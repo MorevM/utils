@@ -66,7 +66,7 @@
 		"prepare": "husky install ./.husky",
 		"vscode-settings": "cp .vscode/settings.template.json ./vscode/settings.json",
 		"build": "tsup",
-		"test": "jest --coverage",
+		"test": "jest",
 		"test:dev": "jest --watch",
 		"lint": "eslint \"**/*.{js,ts,json,json5,jsonc,yml,yaml}\"",
 		"lint:fix": "eslint \"**/*.{js,ts,json,json5,jsonc,yml,yaml}\" --fix",
