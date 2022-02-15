@@ -1,3 +1,11 @@
+## [0.3.0](https://github.com/MorevM/helpers/compare/v0.2.0...v0.3.0) (2022-02-15)
+
+
+### Features
+
+* **strings:** Add `hash` helper ([38e611d](https://github.com/MorevM/helpers/commit/38e611d9785e176f98089cfa83dc04489d8a07c6))
+* **utility:** Add `sleep` helper ([b65df7a](https://github.com/MorevM/helpers/commit/b65df7ac25d959e11afe747ce62b5094d635f777))
+
 ## [0.2.0](https://github.com/MorevM/helpers/compare/v0.1.0...v0.2.0) (2022-02-15)
 
 
