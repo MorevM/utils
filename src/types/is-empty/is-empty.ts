@@ -5,7 +5,8 @@
  *
  * @returns   {boolean}
  */
-import { isArray, isObject } from '..';
+import { isArray } from '../is-array/is-array';
+import { isObject } from '../is-object/is-object';
 
 export const isEmpty = (value: any): boolean => {
 	if ([undefined, null, false, NaN, 0, ''].includes(value)) {
