@@ -6,6 +6,6 @@ describe('sleep', () => {
 		await sleep(500);
 		const after = Date.now();
 
-		expect(after - before).toBeGreaterThan(500);
+		expect(after - before).toBeGreaterThan(499);
 	});
 });
