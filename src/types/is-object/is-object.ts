@@ -5,5 +5,5 @@
  *
  * @returns   {boolean}
  */
-export const isObject = (value: any): boolean =>
+export const isObject = (value: any): value is Record<string, unknown> =>
 	Object.prototype.toString.call(value).includes('Object');

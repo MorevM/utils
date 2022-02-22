@@ -5,4 +5,4 @@
  *
  * @returns   {boolean}
  */
-export const isArray = (value: any): boolean => Array.isArray(value);
+export const isArray = (value: any): value is any[] => Array.isArray(value);

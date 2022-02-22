@@ -13,7 +13,7 @@ export const isEmpty = (value: any): boolean => {
 		return true;
 	}
 
-	if (isArray(value)) return !(value as any[]).length;
+	if (isArray(value)) return !value.length;
 	if (isObject(value)) return !Object.keys(value).length;
 
 	return false;
