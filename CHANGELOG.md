@@ -1,3 +1,20 @@
+## [0.4.0](https://github.com/MorevM/helpers/compare/v0.3.0...v0.4.0) (2022-02-22)
+
+
+### Features
+
+* **strings:** Add `capitalize` function ([ee999f0](https://github.com/MorevM/helpers/commit/ee999f0f07fdafbea389b37630a7ed5ab8ecfbbe))
+
+
+### Tests
+
+* Fix `sleep` test ([3ee2a6b](https://github.com/MorevM/helpers/commit/3ee2a6bd2a72424c77e25eea935b4fa5311846e8))
+
+
+### Chores
+
+* bump @morev/eslint-config from 5.2.0 to 6.0.1 ([#4](https://github.com/MorevM/helpers/issues/4)) ([a39905c](https://github.com/MorevM/helpers/commit/a39905cc866405b3b87468b3702a851671a2be07))
+
 ## [0.3.0](https://github.com/MorevM/helpers/compare/v0.2.0...v0.3.0) (2022-02-15)
 
 
