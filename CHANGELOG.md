@@ -1,3 +1,11 @@
+### [0.4.1](https://github.com/MorevM/helpers/compare/v0.4.0...v0.4.1) (2022-02-22)
+
+
+### Bug fixes
+
+* Add forgotten `capitalize` export ([2b951a1](https://github.com/MorevM/helpers/commit/2b951a124f66bc6bbccbd842dd61ef0cfd1e5d1f))
+* Clarify `is-array` and `is-object` return type ([87632ec](https://github.com/MorevM/helpers/commit/87632ec544dc40b1063d02beeefa8174d8ae7077))
+
 ## [0.4.0](https://github.com/MorevM/helpers/compare/v0.3.0...v0.4.0) (2022-02-22)
 
 
