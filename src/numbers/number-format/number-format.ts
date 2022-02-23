@@ -13,7 +13,7 @@ export const numberFormat = (
 	decimals: number = 0,
 	fractionSeparator: string = '.',
 	thousandsSeparator: string = ' ',
-) => {
+): string => {
 	const toFixedFix = () => {
 		const k = 10 ** decimals;
 		return Math.round(number * k) / k;

@@ -15,7 +15,7 @@ const numerals = {
 	I: 1,
 };
 
-export const romanize = (num: number) => Object.entries(numerals)
+export const romanize = (num: number): string => Object.entries(numerals)
 	.reduce((acc, [key, value]) => {
 		// eslint-disable-next-line no-bitwise
 		acc += key.repeat(num / value >>> 0);
