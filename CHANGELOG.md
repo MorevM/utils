@@ -1,3 +1,11 @@
+### [0.4.2](https://github.com/MorevM/helpers/compare/v0.4.1...v0.4.2) (2022-02-23)
+
+
+### Bug fixes
+
+* **arrays:** Clarify array methods types ([f4e2990](https://github.com/MorevM/helpers/commit/f4e29908a563e76845cda517e38a5f1394a70a7c))
+* Explicit return values ([762b2a9](https://github.com/MorevM/helpers/commit/762b2a9f67315c979f5bbfaca2714682cafacc34))
+
 ### [0.4.1](https://github.com/MorevM/helpers/compare/v0.4.0...v0.4.1) (2022-02-22)
 
 
