@@ -1,3 +1,10 @@
+## [0.5.0](https://github.com/MorevM/helpers/compare/v0.4.3...v0.5.0) (2022-02-23)
+
+
+### Features
+
+* Remove `camelcase` dependency ([a03349b](https://github.com/MorevM/helpers/commit/a03349b171c0674255131b8ed2152bbfde33dec5))
+
 ### [0.4.3](https://github.com/MorevM/helpers/compare/v0.4.2...v0.4.3) (2022-02-23)
 
 
