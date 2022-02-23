@@ -10,7 +10,7 @@ import { arraysUnion } from '../arrays-union/arrays-union';
  * @param     {...any}       arrays   An arrays to process.
  * @returns   {Array<any>}            An array containing all the unique values of each array.
  */
-export const arraysDifference = (...arrays: any[][]) => {
+export const arraysDifference = <T>(...arrays: T[][]): T[] => {
 	const intersections = arraysIntersection(...arrays);
 	return arraysUnion(...arrays.map(array => array.filter(i => !intersections.includes(i))));
 };

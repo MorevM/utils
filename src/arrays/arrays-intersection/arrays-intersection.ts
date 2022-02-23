@@ -9,5 +9,5 @@
  *
  * @returns   {Array}                    Intersection between arrays
  */
-export const arraysIntersection = (...arrays: any[][]): any[] =>
+export const arraysIntersection = <T>(...arrays: T[][]): T[] =>
 	arrays.reduce((acc, array) => acc.filter(i => array.includes(i)));
