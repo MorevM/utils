@@ -1,3 +1,10 @@
+### [0.4.3](https://github.com/MorevM/helpers/compare/v0.4.2...v0.4.3) (2022-02-23)
+
+
+### Bug fixes
+
+* **types:** Clarify `isString` return type ([1a16164](https://github.com/MorevM/helpers/commit/1a16164cf32fcd0f7cf6b7d6cb087526052d2286))
+
 ### [0.4.2](https://github.com/MorevM/helpers/compare/v0.4.1...v0.4.2) (2022-02-23)
 
 
