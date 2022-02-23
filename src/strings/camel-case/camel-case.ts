@@ -1,13 +1,65 @@
-import _camelCase from 'camelcase';
+// import _camelCase from 'camelcase';
+import { isArray, isString } from '../../types';
 
 type CamelCaseOptions = {
 	readonly preserveConsecutiveUppercase?: boolean;
-	readonly locale?: false | string | readonly string[];
 };
+
+const UPPERCASE = /[\p{Lu}]/u;
+const LOWERCASE = /[\p{Ll}]/u;
+const LEADING_CAPITAL = /^[\p{Lu}](?![\p{Lu}])/gu;
+const IDENTIFIER = /([\p{Alpha}\p{N}_]|$)/u;
+const SEPARATORS = /[ ._-]+/;
+
+const LEADING_SEPARATORS = new RegExp(`^${SEPARATORS.source}`);
+const SEPARATORS_AND_IDENTIFIER = new RegExp(SEPARATORS.source + IDENTIFIER.source, 'gu');
+const NUMBERS_AND_IDENTIFIER = new RegExp(`\\d+${IDENTIFIER.source}`, 'gu');
 
 const defaultOptions: CamelCaseOptions = {
 	preserveConsecutiveUppercase: false,
-	locale: false,
+};
+
+const preserveCamelCase = (string: string) => {
+	let isLastCharLower = false;
+	let isLastCharUpper = false;
+	let isLastLastCharUpper = false;
+
+	for (let i = 0; i < string.length; i++) {
+		const character = string[i];
+
+		if (isLastCharLower && UPPERCASE.test(character)) {
+			string = `${string.slice(0, i)}-${string.slice(i)}`;
+			isLastCharLower = false;
+			isLastLastCharUpper = isLastCharUpper;
+			isLastCharUpper = true;
+			i++;
+		} else if (isLastCharUpper && isLastLastCharUpper && LOWERCASE.test(character)) {
+			string = `${string.slice(0, i - 1)}-${string.slice(i - 1)}`;
+			isLastLastCharUpper = isLastCharUpper;
+			isLastCharUpper = false;
+			isLastCharLower = true;
+		} else {
+			isLastCharLower = character.toLowerCase() === character && character.toUpperCase() !== character;
+			isLastLastCharUpper = isLastCharUpper;
+			isLastCharUpper = character.toUpperCase() === character && character.toLowerCase() !== character;
+		}
+	}
+
+	return string;
+};
+
+const preserveConsecutiveUppercase = (input: string) => {
+	LEADING_CAPITAL.lastIndex = 0;
+
+	return input.replace(LEADING_CAPITAL, m1 => m1.toLowerCase());
+};
+
+const postProcess = (input: string) => {
+	SEPARATORS_AND_IDENTIFIER.lastIndex = 0;
+	NUMBERS_AND_IDENTIFIER.lastIndex = 0;
+
+	return input.replace(SEPARATORS_AND_IDENTIFIER, (_, identifier) => identifier.toUpperCase())
+		.replace(NUMBERS_AND_IDENTIFIER, m => m.toUpperCase());
 };
 
 /**
@@ -17,9 +69,31 @@ const defaultOptions: CamelCaseOptions = {
  * @param     {CamelCaseOptions}       options   Additional options being supplied to the `_camelCase`.
  *
  * @returns   {string}                           The string converted to camelCase.
+ * @throws    {TypeError}
  */
 export const camelCase = (
 	input: string | readonly string[],
 	options?: CamelCaseOptions,
-): string =>
-	_camelCase(input, { ...defaultOptions, ...options, pascalCase: false });
+): string => {
+	if (!isArray(!input) && !isString(input)) {
+		throw new TypeError('Expected the input to be `string | string[]`');
+	}
+
+	options = { ...defaultOptions, ...options };
+
+	input = isArray(input)
+		? input.map(v => v.trim()).filter(Boolean).join('-')
+		: (input as string).trim();
+
+	if (!input.length) return '';
+	if (input.length === 1) return input.toLowerCase();
+	if (input !== input.toLowerCase()) {
+		input = preserveCamelCase(input);
+	}
+
+	input = input.replace(LEADING_SEPARATORS, '');
+
+	input = options.preserveConsecutiveUppercase ? preserveConsecutiveUppercase(input) : input.toLowerCase();
+
+	return postProcess(input);
+};

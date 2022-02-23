@@ -1,13 +1,11 @@
-import _camelCase from 'camelcase';
+import { camelCase } from '../camel-case/camel-case';
 
 type PascalCaseOptions = {
 	readonly preserveConsecutiveUppercase?: boolean;
-	readonly locale?: false | string | readonly string[];
 };
 
 const defaultOptions: PascalCaseOptions = {
 	preserveConsecutiveUppercase: false,
-	locale: false,
 };
 
 /**
@@ -21,5 +19,8 @@ const defaultOptions: PascalCaseOptions = {
 export const pascalCase = (
 	input: string | readonly string[],
 	options?: PascalCaseOptions,
-): string =>
-	_camelCase(input, { ...defaultOptions, ...options, pascalCase: true });
+): string => {
+	const base = camelCase(input, { ...defaultOptions, ...options });
+	if (!base.length) return '';
+	return base[0].toUpperCase() + base.slice(1);
+};

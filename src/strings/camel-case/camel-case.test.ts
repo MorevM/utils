@@ -36,4 +36,12 @@ describe('camel-case', () => {
 	it('Returns empty string as is', () => {
 		expect(camelCase('')).toBe('');
 	});
+
+	it('Respect non-latin characters', () => {
+		expect(camelCase('хорошего дня')).toBe('хорошегоДня');
+		expect(camelCase('ДобрыйДень_уважаемые---слушатели')).toBe('добрыйДеньУважаемыеСлушатели');
+		expect(
+			camelCase('о май ГАД', { preserveConsecutiveUppercase: true }),
+		).toBe('оМайГАД');
+	});
 });

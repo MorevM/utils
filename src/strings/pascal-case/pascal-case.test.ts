@@ -36,4 +36,12 @@ describe('pascal-case', () => {
 	it('Returns empty string as is', () => {
 		expect(pascalCase('')).toBe('');
 	});
+
+	it('Respects non-latin characters', () => {
+		expect(pascalCase('приветики-буфетики')).toBe('ПриветикиБуфетики');
+		expect(pascalCase('РОЗОВЫЙ_пушистый единорог')).toBe('РозовыйПушистыйЕдинорог');
+		expect(
+			pascalCase('РОЗОВЫЙ_пушистый единорог', { preserveConsecutiveUppercase: true }),
+		).toBe('РОЗОВЫЙПушистыйЕдинорог');
+	});
 });
