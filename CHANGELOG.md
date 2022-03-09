@@ -1,4 +1,27 @@
-## [0.5.0](https://github.com/MorevM/helpers/compare/v0.4.3...v0.5.0) (2022-02-23)
+
+
+## [0.6.0](https://github.com/MorevM/helpers/compare/v0.5.0...v0.6.0) (2022-03-09)
+
+
+### Features
+
+* **arrays:** Add `array-unique` function ([2b5e5b7](https://github.com/MorevM/helpers/commit/2b5e5b7de598d4f2662611bf156e13986f4ad23e))
+
+
+### Bug fixes
+
+* **arrays:** Add missed `array` export ([d1a23e3](https://github.com/MorevM/helpers/commit/d1a23e3aed0d767e7490b23b0527b333997050f8))
+
+
+### Chores
+
+* bump @release-it/conventional-changelog from 4.1.0 to 4.2.0 ([#6](https://github.com/MorevM/helpers/issues/6)) ([3247038](https://github.com/MorevM/helpers/commit/3247038fc001c5999e46d2132178c9363c2449d1))
+* bump @types/jest from 27.4.0 to 27.4.1 ([#5](https://github.com/MorevM/helpers/issues/5)) ([190e23a](https://github.com/MorevM/helpers/commit/190e23a0253824ac9191631f1f286f94d075b571))
+* bump eslint from 8.9.0 to 8.10.0 ([#8](https://github.com/MorevM/helpers/issues/8)) ([7bf0b4f](https://github.com/MorevM/helpers/commit/7bf0b4fd233bdada794faebb3388e3e20cb5eb00))
+* bump lint-staged from 12.3.4 to 12.3.5 ([#10](https://github.com/MorevM/helpers/issues/10)) ([62f74e2](https://github.com/MorevM/helpers/commit/62f74e26db9953e0d742d3fbacefc2f3df9e830f))
+* bump release-it from 14.12.4 to 14.12.5 ([#7](https://github.com/MorevM/helpers/issues/7)) ([a9245f8](https://github.com/MorevM/helpers/commit/a9245f84314b037ad1094bfece37b528a6aa8b28))
+* bump typescript from 4.5.5 to 4.6.2 ([#11](https://github.com/MorevM/helpers/issues/11)) ([7339f6c](https://github.com/MorevM/helpers/commit/7339f6c7a8307b963c21a5fbbeb5aad98d371246))
+* **deps:** Upgrade dependencies ([562e1d3](https://github.com/MorevM/helpers/commit/562e1d3dcf34ee96df691bd695b06548dc2315b1))## [0.5.0](https://github.com/MorevM/helpers/compare/v0.4.3...v0.5.0) (2022-02-23)
 
 
 ### Features
@@ -86,4 +109,3 @@
 ### Bug fixes
 
 * Change package name ([252274c](https://github.com/MorevM/helpers/commit/252274c111df3b14204ca8ccfd5bf08efdbad1c9))
-
