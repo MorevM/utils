@@ -11,10 +11,10 @@
  * @returns   {string}         Hash for given string.
  */
 export const hash = (str: string): string => {
-	let hash = 0;
+	let h = 0;
 	for (let i = 0, l = str.length; i < l; i++) {
-		hash = (hash << 5) - hash + str.charCodeAt(i);
-		hash &= hash; // Convert to 32bit integer
+		h = (h << 5) - h + (str.codePointAt(i) ?? 0);
+		h &= h; // Convert to 32bit integer
 	}
-	return new Uint32Array([hash])[0].toString(36);
+	return new Uint32Array([h])[0].toString(36);
 };
