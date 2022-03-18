@@ -7,5 +7,8 @@
  *
  * @returns   {boolean}
  */
-export const isNullish = (value: any): boolean =>
+
+type NullishType = null | undefined;
+
+export const isNullish = (value: any): value is NullishType =>
 	value === null || typeof value === 'undefined';
