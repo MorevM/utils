@@ -1,6 +1,19 @@
 
 
-## [0.6.0](https://github.com/MorevM/helpers/compare/v0.5.0...v0.6.0) (2022-03-09)
+## [0.7.0](https://github.com/MorevM/helpers/compare/v0.6.0...v0.7.0) (2022-03-18)
+
+
+### Features
+
+* **types:** Add `is-function` helper ([4b44c77](https://github.com/MorevM/helpers/commit/4b44c77ae5f67696d0f19dba9b5c6c66942633d4))
+* **types:** Add `is-promise` helper ([726a0f3](https://github.com/MorevM/helpers/commit/726a0f39a6ae35e0324eddb932eab5d63aeb9546))
+
+
+### Bug fixes
+
+* **types:** Clarify `isNullish` return type ([df2ce3b](https://github.com/MorevM/helpers/commit/df2ce3babaaf78eac4c48a4575a2353b094f53fe))
+* **types:** Clarify `isNumeric` return type ([7053e59](https://github.com/MorevM/helpers/commit/7053e596aad22a0048b3f2e8993ecffc4716489c))
+* **types:** Clarify `isRegExp` return type ([a56b957](https://github.com/MorevM/helpers/commit/a56b957181b1d55ec40e275a87c07a7f5b68ef84))## [0.6.0](https://github.com/MorevM/helpers/compare/v0.5.0...v0.6.0) (2022-03-09)
 
 
 ### Features
