@@ -1,7 +1,7 @@
 {
 	"name": "@morev/helpers",
 	"description": "JS helpers library",
-	"version": "0.7.1",
+	"version": "0.7.2",
 	"private": false,
 	"license": "MIT",
 	"publishConfig": {
