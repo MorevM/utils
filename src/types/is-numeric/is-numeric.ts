@@ -5,5 +5,5 @@
  *
  * @returns   {boolean}
  */
-export const isNumeric = (value: any) =>
+export const isNumeric = (value: any): value is number =>
 	typeof value === 'number' && !isNaN(value);
