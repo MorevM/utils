@@ -6,7 +6,7 @@ function foo() { return '123'; }
 // eslint-disable-next-line @typescript-eslint/no-implied-eval
 const bar = new Function();
 
-describe('is-string', () => {
+describe('is-function', () => {
 	it('Returns `true` if a given value is a function', () => {
 		expect(isFunction(() => {})).toBe(true);
 		expect(isFunction(fn)).toBe(true);
