@@ -1,6 +1,16 @@
 
 
-### [0.7.2](https://github.com/MorevM/helpers/compare/v0.7.1...v0.7.2) (2022-03-18)### [0.7.1](https://github.com/MorevM/helpers/compare/v0.7.0...v0.7.1) (2022-03-18)
+## [0.8.0](https://github.com/MorevM/helpers/compare/v0.7.2...v0.8.0) (2022-03-18)
+
+
+### Features
+
+* **types:** Add `is-boolean` helper ([1111094](https://github.com/MorevM/helpers/commit/11110941f448edd404525b2fa1988259ed70f5f3))
+
+
+### Bug fixes
+
+* Correct test names ([cf47e43](https://github.com/MorevM/helpers/commit/cf47e435eb75cb06fc25b2b667d593c2e2c6b99b))### [0.7.2](https://github.com/MorevM/helpers/compare/v0.7.1...v0.7.2) (2022-03-18)### [0.7.1](https://github.com/MorevM/helpers/compare/v0.7.0...v0.7.1) (2022-03-18)
 
 
 ### Chores
