@@ -1,6 +1,18 @@
 
 
-## [0.7.0](https://github.com/MorevM/helpers/compare/v0.6.0...v0.7.0) (2022-03-18)
+### [0.7.1](https://github.com/MorevM/helpers/compare/v0.7.0...v0.7.1) (2022-03-18)
+
+
+### Chores
+
+* bump @release-it/conventional-changelog from 4.2.1 to 4.2.2 ([#15](https://github.com/MorevM/helpers/issues/15)) ([cc1814a](https://github.com/MorevM/helpers/commit/cc1814a3961f4e630643e6d6619873b1cb04b6c4))
+* bump eslint from 8.10.0 to 8.11.0 ([#13](https://github.com/MorevM/helpers/issues/13)) ([c86faa5](https://github.com/MorevM/helpers/commit/c86faa5ca3e920cf221095fddf55fe5554f50905))
+* bump tsup from 5.12.0 to 5.12.1 ([#14](https://github.com/MorevM/helpers/issues/14)) ([3a21810](https://github.com/MorevM/helpers/commit/3a218100a9c71660f8fe19af385ee833d8a5a3ed))
+
+
+### Bug fixes
+
+* **types:** Clarify `isInteger` return type ([56a9dc2](https://github.com/MorevM/helpers/commit/56a9dc249adf13f36cb9ae3146bca67d5bc87139))## [0.7.0](https://github.com/MorevM/helpers/compare/v0.6.0...v0.7.0) (2022-03-18)
 
 
 ### Features
