@@ -7,5 +7,5 @@ import { isNumeric } from '../is-numeric/is-numeric';
  *
  * @returns   {boolean}
  */
-export const isInteger = (value: any): boolean =>
+export const isInteger = (value: any): value is number =>
 	isNumeric(value) && (value % 1 === 0);
