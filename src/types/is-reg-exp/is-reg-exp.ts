@@ -5,5 +5,5 @@
  *
  * @returns   {boolean}
  */
-export const isRegExp = (value: any): boolean =>
+export const isRegExp = (value: any): value is RegExp =>
 	Object.prototype.toString.call(value) === '[object RegExp]';
