@@ -1,6 +1,23 @@
 
 
-## [0.8.0](https://github.com/MorevM/helpers/compare/v0.7.2...v0.8.0) (2022-03-18)
+### [0.8.1](https://github.com/MorevM/helpers/compare/v0.8.0...v0.8.1) (2022-03-26)
+
+
+### Bug fixes
+
+* **arrays:** Add forgotten `array-unique` export ([fc91d82](https://github.com/MorevM/helpers/commit/fc91d82eba6d9a7f0c1c745c8f190d3cc4706bac))
+
+
+### Chores
+
+* Add `md` files linter ([94c8767](https://github.com/MorevM/helpers/commit/94c8767c426f63916dedadfbe89b88f647d631e1))
+* bump @morev/eslint-config from 8.1.0 to 8.2.0 ([#17](https://github.com/MorevM/helpers/issues/17)) ([2877728](https://github.com/MorevM/helpers/commit/28777280db2058ae1d08852672eb671e170d915c))
+* bump eslint from 8.11.0 to 8.12.0 ([#19](https://github.com/MorevM/helpers/issues/19)) ([1f38625](https://github.com/MorevM/helpers/commit/1f38625dff45caa520f0664c056165635953987b))
+* bump lint-staged from 12.3.5 to 12.3.7 ([#16](https://github.com/MorevM/helpers/issues/16)) ([e4023a2](https://github.com/MorevM/helpers/commit/e4023a212226fb186e009e881e40a9b67a3a1f20))
+* bump release-it from 14.12.5 to 14.13.1 ([#22](https://github.com/MorevM/helpers/issues/22)) ([3987c07](https://github.com/MorevM/helpers/commit/3987c07f064f4f2950ca06f63ccb6f87c59f0eb6))
+* bump ts-jest from 27.1.3 to 27.1.4 ([#20](https://github.com/MorevM/helpers/issues/20)) ([17e08b5](https://github.com/MorevM/helpers/commit/17e08b50bf37bfa453b8cdcb73852db24f1bbccd))
+* bump typescript from 4.6.2 to 4.6.3 ([#21](https://github.com/MorevM/helpers/issues/21)) ([b56902f](https://github.com/MorevM/helpers/commit/b56902ff60230bb95f48c02961544cf7ca841e43))
+* ESLint config upgrade ([6c4e0dc](https://github.com/MorevM/helpers/commit/6c4e0dc734a9e4e62742036c68e991e57319e1a6))## [0.8.0](https://github.com/MorevM/helpers/compare/v0.7.2...v0.8.0) (2022-03-18)
 
 
 ### Features
