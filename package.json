@@ -74,7 +74,7 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"@morev/commitlint-config": "^0.1.0",
+		"@morev/commitlint-config": "^0.1.1",
 		"@morev/eslint-config": "^10.0.3",
 		"@release-it/conventional-changelog": "^4.2.1",
 		"@types/jest": "^27.4.0",
