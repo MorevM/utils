@@ -1,1 +1,1 @@
-'*.{js,ts,json,json5,jsonc,yml,yaml}': eslint --fix
+'*.{js,ts,json,json5,jsonc,yml,yaml,md}': eslint --fix

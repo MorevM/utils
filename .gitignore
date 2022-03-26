@@ -22,6 +22,8 @@ yarn-error.log*
 todo
 
 # Editors
-.vscode/settings.json
+.vscode/*
+!.vscode/settings.template.json
+
 .idea
 coverage

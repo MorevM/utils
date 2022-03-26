@@ -1,13 +1,16 @@
 {
 	"prettier.enable": false,
 	"editor.codeActionsOnSave": {
-		"source.fixAll.eslint": true,
-		"source.fixAll.stylelint": true
+		"source.fixAll.eslint": true
 	},
 	"eslint.validate": [
-		"json",
-		"jsonc",
-		"json5",
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact",
+		"html",
+		"vue",
+		"markdown",
 		"yaml"
 	]
 }

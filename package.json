@@ -68,8 +68,8 @@
 		"build": "tsup",
 		"test": "jest",
 		"test:dev": "jest --watch",
-		"lint": "eslint \"**/*.{js,ts,json,json5,jsonc,yml,yaml}\"",
-		"lint:fix": "eslint \"**/*.{js,ts,json,json5,jsonc,yml,yaml}\" --fix",
+		"lint": "eslint \"**/*.{js,ts,json,json5,jsonc,yml,yaml,md}\"",
+		"lint:fix": "eslint \"**/*.{js,ts,json,json5,jsonc,yml,yaml,md}\" --fix",
 		"release": "release-it --disable-metrics"
 	},
 	"dependencies": {},
