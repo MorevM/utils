@@ -1,6 +1,20 @@
 
 
-### [0.8.1](https://github.com/MorevM/helpers/compare/v0.8.0...v0.8.1) (2022-03-26)
+### [0.8.2](https://github.com/MorevM/helpers/compare/v0.8.1...v0.8.2) (2022-04-04)
+
+
+### Chores
+
+* bump @morev/commitlint-config from 0.1.0 to 0.1.1 ([#23](https://github.com/MorevM/helpers/issues/23)) ([4746467](https://github.com/MorevM/helpers/commit/4746467be98f634f80cbdf8c188fca71a05181e5))
+* bump release-it from 14.13.1 to 14.14.0 ([#24](https://github.com/MorevM/helpers/issues/24)) ([dbc6342](https://github.com/MorevM/helpers/commit/dbc6342b3cbf4948abc5901ad1d88d2e9fdbb2fc))
+* bump tsup from 5.12.1 to 5.12.2 ([#25](https://github.com/MorevM/helpers/issues/25)) ([1386d41](https://github.com/MorevM/helpers/commit/1386d41ecfad3cdb811cf9c858c3e5ad321ab2fa))
+* Update `dependabot` settings ([9acee61](https://github.com/MorevM/helpers/commit/9acee61e4f0b60de21bee5748432e042611b663f))
+
+
+### Bug fixes
+
+* Fix JSDoc typo in `[@returns](https://github.com/returns)` declaration ([7011254](https://github.com/MorevM/helpers/commit/7011254098c2b4e41e68b4ba5d84144888cab1f4))
+* Rename `hyphenate` to `kebabCase` ([6aee658](https://github.com/MorevM/helpers/commit/6aee658b277d00c5fc569f80a8b550787be082ef))### [0.8.1](https://github.com/MorevM/helpers/compare/v0.8.0...v0.8.1) (2022-03-26)
 
 
 ### Bug fixes
