@@ -1,6 +1,11 @@
 
 
-### [0.8.2](https://github.com/MorevM/helpers/compare/v0.8.1...v0.8.2) (2022-04-04)
+### [0.8.3](https://github.com/MorevM/helpers/compare/v0.8.2...v0.8.3) (2022-04-04)
+
+
+### Bug fixes
+
+* Add missed export ([9065d14](https://github.com/MorevM/helpers/commit/9065d14aa264818112f02ba20c9cdefab25b26fd))### [0.8.2](https://github.com/MorevM/helpers/compare/v0.8.1...v0.8.2) (2022-04-04)
 
 
 ### Chores
