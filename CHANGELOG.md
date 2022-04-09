@@ -1,6 +1,17 @@
 
 
-### [0.8.3](https://github.com/MorevM/helpers/compare/v0.8.2...v0.8.3) (2022-04-04)
+## [0.9.0](https://github.com/MorevM/helpers/compare/v0.8.3...v0.9.0) (2022-04-09)
+
+
+### Features
+
+* **arrays:** Add `toArray` helper ([0bdd2ea](https://github.com/MorevM/helpers/commit/0bdd2ea82d7d73a427741ae5a056fa681a5eb7c2))
+* **utility:** Add `debounce` helper ([d8e916c](https://github.com/MorevM/helpers/commit/d8e916cb7d3d462cb6253a8294d3d2a0685ee890))
+
+
+### Chores
+
+* Deps update ([2ada02c](https://github.com/MorevM/helpers/commit/2ada02c6cb86ddd1e411f46133f8ba398b7e6e26))### [0.8.3](https://github.com/MorevM/helpers/compare/v0.8.2...v0.8.3) (2022-04-04)
 
 
 ### Bug fixes
