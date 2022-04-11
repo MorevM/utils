@@ -1,6 +1,18 @@
 
 
-## [0.9.0](https://github.com/MorevM/helpers/compare/v0.8.3...v0.9.0) (2022-04-09)
+## [0.10.0](https://github.com/MorevM/helpers/compare/v0.9.0...v0.10.0) (2022-04-11)
+
+
+### Features
+
+* **browser:** Add `supportsPassive` helper ([b85acf3](https://github.com/MorevM/helpers/commit/b85acf31436b6051012d5e4c78479cc136df5aa7))
+* **dom:** Add `getDocumentSize` helper ([78d9c2e](https://github.com/MorevM/helpers/commit/78d9c2e636310d415e6579503f040aff583aa1ee))
+* **dom:** Add `getScrollLimit` helper ([685d548](https://github.com/MorevM/helpers/commit/685d548fd1d3d5f27fbe69d325ea1caffcd8ac35))
+
+
+### Chores
+
+* bump eslint from 8.12.0 to 8.13.0 ([#26](https://github.com/MorevM/helpers/issues/26)) ([a461126](https://github.com/MorevM/helpers/commit/a461126aa4765383dd20db1d338a2c63aa0ac875))## [0.9.0](https://github.com/MorevM/helpers/compare/v0.8.3...v0.9.0) (2022-04-09)
 
 
 ### Features
