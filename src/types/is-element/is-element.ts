@@ -1,5 +1,5 @@
 /**
- * Checks whether a given value is an DOM Element.
+ * Checks whether a given value is a DOM Element.
  *
  * @param     {any}       value   The value being evaluated.
  *
