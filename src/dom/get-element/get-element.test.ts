@@ -43,7 +43,7 @@ describe('isDescendantOf', () => {
 	});
 
 	afterAll(() => {
-		const el = document.querySelector('.test-blocks');
+		const el = document.querySelector('#root');
 		el?.remove();
 	});
 
