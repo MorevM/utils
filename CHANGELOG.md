@@ -1,6 +1,11 @@
 
 
-## [0.11.0](https://github.com/MorevM/helpers/compare/v0.10.0...v0.11.0) (2022-04-13)
+## [0.12.0](https://github.com/MorevM/helpers/compare/v0.11.0...v0.12.0) (2022-04-13)
+
+
+### Features
+
+* **dom:** Add `getScrollableAncestor` helper ([8a67070](https://github.com/MorevM/helpers/commit/8a67070936cb21af86b90246234d47254f982598))## [0.11.0](https://github.com/MorevM/helpers/compare/v0.10.0...v0.11.0) (2022-04-13)
 
 
 ### Features
