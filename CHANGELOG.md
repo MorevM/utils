@@ -1,6 +1,17 @@
 
 
-## [0.10.0](https://github.com/MorevM/helpers/compare/v0.9.0...v0.10.0) (2022-04-11)
+## [0.11.0](https://github.com/MorevM/helpers/compare/v0.10.0...v0.11.0) (2022-04-13)
+
+
+### Features
+
+* **dom:** Add `getElement` helper ([b04c444](https://github.com/MorevM/helpers/commit/b04c44410c0af0489a21ed19cb45487238ab4327))
+* **types:** Add `isElement` helper ([4b3746f](https://github.com/MorevM/helpers/commit/4b3746ffed5c59b0c39a8099d97772e72a16597e))
+
+
+### Refactoring
+
+* Add deprecation flag to `isNode` function due to incorrect name ([f46067b](https://github.com/MorevM/helpers/commit/f46067bab9d8e780abcb7c755308fb251468d1d7))## [0.10.0](https://github.com/MorevM/helpers/compare/v0.9.0...v0.10.0) (2022-04-11)
 
 
 ### Features
