@@ -1,54 +1,89 @@
-import { defaults } from './defaults';
+/* eslint-disable jest/no-conditional-in-test */
+import { defaults, createDefaults } from './defaults';
+
+const defaultObj = {
+	a: 'a',
+	b: {
+		'b.a': true,
+		'b.b': {
+			'b.b.a': [1, 2, 3],
+			'b.b.b': 'b.b.b',
+		},
+		'b.c': 'b.c',
+	},
+	c: 1,
+};
+
+const input = {
+	a: 'a',
+	b: {
+		'b.a': false,
+		'b.b': {
+			'b.b.a': [4, 5, 6],
+			'b.b.b': 'b.b.b',
+			'b.b.c': 1,
+		},
+		'b.c': 'new b.c',
+	},
+	c: 2,
+	d: 'd',
+};
 
 describe('defaults', () => {
 	it('Returns the object which is a given objects being recursively merged', () => {
-		const target = {
-			'prop-1': 'val-1',
-			'prop-2': {
-				'prop-2-1': 'val-2-1',
-				'prop-2-2': {
-					'prop-2-2-1': 'val-2-2-1',
-					'prop-2-2-2': 'val-2-2-2',
+		const expected = {
+			a: 'a',
+			b: {
+				'b.a': false,
+				'b.b': {
+					'b.b.a': [4, 5, 6],
+					'b.b.b': 'b.b.b',
+					'b.b.c': 1,
 				},
-				'prop-2-3': 'val-2-3',
+				'b.c': 'new b.c',
 			},
-			'prop-3': 'val-3',
+			c: 2,
+			d: 'd',
 		};
 
-		const source = {
-			'prop-2': {
-				'prop-2-2': {
-					'prop-2-2-1': 'new val-2-2-1',
-					'prop-2-2-3': 'new val-2-2-3',
-				},
-				'prop-2-3': 'new val-2-3',
-			},
-			'prop-4': {
-				'prop-4-1': 'new val-4-1',
-				'prop-4-2': 'new val-4-2',
-			},
-		};
+		expect(defaults(defaultObj, input)).toStrictEqual(expected);
+	});
+
+	it('Can use custom merger function', () => {
+		const customDefaults = createDefaults((obj, key, value, namespace) => {
+			if (namespace === 'b.b.b' && key === 'b.b.b') {
+				obj[key] = 666 as any;
+				return true;
+			}
+
+			if (namespace === 'b.b.b' && key === 'b.b.a') {
+				obj[key] = [...obj[key], ...value] as any;
+				return true;
+			}
+
+			if (namespace === '' && key === 'c') {
+				obj[key] = 3 as any;
+				return true;
+			}
+
+			return false;
+		});
 
 		const expected = {
-			'prop-1': 'val-1',
-			'prop-2': {
-				'prop-2-1': 'val-2-1',
-				'prop-2-2': {
-					'prop-2-2-1': 'new val-2-2-1',
-					'prop-2-2-2': 'val-2-2-2',
-					'prop-2-2-3': 'new val-2-2-3',
+			a: 'a',
+			b: {
+				'b.a': false,
+				'b.b': {
+					'b.b.a': [1, 2, 3, 4, 5, 6],
+					'b.b.b': 666,
+					'b.b.c': 1,
 				},
-				'prop-2-3': 'new val-2-3',
+				'b.c': 'new b.c',
 			},
-			'prop-3': 'val-3',
-			'prop-4': {
-				'prop-4-1': 'new val-4-1',
-				'prop-4-2': 'new val-4-2',
-			},
+			c: 3,
+			d: 'd',
 		};
 
-		const result = defaults(target, source);
-
-		expect(result).toStrictEqual(expected);
+		expect(customDefaults(defaultObj, input)).toStrictEqual(expected);
 	});
 });
