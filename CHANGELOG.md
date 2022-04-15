@@ -1,6 +1,11 @@
 
 
-## [0.13.0](https://github.com/MorevM/helpers/compare/v0.12.0...v0.13.0) (2022-04-15)
+## [0.14.0](https://github.com/MorevM/helpers/compare/v0.13.0...v0.14.0) (2022-04-15)
+
+
+### Features
+
+* **dom:** Add `parent` argument to `getElementOffset` ([190c02f](https://github.com/MorevM/helpers/commit/190c02f2591c1c5426a9ef53f48445702a31b77a))## [0.13.0](https://github.com/MorevM/helpers/compare/v0.12.0...v0.13.0) (2022-04-15)
 
 
 ### Features
