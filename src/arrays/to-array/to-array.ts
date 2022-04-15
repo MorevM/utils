@@ -1,23 +1,12 @@
-/* eslint-disable func-style */
-
-/**
- * @callback ToArray
- * @param     {any}     value
- * @returns   {any[]}
- *
- * @callback KeepArray
- * @param     {any[]}   value
- * @returns   {any[]}
- */
+type ToReturn<T> = T extends any[] ? T : T[];
 
 /**
  * Casts the given value to an array.
- * Remains array as is if given value is array already.
+ * Remains array as is if given value is an array already.
  *
- * @type {ToArray & KeepArray}
+ * @param     {any}   value   Any value
+ *
+ * @returns   {*}             Array itself if the value is already array, single-value array containing value otherwise
  */
-export function toArray<T extends any[]>(value: T): T;
-export function toArray<T>(value: T): T[];
-export function toArray(value: any): any[] {
-	return [value].flat();
-}
+export const toArray = <T>(value: T): ToReturn<T> =>
+	[value].flat() as ToReturn<T>;
