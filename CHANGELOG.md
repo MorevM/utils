@@ -1,6 +1,11 @@
 
 
-## [0.12.0](https://github.com/MorevM/helpers/compare/v0.11.0...v0.12.0) (2022-04-13)
+## [0.13.0](https://github.com/MorevM/helpers/compare/v0.12.0...v0.13.0) (2022-04-15)
+
+
+### Features
+
+* **utility:** Extend `defaults` with `createDefaults`, better types ([84cb8bb](https://github.com/MorevM/helpers/commit/84cb8bbb1488ccd73d98bf7515eb2403b01c8177))## [0.12.0](https://github.com/MorevM/helpers/compare/v0.11.0...v0.12.0) (2022-04-13)
 
 
 ### Features
