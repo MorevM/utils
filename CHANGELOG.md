@@ -1,6 +1,11 @@
 
 
-## [0.14.0](https://github.com/MorevM/helpers/compare/v0.13.0...v0.14.0) (2022-04-15)
+### [0.14.1](https://github.com/MorevM/helpers/compare/v0.14.0...v0.14.1) (2022-04-15)
+
+
+### Bug fixes
+
+* **arrays:** Clarify `toArray` return type ([fc7d4f9](https://github.com/MorevM/helpers/commit/fc7d4f907fe26ac14f50bedfde916f8725b6ae8d))## [0.14.0](https://github.com/MorevM/helpers/compare/v0.13.0...v0.14.0) (2022-04-15)
 
 
 ### Features
