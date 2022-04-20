@@ -1,5 +1,21 @@
 
 
+## [0.15.0](https://github.com/MorevM/helpers/compare/v0.14.1...v0.15.0) (2022-04-20)
+
+
+### Features
+
+* **objects:** Add `pick` helper ([24d030a](https://github.com/MorevM/helpers/commit/24d030ad892c7bbb9388b053e9edfa8dfded4cf8))
+
+
+### Chores
+
+* bump @morev/eslint-config from 11.0.0 to 11.1.1 ([#30](https://github.com/MorevM/helpers/issues/30)) ([adc3682](https://github.com/MorevM/helpers/commit/adc3682b4352cdb96c7bc664e7e434a13b29a956))
+* bump @release-it/conventional-changelog from 4.2.2 to 4.3.0 ([#29](https://github.com/MorevM/helpers/issues/29)) ([b633e7a](https://github.com/MorevM/helpers/commit/b633e7a0c780ac4881d465e7916d303d7274e2e2))
+* bump lint-staged from 12.3.7 to 12.3.8 ([#27](https://github.com/MorevM/helpers/issues/27)) ([4782920](https://github.com/MorevM/helpers/commit/4782920f14e3e53449aa4175fe3080009ff9b248))
+* bump release-it from 14.14.0 to 14.14.2 ([#31](https://github.com/MorevM/helpers/issues/31)) ([73c590a](https://github.com/MorevM/helpers/commit/73c590a24278a49543a351777ce3212ebd260acb))
+* bump tsup from 5.12.4 to 5.12.5 ([#28](https://github.com/MorevM/helpers/issues/28)) ([9643520](https://github.com/MorevM/helpers/commit/96435204cfefeda3483a8b0874ce8976637a5dfb))
+
 ### [0.14.1](https://github.com/MorevM/helpers/compare/v0.14.0...v0.14.1) (2022-04-15)
 
 
