@@ -1,5 +1,16 @@
 
 
+### [0.15.1](https://github.com/MorevM/helpers/compare/v0.15.0...v0.15.1) (2022-04-23)
+
+
+### Chores
+
+* bump @morev/eslint-config from 11.1.1 to 11.2.0 ([#36](https://github.com/MorevM/helpers/issues/36)) ([ff6cdfd](https://github.com/MorevM/helpers/commit/ff6cdfdf2e37bfe777ca1e3387ab812104598b7f))
+* bump eslint from 8.13.0 to 8.14.0 ([#35](https://github.com/MorevM/helpers/issues/35)) ([02ad3b1](https://github.com/MorevM/helpers/commit/02ad3b13066f2104d49f3e8685035dc10167c369))
+* bump lint-staged from 12.3.8 to 12.4.0 ([#34](https://github.com/MorevM/helpers/issues/34)) ([4ca1628](https://github.com/MorevM/helpers/commit/4ca16280a7ea7859b730ced1f51718947fc4d46f))
+* bump tsup from 5.12.5 to 5.12.6 ([#32](https://github.com/MorevM/helpers/issues/32)) ([0d2f796](https://github.com/MorevM/helpers/commit/0d2f7969a705f81977a8a3e7ebb0320de14564ef))
+* Recreate lock-file ([7f6f839](https://github.com/MorevM/helpers/commit/7f6f8399683a16d3e6160761060a15414125d7d3))
+
 ## [0.15.0](https://github.com/MorevM/helpers/compare/v0.14.1...v0.15.0) (2022-04-20)
 
 
