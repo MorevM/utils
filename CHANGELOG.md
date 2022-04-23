@@ -1,5 +1,12 @@
 
 
+## [0.16.0](https://github.com/MorevM/helpers/compare/v0.15.1...v0.16.0) (2022-04-23)
+
+
+### Features
+
+* Add `fileExtension` helper ([9bf6133](https://github.com/MorevM/helpers/commit/9bf61330f23363c4bbf172760b0371454cc1859e))
+
 ### [0.15.1](https://github.com/MorevM/helpers/compare/v0.15.0...v0.15.1) (2022-04-23)
 
 
