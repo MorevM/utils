@@ -1,5 +1,19 @@
 
 
+### [0.16.1](https://github.com/MorevM/helpers/compare/v0.16.0...v0.16.1) (2022-05-07)
+
+
+### Chores
+
+* bump @morev/eslint-config from 11.2.0 to 11.4.0 ([f5cd089](https://github.com/MorevM/helpers/commit/f5cd0891078c20094c05cd5576144ca090f274ee))
+* bump @types/jest from 27.4.1 to 27.5.0 ([#41](https://github.com/MorevM/helpers/issues/41)) ([f90e2ae](https://github.com/MorevM/helpers/commit/f90e2aeffeb5d1b2e73f9be3c07fca659dd46ff7))
+* bump eslint from 8.14.0 to 8.15.0 ([#42](https://github.com/MorevM/helpers/issues/42)) ([abc880a](https://github.com/MorevM/helpers/commit/abc880ae5ca7c4a7c0c93f39bcae78fd4ff69854))
+* bump lint-staged from 12.4.0 to 12.4.1 ([#39](https://github.com/MorevM/helpers/issues/39)) ([0f54f99](https://github.com/MorevM/helpers/commit/0f54f992c2f7cabedc967c24e9bea2e288aa838e))
+* bump release-it and @release-it/conventional-changelog ([#43](https://github.com/MorevM/helpers/issues/43)) ([905a9c2](https://github.com/MorevM/helpers/commit/905a9c28ed2ab6e4047cb8e0d8020aca20bd5102))
+* bump release-it from 14.14.2 to 14.14.3 ([#38](https://github.com/MorevM/helpers/issues/38)) ([af7bca6](https://github.com/MorevM/helpers/commit/af7bca6ab4aa3c8c117912fd03beef006f28e072))
+* bump tsup from 5.12.6 to 5.12.7 ([#44](https://github.com/MorevM/helpers/issues/44)) ([9ec7d24](https://github.com/MorevM/helpers/commit/9ec7d248e31206cd952b7f1103d7f01b961677a8))
+* bump typescript from 4.6.3 to 4.6.4 ([#37](https://github.com/MorevM/helpers/issues/37)) ([f341e7f](https://github.com/MorevM/helpers/commit/f341e7f641781d77e7e4bb11cc98d36fb372904b))
+
 ## [0.16.0](https://github.com/MorevM/helpers/compare/v0.15.1...v0.16.0) (2022-04-23)
 
 
