@@ -12,7 +12,7 @@ type MergeObjects<Defaults extends IObject, Input extends IObject> = Input exten
 		});
 
 type DefaultsFn = <Defaults extends IObject, Input extends IObject>(
-	defaults: Defaults, ...input: Input[]
+	defaults: Defaults, ...input: Array<Input | null | undefined>
 ) => MergeObjects<Defaults, Input>;
 
 type Merger = <T extends IObject, K extends keyof T>(
@@ -20,7 +20,7 @@ type Merger = <T extends IObject, K extends keyof T>(
 ) => boolean | undefined;
 
 // Base function to apply defaults
-const _defaults = <T extends IObject>(defaults: T, input: T, stack: string = '', merger?: Merger): T => {
+const _defaults = <T extends IObject>(defaults: T, input?: T | null, stack: string = '', merger?: Merger): T => {
 	const result = { ...defaults };
 	if (!isObject(input)) return result;
 

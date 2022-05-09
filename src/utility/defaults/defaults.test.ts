@@ -86,4 +86,15 @@ describe('defaults', () => {
 
 		expect(customDefaults(defaultObj, input)).toStrictEqual(expected);
 	});
+
+	it('Allows to pass undefined/null argument', () => {
+		const undefinedObj = undefined;
+		const nullObj = null;
+		const fooObj = { e: 'e' };
+
+		expect(defaults(defaultObj, undefinedObj, nullObj, fooObj)).toStrictEqual({
+			...defaultObj,
+			...fooObj,
+		});
+	});
 });
