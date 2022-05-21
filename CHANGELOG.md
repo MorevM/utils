@@ -1,5 +1,29 @@
 
 
+## [0.18.0](https://github.com/MorevM/helpers/compare/v0.16.1...v0.18.0) (2022-05-21)
+
+
+### Features
+
+* **arrays:** Add `arrayShuffle` helper ([7db0655](https://github.com/MorevM/helpers/commit/7db0655b3cd4f4dc4fbdaedafdd4e11b4cc0b943))
+* **objects:** Add `objectKeysCase` helper ([6c60758](https://github.com/MorevM/helpers/commit/6c607585bbb9043c2ad5a708c056e2bfe2802682))
+* **strings:** Add `snakeCase` helper ([2ab712d](https://github.com/MorevM/helpers/commit/2ab712d264351b62c154a5fa143b27796bd4a051))
+* **utility:** Allow to pass undefined argument ([cec91fe](https://github.com/MorevM/helpers/commit/cec91fe4e100aedee98dcb8605eca5a4577c40b8))
+
+
+### Chores
+
+* bump @morev/eslint-config from 11.4.0 to 12.0.0 ([e532591](https://github.com/MorevM/helpers/commit/e53259159f3bb4581732bb07448d0dde28175188))
+* bump eslint from 8.15.0 to 8.16.0 ([#48](https://github.com/MorevM/helpers/issues/48)) ([13f71ea](https://github.com/MorevM/helpers/commit/13f71eacdf2a8ab10b66f2a1e13e50213da6c241))
+* bump husky from 7.0.4 to 8.0.1 ([#46](https://github.com/MorevM/helpers/issues/46)) ([0f54e77](https://github.com/MorevM/helpers/commit/0f54e77ca01728b0d1e61916a0cbd6a71091d60d))
+* bump tsup from 5.12.7 to 5.12.8 ([#49](https://github.com/MorevM/helpers/issues/49)) ([4f2ebaa](https://github.com/MorevM/helpers/commit/4f2ebaa0e994ae654ba27082d90b9c7d02fcdfc5))
+* Upgrade `jest` & co ([5450e01](https://github.com/MorevM/helpers/commit/5450e0157fde6cf43564c2115ba7bc3d5217b59c))
+
+
+### Tests
+
+* Fix `array-shuffle` test ([8c89b2c](https://github.com/MorevM/helpers/commit/8c89b2c306dfc6af79204687a5c7bc877c95d82f))
+
 ## [0.17.0](https://github.com/MorevM/helpers/compare/v0.16.1...v0.17.0) (2022-05-09)
 
 
