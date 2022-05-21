@@ -1,5 +1,12 @@
 
 
+## [0.17.0](https://github.com/MorevM/helpers/compare/v0.16.1...v0.17.0) (2022-05-09)
+
+
+### Features
+
+* **utility:** Allow to pass undefined argument ([cec91fe](https://github.com/MorevM/helpers/commit/cec91fe4e100aedee98dcb8605eca5a4577c40b8))
+
 ### [0.16.1](https://github.com/MorevM/helpers/compare/v0.16.0...v0.16.1) (2022-05-07)
 
 
