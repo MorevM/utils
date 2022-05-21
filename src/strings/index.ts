@@ -10,4 +10,5 @@ export * from './pascal-case/pascal-case';
 export * from './quote/quote';
 export * from './random-string/random-string';
 export * from './romanize/romanize';
+export * from './snake-case/snake-case';
 export * from './unquote/unquote';
