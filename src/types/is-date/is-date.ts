@@ -5,5 +5,5 @@
  *
  * @returns   {boolean}
  */
-export const isDate = (value: any): boolean =>
+export const isDate = (value: any): value is Date =>
 	Object.prototype.toString.call(value).includes('Date');
