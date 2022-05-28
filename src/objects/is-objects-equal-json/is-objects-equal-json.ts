@@ -4,6 +4,8 @@
  * WARN: Works only with JSON-compatible data.
  * For a real equality check use specialized packages.
  *
+ * @deprecated This function will be removed in next major release. Use `deepEqual` instead
+ *
  * @param     {object}    o1
  * @param     {object}    o2
  * @returns   {boolean}
