@@ -1,5 +1,37 @@
 
 
+## [0.19.0](https://github.com/MorevM/helpers/compare/v0.18.0...v0.19.0) (2022-05-28)
+
+
+### Features
+
+* **objects:** Add `deepEqual` helper ([146d17b](https://github.com/MorevM/helpers/commit/146d17bf2ce59cc5d12c528b2ee853d6c9d2fcbd))
+
+
+### Documentation
+
+* Add missed `objectKeysCase` jsdoc ([9b2c804](https://github.com/MorevM/helpers/commit/9b2c804e0a51b8b84948f874312c26d557533616))
+
+
+### Bug fixes
+
+* **types:** Clarify `isDate` return type ([a6f6245](https://github.com/MorevM/helpers/commit/a6f6245ef0b3bcc647045b49712cccfb02a8119d))
+
+
+### Refactoring
+
+* Deprecate `isObjectsEqualJSON` helper ([f355970](https://github.com/MorevM/helpers/commit/f35597064c762983b9caa16bce237b3684267fcb))
+
+
+### Chores
+
+* bump lint-staged from 12.4.1 to 12.4.2 ([#53](https://github.com/MorevM/helpers/issues/53)) ([0ba6972](https://github.com/MorevM/helpers/commit/0ba6972f24315cc45bac372a5ce4f679f7ff5cc5))
+* bump ts-jest from 28.0.2 to 28.0.3 ([#51](https://github.com/MorevM/helpers/issues/51)) ([de1b2d9](https://github.com/MorevM/helpers/commit/de1b2d90f6bec347518db7eb3febd16a4d93c7aa))
+* bump tsup from 5.12.8 to 6.0.1 ([#50](https://github.com/MorevM/helpers/issues/50)) ([89fa212](https://github.com/MorevM/helpers/commit/89fa2121f904a126f6f122510b665d1044993c0e))
+* bump typescript from 4.6.4 to 4.7.2 ([#52](https://github.com/MorevM/helpers/issues/52)) ([d2752b8](https://github.com/MorevM/helpers/commit/d2752b8e6b873e2767dc6348674596253e732211))
+* Disable `prefer-object-has-own` ESLint rule ([66d21c2](https://github.com/MorevM/helpers/commit/66d21c2273646e302288036e93f94fab4c9ae79e))
+* Disable some eslint rules for jsdoc ([3aca1c0](https://github.com/MorevM/helpers/commit/3aca1c0ba34fb17c2cb9351470237849674f5726))
+
 ## [0.18.0](https://github.com/MorevM/helpers/compare/v0.16.1...v0.18.0) (2022-05-21)
 
 
