@@ -1,5 +1,12 @@
 
 
+### [0.19.1](https://github.com/MorevM/helpers/compare/v0.19.0...v0.19.1) (2022-05-29)
+
+
+### Bug fixes
+
+* **objects:** Correctly convert multiple FormData entries with the same name ([34a97b1](https://github.com/MorevM/helpers/commit/34a97b131990e9888b512395f4c667e9b6a3d395))
+
 ## [0.19.0](https://github.com/MorevM/helpers/compare/v0.18.0...v0.19.0) (2022-05-28)
 
 
