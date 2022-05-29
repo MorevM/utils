@@ -1,3 +1,8 @@
+import { toArray } from '../../arrays';
+
+// eslint-disable-next-line no-undef
+type Entry = FormDataEntryValue | FormDataEntryValue[];
+
 /**
  * Converts given `FormData` object to plain object.
  *
@@ -5,10 +10,10 @@
  *
  * @returns   {object}                Plain object builded from given FormData.
  */
-export const formDataToObject = (formData: FormData): Record<string, string | File> => {
-	const result = {} as Record<string, string | File>;
+export const formDataToObject = (formData: FormData): Record<string, Entry> => {
+	const result = {} as Record<string, Entry>;
 	for (const [key, value] of formData.entries()) {
-		result[key] = value;
+		result[key] = key in result ? [...toArray(result[key]), value] : value;
 	}
 
 	return result;
