@@ -1,5 +1,12 @@
 
 
+### [0.19.2](https://github.com/MorevM/helpers/compare/v0.19.1...v0.19.2) (2022-06-01)
+
+
+### Bug fixes
+
+* Revert target to `node12` ([3a4484c](https://github.com/MorevM/helpers/commit/3a4484c21912ce6ceb18e4aa35523b71b2f4de30))
+
 ### [0.19.1](https://github.com/MorevM/helpers/compare/v0.19.0...v0.19.1) (2022-05-29)
 
 
