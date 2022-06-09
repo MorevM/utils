@@ -64,7 +64,7 @@
 	"types": "dist/index.d.ts",
 	"scripts": {
 		"prepare": "husky install ./.husky",
-		"vscode-settings": "cp .vscode/settings.template.json ./vscode/settings.json",
+		"vscode-settings": "cp .vscode/settings.template.json .vscode/settings.json",
 		"build": "tsup",
 		"test": "jest",
 		"test:dev": "jest --watch",
