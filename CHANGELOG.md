@@ -1,5 +1,27 @@
 
 
+## [0.20.0](https://github.com/MorevM/helpers/compare/v0.19.2...v0.20.0) (2022-06-14)
+
+
+### Features
+
+* **number:** Add `randomFloat` helper ([f3c91ff](https://github.com/MorevM/helpers/commit/f3c91ffcf4f3c2876eb1610d19a487a2d80dc5de))
+
+
+### Chores
+
+* bump @morev/eslint-config from 12.0.0 to 12.1.1 ([#59](https://github.com/MorevM/helpers/issues/59)) ([d700492](https://github.com/MorevM/helpers/commit/d7004929460ef5b3e5c9cebf3b3f84d5887e09d3))
+* bump @morev/eslint-config from 12.1.1 to 12.2.0 ([#63](https://github.com/MorevM/helpers/issues/63)) ([186302e](https://github.com/MorevM/helpers/commit/186302eee7b2678442f713db599fe3dd23ed8838))
+* bump @types/jest from 27.5.1 to 28.1.0 ([#54](https://github.com/MorevM/helpers/issues/54)) ([894c95a](https://github.com/MorevM/helpers/commit/894c95a867c4ace48d544cb8d6cf64a8b99d0b37))
+* bump eslint from 8.16.0 to 8.17.0 ([#55](https://github.com/MorevM/helpers/issues/55)) ([663546d](https://github.com/MorevM/helpers/commit/663546d42e811d6ec67133a7b89c6ac12d4c2d1f))
+* bump jest and @types/jest ([#60](https://github.com/MorevM/helpers/issues/60)) ([d5ee7de](https://github.com/MorevM/helpers/commit/d5ee7de493b190ad79caae522d544a803ffd7225))
+* bump jest-environment-jsdom from 28.1.0 to 28.1.1 ([#64](https://github.com/MorevM/helpers/issues/64)) ([f2f4238](https://github.com/MorevM/helpers/commit/f2f4238dd14fe46257308c9619f51b830e4338f2))
+* bump lint-staged from 12.4.2 to 13.0.0 ([#58](https://github.com/MorevM/helpers/issues/58)) ([7d3b776](https://github.com/MorevM/helpers/commit/7d3b776bdda75584e52333e1095f793131b769b3))
+* bump lint-staged from 13.0.0 to 13.0.1 ([#61](https://github.com/MorevM/helpers/issues/61)) ([d3134af](https://github.com/MorevM/helpers/commit/d3134af746afed83d447d505aa4eb869b840afd5))
+* bump ts-jest from 28.0.3 to 28.0.4 ([#57](https://github.com/MorevM/helpers/issues/57)) ([6a664fd](https://github.com/MorevM/helpers/commit/6a664fde97f34dc37bcdffbe587d54b0f0dae5d1))
+* bump tsup from 6.0.1 to 6.1.2 ([#62](https://github.com/MorevM/helpers/issues/62)) ([8eb56e3](https://github.com/MorevM/helpers/commit/8eb56e30b0771b7a761be38361a9b7e9481340aa))
+* bump typescript from 4.7.2 to 4.7.3 ([#56](https://github.com/MorevM/helpers/issues/56)) ([ccf0c01](https://github.com/MorevM/helpers/commit/ccf0c015ef0989bc8cd1ec44147a135ae56230bf))
+
 ### [0.19.2](https://github.com/MorevM/helpers/compare/v0.19.1...v0.19.2) (2022-06-01)
 
 
