@@ -3,9 +3,9 @@
  *
  * @see      https://developer.mozilla.org/en-US/docs/Glossary/Nullish
  *
- * @param     {any}       value   The value being evaluated.
+ * @param   value   The value being evaluated.
  *
- * @returns   {boolean}
+ * @returns           Whether the value is nullish value
  */
 
 type NullishType = null | undefined;

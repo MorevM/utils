@@ -1,10 +1,10 @@
 /**
  * Quotes the given string with specified `char`.
  *
- * @param     {string}   str    String to be quoted.
- * @param     {string}   char   Quote character.
+ * @param   str    String to be quoted.
+ * @param   char   Quote character.
  *
- * @returns   {string}          Quoted string.
+ * @returns          Quoted string.
  */
 export const quote = (str: string, char: string = '"'): string => {
 	if (str === '') return `${char}${char}`;

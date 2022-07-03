@@ -28,11 +28,11 @@ const getHandler = (neededCase: Case) => {
 /**
  * Creates a new object from given one with the keys written in needed case.
  *
- * @param        input        Object to convert keys case.
- * @param        neededCase   Needed keys case.
- * @param        _options     Custom options.
+ * @param   input        Object to convert keys case.
+ * @param   neededCase   Needed keys case.
+ * @param   _options     Custom options.
  *
- * @returns                   New object with keys "renamed" to needed case.
+ * @returns                New object with keys "renamed" to needed case.
  */
 export const objectKeysCase = (input: any, neededCase: Case, _options?: Partial<Options>) => {
 	const options = defaults({

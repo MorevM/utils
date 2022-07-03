@@ -3,9 +3,9 @@ import { kebabCase } from '../kebab-case/kebab-case';
 /**
  * Convert a string to kebab-case: `fooFar` → `foo-bar`
  *
- * @param     {string}   input   A string to convert to kebab-case
+ * @param   input   A string to convert to kebab-case
  *
- * @returns   {string}           The string converted to kebab-case.
+ * @returns           The string converted to kebab-case.
  */
 export const hyphenate = (input: string): string => {
 	// TODO: [>1.0.0] Remove

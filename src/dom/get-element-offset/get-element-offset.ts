@@ -11,6 +11,14 @@ const getElementScroll = <T extends Axis>(el: Element, axis: T): ToReturn<T> => 
 	return axis === 'x' ? el.scrollLeft as ToReturn<T> : el.scrollTop as ToReturn<T>;
 };
 
+/**
+ * Retrieves the element offset from given ancestor.
+ *
+ * @param   el       Element
+ * @param   axis     Retrieve only `x` or `y` offset, or both
+ * @param   parent   Parent element, default is `window`
+ * @returns            The element offset
+ */
 export const getElementOffset = <T extends Axis>(
 	el: Element,
 	axis: T,

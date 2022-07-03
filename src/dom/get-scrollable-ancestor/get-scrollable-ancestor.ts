@@ -3,10 +3,10 @@ type Axis = 'x' | 'y' | 'both';
 /**
  * Retrieves the nearest scrollable ancestor element of a given element.
  *
- * @param     {Element}          element   The element being evaluated.
- * @param     {string}           axis      Consider only one axis (`x`, `y`) or both
+ * @param   element   The element being evaluated.
+ * @param   axis      Consider only one axis (`x`, `y`) or both
  *
- * @returns   {Element|Window}             The nearest scrollable ancestor element of a given element, or the `window` object.
+ * @returns             The nearest scrollable ancestor element of a given element, or the `window` object.
  */
 export const getScrollableAncestor = (element: Element | null, axis: Axis = 'both'): Element | Window => {
 	let el = element;

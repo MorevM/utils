@@ -1,7 +1,7 @@
 /**
  * Checks whether the current browser supports passive event listeners.
  *
- * @returns   {boolean}
+ * @returns   Whether the browser supports passive events
  */
 export const supportsPassive = () => {
 	let supports = false;

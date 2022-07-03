@@ -65,11 +65,11 @@ const postProcess = (input: string) => {
 /**
  * Converts a dash/dot/underscore/space separated string to camelCase: `foo-bar` → `fooBar`
  *
- * @param     {string|Array<string>}   input     A string/array of strings to convert to camelCase.
- * @param     {CamelCaseOptions}       options   Additional options being supplied to the `_camelCase`.
+ * @param        input     A string/array of strings to convert to camelCase.
+ * @param        options   Additional options being supplied to the `_camelCase`.
  *
- * @returns   {string}                           The string converted to camelCase.
- * @throws    {TypeError}
+ * @returns                The string converted to camelCase.
+ * @throws    {TypeError}  Throws if not string is passed
  */
 export const camelCase = (
 	input: string | readonly string[],

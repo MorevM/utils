@@ -9,9 +9,9 @@
  *
  * compose(func1, func2)('foo') -> func1(func2('foo')) -> 'foo-bar-baz'
  *
- * @param     {...Function}   functions   Functions to proccess value with.
+ * @param   functions   Functions to proccess value with.
  *
- * @returns   {Function}
+ * @returns               Composed function
  */
 export const compose = (...functions: readonly Function[]): any => (value: any) =>
 	[...functions].reverse().reduce((acc, curr) => (acc = curr(acc)), value);

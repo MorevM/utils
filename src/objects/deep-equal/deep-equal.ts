@@ -7,9 +7,9 @@ import { areArraysEqual, areObjectsEqual, areRegExpsEqual } from './_utils';
 /**
  * Checks if of two objects are the same data (deep equality).
  *
- * @param        a   Value to compare #1
- * @param        b   Value to compare #2
- * @returns          Result of comparing two given values (deep equality)
+ * @param   a   Value to compare #1
+ * @param   b   Value to compare #2
+ * @returns       Result of comparing two given values (deep equality)
  */
 export const deepEqual = (a: any, b: any): boolean => {
 	if (a === b) return true;

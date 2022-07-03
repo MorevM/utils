@@ -1,9 +1,9 @@
 /**
  * Checks whether a given value is a DOM Element.
  *
- * @param     {any}       value   The value being evaluated.
+ * @param   value   The value being evaluated.
  *
- * @returns   {boolean}
+ * @returns           Whether the value is DOM Element
  */
 export const isElement = (value: any): value is Element =>
 	value?.nodeType === 1;

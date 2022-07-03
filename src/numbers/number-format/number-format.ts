@@ -1,12 +1,12 @@
 /**
  * Formats a given number with grouped thousands.
  *
- * @param     {number}   number                 The number being formatted.
- * @param     {number}   [decimals]             The number of decimal points. Default 0.
- * @param     {string}   [fractionSeparator]    The separator for the decimal point. Default `.`.
- * @param     {string}   [thousandsSeparator]   The thousands separator. Default ` `.
+ * @param   number               The number being formatted.
+ * @param   decimals             The number of decimal points. Default 0.
+ * @param   fractionSeparator    The separator for the decimal point. Default `.`.
+ * @param   thousandsSeparator   The thousands separator. Default ` `.
  *
- * @returns   {string}                          Formatted number.
+ * @returns                        Formatted number.
  */
 export const numberFormat = (
 	number: number,

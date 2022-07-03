@@ -8,9 +8,9 @@ const toMax = (v: number) => Math.max(0, v);
 /**
  * Retrieves the maximum scroll value.
  *
- * @param     {string}   [axis]   Scroll axis (x | y | both).
+ * @param   [axis]   Scroll axis (x | y | both).
  *
- * @returns   {number}            The maximum scroll value by a given axis or both.
+ * @returns            The maximum scroll value by a given axis or both.
  */
 export const getScrollLimit = <T extends Axis>(axis: T): ToReturn<T> => {
 	if (axis === 'both') {

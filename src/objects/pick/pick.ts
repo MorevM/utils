@@ -1,10 +1,10 @@
 /**
  * Returns the new object containing only the specified keys.
  *
- * @param     {object}      obj    Original object.
- * @param     {...string}   keys   Keys of original object to pick.
+ * @param   obj    Original object.
+ * @param   keys   Keys of original object to pick.
  *
- * @returns   {boolean}
+ * @returns          New object containing only the specified keys.
  */
 export const pick = (obj: Record<string, any>, ...keys: string[]): object =>
 	Object.fromEntries(

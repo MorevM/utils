@@ -9,6 +9,13 @@ const getScrollTop = (): number =>
 const getScrollLeft = (): number =>
 	Math.max(window.pageXOffset, document.documentElement.scrollLeft, document.body.scrollLeft);
 
+/**
+ * Retrieves the window scroll value for given axis, or both
+ *
+ * @param   axis   Axis to restrict return value
+ *
+ * @returns          Window scroll for given axis (or both)
+ */
 export const getWindowScroll = <T extends Axis = 'y'>(axis: T): ToReturn<T> => {
 	if (axis === 'y') return getScrollTop() as ToReturn<T>;
 	if (axis === 'x') return getScrollLeft() as ToReturn<T>;

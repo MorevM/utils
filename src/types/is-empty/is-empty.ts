@@ -1,9 +1,9 @@
 /**
  * Checks whether a given value is considered to be empty.
  *
- * @param     {any}       value   The value being evaluated.
+ * @param   value   The value being evaluated.
  *
- * @returns   {boolean}
+ * @returns           Whether the value is `empty`
  */
 import { isArray } from '../is-array/is-array';
 import { isObject } from '../is-object/is-object';

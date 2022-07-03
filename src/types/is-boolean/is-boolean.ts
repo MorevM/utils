@@ -1,9 +1,9 @@
 /**
  * Checks whether a given value is a boolean.
  *
- * @param     {any}       value   The value being evaluated.
+ * @param   value   The value being evaluated.
  *
- * @returns   {boolean}
+ * @returns           Whether the value is Boolean
  */
 export const isBoolean = (value: any): value is boolean =>
 	value === true || value === false;

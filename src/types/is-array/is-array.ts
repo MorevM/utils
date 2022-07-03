@@ -1,8 +1,8 @@
 /**
  * Checks whether a given value is an array.
  *
- * @param     {any}       value   The value being evaluated.
+ * @param   value   The value being evaluated.
  *
- * @returns   {boolean}
+ * @returns           Whether the value is Array
  */
 export const isArray = (value: any): value is any[] => Array.isArray(value);

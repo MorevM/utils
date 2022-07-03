@@ -4,8 +4,8 @@
  * @example
  * arrayUnique([1, 2, 3, 4, 1, 2, 3]) -> [1, 2, 3, 4]
  *
- * @param     {Array}   array
+ * @param   array
  *
- * @returns   {any[]}           Array without any duplicated values
+ * @returns           Array without any duplicated values
  */
 export const arrayUnique = <T>(array: T[]): T[] => [...new Set(array)];

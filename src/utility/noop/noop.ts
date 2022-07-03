@@ -1,6 +1,6 @@
 /**
  * Does nothing.
  *
- * @returns   {void}
+ * @returns   {void}   Nothing
  */
 export const noop: Function = () => {};

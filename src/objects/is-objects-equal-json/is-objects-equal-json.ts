@@ -6,9 +6,9 @@
  *
  * @deprecated This function will be removed in next major release. Use `deepEqual` instead
  *
- * @param     {object}    o1
- * @param     {object}    o2
- * @returns   {boolean}
+ * @param   o1
+ * @param   o2
+ * @returns
  */
 export const isObjectsEqualJSON = (o1: object, o2: object): boolean =>
 	JSON.stringify(o1, Object.keys(o1).sort()) === JSON.stringify(o2, Object.keys(o2).sort()); //eslint-disable-line

@@ -1,9 +1,9 @@
 /**
  * Checks whether a given value is a Promise.
  *
- * @param     {any}       value   The value being evaluated.
+ * @param   value   The value being evaluated.
  *
- * @returns   {boolean}
+ * @returns           Whether the value is Promise
  */
 export const isPromise = (value: any): value is Promise<any> =>
 	value instanceof Promise;

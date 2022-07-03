@@ -37,23 +37,12 @@ const _defaults = <T extends IObject>(defaults: T, input?: T | null, stack: stri
 	return result;
 };
 
-
-/**
- * Custom merger function.
- *
- * @callback MergerFn
- * @param   {object}   obj     Defaults.
- * @param   {string}   key     Key being processed.
- * @param   {any}      value   Value being processed.
- * @param   {string}   stack   Path to value.
- */
-
 /**
  * Creates defaults function with custom merger.
  *
- * @param     {MergerFn}   merger   Custom merger function
+ * @param   merger   Custom merger function
  *
- * @returns   {Function}            Defaults function with custom merger applied.
+ * @returns            Defaults function with custom merger applied.
  */
 export const createDefaults = (merger?: Merger): DefaultsFn => {
 	return (...args) => args.reduce<any>((p, c) => _defaults(p, c, '', merger), {});
@@ -62,9 +51,9 @@ export const createDefaults = (merger?: Merger): DefaultsFn => {
 /**
  * Mixes properties from source into target when
  *
- * @param     {object}   defaults   Defaults.
- * @param     {object}   input      Custom object to be merged with defaults.
+ * @param   defaults   Defaults.
+ * @param   input      Custom object to be merged with defaults.
  *
- * @returns   {object}              Merged object.
+ * @returns              Merged object.
  */
 export const defaults = createDefaults();

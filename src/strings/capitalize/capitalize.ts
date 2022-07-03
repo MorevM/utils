@@ -1,9 +1,9 @@
 /**
  * Converts the first character of string to upper case.
  *
- * @param     {string}   input   The string to capitalize.
+ * @param   input   The string to capitalize.
  *
- * @returns   {string}           Capitalized string.
+ * @returns           Capitalized string.
  */
 export const capitalize = (input: string): string => {
 	if (!input.length) return '';

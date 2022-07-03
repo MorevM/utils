@@ -15,10 +15,16 @@ const numerals = {
 	I: 1,
 };
 
+/**
+ * Retrieves Roman representation of given integer number.
+ *
+ * @param   num   Integer value to transform to Roman notation
+ *
+ * @returns         Roman representation of given number
+ */
 export const romanize = (num: number): string => Object.entries(numerals)
 	.reduce((acc, [key, value]) => {
-		// eslint-disable-next-line no-bitwise
-		acc += key.repeat(num / value >>> 0);
+		acc += key.repeat(num / value >>> 0); // eslint-disable-line no-bitwise
 		num %= value;
 		return acc;
 	}, '');

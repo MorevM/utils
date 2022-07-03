@@ -5,9 +5,9 @@ type ToReturn<T> = T extends 'both' ? { x: number; y: number } : number;
 /**
  * Retrieves the document scroll size (width, height or both).
  *
- * @param     {string}                                       [axis]   Whether to return the document scroll width (x) or height (y), or both.
+ * @param   [axis]   Whether to return the document scroll width (x) or height (y), or both.
  *
- * @returns   {number | { width: number, height: number }}            The document scroll size in defined axis or both.
+ * @returns            The document scroll size in defined axis or both.
  */
 export const getDocumentSize = <T extends Axis>(axis: T): ToReturn<T> => {
 	const scrollWidth = Math.max(

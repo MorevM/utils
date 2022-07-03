@@ -1,9 +1,9 @@
 /**
- * Checks whether a given value is a valid number .
+ * Checks whether a given value is a valid number.
  *
- * @param     {any}       value   The value being evaluated.
+ * @param   value   The value being evaluated.
  *
- * @returns   {boolean}
+ * @returns           Whether the value is a valid number
  */
 export const isNumeric = (value: any): value is number =>
 	typeof value === 'number' && !isNaN(value);

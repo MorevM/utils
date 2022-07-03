@@ -1,9 +1,9 @@
 /**
  * Unquotes the given string.
  *
- * @param     {string}   str   String to unquote.
+ * @param   str   String to unquote.
  *
- * @returns   {string}         String without start/end quotes.
+ * @returns         String without start/end quotes.
  */
 export const unquote = (str: string): string => {
 	if (!str) return '';
