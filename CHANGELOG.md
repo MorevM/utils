@@ -1,5 +1,31 @@
 
 
+## [0.21.0](https://github.com/MorevM/helpers/compare/v0.20.0...v0.21.0) (2022-07-06)
+
+
+### Features
+
+* Add `formatBytes` helper ([8691ea5](https://github.com/MorevM/helpers/commit/8691ea5cc4b931ac3996b9e4ccedd8b3667ab9fa))
+
+
+### Chores
+
+* bump @morev/eslint-config from 12.2.0 to 12.3.0 ([#73](https://github.com/MorevM/helpers/issues/73)) ([d0f86fc](https://github.com/MorevM/helpers/commit/d0f86fc34d6f5275827a85c83f34555c97cbc629))
+* bump @types/jest from 28.1.1 to 28.1.2 ([#66](https://github.com/MorevM/helpers/issues/66)) ([51c22b0](https://github.com/MorevM/helpers/commit/51c22b0dae8d4a2e13bc7697b56ad0d26e00698d))
+* bump @types/jest from 28.1.2 to 28.1.3 ([#72](https://github.com/MorevM/helpers/issues/72)) ([9e08558](https://github.com/MorevM/helpers/commit/9e0855894796c0f8b96e32525bba9d08cb3d156c))
+* bump eslint from 8.17.0 to 8.18.0 ([#65](https://github.com/MorevM/helpers/issues/65)) ([39fadae](https://github.com/MorevM/helpers/commit/39fadae50e1bc34aff72028bc5028cdeb2e9c84b))
+* bump lint-staged from 13.0.1 to 13.0.2 ([#68](https://github.com/MorevM/helpers/issues/68)) ([395c3ee](https://github.com/MorevM/helpers/commit/395c3ee90ccd65cf6f1362f343227f934075a608))
+* bump lint-staged from 13.0.2 to 13.0.3 ([#71](https://github.com/MorevM/helpers/issues/71)) ([46332ab](https://github.com/MorevM/helpers/commit/46332ab1b39b8b60c2c8b26651328e1dd3b49a56))
+* bump release-it from 15.0.0 to 15.1.0 ([#70](https://github.com/MorevM/helpers/issues/70)) ([745878b](https://github.com/MorevM/helpers/commit/745878b6b780161bbb241e8308113af002777641))
+* bump ts-jest from 28.0.4 to 28.0.5 ([#69](https://github.com/MorevM/helpers/issues/69)) ([43cfe57](https://github.com/MorevM/helpers/commit/43cfe5787c372cec3f34220d3dcc15e7c49b3d67))
+* bump typescript from 4.7.3 to 4.7.4 ([#67](https://github.com/MorevM/helpers/issues/67)) ([d1eacc1](https://github.com/MorevM/helpers/commit/d1eacc1700b5e364d0e42149ebfac2bc642c1904))
+* Deps update ([1bd0c9b](https://github.com/MorevM/helpers/commit/1bd0c9ba8627298d057bd8afc0267d0a476eaabe))
+
+
+### Refactoring
+
+* Remove type informaton from JSDoc's ([8f0f80a](https://github.com/MorevM/helpers/commit/8f0f80a75b66aaf3afd98a94817bc2080a9e6ac3))
+
 ## [0.20.0](https://github.com/MorevM/helpers/compare/v0.19.2...v0.20.0) (2022-06-14)
 
 
