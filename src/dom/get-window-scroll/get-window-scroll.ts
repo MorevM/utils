@@ -14,9 +14,9 @@ const getScrollLeft = (): number =>
  *
  * @param   axis   Axis to restrict return value
  *
- * @returns          Window scroll for given axis (or both)
+ * @returns          Window scroll for given axis or both (default is 'y')
  */
-export const getWindowScroll = <T extends Axis = 'y'>(axis: T): ToReturn<T> => {
+export const getWindowScroll = <T extends Axis = 'y'>(axis: T = 'y' as T): ToReturn<T> => {
 	if (axis === 'y') return getScrollTop() as ToReturn<T>;
 	if (axis === 'x') return getScrollLeft() as ToReturn<T>;
 	return { top: getScrollTop(), left: getScrollLeft() } as any;
