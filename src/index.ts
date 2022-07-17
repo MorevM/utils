@@ -1,6 +1,6 @@
 export * from './arrays';
-export * from './browser';
 export * from './dom';
+export * from './environment';
 export * from './numbers';
 export * from './objects';
 export * from './strings';
