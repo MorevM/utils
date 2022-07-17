@@ -6,7 +6,7 @@
  *
  * @see https://gist.github.com/jlevy/c246006675becc446360a798e2b2d781
  *
- * @param   str   String to get hash.
+ * @param   str   String to retrieve hash.
  *
  * @returns         Hash for given string.
  */
