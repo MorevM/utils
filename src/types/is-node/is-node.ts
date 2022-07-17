@@ -1,11 +1,8 @@
 /**
- * Checks whether a given value is a node.
+ * Checks whether a given value is a Node.
  *
  * @param   value   The value being evaluated.
  *
- * @deprecated    This function will change in the next major release, use `isElement` instead.
- *
- * @returns           Whether the value is DOM Element (TODO: Change when upgdade)
+ * @returns           Whether the value is a Node
  */
-export const isNode = (value: any): boolean =>
-	value?.nodeType === 1;
+export const isNode = (value: any): value is Node => value instanceof Node;
