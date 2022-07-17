@@ -34,6 +34,10 @@
 			"import": "./dist/arrays/index.mjs",
 			"require": "./dist/arrays/index.js"
 		},
+		"./dates": {
+			"import": "./dist/dates/index.mjs",
+			"require": "./dist/dates/index.js"
+		},
 		"./dom": {
 			"import": "./dist/dom/index.mjs",
 			"require": "./dist/dom/index.js"
