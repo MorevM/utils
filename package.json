@@ -38,6 +38,10 @@
 			"import": "./dist/browser/index.mjs",
 			"require": "./dist/browser/index.js"
 		},
+		"./dom": {
+			"import": "./dist/dom/index.mjs",
+			"require": "./dist/dom/index.js"
+		},
 		"./numbers": {
 			"import": "./dist/numbers/index.mjs",
 			"require": "./dist/numbers/index.js"
