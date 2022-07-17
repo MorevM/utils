@@ -6,4 +6,5 @@
  * @returns         Whether the value is a valid email address
  */
 export const isEmail = (str: string): boolean =>
-	/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Zа-яА-ЯёЁ\-0-9]+\.)+[a-zA-Zа-яА-ЯёЁ]{2,}))$/.test(str); // eslint-disable-line
+	// eslint-disable-next-line unicorn/no-unsafe-regex
+	/^(([^\s"(),.:;<>@[\\\]]+(\.[^\s"(),.:;<>@[\\\]]+)*)|(".+"))@((\[(?:\d{1,3}\.){3}\d{1,3}])|(([\dA-Za-zЁА-яё-]+\.)+[A-Za-zЁА-яё]{2,}))$/.test(str);
