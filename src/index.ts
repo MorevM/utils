@@ -4,5 +4,5 @@ export * from './environment';
 export * from './numbers';
 export * from './objects';
 export * from './strings';
-export * from './types';
+export * from './guards';
 export * from './utility';

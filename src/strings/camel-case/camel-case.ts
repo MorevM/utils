@@ -1,5 +1,5 @@
 // import _camelCase from 'camelcase';
-import { isArray, isString } from '../../types';
+import { isArray, isString } from '../../guards';
 
 type CamelCaseOptions = {
 	readonly preserveConsecutiveUppercase?: boolean;

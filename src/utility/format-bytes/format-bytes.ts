@@ -1,4 +1,4 @@
-import { isInteger as _isInteger } from '../../types/is-integer/is-integer';
+import { isInteger as _isInteger } from '../../guards/is-integer/is-integer';
 import { defaults } from '../defaults/defaults';
 
 type Prefix = 'b' | 'k' | 'm' | 'g' | 't' | 'p' | 'e' | 'z' | 'y';

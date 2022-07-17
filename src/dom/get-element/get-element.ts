@@ -1,5 +1,5 @@
-import { isElement } from '../../types/is-element/is-element';
-import { isString } from '../../types/is-string/is-string';
+import { isElement } from '../../guards/is-element/is-element';
+import { isString } from '../../guards/is-string/is-string';
 
 /**
  * Retrieves the Element by a given selector using optional parent element,

@@ -1,5 +1,5 @@
 /* eslint-disable no-self-compare */
-import { isArray, isDate, isObject, isRegExp } from '../../types/index';
+import { isArray, isDate, isObject, isRegExp } from '../../guards/index';
 import { areArraysEqual, areObjectsEqual, areRegExpsEqual } from './_utils';
 
 // TODO: [2022-09-01] Sets and maps

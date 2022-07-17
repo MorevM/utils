@@ -1,4 +1,4 @@
-import { isObject } from '../../types/is-object/is-object';
+import { isObject } from '../../guards/is-object/is-object';
 import { formDataToObject } from './form-data-to-object';
 
 describe('form-data-to-object', () => {

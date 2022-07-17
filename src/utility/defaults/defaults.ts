@@ -1,4 +1,4 @@
-import { isObject } from '../../types/is-object/is-object';
+import { isObject } from '../../guards/is-object/is-object';
 
 type IObject = Record<string, any>;
 
