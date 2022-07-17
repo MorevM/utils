@@ -1,7 +1,7 @@
 type Axis = 'x' | 'y' | 'both';
 
 type ToReturn<T extends Axis> = T extends 'both'
-	? { top: number; left: number }
+	? { x: number; y: number }
 	: number;
 
 const getScrollTop = (): number =>
@@ -16,8 +16,8 @@ const getScrollLeft = (): number =>
  *
  * @returns          Window scroll for given axis or both (default is 'y')
  */
-export const getWindowScroll = <T extends Axis = 'y'>(axis: T = 'y' as T): ToReturn<T> => {
+export const getWindowScroll = <T extends Axis>(axis: T = 'y' as T): ToReturn<T> => {
 	if (axis === 'y') return getScrollTop() as ToReturn<T>;
 	if (axis === 'x') return getScrollLeft() as ToReturn<T>;
-	return { top: getScrollTop(), left: getScrollLeft() } as any;
+	return { x: getScrollLeft(), y: getScrollTop() } as ToReturn<T>;
 };

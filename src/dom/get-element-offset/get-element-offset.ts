@@ -1,11 +1,11 @@
 import { getWindowScroll } from '../get-window-scroll/get-window-scroll';
 
 type Axis = 'x' | 'y' | 'both';
-type ToReturn<T> = T extends 'both' ? { top: number; left: number } : number;
+type ToReturn<T> = T extends 'both' ? { x: number; y: number } : number;
 
 const getElementScroll = <T extends Axis>(el: Element, axis: T): ToReturn<T> => {
 	if (axis === 'both') {
-		return { top: el.scrollTop, left: el.scrollLeft } as ToReturn<T>;
+		return { x: el.scrollLeft, y: el.scrollTop } as ToReturn<T>;
 	}
 
 	return axis === 'x' ? el.scrollLeft as ToReturn<T> : el.scrollTop as ToReturn<T>;
@@ -41,8 +41,8 @@ export const getElementOffset = <T extends Axis>(
 
 	return {
 		// @ts-expect-error -- TODO
-		top: top + (scroll.top as number),
+		x: left + scroll.x,
 		// @ts-expect-error -- TODO
-		left: left + (scroll.left as number),
+		y: top + scroll.y,
 	} as ToReturn<T>;
 };
