@@ -9,7 +9,7 @@ type ToReturn<T> = T extends 'both' ? { x: number; y: number } : number;
  *
  * @returns            The document scroll size in defined axis or both.
  */
-export const getDocumentSize = <T extends Axis>(axis: T): ToReturn<T> => {
+export const getDocumentSize = <T extends Axis>(axis: T = 'y' as T): ToReturn<T> => {
 	const scrollWidth = Math.max(
 		document.body.scrollWidth, document.documentElement.scrollWidth,
 		document.body.offsetWidth, document.documentElement.offsetWidth,
