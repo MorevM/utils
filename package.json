@@ -42,6 +42,10 @@
 			"import": "./dist/environment/index.mjs",
 			"require": "./dist/environment/index.js"
 		},
+		"./functions": {
+			"import": "./dist/functions/index.mjs",
+			"require": "./dist/functions/index.js"
+		},
 		"./guards": {
 			"import": "./dist/guards/index.mjs",
 			"require": "./dist/guards/index.js"
