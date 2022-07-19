@@ -1,5 +1,5 @@
-import { isInteger as _isInteger } from '../../guards/is-integer/is-integer';
-import { defaults } from '../defaults/defaults';
+import { isInteger as _isInteger } from '../../guards';
+import { mergeObjects } from '../../objects';
 
 type Prefix = 'b' | 'k' | 'm' | 'g' | 't' | 'p' | 'e' | 'z' | 'y';
 type Mode = 'metric' | 'IEC';
@@ -146,7 +146,7 @@ class FormatBytes {
 
 	public constructor(bytes: number, customOptions?: Partial<Options>) {
 		if (!_isInteger(bytes)) bytes = 0;
-		const options = defaults(DEFAULT_OPTIONS, customOptions) as Required<Options>;
+		const options = mergeObjects(DEFAULT_OPTIONS, customOptions) as Required<Options>;
 		_options.set(this, options);
 
 		const referenceTable = REFERENCE_TABLE[options.mode];
@@ -155,7 +155,7 @@ class FormatBytes {
 			: referenceTable.find(i => i.prefix === options.to) ?? referenceTable[0];
 		const { from, prefix } = entry;
 
-		const unitsReferenceTable = defaults(UNITS_DEFAULTS, options.customUnits);
+		const unitsReferenceTable = mergeObjects(UNITS_DEFAULTS, options.customUnits);
 		/* @ts-expect-error -- TODO */
 		const unit = unitsReferenceTable[options.mode][prefix];
 
@@ -190,7 +190,7 @@ export const formatBytes = (bytes: number, customOptions?: Partial<Options>): Fo
 	new FormatBytes(bytes, customOptions);
 
 export const formatBytesRu = (bytes: number, _customOptions?: Partial<Options>): FormatBytes => {
-	const customOptions = defaults({
+	const customOptions = mergeObjects({
 		// Not sure actually, it's not reglamented ¯\_(ツ)_/¯
 		customUnits: {
 			metric: {

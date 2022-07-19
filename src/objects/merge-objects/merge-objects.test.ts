@@ -1,5 +1,5 @@
 /* eslint-disable jest/no-conditional-in-test */
-import { defaults, createDefaults } from './defaults';
+import { mergeObjects, createMergeObjects } from './merge-objects';
 
 const defaultObj = {
 	a: 'a',
@@ -29,7 +29,7 @@ const input = {
 	d: 'd',
 };
 
-describe('defaults', () => {
+describe('mergeObjects', () => {
 	it('Returns the object which is a given objects being recursively merged', () => {
 		const expected = {
 			a: 'a',
@@ -46,11 +46,11 @@ describe('defaults', () => {
 			d: 'd',
 		};
 
-		expect(defaults(defaultObj, input)).toStrictEqual(expected);
+		expect(mergeObjects(defaultObj, input)).toStrictEqual(expected);
 	});
 
 	it('Can use custom merger function', () => {
-		const customDefaults = createDefaults((obj, key, value, namespace) => {
+		const customMergeObjects = createMergeObjects((obj, key, value, namespace) => {
 			if (namespace === 'b.b.b' && key === 'b.b.b') {
 				obj[key] = 666 as any;
 				return true;
@@ -84,7 +84,7 @@ describe('defaults', () => {
 			d: 'd',
 		};
 
-		expect(customDefaults(defaultObj, input)).toStrictEqual(expected);
+		expect(customMergeObjects(defaultObj, input)).toStrictEqual(expected);
 	});
 
 	it('Allows to pass undefined/null argument', () => {
@@ -92,7 +92,7 @@ describe('defaults', () => {
 		const nullObj = null;
 		const fooObj = { e: 'e' };
 
-		expect(defaults(defaultObj, undefinedObj, nullObj, fooObj)).toStrictEqual({
+		expect(mergeObjects(defaultObj, undefinedObj, nullObj, fooObj)).toStrictEqual({
 			...defaultObj,
 			...fooObj,
 		});
