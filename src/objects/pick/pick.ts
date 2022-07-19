@@ -6,8 +6,8 @@
  *
  * @returns          New object containing only the specified keys.
  */
-export const pick = (obj: Record<string, any>, ...keys: string[]): object =>
+export const pick = <T, K extends keyof T>(obj: T, ...keys: K[]): Pick<T, K> =>
 	Object.fromEntries(
 		keys.filter(key => key in obj)
 			.map(key => [key, obj[key]]),
-	);
+	) as Pick<T, K>;

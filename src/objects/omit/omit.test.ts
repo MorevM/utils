@@ -37,7 +37,7 @@ describe('omit', () => {
 		};
 		const expected = {};
 
-		const result = omit(input, ...Object.keys(input));
+		const result = omit(input, 'foo', 'bar', 'baz');
 
 		expect(result).toStrictEqual(expected);
 	});
@@ -53,6 +53,7 @@ describe('omit', () => {
 			baz: 3,
 		};
 
+		/* @ts-expect-error -- Edge case */
 		const result = omit(input, 'bar', 'some');
 
 		expect(result).toStrictEqual(expected);
