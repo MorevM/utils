@@ -5,9 +5,9 @@ type ToReturn<T extends Axis> = T extends 'both'
 	: number;
 
 const getScrollTop = (): number =>
-	Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop);
+	Math.max(window.pageYOffset || 0, window.scrollY || 0, document.documentElement.scrollTop, document.body.scrollTop);
 const getScrollLeft = (): number =>
-	Math.max(window.pageXOffset, document.documentElement.scrollLeft, document.body.scrollLeft);
+	Math.max(window.pageXOffset || 0, window.scrollX || 0, document.documentElement.scrollLeft, document.body.scrollLeft);
 
 /**
  * Retrieves the window scroll value for given axis, or both
