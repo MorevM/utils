@@ -1,7 +1,7 @@
 /* eslint-disable import/exports-last */
 import { kebabCase, snakeCase, pascalCase, camelCase } from '../../strings';
 import { isArray, isObject, isRegExp, isString } from '../../guards/index';
-import { defaults } from '../../utility/defaults/defaults';
+import { defaults } from '../../miscellaneous/defaults/defaults';
 
 type IObject = Record<string, any>;
 

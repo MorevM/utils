@@ -46,6 +46,10 @@
 			"import": "./dist/guards/index.mjs",
 			"require": "./dist/guards/index.js"
 		},
+		"./miscellaneous": {
+			"import": "./dist/miscellaneous/index.mjs",
+			"require": "./dist/miscellaneous/index.js"
+		},
 		"./numbers": {
 			"import": "./dist/numbers/index.mjs",
 			"require": "./dist/numbers/index.js"
@@ -57,10 +61,6 @@
 		"./strings": {
 			"import": "./dist/strings/index.mjs",
 			"require": "./dist/strings/index.js"
-		},
-		"./utility": {
-			"import": "./dist/utility/index.mjs",
-			"require": "./dist/utility/index.js"
 		}
 	},
 	"main": "dist/index.js",
