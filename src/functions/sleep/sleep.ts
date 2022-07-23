@@ -7,3 +7,5 @@
  */
 export const sleep = async (duration: number = 0): Promise<void> =>
 	new Promise((resolve) => setTimeout(resolve, duration));
+
+// TODO: Callback
