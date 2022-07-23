@@ -50,10 +50,6 @@
 			"import": "./dist/guards/index.mjs",
 			"require": "./dist/guards/index.js"
 		},
-		"./miscellaneous": {
-			"import": "./dist/miscellaneous/index.mjs",
-			"require": "./dist/miscellaneous/index.js"
-		},
 		"./numbers": {
 			"import": "./dist/numbers/index.mjs",
 			"require": "./dist/numbers/index.js"
