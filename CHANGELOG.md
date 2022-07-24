@@ -1,4 +1,62 @@
+## [1.0.0](https://github.com/MorevM/helpers/compare/v0.21.0...v1.0.0) (2022-07-24)
 
+### ⚠ BREAKING CHANGES
+
+* `defaults` helper has been renamed to `mergeObjects`.
+* **dom:** Return value for functions `getElementOffset` and `getWindowScroll` using `axis` argument with value `both` has been changed: now it returns object of type `{ x: number; y: number }` instead of `{ top: number, left: number }`
+* Helper `hyphenate` has been renamed to `kebabCase` with the same functionality.
+* Helper `isObjectsEqualJson` no longer exists. Use `deepEqual` instead.
+* `compose`, `debounce`, `noop` and `sleep` has been moved to new category `./functions`.
+* Exports was renamed: `./browser` → `./environment`
+* Exports was renamed: `./types` → `./guards`
+* Exports `./utils` no longer exists.
+* Helper `isEmail` has been moved from `./strings` to `./guards` category.
+* Helper `isNode` previously works the same as `isElement` works now. Now the function name corresponds to its logic.
+
+### Features
+
+* **dates:** Add category `dates` and `daysInMonth` helper ([93bf9b0](https://github.com/MorevM/helpers/commit/93bf9b07a27daabbebf50bb93160ede1d47e8ff3))
+* **dom:** Make `axis` argument optional for `getDocumentSize` ([e202a41](https://github.com/MorevM/helpers/commit/e202a41d8c5a77efbbc8474baee14230caf4db0a))
+* **dom:** Make `axis` argument optional for `getScrollLimit` ([2ed1743](https://github.com/MorevM/helpers/commit/2ed1743a7e00fb3e32cc3615543c38f07f182d03))
+* **dom:** Make `axis` argument optional for `getWindowScroll` ([a3bb130](https://github.com/MorevM/helpers/commit/a3bb1305e51dd1ebfb1923e8f6cf763d9d5ab20c))
+* **environment:** Add `isServer` and `isClient` helpers ([a47f1de](https://github.com/MorevM/helpers/commit/a47f1de745b10a69c761efbe158d30241bf7f401))
+* **numbers:** Add `in-range` helper ([3453e22](https://github.com/MorevM/helpers/commit/3453e22c8b82798c1ed020822edc1d2f3faeabfc))
+
+
+### Bug fixes
+
+* Add missed `./dom`  exports ([d59b832](https://github.com/MorevM/helpers/commit/d59b8324b9da8054501ee090468e2cab85071cdf))
+* **dom:** Make `getWindowScroll` safer for old browsers ([af5037a](https://github.com/MorevM/helpers/commit/af5037a099de210c60581c6fa406eeb5ea3ce5bb))
+
+
+### Tests
+
+* **dom:** Add missed `get-element-offset` test ([ef8aac9](https://github.com/MorevM/helpers/commit/ef8aac991270cb0db7f9ed62989b3e03434df515))
+
+
+### Refactoring
+
+* Change behavior of `isNode` ([3c41259](https://github.com/MorevM/helpers/commit/3c41259032a07a3751099895d132dbfb21f26adc))
+* **dom:** Rename return keys when `axis` argument is `both` ([6643216](https://github.com/MorevM/helpers/commit/6643216f03f0d1f93a655a96f42bb4afe277a675))
+* Move `compose`, `debounce`, `noop` and `sleep` to new category `functions` ([7b3d961](https://github.com/MorevM/helpers/commit/7b3d96107b9931ac3211d99e256d34e46ea15efb))
+* Move `format-bytes` to category `numbers` ([74ea9e4](https://github.com/MorevM/helpers/commit/74ea9e473b8df8b6493bb719c01d1f53b27db965))
+* Move `isEmail` helper to `guards` category ([0ab9050](https://github.com/MorevM/helpers/commit/0ab9050b4d3883b17a0c33096326f2d00f3cef07))
+* **objects:** Better types for `omit` amd `pick` ([528b04e](https://github.com/MorevM/helpers/commit/528b04e6191f74e8a76b8591b21462761b005dce))
+* Remove `hyphenate` helper ([8a72aff](https://github.com/MorevM/helpers/commit/8a72aff0df0f3a68a5bcc6e69617278f06f33a1a))
+* Remove `isObjectsEqualJson` helper ([04d003b](https://github.com/MorevM/helpers/commit/04d003b8343f34a05b2689c8b23101061bef0e56))
+* Rename `defaults` to `merge-objects` and move it to `objects` category ([532d79c](https://github.com/MorevM/helpers/commit/532d79cb384bb49d7bb9025f6bfcb110c8771b11))
+* Rename `types` category to `guards` ([008511d](https://github.com/MorevM/helpers/commit/008511daf30dae9ec4f932f0055708ac20712aa9))
+* Rename `utils` directory to `miscellaneous` ([b264a67](https://github.com/MorevM/helpers/commit/b264a67b99db9a2dddaa55d6080e906dbbf75142))
+* Rename category `browser` to `environment` ([c2c028c](https://github.com/MorevM/helpers/commit/c2c028c214ca335782b4e683c69ed991a58b08c5))
+* Set `compilerOptions` target and module to ESNext ([71d5a5a](https://github.com/MorevM/helpers/commit/71d5a5a42658729b765e17f0c5c7a84b4650e8bf))
+* **strings:** Simplify `isEmail` regexp ([1e6db40](https://github.com/MorevM/helpers/commit/1e6db400201db1c56d3075b187b36afbacf4dcc7))
+
+
+### Chores
+
+* All deps update ([d744aad](https://github.com/MorevM/helpers/commit/d744aad908236925ecdab3f2e836f6c9f842b80e))
+* bump `@morev/eslint-config` from 15.0.0 to 15.1.0 ([117d77a](https://github.com/MorevM/helpers/commit/117d77a613e9a2adcdde4214f6217bb5354e239e))
+* bump `release-it` from 15.1.2 to 15.1.3 ([f60c459](https://github.com/MorevM/helpers/commit/f60c459ea827da65a4569bf364caa2e0844f4b01))
 
 ## [0.21.0](https://github.com/MorevM/helpers/compare/v0.20.0...v0.21.0) (2022-07-06)
 
