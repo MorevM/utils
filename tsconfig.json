@@ -5,6 +5,8 @@
 		"moduleResolution": "Node",
 		"esModuleInterop": true,
 		"strict": true,
+		"strictNullChecks": false,
+		"noImplicitAny": false,
 		"forceConsistentCasingInFileNames": true,
 		"outDir": "./dist",
 		"checkJs": false,

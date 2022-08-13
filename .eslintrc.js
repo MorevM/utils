@@ -4,5 +4,6 @@ module.exports = {
 	rules: {
 		'jsdoc/sort-tags': 'off', // @TODO: [2023-05-11] -- "see" should be under description mostly
 		'prefer-object-has-own': 'off',
+		'@typescript-eslint/no-unnecessary-condition': 'off',
 	},
 };
