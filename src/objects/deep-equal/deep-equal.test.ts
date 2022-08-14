@@ -1,5 +1,7 @@
 import { deepEqual } from './deep-equal';
 
+const fn = () => ({});
+
 describe('deep-equal', () => {
 	describe('Primitives', () => {
 		// Numbers
@@ -72,8 +74,6 @@ describe('deep-equal', () => {
 	});
 
 	describe('Functions', () => {
-		const fn = () => ({});
-
 		it('Returns `true` for equal functions', () => {
 			const b = fn;
 
@@ -270,7 +270,6 @@ describe('deep-equal', () => {
 	});
 
 	describe('Complex example', () => {
-		const fn = () => {};
 		const pr = Promise.resolve(123);
 
 		it('Returns `true` for equal objects', () => {

@@ -18,5 +18,5 @@ export const arrayRange = (from: number, to?: number) => {
 	}
 
 	return [...new Array(Math.abs(to - from) + 1).keys()]
-		.map(i => (from > (to as number) ? -i : i) + from);
+		.map(i => (from > to ? -i : i) + from);
 };

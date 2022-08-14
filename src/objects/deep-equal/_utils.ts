@@ -31,6 +31,5 @@ export const areArraysEqual = (a: any[], b: any[], comparator: Function) => {
 };
 
 export const areRegExpsEqual = (a: RegExp, b: RegExp, comparator: Function) => {
-	/* @ts-expect-error -- It's correct */
 	return !regExpKeysToCheck.some(key => a[key] !== b[key]);
 };

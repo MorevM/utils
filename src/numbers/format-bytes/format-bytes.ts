@@ -156,7 +156,6 @@ class FormatBytes {
 		const { from, prefix } = entry;
 
 		const unitsReferenceTable = mergeObjects(UNITS_DEFAULTS, options.customUnits);
-		/* @ts-expect-error -- TODO */
 		const unit = unitsReferenceTable[options.mode][prefix];
 
 
@@ -175,7 +174,7 @@ class FormatBytes {
 
 		this.value = value;
 		this.valueAsString = valueAsString;
-		this.unit = unit as string;
+		this.unit = unit;
 		this.isInteger = isInteger;
 	}
 
