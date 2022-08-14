@@ -1,5 +1,33 @@
 
 
+## [1.1.0](https://github.com/MorevM/helpers/compare/v1.0.1...v1.1.0) (2022-08-14)
+
+
+### Features
+
+* **arrays:** Add `array-range` helper ([786bdf2](https://github.com/MorevM/helpers/commit/786bdf2211317b907bc465d4a69d886d072fc72e))
+* **ranges:** Add `rangesMerge` helper ([06c1546](https://github.com/MorevM/helpers/commit/06c1546113628e4f98aae460d1ed1daa0404748c))
+* **ranges:** Add `rangesSort` helper ([9557967](https://github.com/MorevM/helpers/commit/95579675e8c1ecaa0f1622348645556d4d8855cc))
+* **strings:** Add `padStart` and `padEnd` helpers ([e831f03](https://github.com/MorevM/helpers/commit/e831f031bb64c4185891bb176a7a2520b7cfda5c))
+
+
+### Chores
+
+* bump @morev/eslint-config from 15.1.0 to 15.2.0 ([#89](https://github.com/MorevM/helpers/issues/89)) ([5f3d82a](https://github.com/MorevM/helpers/commit/5f3d82abc255752579089fdf1539a39b7c94aaa1))
+* bump @morev/eslint-config from 15.2.0 to 15.3.0 ([#92](https://github.com/MorevM/helpers/issues/92)) ([b6e6c65](https://github.com/MorevM/helpers/commit/b6e6c65e0e48b79a7d0ef967b691c8ad436a1d1b))
+* bump eslint from 8.20.0 to 8.21.0 ([#90](https://github.com/MorevM/helpers/issues/90)) ([43bd9b5](https://github.com/MorevM/helpers/commit/43bd9b597d054e784ddad042605c818634bfd57b))
+* bump release-it from 15.1.3 to 15.2.0 ([#87](https://github.com/MorevM/helpers/issues/87)) ([dfb7f54](https://github.com/MorevM/helpers/commit/dfb7f54bf958dc42191adfbe7a0850843fda0129))
+* bump release-it from 15.2.0 to 15.3.0 ([#93](https://github.com/MorevM/helpers/issues/93)) ([a5146a9](https://github.com/MorevM/helpers/commit/a5146a91fb88e7858c654ec794ce62ef6af53a8b))
+* bump tsup from 6.1.3 to 6.2.1 ([#88](https://github.com/MorevM/helpers/issues/88)) ([ea03e15](https://github.com/MorevM/helpers/commit/ea03e15f5e25ccfbf99c6a74e3a1dbb4b0cfc04b))
+* bump tsup from 6.2.1 to 6.2.2 ([#91](https://github.com/MorevM/helpers/issues/91)) ([14f881f](https://github.com/MorevM/helpers/commit/14f881f0eb66ebfd7d3d3301e6ebbc7041fdb746))
+* Disable `strictNullChecks` and `noImplicitAny` compiler options ([225006a](https://github.com/MorevM/helpers/commit/225006a3b1f6704bebf50f1e36c0708a33fd988c))
+* Update `tsconfig.json` to use `ts-node` with ESM ([069bbd1](https://github.com/MorevM/helpers/commit/069bbd1e3af2120bb64e5781d8d0a570accf8205))
+
+
+### Refactoring
+
+* Suppress linter/compiler errors after editing of `tsconfig.json` ([de28c0d](https://github.com/MorevM/helpers/commit/de28c0d7b385312595b929e012d85501ca63f4d9))
+
 ### [1.0.1](https://github.com/MorevM/helpers/compare/v1.0.0...v1.0.1) (2022-07-24)
 
 Just version bump due to unsuccessful release.
