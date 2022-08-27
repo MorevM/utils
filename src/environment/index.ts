@@ -1,6 +1,7 @@
 export * from './is-client/is-client';
 export * from './is-firefox/is-firefox';
 export * from './is-internet-explorer/is-internet-explorer';
+export * from './is-lighthouse/is-lighthouse';
 export * from './is-mobile/is-mobile';
 export * from './is-motionless/is-motionless';
 export * from './is-osx/is-osx';
