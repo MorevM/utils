@@ -1,5 +1,12 @@
 
 
+### [1.2.1](https://github.com/MorevM/helpers/compare/v1.2.0...v1.2.1) (2022-08-27)
+
+
+### Bug fixes
+
+* **environment:** Add missed `isLighthouse` export ([e919a2e](https://github.com/MorevM/helpers/commit/e919a2eb3eddb25bc9755122c9f350fe2d451da9))
+
 ## [1.2.0](https://github.com/MorevM/helpers/compare/v1.1.0...v1.2.0) (2022-08-27)
 
 
