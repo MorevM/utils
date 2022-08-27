@@ -1,5 +1,21 @@
 
 
+## [1.2.0](https://github.com/MorevM/helpers/compare/v1.1.0...v1.2.0) (2022-08-27)
+
+
+### Features
+
+* **environment:** Add `isLighthouse` helper ([791e68a](https://github.com/MorevM/helpers/commit/791e68a436c3601f642b3767a19248fe7a2ec177))
+
+
+### Chores
+
+* All deps update ([0410f5a](https://github.com/MorevM/helpers/commit/0410f5ac51c8531abcd0bc0c62bfa79e2303d48f))
+* bump @release-it/conventional-changelog from 5.0.0 to 5.1.0 ([#94](https://github.com/MorevM/helpers/issues/94)) ([133529a](https://github.com/MorevM/helpers/commit/133529a848678af55f4f18980795ef5f44599c4a))
+* bump @types/jest from 28.1.6 to 28.1.7 ([#97](https://github.com/MorevM/helpers/issues/97)) ([efd16d8](https://github.com/MorevM/helpers/commit/efd16d8ea60273341bec44ed00b669019f9f5a30))
+* bump eslint from 8.21.0 to 8.22.0 ([#96](https://github.com/MorevM/helpers/issues/96)) ([d7ec813](https://github.com/MorevM/helpers/commit/d7ec81305a777218531736b21fc20928dc78f7b6))
+* bump ts-jest from 28.0.7 to 28.0.8 ([#95](https://github.com/MorevM/helpers/issues/95)) ([b4cb1fe](https://github.com/MorevM/helpers/commit/b4cb1fefa4d9b34c0511723f2fb6724237e7ec64))
+
 ## [1.1.0](https://github.com/MorevM/helpers/compare/v1.0.1...v1.1.0) (2022-08-14)
 
 
