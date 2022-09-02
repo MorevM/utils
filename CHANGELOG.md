@@ -1,5 +1,16 @@
 
 
+## [1.4.0](https://github.com/MorevM/helpers/compare/v1.3.0...v1.4.0) (2022-09-02)
+
+
+### Features
+
+* **types:** Add `ArrayOf` type ([214f025](https://github.com/MorevM/helpers/commit/214f02598d96cbbf62d8fcf4d015344d10f684fd))
+* **types:** Add `ElementOf` type ([02498c3](https://github.com/MorevM/helpers/commit/02498c3440de4d36ea44fe03672d00b46ba68d44))
+* **types:** Add `NonEmptyArray` type ([e275060](https://github.com/MorevM/helpers/commit/e275060647372b2e50a2149c8b9b216ee6d82a05))
+* **types:** Add `ObjectKeys` type ([034e3db](https://github.com/MorevM/helpers/commit/034e3db5de8db19b7301d5ba6eea6616cf90a91d))
+* **types:** Add `PlainObject` type ([60d8d3d](https://github.com/MorevM/helpers/commit/60d8d3d490d2236054696e4d63dba69caa47342e))
+
 ## [1.3.0](https://github.com/MorevM/helpers/compare/v1.2.1...v1.3.0) (2022-09-02)
 
 
