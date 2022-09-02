@@ -9,3 +9,4 @@ export * from './objects';
 export * from './promises';
 export * from './ranges';
 export * from './strings';
+export * from './types';

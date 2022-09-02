@@ -73,6 +73,10 @@
 		"./strings": {
 			"import": "./dist/strings/index.mjs",
 			"require": "./dist/strings/index.js"
+		},
+		"./types": {
+			"import": "./dist/types/index.mjs",
+			"require": "./dist/types/index.js"
 		}
 	},
 	"main": "dist/index.js",
