@@ -1,5 +1,20 @@
 
 
+## [1.3.0](https://github.com/MorevM/helpers/compare/v1.2.1...v1.3.0) (2022-09-02)
+
+
+### Features
+
+* **promises:** Add `promiseController` utility ([f8e3ee8](https://github.com/MorevM/helpers/commit/f8e3ee80ca6bca0b8d98cf23696f935fdcf27c67))
+* **types:** Add `Arrayable`, `Awaitable` and `Nullable` types ([481334f](https://github.com/MorevM/helpers/commit/481334f573792fae3983b8096f54fd0627698c46))
+
+
+### Chores
+
+* bump `@morev/eslint-config` from 15.4.0 to 16.0.0 ([2886dc6](https://github.com/MorevM/helpers/commit/2886dc6a2f671370f3d98ca8164eec926df792fd))
+* bump `@types/jest` from 28.1.8 to 29.0.0 ([1817d8e](https://github.com/MorevM/helpers/commit/1817d8e9132220239a78eb82d89b36772f62bc11))
+* bump `release-it` from 15.4.0 to 15.4.1 ([4fe0917](https://github.com/MorevM/helpers/commit/4fe091749197a88202ba8f9e21f16c682a331af2))
+
 ### [1.2.1](https://github.com/MorevM/helpers/compare/v1.2.0...v1.2.1) (2022-08-27)
 
 
