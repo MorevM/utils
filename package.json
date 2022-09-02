@@ -62,6 +62,10 @@
 			"import": "./dist/objects/index.mjs",
 			"require": "./dist/objects/index.js"
 		},
+		"./promises": {
+			"import": "./dist/promises/index.mjs",
+			"require": "./dist/promises/index.js"
+		},
 		"./ranges": {
 			"import": "./dist/ranges/index.mjs",
 			"require": "./dist/ranges/index.js"
