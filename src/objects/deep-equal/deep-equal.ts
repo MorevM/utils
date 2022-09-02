@@ -2,7 +2,7 @@
 import { isArray, isDate, isObject, isRegExp } from '../../guards/index';
 import { areArraysEqual, areObjectsEqual, areRegExpsEqual } from './_utils';
 
-// TODO: [2022-09-01] Sets and maps
+// TODO: [2022-10-01] Sets and maps
 
 /**
  * Checks if of two objects are the same data (deep equality).
