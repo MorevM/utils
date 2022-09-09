@@ -51,6 +51,16 @@ describe('getElementOffset', () => {
 		expect(getElementOffset(el, 'y')).toBe(200);
 	});
 
+	it('Returns the viewport-relative offset value of a given element by both axis if `axis` argument is omitted', () => {
+		const el = document.querySelector(SELECTOR);
+		mockGetBoundingClientRect(el, { x: 100, y: 200 });
+
+		expect(getElementOffset(el)).toStrictEqual({
+			x: 100,
+			y: 200,
+		});
+	});
+
 	it('Considers the current scroll value', () => {
 		const el = document.querySelector(SELECTOR);
 		mockGetBoundingClientRect(el, { x: 100, y: 200 });
@@ -78,6 +88,21 @@ describe('getElementOffset', () => {
 	});
 
 	it('Uses the `window.page(X|Y)Offset` as fallbacks for `window.scroll(X|Y)` in old browsers', () => {
+		const el = document.querySelector(SELECTOR);
+		mockGetBoundingClientRect(el, { x: 100, y: 200 });
+
+		window.scrollX = window.scrollY = undefined;
+
+		window.pageXOffset = 400;
+		window.pageYOffset = 800;
+
+		expect(getElementOffset(el, 'both')).toStrictEqual({
+			x: 100 + 400,
+			y: 200 + 800,
+		});
+	});
+
+	it('Correctly outputs with single argument', () => {
 		const el = document.querySelector(SELECTOR);
 		mockGetBoundingClientRect(el, { x: 100, y: 200 });
 

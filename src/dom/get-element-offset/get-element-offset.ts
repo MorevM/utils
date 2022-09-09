@@ -3,7 +3,7 @@ import { getWindowScroll } from '../get-window-scroll/get-window-scroll';
 type Axis = 'x' | 'y' | 'both';
 type ToReturn<T> = T extends 'both' ? { x: number; y: number } : number;
 
-const getElementScroll = <T extends Axis>(el: Element, axis: T): ToReturn<T> => {
+const getElementScroll = <T extends Axis>(el: Element, axis: T = 'both' as T): ToReturn<T> => {
 	if (axis === 'both') {
 		return { x: el.scrollLeft, y: el.scrollTop } as ToReturn<T>;
 	}
@@ -21,7 +21,7 @@ const getElementScroll = <T extends Axis>(el: Element, axis: T): ToReturn<T> => 
  */
 export const getElementOffset = <T extends Axis>(
 	el: Element,
-	axis: T,
+	axis: T = 'both' as T,
 	parent: Element | Window = window,
 ): ToReturn<T> => {
 	const parentRect = parent === window
