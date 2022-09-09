@@ -1,5 +1,12 @@
 
 
+### [1.4.1](https://github.com/MorevM/helpers/compare/v1.4.0...v1.4.1) (2022-09-09)
+
+
+### Refactoring
+
+* **dom:** Make `axis` argument optional for `getElementOffset` ([f3f84f2](https://github.com/MorevM/helpers/commit/f3f84f2e81d6d6a532ba8c13b763469d6fd9855f))
+
 ## [1.4.0](https://github.com/MorevM/helpers/compare/v1.3.0...v1.4.0) (2022-09-02)
 
 
