@@ -8,5 +8,5 @@ export const isOSX = (): boolean => {
 	const platform = (navigator as any).userAgentData?.platform
 		|| navigator.platform
 		|| '';
-	return !!platform.match(/(mac|iphone|ipod|ipad)/i);
+	return !!platform.match(/(ipad|iphone|ipod|mac)/i);
 };
