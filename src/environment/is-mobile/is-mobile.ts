@@ -4,4 +4,4 @@
  * @returns   Whether any mobile browser is being used.
  */
 export const isMobile = (): boolean =>
-	/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent);
+	/android|blackberry|iemobile|ipad|iphone|ipod|opera mini|webos/i.test(navigator.userAgent);
