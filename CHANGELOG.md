@@ -1,5 +1,24 @@
 
 
+### [1.4.2](https://github.com/MorevM/helpers/compare/v1.4.1...v1.4.2) (2022-09-10)
+
+
+### Chores
+
+* bump @morev/eslint-config from 16.0.0 to 17.1.1 ([83efa18](https://github.com/MorevM/helpers/commit/83efa1880bf76d817d7715bbbe4f12019b6c1f54))
+* bump jest from 29.0.1 to 29.0.2 ([#99](https://github.com/MorevM/helpers/issues/99)) ([1923751](https://github.com/MorevM/helpers/commit/19237513b4c7a9fecfeb85a819ee4e173ff1f5f6))
+* bump jest-environment-jsdom from 29.0.1 to 29.0.2 ([#101](https://github.com/MorevM/helpers/issues/101)) ([b2a51ac](https://github.com/MorevM/helpers/commit/b2a51acaa44616a11996afbf793a5d01946c250d))
+* bump ts-jest from 28.0.8 to 29.0.0 ([#98](https://github.com/MorevM/helpers/issues/98)) ([1cbcb57](https://github.com/MorevM/helpers/commit/1cbcb57461c29c7b061cbf9c24292e6b8a216bda))
+* bump typescript from 4.8.2 to 4.8.3 ([#100](https://github.com/MorevM/helpers/issues/100)) ([9ddfa6b](https://github.com/MorevM/helpers/commit/9ddfa6b52843e7982913498db871cdcf6eff7be3))
+* Disable `yml/file-extension` for `.github` folder ([c6cfdd6](https://github.com/MorevM/helpers/commit/c6cfdd651c95114d52c2d298709e1bd8f816f8af))
+
+
+### Refactoring
+
+* **environment:** Sort `isMobile` regex ([14df57d](https://github.com/MorevM/helpers/commit/14df57d0386c8bc40c8a24c386d240c4a836eae0))
+* **environment:** Sort `isOSX` regex ([13a5e76](https://github.com/MorevM/helpers/commit/13a5e7601decadbdafbdbe3f873a2e790e14a61a))
+* Fix some more regexps after linter update ([14c08be](https://github.com/MorevM/helpers/commit/14c08be0059091031b5b3d944c598607cf0df6a4))
+
 ### [1.4.1](https://github.com/MorevM/helpers/compare/v1.4.0...v1.4.1) (2022-09-09)
 
 
