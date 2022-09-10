@@ -1,3 +1,4 @@
+/* eslint-disable regexp/no-unused-capturing-group, no-autofix/regexp/no-unused-capturing-group  -- It's better here for "readability" :D */
 /**
  * Checks whether a given string is a valid email.
  *
@@ -7,4 +8,4 @@
  */
 export const isEmail = (str: string): boolean =>
 	// eslint-disable-next-line unicorn/no-unsafe-regex
-	/^(([^\s"(),.:;<>@[\\\]]+(\.[^\s"(),.:;<>@[\\\]]+)*)|(".+"))@((\[(?:\d{1,3}\.){3}\d{1,3}])|(([\dA-Za-zЁА-яё-]+\.)+[A-Za-zЁА-яё]{2,}))$/.test(str);
+	/^(([^\s"(),.:;<>@[\\\]]+(\.[^\s"(),.:;<>@[\\\]]+)*)|(".+"))@((\[(?:\d{1,3}\.){3}\d{1,3}])|(([\d\-A-Za-zЁА-яё]+\.)+[A-Za-zЁА-яё]{2,}))$/.test(str);

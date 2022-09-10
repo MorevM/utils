@@ -23,7 +23,7 @@ type FormatSlashesOptions = {
  */
 export const formatSlashes = (input: string, options?: Partial<FormatSlashesOptions>): string => {
 	// Remove any duplicated slashes except after `:` (in case https://some.ru/path//)
-	input = input.replace(/([^:]\/)\/+/g, '$1').replace(/\\\\+/g, '\\');
+	input = input.replace(/([^:]\/)\/+/g, '$1').replace(/\\{2,}/g, '\\');
 
 	if (options?.to) {
 		const re = options.to === '/' ? '\\\\' : '/';

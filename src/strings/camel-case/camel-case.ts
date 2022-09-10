@@ -1,15 +1,15 @@
-// import _camelCase from 'camelcase';
+/* eslint-disable regexp/no-unused-capturing-group, no-autofix/regexp/no-unused-capturing-group -- Used actually */
 import { isArray, isString } from '../../guards';
 
 type CamelCaseOptions = {
 	readonly preserveConsecutiveUppercase?: boolean;
 };
 
-const UPPERCASE = /[\p{Lu}]/u;
-const LOWERCASE = /[\p{Ll}]/u;
-const LEADING_CAPITAL = /^[\p{Lu}](?![\p{Lu}])/gu;
+const UPPERCASE = /\p{Lu}/u;
+const LOWERCASE = /\p{Ll}/u;
+const LEADING_CAPITAL = /^\p{Lu}(?!\p{Lu})/gu;
 const IDENTIFIER = /([\p{Alpha}\p{N}_]|$)/u;
-const SEPARATORS = /[ ._-]+/;
+const SEPARATORS = /[ \-._]+/;
 
 const LEADING_SEPARATORS = new RegExp(`^${SEPARATORS.source}`);
 const SEPARATORS_AND_IDENTIFIER = new RegExp(SEPARATORS.source + IDENTIFIER.source, 'gu');

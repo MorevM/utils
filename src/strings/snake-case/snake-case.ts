@@ -7,5 +7,5 @@
  */
 export const snakeCase = (input: string): string => input
 	.replace(/([a-z])([A-Z])/g, '$1-$2')
-	.replace(/[\s.-]+/g, '_')
+	.replace(/[\s\-.]+/g, '_')
 	.toLowerCase();
