@@ -6,4 +6,12 @@ module.exports = {
 		'prefer-object-has-own': 'off',
 		'@typescript-eslint/no-unnecessary-condition': 'off',
 	},
+	overrides: [
+		{
+			files: '.github/**.*',
+			rules: {
+				'yml/file-extension': 'off',
+			},
+		},
+	],
 };
