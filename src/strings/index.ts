@@ -1,5 +1,6 @@
 export * from './camel-case/camel-case';
 export * from './capitalize/capitalize';
+export * from './escape-reg-exp/escape-reg-exp';
 export * from './file-extension/file-extension';
 export * from './format-slashes/format-slashes';
 export * from './hash/hash';
