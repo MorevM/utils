@@ -1,5 +1,21 @@
 
 
+## [1.5.0](https://github.com/MorevM/helpers/compare/v1.4.2...v1.5.0) (2022-09-17)
+
+
+### Features
+
+* **types:** Add `StartsWith` and `EndsWith` utility types ([32735e9](https://github.com/MorevM/helpers/commit/32735e90d52a72e75e105fa71f45104ac363a7fe))
+
+
+### Chores
+
+* bump eslint from 8.23.0 to 8.23.1 ([#105](https://github.com/MorevM/helpers/issues/105)) ([05f271c](https://github.com/MorevM/helpers/commit/05f271c1fdef645dac34509519163573d70ee867))
+* bump jest and @types/jest ([#103](https://github.com/MorevM/helpers/issues/103)) ([73cfa00](https://github.com/MorevM/helpers/commit/73cfa00d694287d7dbc422cb06c087890fee96a8))
+* bump jest-environment-jsdom from 29.0.2 to 29.0.3 ([#104](https://github.com/MorevM/helpers/issues/104)) ([3f3469d](https://github.com/MorevM/helpers/commit/3f3469d0f05e9e64d541842093b87c36b84cd5a2))
+* bump release-it from 15.4.1 to 15.4.2 ([#107](https://github.com/MorevM/helpers/issues/107)) ([8228cba](https://github.com/MorevM/helpers/commit/8228cbaa7920bfc0b0193851864ab05a9b80bf59))
+* bump ts-jest from 29.0.0 to 29.0.1 ([#106](https://github.com/MorevM/helpers/issues/106)) ([8f213a8](https://github.com/MorevM/helpers/commit/8f213a8d4f9923c6d4798d280664fc11a0efc546))
+
 ### [1.4.2](https://github.com/MorevM/helpers/compare/v1.4.1...v1.4.2) (2022-09-10)
 
 
