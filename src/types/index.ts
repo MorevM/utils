@@ -1,6 +1,7 @@
 export * from './array-of/array-of';
 export * from './arrayable/arrayable';
 export * from './awaitable/awaitable';
+export * from './constructor/constructor';
 export * from './element-of/element-of';
 export * from './ends-with/ends-with';
 export * from './non-empty-array/non-empty-array';
