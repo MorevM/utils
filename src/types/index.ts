@@ -5,6 +5,7 @@ export * from './class/class';
 export * from './constructor/constructor';
 export * from './element-of/element-of';
 export * from './ends-with/ends-with';
+export * from './explicit/explicit';
 export * from './non-empty-array/non-empty-array';
 export * from './nullable/nullable';
 export * from './object-keys/object-keys';
