@@ -12,4 +12,5 @@ export * from './object-keys/object-keys';
 export * from './partial-optional/partial-optional';
 export * from './partial-required/partial-required';
 export * from './plain-object/plain-object';
+export * from './primitive/primitive';
 export * from './starts-with/starts-with';
