@@ -9,5 +9,7 @@ export * from './explicit/explicit';
 export * from './non-empty-array/non-empty-array';
 export * from './nullable/nullable';
 export * from './object-keys/object-keys';
+export * from './partial-optional/partial-optional';
+export * from './partial-required/partial-required';
 export * from './plain-object/plain-object';
 export * from './starts-with/starts-with';
