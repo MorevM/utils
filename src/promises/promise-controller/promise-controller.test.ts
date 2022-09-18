@@ -3,7 +3,7 @@
 import { isPromise } from '../../guards';
 import { promiseController } from './promise-controller';
 
-describe('create-controlled-promise', () => {
+describe('promise-controller', () => {
 	it('Returns the Promise object', () => {
 		const controlledPromise = promiseController();
 

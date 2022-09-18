@@ -3,7 +3,7 @@ import { getElement } from './get-element';
 
 type ElementDeclaration = { selector: string; element: Element | null };
 
-describe('isDescendantOf', () => {
+describe('get-element', () => {
 	let parentBlock: ElementDeclaration;
 	let outOfParent: ElementDeclaration;
 	let justBlock: ElementDeclaration;

@@ -1,6 +1,6 @@
 import { inRange } from './in-range';
 
-describe('inRange', () => {
+describe('in-range', () => {
 	it('Returns `true` if a given range includes a given value', () => {
 		expect(inRange(150, [100, 200])).toBe(true);
 	});

@@ -1,7 +1,7 @@
 /* eslint-disable sonarjs/no-duplicate-string */
 import { getScrollableAncestor } from './get-scrollable-ancestor';
 
-describe('isDescendantOf', () => {
+describe('get-scrollable-ancestor', () => {
 	beforeAll(() => {
 		document.body.insertAdjacentHTML('beforeend', `
 			<div id="root">

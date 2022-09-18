@@ -1,6 +1,6 @@
 import { capitalize } from './capitalize';
 
-describe('hash', () => {
+describe('capitalize', () => {
 	it('Returns empty string for empty input', () => {
 		expect(capitalize('')).toBe('');
 	});

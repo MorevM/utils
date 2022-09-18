@@ -1,6 +1,6 @@
 import { formatBytes, formatBytesRu } from './format-bytes';
 
-describe('formatBytes', () => {
+describe('format-bytes', () => {
 	it('Considers invalid input as `0`', () => {
 		const returnValue = {
 			value: 0, valueAsString: '0', unit: 'B', isInteger: true,

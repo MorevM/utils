@@ -1,6 +1,6 @@
 import { daysInMonth } from './days-in-month';
 
-describe('daysInMonth', () => {
+describe('days-in-month', () => {
 	beforeAll(() => {
 		jest.useFakeTimers({ now: new Date(2020, 1, 1) });
 	});

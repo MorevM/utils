@@ -1,6 +1,6 @@
 import { unquote } from './unquote';
 
-describe('quote', () => {
+describe('unquote', () => {
 	it('Returns string as is if there is no quotes', () => {
 		expect(unquote('')).toBe('');
 		expect(unquote('test')).toBe('test');

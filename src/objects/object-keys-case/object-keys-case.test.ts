@@ -17,7 +17,7 @@ const input = {
 	c_c: [{ a_a: 1 }],
 };
 
-describe('objectKeysCase', () => {
+describe('object-keys-case', () => {
 	it('Converts all given object keys case to needed case', () => {
 		const expected = {
 			aA: 1,

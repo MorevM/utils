@@ -1,6 +1,6 @@
 import { getDocumentSize } from './get-document-size';
 
-describe('getDocumentSize', () => {
+describe('get-document-size', () => {
 	beforeEach(() => {
 		jest.spyOn(document.body, 'scrollWidth', 'get').mockImplementation(() => 3000);
 		jest.spyOn(document.body, 'scrollHeight', 'get').mockImplementation(() => 6000);

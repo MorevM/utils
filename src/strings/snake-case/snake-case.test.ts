@@ -1,6 +1,6 @@
 import { snakeCase } from './snake-case';
 
-describe('snakeCase', () => {
+describe('snake-case', () => {
 	it('Converts a given string written in kebab-case to snake-case', () => {
 		expect(snakeCase('foo-bar')).toBe('foo_bar');
 	});

@@ -1,6 +1,6 @@
 import { getScrollLimit } from './get-scroll-limit';
 
-describe('getScrollLimit', () => {
+describe('get-scroll-limit', () => {
 	const windowSize = {
 		width: window.innerWidth,
 		height: window.innerHeight,
