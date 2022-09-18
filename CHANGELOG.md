@@ -1,5 +1,26 @@
 
 
+## [1.6.0](https://github.com/MorevM/helpers/compare/v1.5.0...v1.6.0) (2022-09-18)
+
+
+### Features
+
+* **strings:** Add `escapeRegExp` utility ([041905e](https://github.com/MorevM/helpers/commit/041905eeafe8c3a2940282781a642e34e0decef3))
+* **types:** Add `Class` type ([a824428](https://github.com/MorevM/helpers/commit/a82442849d8ed87853784cf010247bbf0ace9432))
+* **types:** Add `Constructor` type ([6e3bd14](https://github.com/MorevM/helpers/commit/6e3bd14e0a2e53cacbf21d7585e4ba70a973e7e7))
+* **types:** Add `Explicit` type ([a785b45](https://github.com/MorevM/helpers/commit/a785b451f9f2e34dd2f33745d4c466b107d85748))
+* **types:** Add `PartialRequired` and `PartialOptional` types ([292ef8d](https://github.com/MorevM/helpers/commit/292ef8d80b74e57dfab5520700f8120283074e26))
+
+
+### Refactoring
+
+* **types:** Consistent generic name in `StartsWith/EndsWith` ([78baac7](https://github.com/MorevM/helpers/commit/78baac745cef71fef609a3522fe77d94c5982af9))
+
+
+### Bug fixes
+
+* Actualize named exports ([30186e1](https://github.com/MorevM/helpers/commit/30186e1dc88aeda1f2ed5d2c64849b956e84b209))
+
 ## [1.5.0](https://github.com/MorevM/helpers/compare/v1.4.2...v1.5.0) (2022-09-17)
 
 
