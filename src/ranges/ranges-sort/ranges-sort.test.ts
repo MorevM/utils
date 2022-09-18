@@ -9,6 +9,11 @@ describe('ranges-sort', () => {
 		expect(original).toStrictEqual(clone);
 	});
 
+	it('Returns an empty array as for invalid input', () => {
+		expect(rangesSort(null)).toStrictEqual([]);
+		expect(rangesSort(undefined)).toStrictEqual([]);
+	});
+
 	it('Returns given array as is if only one range is passed', () => {
 		expect(rangesSort([[0, 0]])).toStrictEqual([[0, 0]]);
 	});

@@ -13,7 +13,7 @@ const comparator = (a: AllowedInTuple, b: AllowedInTuple) => {
 };
 
 export const rangesSort = (ranges: Array<Range | null>) => {
-	return [...ranges].filter(r => r !== null).sort((r1, r2) => {
+	return [...(ranges || [])].filter(r => r !== null).sort((r1, r2) => {
 		if (r1[0] === r2[0]) {
 			return comparator(r1[1], r2[1]);
 		}
