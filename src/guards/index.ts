@@ -15,3 +15,4 @@ export * from './is-object/is-object';
 export * from './is-promise/is-promise';
 export * from './is-reg-exp/is-reg-exp';
 export * from './is-string/is-string';
+export * from './is-symbol/is-symbol';
