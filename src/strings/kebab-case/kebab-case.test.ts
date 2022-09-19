@@ -25,6 +25,30 @@ describe('kebab-case', () => {
 		expect(kebabCase('FOOBAR')).toBe('foobar');
 	});
 
+	it('Treat repeating uppercase characters as a single word', () => {
+		expect(kebabCase('getID')).toBe('get-id');
+	});
+
+	it(`Doesn't put a separator in start of resulting string`, () => {
+		expect(kebabCase('22Id', { numbers: true })).toBe('22-id');
+	});
+
+	it(`Doesn't treat number as separator with no options`, () => {
+		expect(kebabCase('desktop2k')).toBe('desktop2k');
+	});
+
+	it('Treats number as separator with `{ numbers: true }`', () => {
+		expect(kebabCase('desktop2k', { numbers: true })).toBe('desktop-2k');
+	});
+
+	it('Treats uppercase characted after digit as a new word', () => {
+		expect(kebabCase('get2Ids', { numbers: true })).toBe('get-2-ids');
+	});
+
+	it('Treats repeating digits as single number with `{ numbers: true }`', () => {
+		expect(kebabCase('desktop24k', { numbers: true })).toBe('desktop-24k');
+	});
+
 	it('Returns a given string written in lowercase as is', () => {
 		expect(kebabCase('foobar')).toBe('foobar');
 	});
