@@ -1,5 +1,30 @@
 
 
+## [1.7.0](https://github.com/MorevM/helpers/compare/v1.6.0...v1.7.0) (2022-09-19)
+
+
+### Features
+
+* **guards:** Add `isSymbol` utility ([b1d15b3](https://github.com/MorevM/helpers/commit/b1d15b3d10c33f8de7835b1d1ff8e942480df397))
+* **strings:** Add `numbers` option to `kebab-case` ([9bb8429](https://github.com/MorevM/helpers/commit/9bb84297d1175bb3e4bb1230af90334e415dfc83))
+* **types:** Add `Builtin` type ([a06d752](https://github.com/MorevM/helpers/commit/a06d7529b81e7bd11b1c5dcd91237602cc86b425))
+* **types:** Add `Primitive` type ([aadcc35](https://github.com/MorevM/helpers/commit/aadcc35d0afa04e49f7a8352e3c4ac3c838021aa))
+
+
+### Refactoring
+
+* Consistent test group names ([1036bed](https://github.com/MorevM/helpers/commit/1036bedba80b8f9c1e72c71b048b5eca560879c2))
+
+
+### Bug fixes
+
+* **ranges:** Return an empty array for invalid input in `rangesSort` ([06dbada](https://github.com/MorevM/helpers/commit/06dbada31cd6c0a95a6ba045577df8c986335a53))
+
+
+### Chores
+
+* bump @morev/eslint-config from 17.1.1 to 17.2.1 ([61ad3b0](https://github.com/MorevM/helpers/commit/61ad3b071f47c36b3f8e81954ea6b11ba1deef68))
+
 ## [1.6.0](https://github.com/MorevM/helpers/compare/v1.5.0...v1.6.0) (2022-09-18)
 
 
