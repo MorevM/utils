@@ -15,3 +15,6 @@ export * from './partial-required/partial-required';
 export * from './plain-object/plain-object';
 export * from './primitive/primitive';
 export * from './starts-with/starts-with';
+export * from './trim/trim';
+export * from './trim-left/trim-left';
+export * from './trim-right/trim-right';
