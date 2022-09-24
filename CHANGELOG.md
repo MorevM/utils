@@ -1,5 +1,12 @@
 
 
+## [1.8.0](https://github.com/MorevM/helpers/compare/v1.7.0...v1.8.0) (2022-09-24)
+
+
+### Features
+
+* **types:** Add `Trim`, `TrimLeft`, `TrimRight` types ([e032a58](https://github.com/MorevM/helpers/commit/e032a58c726bc9be30780f6e891c78727a9101a0))
+
 ## [1.7.0](https://github.com/MorevM/helpers/compare/v1.6.0...v1.7.0) (2022-09-19)
 
 
