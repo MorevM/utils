@@ -1,5 +1,34 @@
 
 
+## [1.9.0](https://github.com/MorevM/helpers/compare/v1.8.0...v1.9.0) (2022-09-25)
+
+
+### Features
+
+* **environment:** Add `cjsVariables` utility ([1f9f203](https://github.com/MorevM/helpers/commit/1f9f203a72031bfc4a9fa325288868b9870327ce))
+* **environment:** Add `isDev`, `isProp`, `isTest` utilities ([8ff3678](https://github.com/MorevM/helpers/commit/8ff3678ab7b7c8a1a51ef0975304dc0859029977))
+* **functions:** Add `throttle` utility ([af021e3](https://github.com/MorevM/helpers/commit/af021e3b3464a44dc09f148defdf890188dad5f2))
+* **numbers:** Add `toNumber` utility ([3540ead](https://github.com/MorevM/helpers/commit/3540eadffdebf56745a7a55daf6065bdbf1aee53))
+* **ranges:** Add `rangeIncludes` utility ([1bb4a1c](https://github.com/MorevM/helpers/commit/1bb4a1c6fcafbbc90afd0684f353f4aaed3806b5))
+* **ranges:** Add `rangesCrop` utility ([b65ebc2](https://github.com/MorevM/helpers/commit/b65ebc22e51f399cb3e9104b9cac04d6f26a9887))
+* **ranges:** Add `rangesInvert` utility ([d7e6b8b](https://github.com/MorevM/helpers/commit/d7e6b8b356d4543762661981ee0c4b4548fa830b))
+* **types:** Add `MathAdd`, `MathSubtract` and `NumberRange` types ([1a075d3](https://github.com/MorevM/helpers/commit/1a075d3cc47d166378588af10bea6e1be3a906bc))
+
+
+### Refactoring
+
+* **numbers:** Deprecate `inRange` utility ([ccd7567](https://github.com/MorevM/helpers/commit/ccd756717924d8361a1ab5d1fc12ca45b6cc24cb))
+* **ranges:** Consistent type of `Range` across all utilities ([4ace6da](https://github.com/MorevM/helpers/commit/4ace6daf4b360726c28aa09e3078129290350a5d))
+* **types:** Put types in semantic groups ([eab149d](https://github.com/MorevM/helpers/commit/eab149dd2369192642d1d6e939229200fce0486b))
+* **types:** Rename `TrimLeft / TrimRight` to `TrimStart / TrimEnd` ([025be95](https://github.com/MorevM/helpers/commit/025be958dcb3d666482db4a16c536b2833bd2398))
+
+
+### Chores
+
+* bump @morev/eslint-config from 17.2.1 to 17.3.1 ([2090f2b](https://github.com/MorevM/helpers/commit/2090f2b85b98dc48051ed30275c83956ea1093a1))
+* bump eslint from 8.23.1 to 8.24.0 ([2fc6305](https://github.com/MorevM/helpers/commit/2fc630522f69c8bbd0170bd11d471225b873b77f))
+* bump ts-jest from 29.0.1 to 29.0.2 ([2d4b9b0](https://github.com/MorevM/helpers/commit/2d4b9b03ca608df2f8131e685567071daaf74c00))
+
 ## [1.8.0](https://github.com/MorevM/helpers/compare/v1.7.0...v1.8.0) (2022-09-24)
 
 
