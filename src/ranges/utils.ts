@@ -1,4 +1,4 @@
-export type Range = [number | null, number | null];
+export type Range = [number | null | undefined, number | null | undefined];
 
 export const formatInfinity = (value: any, isNeeded: boolean) => isNeeded
 	? ((value === Infinity || value === -Infinity) ? null : value)

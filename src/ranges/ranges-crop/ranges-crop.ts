@@ -1,8 +1,7 @@
 import { isEmpty, isNullish } from '../../guards';
 import { rangesMerge } from '../ranges-merge/ranges-merge';
+import type { Range } from '../utils';
 import { formatInfinity } from '../utils';
-
-type Range = [number | null, number | null];
 
 /**
  * Crops an array of ranges if they go beyond the `start` and `end`.

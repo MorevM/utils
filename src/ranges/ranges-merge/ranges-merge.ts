@@ -1,13 +1,11 @@
 /* eslint-disable import/exports-last */
 // https://github.com/codsen/codsen/blob/main/packages/ranges-merge/src/main.ts
-// @ts-nocheck -- Temp
 
 import { isNullish } from '../../guards';
 import { rangesSort } from '../ranges-sort/ranges-sort';
+import type { Range } from '../utils';
 
-type Range = [number | null, number | null];
-
-export const rangesMerge = (ranges: Array<Range | null>, joinEdges = true) => {
+export const rangesMerge = (ranges: Array<Range | null>, joinEdges = true): Range[] => {
 	const sorted = rangesSort(ranges)
 		.map(r => [
 			isNullish(r[0]) ? -Infinity : r[0],
