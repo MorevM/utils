@@ -98,7 +98,7 @@
 		"@morev/eslint-config": "^17.2.1",
 		"@release-it/conventional-changelog": "^5.1.0",
 		"@types/jest": "^29.0.3",
-		"eslint": "^8.23.1",
+		"eslint": "^8.24.0",
 		"husky": "^8.0.1",
 		"jest": "^29.0.3",
 		"jest-environment-jsdom": "^29.0.3",
