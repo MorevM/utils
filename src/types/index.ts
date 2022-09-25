@@ -19,5 +19,5 @@ export * from './objects/plain-object/plain-object';
 export * from './strings/ends-with/ends-with';
 export * from './strings/starts-with/starts-with';
 export * from './strings/trim/trim';
-export * from './strings/trim-left/trim-left';
-export * from './strings/trim-right/trim-right';
+export * from './strings/trim-end/trim-end';
+export * from './strings/trim-start/trim-start';
