@@ -1,4 +1,3 @@
-export * from './cjs-variables/cjs-variables';
 export * from './is-client/is-client';
 export * from './is-dev/is-dev';
 export * from './is-firefox/is-firefox';
