@@ -1,5 +1,12 @@
 
 
+### [1.9.1](https://github.com/MorevM/helpers/compare/v1.9.0...v1.9.1) (2022-09-28)
+
+
+### Bug fixes
+
+* **environment:** Drop `cjsVariables` utility ([c90f4c4](https://github.com/MorevM/helpers/commit/c90f4c4415152a38383f7d444db181d3ff286a4e))
+
 ## [1.9.0](https://github.com/MorevM/helpers/compare/v1.8.0...v1.9.0) (2022-09-25)
 
 
