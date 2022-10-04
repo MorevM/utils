@@ -21,3 +21,4 @@ export * from './strings/starts-with/starts-with';
 export * from './strings/trim/trim';
 export * from './strings/trim-end/trim-end';
 export * from './strings/trim-start/trim-start';
+export * from './utility/is-equal/is-equal';
