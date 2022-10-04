@@ -1,3 +1,4 @@
+import type { Except } from '../except/except';
 import type { Explicit } from '../explicit/explicit';
 
 /**
@@ -5,4 +6,4 @@ import type { Explicit } from '../explicit/explicit';
  * The remaining keys are kept as is.
  */
 export type PartialOptional<Base, Keys extends keyof Base> =
-	Explicit<Omit<Base, Keys> & Partial<Pick<Base, Keys>>>;
+	Explicit<Except<Base, Keys> & Partial<Pick<Base, Keys>>>;
