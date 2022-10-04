@@ -11,6 +11,7 @@ export * from './extensions/nullable/nullable';
 export * from './numbers/math-add/math-add';
 export * from './numbers/math-subtract/math-subtract';
 export * from './numbers/number-range/number-range';
+export * from './objects/except/except';
 export * from './objects/explicit/explicit';
 export * from './objects/object-keys/object-keys';
 export * from './objects/partial-optional/partial-optional';
