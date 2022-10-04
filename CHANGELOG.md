@@ -1,5 +1,18 @@
 
 
+## [1.10.0](https://github.com/MorevM/helpers/compare/v1.9.1...v1.10.0) (2022-10-04)
+
+
+### Features
+
+* **types:** Add `Except` type ([46b0b39](https://github.com/MorevM/helpers/commit/46b0b39e437325175663b7e7cce6faf3d1a04494))
+* **types:** Add `IsEqual` utility type ([ad6c0bc](https://github.com/MorevM/helpers/commit/ad6c0bc60b9271d00fd68671cb385bf5de51cf80))
+
+
+### Bug fixes
+
+* **types:** Use `Except` instead of `Omit` in `PartialOptional` and `PartialRequired` ([32e1f69](https://github.com/MorevM/helpers/commit/32e1f690c5dfd5c21cad637acb3693902a031ffd))
+
 ### [1.9.1](https://github.com/MorevM/helpers/compare/v1.9.0...v1.9.1) (2022-09-28)
 
 
