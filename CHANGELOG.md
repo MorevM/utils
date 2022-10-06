@@ -1,5 +1,12 @@
 
 
+### [1.10.1](https://github.com/MorevM/helpers/compare/v1.10.0...v1.10.1) (2022-10-06)
+
+
+### Bug fixes
+
+* **ranges:** Add missed `rangesInvert` and `rangeIncludes` exports ([5204699](https://github.com/MorevM/helpers/commit/520469981b3339e6ed1c5e51eb2847fb07e938c9))
+
 ## [1.10.0](https://github.com/MorevM/helpers/compare/v1.9.1...v1.10.0) (2022-10-04)
 
 
