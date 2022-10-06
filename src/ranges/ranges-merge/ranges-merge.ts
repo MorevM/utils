@@ -1,6 +1,3 @@
-/* eslint-disable import/exports-last */
-// https://github.com/codsen/codsen/blob/main/packages/ranges-merge/src/main.ts
-
 import { isNullish } from '../../guards';
 import { rangesSort } from '../ranges-sort/ranges-sort';
 import type { Range } from '../utils';
