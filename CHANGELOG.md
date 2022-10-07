@@ -1,5 +1,12 @@
 
 
+## [1.11.0](https://github.com/MorevM/helpers/compare/v1.10.1...v1.11.0) (2022-10-07)
+
+
+### Features
+
+* **types:** Add `ObjectValues` and `ObjectEntries` types ([62171b3](https://github.com/MorevM/helpers/commit/62171b3ef0a990d17ff6c8e79d709c752b354770))
+
 ### [1.10.1](https://github.com/MorevM/helpers/compare/v1.10.0...v1.10.1) (2022-10-06)
 
 
