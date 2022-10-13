@@ -1,5 +1,18 @@
 
 
+## [1.12.0](https://github.com/MorevM/helpers/compare/v1.11.0...v1.12.0) (2022-10-13)
+
+
+### Features
+
+* **dom:** Add `getScrollbarWidth` utility ([01ec25d](https://github.com/MorevM/helpers/commit/01ec25dafe52c4b4c77d49b45269bb144c2fc5f0))
+* **types:** Add `LiteralUnion` utility ([11ef568](https://github.com/MorevM/helpers/commit/11ef568384d21af74fcdac2f651c69405792aa08))
+
+
+### Chores
+
+* Upgrade devDeps ([529d8e5](https://github.com/MorevM/helpers/commit/529d8e54e9b592c8f0329a587c037669cf609282))
+
 ## [1.11.0](https://github.com/MorevM/helpers/compare/v1.10.1...v1.11.0) (2022-10-07)
 
 
