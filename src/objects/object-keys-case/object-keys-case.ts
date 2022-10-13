@@ -2,8 +2,7 @@
 import { kebabCase, snakeCase, pascalCase, camelCase } from '../../strings';
 import { isArray, isObject, isRegExp, isString } from '../../guards/index';
 import { mergeObjects } from '../merge-objects/merge-objects';
-
-type IObject = Record<string, any>;
+import type { PlainObject } from '../../types';
 
 type Case = 'snake_case' | 'PascalCase' | 'kebab-case' | 'camelCase';
 
@@ -57,7 +56,7 @@ export const objectKeysCase = (input: any, neededCase: Case, _options?: Partial<
 		if (!isObject(entry) && !isArray(entry)) return entry;
 		const isEntryArray = isArray(entry);
 
-		return Object.entries(entry).reduce<IObject>((acc, [_key, _value]) => {
+		return Object.entries(entry).reduce<PlainObject>((acc, [_key, _value]) => {
 			const shouldTransformKey = !isExcluded('key', _key)
 				&& !isExcluded('branch', getPath(path, _key))
 				&& isDepthAllowed(depth);
