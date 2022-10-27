@@ -1,5 +1,12 @@
 
 
+### [1.12.1](https://github.com/MorevM/helpers/compare/v1.12.0...v1.12.1) (2022-10-27)
+
+### Bug fixes
+
+* **numbers:** Arguments of `randomInteger` are optional now ([7a8dfa3](https://github.com/MorevM/helpers/commit/7a8dfa3aaa3f65387b0e4250ce4181e342ce539c))
+
+
 ## [1.12.0](https://github.com/MorevM/helpers/compare/v1.11.0...v1.12.0) (2022-10-13)
 
 
