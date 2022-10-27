@@ -6,10 +6,10 @@ type RangePart = number | null;
 /**
  * Checks whether at least one of provided ranges includes a given number.
  *
- * @param   value    The number to search in ranges.
- * @param   ranges   The ranges to check for occurrences.
+ * @param        value    The number to search in ranges.
+ * @param        ranges   The ranges to check for occurrences.
  *
- * @returns            Is any provided range includes a given number.
+ * @returns               Is any provided range includes a given number.
  *
  * @deprecated  This function will be removed in the next major release for better consistency across the groups.
  * 							Use `rangeIncludes` from `ranges` group instead.

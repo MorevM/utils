@@ -3,7 +3,7 @@
  *
  * @param   str   The string to escape.
  *
- * @returns         The escaped string.
+ * @returns       The escaped string.
  */
 export const escapeRegExp = (str: string) =>
 	(str || '').replace(/[$()*+.?[\\\]^{|}]/g, '\\$&');

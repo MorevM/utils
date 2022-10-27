@@ -8,7 +8,7 @@
  *
  * @param   str   String to retrieve hash.
  *
- * @returns         Hash for given string.
+ * @returns       Hash for given string.
  */
 export const hash = (str: string): string => {
 	let h = 0;

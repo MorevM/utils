@@ -7,7 +7,7 @@
  *
  * @param   arrays   Arrays to find intersection
  *
- * @returns            Intersection between arrays
+ * @returns          Intersection between arrays
  */
 export const arraysIntersection = <T>(...arrays: T[][]): T[] =>
 	arrays.reduce((acc, array) => acc.filter(i => array.includes(i)));

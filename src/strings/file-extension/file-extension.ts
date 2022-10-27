@@ -3,7 +3,7 @@
  *
  * @param   input   Filename / Full path to file
  *
- * @returns           File extension (without leading dot) or `null`
+ * @returns         File extension (without leading dot) or `null`
  */
 export const fileExtension = (input: string): string | null => {
 	const basePath = input.split(/[/\\]/).pop();

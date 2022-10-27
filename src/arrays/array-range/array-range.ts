@@ -5,7 +5,7 @@
  * @param   from   Lower value of resulting array
  * @param   to     Upper value of resulting array
  *
- * @returns          An array starting with `from` and ending with `to`.
+ * @returns        An array starting with `from` and ending with `to`.
  */
 export const arrayRange = (from: number, to?: number) => {
 	if (to === undefined) {

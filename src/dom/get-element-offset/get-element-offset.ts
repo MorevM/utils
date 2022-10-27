@@ -17,7 +17,7 @@ const getElementScroll = <T extends Axis>(el: Element, axis: T = 'both' as T): T
  * @param   el       Element
  * @param   axis     Retrieve only `x` or `y` offset, or both
  * @param   parent   Parent element, default is `window`
- * @returns            The element offset
+ * @returns          The element offset
  */
 export const getElementOffset = <T extends Axis>(
 	el: Element,

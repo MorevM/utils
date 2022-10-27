@@ -8,7 +8,7 @@ type Entry = FormDataEntryValue | FormDataEntryValue[];
  *
  * @param   formData   The value being evaluated.
  *
- * @returns              Plain object builded from given FormData.
+ * @returns            Plain object builded from given FormData.
  */
 export const formDataToObject = (formData: FormData): Record<string, Entry> => {
 	const result = {} as Record<string, Entry>;

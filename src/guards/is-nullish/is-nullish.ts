@@ -5,7 +5,7 @@
  *
  * @param   value   The value being evaluated.
  *
- * @returns           Whether the value is nullish value
+ * @returns         Whether the value is nullish value
  */
 
 type NullishType = null | undefined;

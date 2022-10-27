@@ -5,7 +5,7 @@
  * @param   length           The length of result string.
  * @param   startWithLatin   Should string strictly start with latin character or not
  *
- * @returns                    Generated string of a given length.
+ * @returns                  Generated string of a given length.
  */
 export const randomString = (length: number = 10, startWithLatin: boolean = true): string => {
 	const base = [...new Array(length)].map(() => (Math.trunc(Math.random() * 36)).toString(36)).join('');

@@ -3,6 +3,6 @@
  *
  * @param   value   The value being evaluated.
  *
- * @returns           Whether the value is FormData instance
+ * @returns         Whether the value is FormData instance
  */
 export const isFormData = (value: any): boolean => value instanceof FormData;

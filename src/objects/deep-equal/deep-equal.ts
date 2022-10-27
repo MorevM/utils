@@ -2,14 +2,14 @@
 import { isArray, isDate, isObject, isRegExp } from '../../guards/index';
 import { areArraysEqual, areObjectsEqual, areRegExpsEqual } from './_utils';
 
-// TODO: [2022-10-15] Sets and maps
+// TODO: [2022-12-15] Sets and maps
 
 /**
  * Checks if of two objects are the same data (deep equality).
  *
  * @param   a   Value to compare #1
  * @param   b   Value to compare #2
- * @returns       Result of comparing two given values (deep equality)
+ * @returns     Result of comparing two given values (deep equality)
  */
 export const deepEqual = (a: any, b: any): boolean => {
 	if (a === b) return true;

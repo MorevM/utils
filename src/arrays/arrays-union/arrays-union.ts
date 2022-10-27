@@ -6,7 +6,7 @@
  *
  * @param   arrays   Arrays to process
  *
- * @returns            Union of arrays
+ * @returns          Union of arrays
  */
 export const arraysUnion = <T>(...arrays: T[][]): T[] =>
 	[...new Set(arrays.flat())];

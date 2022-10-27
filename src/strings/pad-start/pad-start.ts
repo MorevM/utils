@@ -7,7 +7,7 @@
  * @param   maxLength    The length of the resulting string once the given string has been padded.
  * @param   fillString   The string to pad the given string with.
  *
- * @returns                The padded string.
+ * @returns              The padded string.
  */
 export const padStart = (input: string | number, maxLength = 2, fillString = '0'): string =>
 	input.toString().padStart(maxLength, fillString);

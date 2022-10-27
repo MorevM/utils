@@ -9,7 +9,7 @@ import type { Range } from '../utils';
  * @param   ranges   The ranges to check for occurrences.
  * @param   mode     Whether the every range includes a number (`all`) or at least one is enough (`any`). Default is `any`.
  *
- * @returns            Is any range (or all of them depending on the `mode` argument) includes a given number.
+ * @returns          Is any range (or all of them depending on the `mode` argument) includes a given number.
  */
 export const rangeIncludes = (
 	value: number,

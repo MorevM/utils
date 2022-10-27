@@ -4,7 +4,7 @@
  * @param   obj    Original object.
  * @param   keys   Keys of original object to remove.
  *
- * @returns          New object without specified keys
+ * @returns        New object without specified keys
  */
 // TODO: `as`
 export const omit = <T, K extends keyof T>(obj: T, ...keys: K[]): Omit<T, K> =>

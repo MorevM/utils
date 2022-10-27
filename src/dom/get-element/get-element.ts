@@ -8,7 +8,7 @@ import { isString } from '../../guards/is-string/is-string';
  * @param   value    Queried element selector or the element itself.
  * @param   parent
  *
- * @returns            The element being queried.
+ * @returns          The element being queried.
  */
 export const getElement = (value: Element | string | null, parent: Element | string | null = null) => {
 	if (isString(parent)) {

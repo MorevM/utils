@@ -6,7 +6,7 @@
  * @param   fractionSeparator    The separator for the decimal point. Default `.`.
  * @param   thousandsSeparator   The thousands separator. Default ` `.
  *
- * @returns                        Formatted number.
+ * @returns                      Formatted number.
  */
 export const numberFormat = (
 	number: number,

@@ -3,7 +3,7 @@
  *
  * @param   input   The string to capitalize.
  *
- * @returns           Capitalized string.
+ * @returns         Capitalized string.
  */
 export const capitalize = (input: string): string => {
 	if (!input.length) return '';

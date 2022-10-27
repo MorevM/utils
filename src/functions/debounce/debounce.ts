@@ -5,7 +5,7 @@
  * @param   delay       Timeout between function invoking, ms.
  * @param   immediate   Whether to invoke a given function immediately after initialization.
  *
- * @returns               Debounced function
+ * @returns             Debounced function
  */
 export const debounce = <F extends (...args: any[]) => any>(
 	fn: F,

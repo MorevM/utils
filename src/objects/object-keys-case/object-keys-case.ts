@@ -31,7 +31,7 @@ const getHandler = (neededCase: Case) => {
  * @param   neededCase   Needed keys case.
  * @param   _options     Custom options.
  *
- * @returns                New object with keys "renamed" to needed case.
+ * @returns              New object with keys "renamed" to needed case.
  */
 export const objectKeysCase = (input: any, neededCase: Case, _options?: Partial<Options>) => {
 	const options = mergeObjects({

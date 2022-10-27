@@ -14,7 +14,7 @@ const defaultOptions: PascalCaseOptions = {
  * @param   input     A string/array of strings to convert to PascalCase.
  * @param   options   Additional options being supplied to the `_camelCase`.
  *
- * @returns             The string converted to PascalCase.
+ * @returns           The string converted to PascalCase.
  */
 export const pascalCase = (
 	input: string | readonly string[],

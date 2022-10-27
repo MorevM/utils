@@ -8,7 +8,7 @@ import { arraysUnion } from '../arrays-union/arrays-union';
  * arraysDifference([1, 2, 3], [2, 3, 4]) -> [1, 4]
  *
  * @param   arrays   An arrays to process.
- * @returns            An array containing all the unique values of each array.
+ * @returns          An array containing all the unique values of each array.
  */
 export const arraysDifference = <T>(...arrays: T[][]): T[] => {
 	const intersections = arraysIntersection(...arrays);

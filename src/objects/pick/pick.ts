@@ -4,7 +4,7 @@
  * @param   obj    Original object.
  * @param   keys   Keys of original object to pick.
  *
- * @returns          New object containing only the specified keys.
+ * @returns        New object containing only the specified keys.
  */
 export const pick = <T, K extends keyof T>(obj: T, ...keys: K[]): Pick<T, K> =>
 	Object.fromEntries(

@@ -20,7 +20,7 @@ const numerals = {
  *
  * @param   num   Integer value to transform to Roman notation
  *
- * @returns         Roman representation of given number
+ * @returns       Roman representation of given number
  */
 export const romanize = (num: number): string => Object.entries(numerals)
 	.reduce((acc, [key, value]) => {

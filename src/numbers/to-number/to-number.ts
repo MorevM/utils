@@ -9,7 +9,7 @@ import { isNumeric, isString } from '../../guards';
  * @param   value      The value to cast.
  * @param   fallback   Fallback value if cast was unsuccessful.
  *
- * @returns              The number if cast was successful, fallback value otherwise if provided.
+ * @returns            The number if cast was successful, fallback value otherwise if provided.
  * @throws               Throws if cast was unsuccessful with no fallback value provided.
  */
 export function toNumber<F>(value: any, fallback?: F): number | F {

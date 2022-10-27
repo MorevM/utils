@@ -6,7 +6,7 @@ type ToReturn<T> = T extends any[] ? T : T[];
  *
  * @param   value   Any value
  *
- * @returns           Array itself if the value is already array, single-value array containing value otherwise
+ * @returns         Array itself if the value is already array, single-value array containing value otherwise
  */
 export const toArray = <T>(value: T): ToReturn<T> =>
 	[value].flat() as ToReturn<T>;

@@ -11,7 +11,7 @@ type Options = {
  * @param   input      A string to convert to kebab-case
  *
  * @param   _options   Transform options
- * @returns              The string converted to kebab-case.
+ * @returns            The string converted to kebab-case.
  */
 export const kebabCase = (input: string, _options?: Options): string => {
 	const options = { numbers: false, ..._options };

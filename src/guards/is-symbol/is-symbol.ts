@@ -3,7 +3,7 @@
  *
  * @param   value   The value being evaluated.
  *
- * @returns           Whether the value is symbol.
+ * @returns         Whether the value is symbol.
  */
 export const isSymbol = (value: any): value is symbol =>
 	typeof value === 'symbol' || (typeof value === 'object' && Object.prototype.toString.call(value).includes('Symbol'));

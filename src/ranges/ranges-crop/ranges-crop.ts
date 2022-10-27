@@ -11,7 +11,7 @@ import { formatInfinity } from '../utils';
  * @param   end              Maximum allowed range value.
  * @param   infinityToNull   Whether the return value should be `null` instead of `+-Infinity`.
  *
- * @returns                    The array of cropped ranges.
+ * @returns                  The array of cropped ranges.
  */
 export const rangesCrop = (
 	ranges: Range[] | null,

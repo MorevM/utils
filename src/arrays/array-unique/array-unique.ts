@@ -6,6 +6,6 @@
  *
  * @param   array
  *
- * @returns           Array without any duplicated values
+ * @returns         Array without any duplicated values
  */
 export const arrayUnique = <T>(array: T[]): T[] => [...new Set(array)];

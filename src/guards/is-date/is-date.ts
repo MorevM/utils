@@ -3,7 +3,7 @@
  *
  * @param   value   The value being evaluated.
  *
- * @returns           Whether the value is Date object
+ * @returns         Whether the value is Date object
  */
 export const isDate = (value: any): value is Date =>
 	Object.prototype.toString.call(value).includes('Date');

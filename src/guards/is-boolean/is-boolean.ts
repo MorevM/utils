@@ -3,7 +3,7 @@
  *
  * @param   value   The value being evaluated.
  *
- * @returns           Whether the value is Boolean
+ * @returns         Whether the value is Boolean
  */
 export const isBoolean = (value: any): value is boolean =>
 	value === true || value === false;

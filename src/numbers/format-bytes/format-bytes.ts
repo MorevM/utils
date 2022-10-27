@@ -51,7 +51,7 @@ type Options = {
 	 * @param   unit            Calculated unit name
 	 * @param   isInteger       Whether the calculated value is integer number. Mostly used for `i18n` purposes.
 	 *
-	 * @returns                   String representation of return value
+	 * @returns                 String representation of return value
 	 */
 	toString: (value: number, valueAsString: string, unit: string, isInteger: boolean) => string;
 };

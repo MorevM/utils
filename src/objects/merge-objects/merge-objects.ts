@@ -42,7 +42,7 @@ const _mergeObjects = <T extends IObject>(defaults: T, input?: T | null, stack: 
  *
  * @param   merger   Custom merger function
  *
- * @returns            Defaults function with custom merger applied.
+ * @returns          Defaults function with custom merger applied.
  */
 export const createMergeObjects = (merger?: Merger): MergerFn =>
 	(...args) => args.reduce<any>((p, c) => _mergeObjects(p, c, '', merger), {});
@@ -54,6 +54,6 @@ export const createMergeObjects = (merger?: Merger): MergerFn =>
  * @param   defaults   Source object
  * @param   ...input   Custom object(s) to be merged with source or result of previous merge
  *
- * @returns              Merged object.
+ * @returns            Merged object.
  */
 export const mergeObjects = createMergeObjects();

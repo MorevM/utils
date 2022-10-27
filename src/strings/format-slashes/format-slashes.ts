@@ -19,7 +19,7 @@ type FormatSlashesOptions = {
  * @param   input     The input string.
  * @param   options   Formatter options.
  *
- * @returns             Formatted string.
+ * @returns           Formatted string.
  */
 export const formatSlashes = (input: string, options?: Partial<FormatSlashesOptions>): string => {
 	// Remove any duplicated slashes except after `:` (in case https://some.ru/path//)

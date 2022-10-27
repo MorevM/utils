@@ -11,7 +11,7 @@
  *
  * @param   functions   Functions to proccess value with.
  *
- * @returns               Composed function
+ * @returns             Composed function
  */
 export const compose = (...functions: readonly Function[]): any => (value: any) =>
 	[...functions].reverse().reduce((acc, curr) => (acc = curr(acc)), value);

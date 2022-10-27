@@ -5,7 +5,7 @@
  * @param   monthIndex   Index of month (January is 0)
  * @param   year         Year (uses local time year if omitted)
  *
- * @returns                Count of days in given month for year `year` (or local year)
+ * @returns              Count of days in given month for year `year` (or local year)
  */
 export const daysInMonth = (monthIndex: number, year?: number) => {
 	year ??= new Date().getFullYear();

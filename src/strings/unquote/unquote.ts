@@ -3,7 +3,7 @@
  *
  * @param   str   String to unquote.
  *
- * @returns         String without start/end quotes.
+ * @returns       String without start/end quotes.
  */
 export const unquote = (str: string): string => {
 	if (!str) return '';

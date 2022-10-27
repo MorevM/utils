@@ -3,7 +3,7 @@
  *
  * @param   value   The value being evaluated.
  *
- * @returns           Whether the value is `empty`
+ * @returns         Whether the value is `empty`
  */
 import { isArray } from '../is-array/is-array';
 import { isObject } from '../is-object/is-object';

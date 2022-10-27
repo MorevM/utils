@@ -4,7 +4,7 @@
  *
  * @param   str   The value being evaluated.
  *
- * @returns         Whether the value is a valid email address
+ * @returns       Whether the value is a valid email address
  */
 export const isEmail = (str: string): boolean =>
 	// eslint-disable-next-line unicorn/no-unsafe-regex

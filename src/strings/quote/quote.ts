@@ -4,7 +4,7 @@
  * @param   str    String to be quoted.
  * @param   char   Quote character.
  *
- * @returns          Quoted string.
+ * @returns        Quoted string.
  */
 export const quote = (str: string, char: string = '"'): string => {
 	if (str === '') return `${char}${char}`;

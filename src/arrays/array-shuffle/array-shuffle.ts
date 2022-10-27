@@ -3,7 +3,7 @@
  *
  * @param   array
  *
- * @returns           Shuffled array.
+ * @returns         Shuffled array.
  */
 export const arrayShuffle = <T>(array: readonly T[]): T[] => {
 	const copy = [...array];
