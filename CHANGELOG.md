@@ -1,5 +1,13 @@
 
 
+## [1.13.0](https://github.com/MorevM/helpers/compare/v1.12.1...v1.13.0) (2022-10-29)
+
+
+### Features
+
+* **numbers:** Allow to use `clamp` with only lower / upper bound ([2716c3e](https://github.com/MorevM/helpers/commit/2716c3ef0e73876eda7da55dd1f9d1d96b3f01cb))
+
+
 ### [1.12.1](https://github.com/MorevM/helpers/compare/v1.12.0...v1.12.1) (2022-10-27)
 
 ### Bug fixes
