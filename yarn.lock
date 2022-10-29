@@ -1125,18 +1125,18 @@
     conventional-changelog-conventionalcommits "^4.6.3"
     lodash.clonedeep "^4.5.0"
 
-"@morev/eslint-config@^17.6.3":
-  version "17.6.3"
-  resolved "https://registry.yarnpkg.com/@morev/eslint-config/-/eslint-config-17.6.3.tgz#ddac8ea0fd2a0493bf5ff54ef6ce936dd3fb5678"
-  integrity sha512-cqklho3cKbC284bhjTnT4GUvl+lhf3oMlPHlMSgZ5zpPuBrYLma6m980gxYN8dho8pWeWxzUeE+loIiYcrJ6WA==
+"@morev/eslint-config@^18.0.0":
+  version "18.0.0"
+  resolved "https://registry.yarnpkg.com/@morev/eslint-config/-/eslint-config-18.0.0.tgz#9c9ddb207c0cb6c4aacd344fcf9dd2a5ac4ccf92"
+  integrity sha512-N82YjM3Vs0D/kKo/O3CsP7pkQtfun44wKItjGIEtXZ72Ky7BVqcz2v5lwDsILuwJAqpxCVkbiFqnLioRFQwR0g==
   dependencies:
     "@babel/core" "^7.19.6"
     "@babel/eslint-parser" "^7.19.1"
     "@babel/plugin-syntax-jsx" "^7.18.6"
     "@html-eslint/eslint-plugin" "^0.15.0"
     "@html-eslint/parser" "^0.15.0"
-    "@typescript-eslint/eslint-plugin" "^5.40.1"
-    "@typescript-eslint/parser" "^5.40.1"
+    "@typescript-eslint/eslint-plugin" "^5.41.0"
+    "@typescript-eslint/parser" "^5.41.0"
     eslint-import-resolver-typescript "^3.5.2"
     eslint-plugin-chai-friendly "^0.7.2"
     eslint-plugin-cypress "^2.12.1"
@@ -1144,8 +1144,8 @@
     eslint-plugin-import "^2.26.0"
     eslint-plugin-jest "^27.1.3"
     eslint-plugin-jest-formatting "^3.1.0"
-    eslint-plugin-jsdoc "^39.3.14"
-    eslint-plugin-jsonc "^2.4.0"
+    eslint-plugin-jsdoc "^39.3.25"
+    eslint-plugin-jsonc "^2.5.0"
     eslint-plugin-markdownlint "^0.3.4"
     eslint-plugin-no-autofix "^1.2.3"
     eslint-plugin-no-secrets "^0.8.9"
@@ -1585,7 +1585,7 @@
   dependencies:
     "@types/yargs-parser" "*"
 
-"@typescript-eslint/eslint-plugin@^5.40.1":
+"@typescript-eslint/eslint-plugin@^5.41.0":
   version "5.41.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-5.41.0.tgz#f8eeb1c6bb2549f795f3ba71aec3b38d1ab6b1e1"
   integrity sha512-DXUS22Y57/LAFSg3x7Vi6RNAuLpTXwxB9S2nIA7msBb/Zt8p7XqMwdpdc1IU7CkOQUPgAqR5fWvxuKCbneKGmA==
@@ -1599,7 +1599,7 @@
     semver "^7.3.7"
     tsutils "^3.21.0"
 
-"@typescript-eslint/parser@^5.40.1":
+"@typescript-eslint/parser@^5.41.0":
   version "5.41.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-5.41.0.tgz#0414a6405007e463dc527b459af1f19430382d67"
   integrity sha512-HQVfix4+RL5YRWZboMD1pUfFN8MpRH4laziWkkAzyO1fvNOY/uinZcvo3QiFJVS/siNHupV8E5+xSwQZrl6PZA==
@@ -3318,7 +3318,7 @@ eslint-plugin-jest@^27.1.3:
   dependencies:
     "@typescript-eslint/utils" "^5.10.0"
 
-eslint-plugin-jsdoc@^39.3.14:
+eslint-plugin-jsdoc@^39.3.25:
   version "39.3.25"
   resolved "https://registry.yarnpkg.com/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-39.3.25.tgz#a9527ca743c907c5d78bd947a2c2eb8260c2a9cf"
   integrity sha512-7JiFOOaipz7Z7lNQ9sMJ6cdvclmVUwNYtFWGS3a0k0uEFcdZPPD64WOfENuyNHpl86C0AKIEPgOpZby5kd+pew==
@@ -3331,10 +3331,10 @@ eslint-plugin-jsdoc@^39.3.14:
     semver "^7.3.8"
     spdx-expression-parse "^3.0.1"
 
-eslint-plugin-jsonc@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jsonc/-/eslint-plugin-jsonc-2.4.0.tgz#83a0f9a22689492d58514ab0464fa0612dceabc7"
-  integrity sha512-YXy5PjyUL9gFYal6pYijd8P6EmpeWskv7PVhB9Py/AwKPn+hwnQHcIzQILiLfxztfhtWiRIUSzoLe/JThZgSUw==
+eslint-plugin-jsonc@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jsonc/-/eslint-plugin-jsonc-2.5.0.tgz#b0daea12f0927a3bba99557902ce6e0b48c37b4b"
+  integrity sha512-G257khwkrOQ5MJpSzz4yQh5K12W4xFZRcHmVlhVFWh2GCLDX+JwHnmkQoUoFDbOieSPBMsPFZDTJScwrXiWlIg==
   dependencies:
     eslint-utils "^3.0.0"
     jsonc-eslint-parser "^2.0.4"
