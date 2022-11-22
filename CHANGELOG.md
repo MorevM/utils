@@ -1,5 +1,18 @@
 
 
+## [1.14.0](https://github.com/MorevM/helpers/compare/v1.13.0...v1.14.0) (2022-11-22)
+
+
+### Features
+
+* **objects:** Add `objectGet` utility ([f7256b7](https://github.com/MorevM/helpers/commit/f7256b720a905fbd3ae7b0d209284d21631a9a75))
+* **objects:** Add `tsObject` utility ([1575323](https://github.com/MorevM/helpers/commit/15753234e06e4dd91cced337521862c4937c9c90))
+
+
+### Bug fixes
+
+* **types:** ObjectValues returns an Array of values ([9b3b6b1](https://github.com/MorevM/helpers/commit/9b3b6b184ec1ac131e02a3120aa614dceb35ddbb))
+
 ## [1.13.0](https://github.com/MorevM/helpers/compare/v1.12.1...v1.13.0) (2022-10-29)
 
 
