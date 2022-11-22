@@ -5,3 +5,4 @@ export * from './object-get/object-get';
 export * from './object-keys-case/object-keys-case';
 export * from './omit/omit';
 export * from './pick/pick';
+export * from './ts-object/ts-object';
