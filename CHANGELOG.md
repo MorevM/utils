@@ -1,5 +1,17 @@
 
 
+## [1.15.0](https://github.com/MorevM/helpers/compare/v1.14.0...v1.15.0) (2022-11-24)
+
+
+### Features
+
+* **numbers:** Allow string input for `numberFormat`, add fallback to zero in case of wrong input ([f6a6f1d](https://github.com/MorevM/helpers/commit/f6a6f1d9b4d83981bb8e6e6da27136b5cc6c13df))
+
+
+### Bug fixes
+
+* **numbers:** Set non-breaking space as default separator between thousands ([1e83f1b](https://github.com/MorevM/helpers/commit/1e83f1b5b16b36e6dc4d0a9c9234206c46887a38))
+
 ## [1.14.0](https://github.com/MorevM/helpers/compare/v1.13.0...v1.14.0) (2022-11-22)
 
 
