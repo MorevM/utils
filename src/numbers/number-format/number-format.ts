@@ -1,19 +1,22 @@
+import { toNumber } from '../to-number/to-number';
+
 /**
  * Formats a given number with grouped thousands.
  *
- * @param   number               The number being formatted.
- * @param   decimals             The number of decimal points. Default 0.
- * @param   fractionSeparator    The separator for the decimal point. Default `.`.
- * @param   thousandsSeparator   The thousands separator. Default ` `.
+ * @param   numberOrStringRepresentingNumber   The number being formatted.
+ * @param   decimals                           The number of decimal points. Default 0.
+ * @param   fractionSeparator                  The separator for the decimal point. Default `.`.
+ * @param   thousandsSeparator                 The thousands separator. Default ` `.
  *
- * @returns                      Formatted number.
+ * @returns                                    Formatted number.
  */
 export const numberFormat = (
-	number: number,
+	numberOrStringRepresentingNumber: any,
 	decimals: number = 0,
 	fractionSeparator: string = '.',
 	thousandsSeparator: string = ' ',
 ): string => {
+	const number = toNumber(numberOrStringRepresentingNumber, 0);
 	const toFixedFix = () => {
 		const k = 10 ** decimals;
 		return Math.round(number * k) / k;
