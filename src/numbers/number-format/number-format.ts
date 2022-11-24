@@ -12,7 +12,7 @@ export const numberFormat = (
 	number: number,
 	decimals: number = 0,
 	fractionSeparator: string = '.',
-	thousandsSeparator: string = ' ',
+	thousandsSeparator: string = ' ',
 ): string => {
 	const toFixedFix = () => {
 		const k = 10 ** decimals;
