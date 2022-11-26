@@ -1,8 +1,7 @@
 import { isObject } from '../../guards/is-object/is-object';
+import type { PlainObject } from '../../types';
 
-type IObject = Record<string, any>;
-
-type MergeObjects<Source extends IObject, Input extends IObject> = Input extends Source
+type MergeObjects<Source extends PlainObject, Input extends PlainObject> = Input extends Source
 	? Input
 	: (
 		Omit<Source, keyof Source & keyof Input>
@@ -11,16 +10,16 @@ type MergeObjects<Source extends IObject, Input extends IObject> = Input extends
 			-readonly [Key in keyof Source & keyof Input]: Input[Key]
 		});
 
-type MergerFn = <Source extends IObject, Input extends IObject>(
+type MergerFn = <Source extends PlainObject, Input extends PlainObject>(
 	defaults: Source, ...input: Array<Input | null | undefined>
 ) => MergeObjects<Source, Input>;
 
-type Merger = <T extends IObject, K extends keyof T>(
+type Merger = <T extends PlainObject, K extends keyof T>(
 	obj: T, key: keyof T, value: T[K], stack: string
 ) => boolean | undefined;
 
 // Base function to merge objects
-const _mergeObjects = <T extends IObject>(defaults: T, input?: T | null, stack: string = '', merger?: Merger): T => {
+const _mergeObjects = <T extends PlainObject>(defaults: T, input?: T | null, stack: string = '', merger?: Merger): T => {
 	const result = { ...defaults };
 	if (!isObject(input)) return result;
 

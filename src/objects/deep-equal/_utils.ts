@@ -1,11 +1,11 @@
-type IObject = Record<string, any>;
+import type { PlainObject } from '../../types';
 
-const hasOwn = (obj: IObject, prop: string) =>
+const hasOwn = (obj: PlainObject, prop: string) =>
 	Object.prototype.hasOwnProperty.call(obj, prop);
 
 const regExpKeysToCheck = ['source', 'global', 'ignoreCase', 'multiline', 'unicode', 'sticky', 'lastIndex'];
 
-export const areObjectsEqual = (a: IObject, b: IObject, comparator: Function) => {
+export const areObjectsEqual = (a: PlainObject, b: PlainObject, comparator: Function) => {
 	const aKeys = Object.keys(a);
 	let index = aKeys.length;
 
