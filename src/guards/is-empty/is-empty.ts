@@ -5,7 +5,7 @@
  *
  * @returns         Whether the value is `empty`
  */
-import { isArray } from '../is-array/is-array';
+import { isIterable } from '../is-iterable/is-iterable';
 import { isObject } from '../is-object/is-object';
 
 export const isEmpty = (value: any): boolean => {
@@ -13,7 +13,8 @@ export const isEmpty = (value: any): boolean => {
 		return true;
 	}
 
-	if (isArray(value)) return !value.length;
+	if (isIterable(value) && value.length === 0) return true;
+	if (isIterable(value) && value.size === 0) return true;
 	if (isObject(value)) return !Object.keys(value).length;
 
 	return false;
