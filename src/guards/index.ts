@@ -8,6 +8,7 @@ export * from './is-float/is-float';
 export * from './is-form-data/is-form-data';
 export * from './is-function/is-function';
 export * from './is-integer/is-integer';
+export * from './is-iterable/is-iterable';
 export * from './is-map/is-map';
 export * from './is-node/is-node';
 export * from './is-nullish/is-nullish';
