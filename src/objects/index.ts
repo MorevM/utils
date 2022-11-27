@@ -1,3 +1,4 @@
+export * from './deep-clone/deep-clone';
 export * from './deep-equal/deep-equal';
 export * from './form-data-to-object/form-data-to-object';
 export * from './merge-objects/merge-objects';
