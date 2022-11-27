@@ -92,7 +92,9 @@
 		"lint:fix": "eslint \"**/*.{js,ts,json,json5,jsonc,yml,yaml,md}\" --fix",
 		"release": "release-it --disable-metrics"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"fast-equals": "^4.0.3"
+	},
 	"devDependencies": {
 		"@morev/commitlint-config": "^0.1.1",
 		"@morev/eslint-config": "^19.0.1",

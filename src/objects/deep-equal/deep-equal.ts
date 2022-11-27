@@ -1,25 +1,21 @@
-/* eslint-disable no-self-compare */
-import { isArray, isDate, isObject, isRegExp } from '../../guards/index';
-import { areArraysEqual, areObjectsEqual, areRegExpsEqual } from './_utils';
-
-// TODO: [2022-12-15] Sets and maps
+import { deepEqual as _deepEqual, circularDeepEqual } from 'fast-equals';
 
 /**
  * Checks if of two objects are the same data (deep equality).
+ * There is no support for circular objects.
  *
- * @param   a   Value to compare #1
- * @param   b   Value to compare #2
- * @returns     Result of comparing two given values (deep equality)
+ * @param   a   The value to compare #1.
+ * @param   b   The value to compare #2.
+ * @returns     Result of comparing two given values (deep equality).
  */
-export const deepEqual = (a: any, b: any): boolean => {
-	if (a === b) return true;
-	if (isObject(a) && isObject(b)) return areObjectsEqual(a, b, deepEqual);
-	if (isArray(a) && isArray(b)) return areArraysEqual(a, b, deepEqual);
-	if (isRegExp(a) && isRegExp(b)) return areRegExpsEqual(a, b, deepEqual);
-	if (isDate(a) && isDate(b)) {
-		const [d1, d2] = [a, b].map(i => i.getTime());
-		return d1 === d2 || (d1 !== d1 && d2 !== d2);
-	}
+export const deepEqual = (a: unknown, b: unknown) => _deepEqual(a, b);
 
-	return a !== a && b !== b;
-};
+/**
+ * Checks if of two objects are the same data (deep equality).
+ * This version handles circular objects correctly.
+ *
+ * @param   a   The value to compare #1.
+ * @param   b   The value to compare #2.
+ * @returns     Result of comparing two given values (deep equality).
+ */
+export const deepEqualCircular = (a: unknown, b: unknown) => circularDeepEqual(a, b);

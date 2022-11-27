@@ -1,4 +1,4 @@
-import { deepEqual } from './deep-equal';
+import { deepEqual, deepEqualCircular } from './deep-equal';
 
 const fn = () => ({});
 
@@ -270,6 +270,38 @@ describe('deep-equal', () => {
 		});
 	});
 
+	describe('Maps', () => {
+		it('Returns `true` for equal Maps', () => {
+			const a = new Map().set('a', 'a').set('b', 'b');
+			const b = new Map().set('b', 'b').set('a', 'a');
+
+			expect(deepEqual(a, b)).toBe(true);
+		});
+
+		it('Returns `false` for not equal Maps', () => {
+			const a = new Map().set('a', 'a');
+			const b = new Map().set('b', 'b');
+
+			expect(deepEqual(a, b)).toBe(false);
+		});
+	});
+
+	describe('Sets', () => {
+		it('Returns `true` for equal Sets', () => {
+			const a = new Set([1, 2, 3]);
+			const b = new Set([1, 2, 3]);
+
+			expect(deepEqual(a, b)).toBe(true);
+		});
+
+		it('Returns `false` for not equal Sets', () => {
+			const a = new Set([1, 2, 3]);
+			const b = new Set([1, 2, 3, 4]);
+
+			expect(deepEqual(a, b)).toBe(false);
+		});
+	});
+
 	describe('Complex example', () => {
 		const pr = Promise.resolve(123);
 
@@ -283,7 +315,7 @@ describe('deep-equal', () => {
 				},
 				b: [[[1, 'foo', 'bar', { baz: undefined }]]],
 				c: fn,
-				d: { 0: { pr } },
+				d: { 0: { pr }, 1: new Set([1, 2, 3]), 2: new Map().set('a', pr) },
 			};
 			const b = {
 				a: {
@@ -294,7 +326,7 @@ describe('deep-equal', () => {
 				},
 				b: [[[1, 'foo', 'bar', { baz: undefined }]]],
 				c: fn,
-				d: { 0: { pr } },
+				d: { 0: { pr }, 1: new Set([1, 2, 3]), 2: new Map().set('a', pr) },
 			};
 
 			expect(deepEqual(a, b)).toBe(true);
@@ -325,6 +357,17 @@ describe('deep-equal', () => {
 			};
 
 			expect(deepEqual(a, b)).toBe(false);
+		});
+	});
+
+	describe('Circular', () => {
+		it('Correctly handles circular references', () => {
+			const a = { a: { b: { c: {} } } };
+			const b = { a: { b: { c: {} } } };
+			a.a.b.c = a;
+			b.a.b.c = b;
+
+			expect(deepEqualCircular(a, b)).toBe(true);
 		});
 	});
 });
