@@ -1,5 +1,22 @@
 
 
+## [1.16.0](https://github.com/MorevM/helpers/compare/v1.15.0...v1.16.0) (2022-11-27)
+
+
+### Features
+
+* **guards:** Add `isIterable` utility ([8429259](https://github.com/MorevM/helpers/commit/84292599bab413d1519dc49d35a26bca1b3f4a4b))
+* **guards:** Add `isMap` utility ([1608271](https://github.com/MorevM/helpers/commit/16082711b7aeca057cd19fd6204c93f300f275b0))
+* **guards:** Add `isPrimitive` utility ([16bbf87](https://github.com/MorevM/helpers/commit/16bbf87551d4986d7bc31afcc12ffb9d94ac32d9))
+* **guards:** Add `isWeakMap` utility ([9e3b58a](https://github.com/MorevM/helpers/commit/9e3b58ab8332953cff0d5b040d201975669fdb74))
+* **object:** Add `deepClone` and `deepCloneStrict` utilities ([c57114d](https://github.com/MorevM/helpers/commit/c57114d139af70d004099712fe4e60226bf30fdf))
+* **objects:** Extend `deepEqual` to support `Map / Set`, add `deepEqualCircular` utility ([ef37fc7](https://github.com/MorevM/helpers/commit/ef37fc7be8b124694cb5e81af7a9a5496a780634))
+
+### Bug fixes
+
+* **guards:** Take account of Nodelist, HTMLCollection and (Weak)Map/Sets in `isEmpty` utility ([7580a3b](https://github.com/MorevM/helpers/commit/7580a3b76f80fb50228b0ba5e99bfd121a5c5698))
+
+
 ## [1.15.0](https://github.com/MorevM/helpers/compare/v1.14.0...v1.15.0) (2022-11-24)
 
 
