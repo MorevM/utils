@@ -1,11 +1,13 @@
 import { arrayOfLength } from '../../arrays';
 
 /**
- * Generates a random string of given length and (optionally) starting with a latin character
+ * Generates a random string of a given length and (optionally) starting with a latin character
  * (if used to fill `id` of HTMLElement for example)
  *
- * @param   length           The length of result string.
- * @param   startWithLatin   Should string strictly start with latin character or not
+ * @param   length           The length of result string. \
+ *                           Default is `10`.
+ * @param   startWithLatin   Should string strictly start with latin character or not. \
+ *                           Default is `true`.
  *
  * @returns                  Generated string of a given length.
  */
