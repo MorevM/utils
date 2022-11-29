@@ -1,3 +1,4 @@
+export * from './array-of-length/array-of-length';
 export * from './array-range/array-range';
 export * from './array-shuffle/array-shuffle';
 export * from './array-unique/array-unique';
