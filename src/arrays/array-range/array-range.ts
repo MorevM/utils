@@ -1,3 +1,5 @@
+import { arrayOfLength } from '../array-of-length/array-of-length';
+
 /**
  * Returns an array of integers starting from argument `from` and ending with `to` argument. \
  * Returns an array starting from / ending with `0` if single argument is passed.
@@ -17,6 +19,6 @@ export const arrayRange = (from: number, to?: number) => {
 		}
 	}
 
-	return [...new Array(Math.abs(to - from) + 1).keys()]
+	return arrayOfLength(Math.abs(to - from) + 1, (index) => index)
 		.map(i => (from > to ? -i : i) + from);
 };

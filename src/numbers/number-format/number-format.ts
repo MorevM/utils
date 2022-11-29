@@ -1,3 +1,4 @@
+import { arrayOfLength } from '../../arrays';
 import { toNumber } from '../to-number/to-number';
 
 /**
@@ -30,7 +31,7 @@ export const numberFormat = (
 	}
 
 	if (fraction.length < decimals) {
-		fraction += new Array(decimals - fraction.length + 1).join('0');
+		fraction += arrayOfLength(decimals - fraction.length + 1).join('0');
 	}
 
 	return [int, fraction].filter(Boolean).join(fractionSeparator);
