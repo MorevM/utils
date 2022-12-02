@@ -13,6 +13,7 @@ export * from './numbers/math-subtract/math-subtract';
 export * from './numbers/number-range/number-range';
 export * from './objects/except/except';
 export * from './objects/explicit/explicit';
+export * from './objects/merge/merge';
 export * from './objects/object-entries/object-entries';
 export * from './objects/object-keys/object-keys';
 export * from './objects/object-values/object-values';
