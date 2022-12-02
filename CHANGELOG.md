@@ -1,5 +1,14 @@
 
 
+## [1.17.0](https://github.com/MorevM/helpers/compare/v1.16.0...v1.17.0) (2022-12-02)
+
+
+### Features
+
+* **arrays:** Add `arrayInsert` utility ([5e89760](https://github.com/MorevM/helpers/commit/5e897600f559fa5358f77d84e56dae9cbb7bb56d))
+* **arrays:** Add `arrayOfLength` utility ([b3c5402](https://github.com/MorevM/helpers/commit/b3c5402e7f667272f9dd90b6081a3d37a27f07aa))
+* **types:** Add `Merge` type ([90b288b](https://github.com/MorevM/helpers/commit/90b288b9317dc2a214d9e504c05083e5456bd4f8))
+
 ## [1.16.0](https://github.com/MorevM/helpers/compare/v1.15.0...v1.16.0) (2022-11-27)
 
 
