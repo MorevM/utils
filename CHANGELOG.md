@@ -1,5 +1,18 @@
 
 
+## [1.18.0](https://github.com/MorevM/helpers/compare/v1.17.0...v1.18.0) (2022-12-06)
+
+
+### Features
+
+* **arrays:** Add `arraySample` utility ([27fbc61](https://github.com/MorevM/helpers/commit/27fbc611892d608f44faabf018fc7f69231046b5))
+* **functions:** Replace string `hash` utility to `ohash` lib processing any JS value ([489772a](https://github.com/MorevM/helpers/commit/489772af3f226dd16cc436e26ccd929ead9c275b))
+
+
+### Chores
+
+* Upgrade devDeps ([697c37d](https://github.com/MorevM/helpers/commit/697c37d981ddbf435fd9ba0ee7f8dac537a5d2b0))
+
 ## [1.17.0](https://github.com/MorevM/helpers/compare/v1.16.0...v1.17.0) (2022-12-02)
 
 
