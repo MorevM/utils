@@ -3,7 +3,6 @@ export * from './capitalize/capitalize';
 export * from './escape-reg-exp/escape-reg-exp';
 export * from './file-extension/file-extension';
 export * from './format-slashes/format-slashes';
-export * from './hash/hash';
 export * from './kebab-case/kebab-case';
 export * from './pad-end/pad-end';
 export * from './pad-start/pad-start';
