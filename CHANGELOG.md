@@ -1,5 +1,13 @@
 
 
+### [1.18.1](https://github.com/MorevM/helpers/compare/v1.18.0...v1.18.1) (2022-12-11)
+
+
+### Bug fixes
+
+* **objects:** Better typings for `deepClone` utility ([fca506c](https://github.com/MorevM/helpers/commit/fca506c136dbb67be0443283b2c4380d6948cd1f))
+
+
 ## [1.18.0](https://github.com/MorevM/helpers/compare/v1.17.0...v1.18.0) (2022-12-06)
 
 
