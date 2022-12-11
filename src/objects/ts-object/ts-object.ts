@@ -11,7 +11,7 @@ export const tsObject = {
 	 *
 	 * @returns       `Object.keys()` return value for a given object.
 	 */
-	keys: <T extends PlainObject>(obj: T) => Object.keys(obj) as ObjectKeys<Required<T>>,
+	keys: <T extends PlainObject>(obj: T) => Object.keys(obj) as unknown as ObjectKeys<Required<T>>,
 
 	/**
 	 * Typed version of `Object.values()`.
