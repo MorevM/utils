@@ -1,5 +1,17 @@
 
 
+## [1.19.0](https://github.com/MorevM/helpers/compare/v1.18.1...v1.19.0) (2022-12-11)
+
+
+### Features
+
+* **types:** Add `ObjectFromEntries` type and corresponding `tsObject` mapping ([94b52ea](https://github.com/MorevM/helpers/commit/94b52eae4f1999fc9d29b802226a1f4afb5ffa8f))
+
+
+### Bug fixes
+
+* **types:** Improve typings for `tsObject` methods ([5451e23](https://github.com/MorevM/helpers/commit/5451e239157128b6015fca68b12e39c4d173b392))
+
 ### [1.18.1](https://github.com/MorevM/helpers/compare/v1.18.0...v1.18.1) (2022-12-11)
 
 
