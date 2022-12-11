@@ -1,4 +1,5 @@
 import type { ObjectEntries, ObjectKeys, ObjectValues, PlainObject } from '../../types';
+import type { ObjectFromEntries } from '../../types/objects/object-from-entries/object-from-entries';
 
 /**
  * Object containing typed versions of popular `Object` methods.
@@ -30,4 +31,14 @@ export const tsObject = {
 	 * @returns       `Object.entries()` return value for a given object.
 	 */
 	entries: <T extends PlainObject>(obj: T) => Object.entries(obj) as ObjectEntries<Required<T>>,
+
+	/**
+	 * Typed version of `Object.fromEntries()`.
+	 *
+	 * @param   entries   Entries to process.
+	 *
+	 * @returns           `Object.fromEntries()` return value for a given object.
+	 */
+	fromEntries: <Key extends PropertyKey, Entries extends ReadonlyArray<readonly [Key, unknown]>>(entries: Entries) =>
+		Object.fromEntries(entries) as ObjectFromEntries<Key, Entries>,
 };
