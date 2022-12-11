@@ -10,7 +10,7 @@ import copy, { copyStrict } from 'fast-copy';
  *
  * @returns         The structured clone of a given value.
  */
-export const deepClone = (value: unknown) => copy(value);
+export const deepClone = <T>(value: T) => copy(value);
 
 /**
  * Copies a value deeply considering property descriptors,
@@ -22,4 +22,4 @@ export const deepClone = (value: unknown) => copy(value);
  *
  * @returns         The structured clone of a given value.
  */
-export const deepCloneStrict = (value: unknown) => copyStrict(value);
+export const deepCloneStrict = <T>(value: T) => copyStrict(value);
