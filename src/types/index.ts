@@ -15,6 +15,7 @@ export * from './objects/except/except';
 export * from './objects/explicit/explicit';
 export * from './objects/merge/merge';
 export * from './objects/object-entries/object-entries';
+export * from './objects/object-from-entries/object-from-entries';
 export * from './objects/object-keys/object-keys';
 export * from './objects/object-values/object-values';
 export * from './objects/partial-optional/partial-optional';
