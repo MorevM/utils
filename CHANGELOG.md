@@ -1,5 +1,12 @@
 
 
+### [1.19.1](https://github.com/MorevM/helpers/compare/v1.19.0...v1.19.1) (2022-12-11)
+
+
+### Bug fixes
+
+* **types:** Add missing `ObjectFromEntries` export ([78c7bb3](https://github.com/MorevM/helpers/commit/78c7bb3783ae75c4a2acfe263f7c0494782c0565))
+
 ## [1.19.0](https://github.com/MorevM/helpers/compare/v1.18.1...v1.19.0) (2022-12-11)
 
 
