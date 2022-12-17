@@ -1,5 +1,13 @@
 
 
+### [1.19.2](https://github.com/MorevM/helpers/compare/v1.19.1...v1.19.2) (2022-12-17)
+
+
+### Bug fixes
+
+* **typescript:** Return type of `tsObject.keys` ([470c747](https://github.com/MorevM/helpers/commit/470c74792ca89250c49bca4d758690cdf2830e46))
+
+
 ### [1.19.1](https://github.com/MorevM/helpers/compare/v1.19.0...v1.19.1) (2022-12-11)
 
 
