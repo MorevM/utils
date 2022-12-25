@@ -3,5 +3,8 @@
  *
  * @returns   Whether the application runs in development node.
  */
-export const isDev = () =>
-	process.env.NODE_ENV === 'development';
+export const isDev = (): boolean | null => {
+	if (typeof process === 'undefined') return null;
+
+	return 	process.env.NODE_ENV === 'development';
+};
