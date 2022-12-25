@@ -29,54 +29,6 @@
 		".": {
 			"import": "./dist/index.mjs",
 			"require": "./dist/index.js"
-		},
-		"./arrays": {
-			"import": "./dist/arrays/index.mjs",
-			"require": "./dist/arrays/index.js"
-		},
-		"./dates": {
-			"import": "./dist/dates/index.mjs",
-			"require": "./dist/dates/index.js"
-		},
-		"./dom": {
-			"import": "./dist/dom/index.mjs",
-			"require": "./dist/dom/index.js"
-		},
-		"./environment": {
-			"import": "./dist/environment/index.mjs",
-			"require": "./dist/environment/index.js"
-		},
-		"./functions": {
-			"import": "./dist/functions/index.mjs",
-			"require": "./dist/functions/index.js"
-		},
-		"./guards": {
-			"import": "./dist/guards/index.mjs",
-			"require": "./dist/guards/index.js"
-		},
-		"./numbers": {
-			"import": "./dist/numbers/index.mjs",
-			"require": "./dist/numbers/index.js"
-		},
-		"./objects": {
-			"import": "./dist/objects/index.mjs",
-			"require": "./dist/objects/index.js"
-		},
-		"./promises": {
-			"import": "./dist/promises/index.mjs",
-			"require": "./dist/promises/index.js"
-		},
-		"./ranges": {
-			"import": "./dist/ranges/index.mjs",
-			"require": "./dist/ranges/index.js"
-		},
-		"./strings": {
-			"import": "./dist/strings/index.mjs",
-			"require": "./dist/strings/index.js"
-		},
-		"./types": {
-			"import": "./dist/types/index.mjs",
-			"require": "./dist/types/index.js"
 		}
 	},
 	"main": "dist/index.js",
