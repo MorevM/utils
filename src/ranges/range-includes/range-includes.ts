@@ -17,7 +17,7 @@ export const rangeIncludes = (
 	mode: 'all' | 'any' = 'any',
 ) => {
 	const method = mode === 'all' ? 'every' : 'some';
-	return ranges[method](([min, max]) => {
+	return (ranges ?? [])[method](([min, max]) => {
 		if (!isNullish(min) && value < min) return false;
 		// eslint-disable-next-line sonarjs/prefer-single-boolean-return
 		if (!isNullish(max) && value > max) return false;

@@ -155,7 +155,7 @@ class FormatBytes {
 			: referenceTable.find(i => i.prefix === options.to) ?? referenceTable[0];
 		const { from, prefix } = entry;
 
-		const unitsReferenceTable = mergeObjects(UNITS_DEFAULTS, options.customUnits);
+		const unitsReferenceTable = mergeObjects(UNITS_DEFAULTS, options.customUnits) as typeof UNITS_DEFAULTS;
 		const unit = unitsReferenceTable[options.mode][prefix];
 
 

@@ -5,5 +5,5 @@
  *
  * @returns       The escaped string.
  */
-export const escapeRegExp = (str: string) =>
-	(str || '').replace(/[$()*+.?[\\\]^{|}]/g, '\\$&');
+export const escapeRegExp = (str: string | null | undefined) =>
+	(str ?? '').replace(/[$()*+.?[\\\]^{|}]/g, '\\$&');

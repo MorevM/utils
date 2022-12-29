@@ -16,8 +16,8 @@ export const promiseController = <T>(): PromiseController<T> => {
 		reject = _reject;
 	}) as PromiseController<T>;
 
-	promise.resolve = resolve;
-	promise.reject = reject;
+	promise.resolve = resolve as unknown as PromiseController<T>['resolve'];
+	promise.reject = reject as unknown as PromiseController<T>['reject'];
 
 	return promise;
 };

@@ -38,21 +38,21 @@ describe('get-element-offset', () => {
 	});
 
 	it('Returns the viewport-relative offset value of a given element by x-axis if `axis` argument value is `x`', () => {
-		const el = document.querySelector(SELECTOR);
+		const el = document.querySelector(SELECTOR) as Element;
 		mockGetBoundingClientRect(el, { x: 100, y: 200 });
 
 		expect(getElementOffset(el, 'x')).toBe(100);
 	});
 
 	it('Returns the viewport-relative offset value of a given element by y-axis if `axis` argument value is `y`', () => {
-		const el = document.querySelector(SELECTOR);
+		const el = document.querySelector(SELECTOR) as Element;
 		mockGetBoundingClientRect(el, { x: 100, y: 200 });
 
 		expect(getElementOffset(el, 'y')).toBe(200);
 	});
 
 	it('Returns the viewport-relative offset value of a given element by both axis if `axis` argument is omitted', () => {
-		const el = document.querySelector(SELECTOR);
+		const el = document.querySelector(SELECTOR) as Element;
 		mockGetBoundingClientRect(el, { x: 100, y: 200 });
 
 		expect(getElementOffset(el)).toStrictEqual({
@@ -62,7 +62,7 @@ describe('get-element-offset', () => {
 	});
 
 	it('Considers the current scroll value', () => {
-		const el = document.querySelector(SELECTOR);
+		const el = document.querySelector(SELECTOR) as Element;
 		mockGetBoundingClientRect(el, { x: 100, y: 200 });
 
 		window.scrollX = 400;
@@ -75,7 +75,7 @@ describe('get-element-offset', () => {
 	});
 
 	it('Considers the custom parent element', () => {
-		const el = document.querySelector(SELECTOR);
+		const el = document.querySelector(SELECTOR) as Element;
 		mockGetBoundingClientRect(el, { x: 100, y: 200 });
 		const inner = document.createElement('div');
 		mockGetBoundingClientRect(inner, { x: 150, y: 250 });
@@ -88,9 +88,10 @@ describe('get-element-offset', () => {
 	});
 
 	it('Uses the `window.page(X|Y)Offset` as fallbacks for `window.scroll(X|Y)` in old browsers', () => {
-		const el = document.querySelector(SELECTOR);
+		const el = document.querySelector(SELECTOR) as Element;
 		mockGetBoundingClientRect(el, { x: 100, y: 200 });
 
+		/* @ts-expect-error -- Edge case */
 		window.scrollX = window.scrollY = undefined;
 
 		window.pageXOffset = 400;
@@ -103,9 +104,10 @@ describe('get-element-offset', () => {
 	});
 
 	it('Correctly outputs with single argument', () => {
-		const el = document.querySelector(SELECTOR);
+		const el = document.querySelector(SELECTOR) as Element;
 		mockGetBoundingClientRect(el, { x: 100, y: 200 });
 
+		/* @ts-expect-error -- Edge case */
 		window.scrollX = window.scrollY = undefined;
 
 		window.pageXOffset = 400;

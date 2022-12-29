@@ -1,5 +1,6 @@
 import { isPrimitive } from './is-primitive';
 
+/* @ts-expect-error -- Edge case */
 class Foo { private readonly foo: string; }
 // eslint-disable-next-line func-style, @typescript-eslint/no-empty-function
 function func() {}

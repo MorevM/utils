@@ -22,17 +22,18 @@ export const rangesCrop = (
 	if (isEmpty(ranges)) return [];
 	if (isNullish(start)) start = -Infinity;
 	if (isNullish(end)) end = +Infinity;
+	// `start` and `end` cannot be `null` here since previous 2 lines.
 
 	return rangesMerge(ranges)
 		.map(range => [
 			isNullish(range[0]) ? -Infinity : range[0],
 			isNullish(range[1]) ? +Infinity : range[1],
 		])
-		.filter(range => range[1] >= start && range[0] <= end)
+		.filter(range => range[1] >= start! && range[0] <= end!)
 		.map(range => {
 			let [first, second] = range;
-			if (first < start) first = start;
-			if (second > end) second = end;
+			if (first < start!) first = start!;
+			if (second > end!) second = end!;
 
 			return [
 				formatInfinity(first, infinityToNull),

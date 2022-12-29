@@ -13,8 +13,8 @@ export const isEmpty = (value: any): boolean => {
 		return true;
 	}
 
-	if (isIterable(value) && value.length === 0) return true;
-	if (isIterable(value) && value.size === 0) return true;
+	if (isIterable(value) && typeof value === 'object' && 'length' in value && value.length === 0) return true;
+	if (isIterable(value) && typeof value === 'object' && 'size' in value && value.size === 0) return true;
 	if (isObject(value)) return !Object.keys(value).length;
 
 	return false;

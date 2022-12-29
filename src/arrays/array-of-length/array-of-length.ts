@@ -18,5 +18,5 @@ export const arrayOfLength = <T = undefined>(
 
 	// The value is always `undefined` in this situation,
 	// so it can be omitted from the public signature.
-	return Array.from({ length: neededLength }, (_, index) => mapFn(index));
+	return Array.from({ length: neededLength }, (_, index) => mapFn(index)) as T[];
 };

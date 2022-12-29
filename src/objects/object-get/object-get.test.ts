@@ -53,6 +53,7 @@ describe('object-get', () => {
 		expect(objectGet(s, ['d.da.0'])).toBeUndefined();
 		expect(objectGet(null, ['d.da.0'])).toBeUndefined();
 		expect(objectGet(null, [''])).toBeUndefined();
+		/* @ts-expect-error -- Edge case */
 		expect(objectGet(s, null)).toBeUndefined();
 	});
 
@@ -60,6 +61,7 @@ describe('object-get', () => {
 		expect(objectGet(s, ['d.da.0'], 1)).toBe(1);
 		expect(objectGet(null, ['d.da.0'], true)).toBe(true);
 		expect(objectGet(null, [''], null)).toBeNull();
+		/* @ts-expect-error -- Edge case */
 		expect(objectGet(s, null, 'foo')).toBe('foo');
 	});
 

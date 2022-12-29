@@ -6,19 +6,20 @@ import type { Range } from '../utils';
 import { formatInfinity } from '../utils';
 
 export const rangesInvert = (
-	ranges: Array<Range | null>,
+	ranges: Array<Range | null> | null,
 	start: number | null = null,
 	end: number | null = null,
 	infinityToNull: boolean = false,
 ) => {
 	if (isNullish(start)) start = -Infinity;
 	if (isNullish(end)) end = +Infinity;
+	// `start` and `end` cannot be `null` since the top two lines of code.
 
 	return rangesCrop(
-		rangesMerge(ranges).reduce((acc, range, i, arr) => {
-			const res = [];
+		rangesMerge(ranges).reduce<Range[]>((acc, range, i, arr) => {
+			const res: Range[] = [];
 
-			if (i === 0 && arr[0][0] > start) {
+			if (i === 0 && arr[0][0]! > start!) {
 				res.push([
 					formatInfinity(start, infinityToNull),
 					formatInfinity(arr[0][0], infinityToNull),
@@ -26,9 +27,9 @@ export const rangesInvert = (
 			}
 
 			const tail = i < arr.length - 1 ? arr[i + 1][0] : end;
-			if (!rangeIncludes(end, [range])) {
+			if (!rangeIncludes(end!, [range])) {
 				res.push([
-					formatInfinity(range[1] > start ? range[1] : start, infinityToNull),
+					formatInfinity((range[1] ?? -Infinity) > start! ? range[1] : start, infinityToNull),
 					formatInfinity(tail, infinityToNull),
 				]);
 			}

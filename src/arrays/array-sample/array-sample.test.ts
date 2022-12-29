@@ -7,7 +7,7 @@ import { arraySample } from './array-sample';
 
 const input = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const runTimes = (times: number, fn: Function) => {
-	return arrayOfLength(times).reduce((acc, curr) => {
+	return arrayOfLength(times).reduce<any[]>((acc, curr) => {
 		acc.push(fn());
 		return acc;
 	}, []);
@@ -36,7 +36,7 @@ describe('array-sample', () => {
 		const runs = runTimes(1000, () => {
 			const length = randomInteger(2, input.length - 1);
 			const sample = arraySample(input, length);
-			return sample.length === length && sample.every(el => input.includes(el));
+			return sample.length === length && sample.every((el: any) => input.includes(el));
 		});
 
 		expect(runs).not.toContain(false);

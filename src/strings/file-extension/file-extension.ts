@@ -6,6 +6,6 @@
  * @returns         File extension (without leading dot) or `null`
  */
 export const fileExtension = (input: string): string | null => {
-	const basePath = input.split(/[/\\]/).pop();
+	const basePath = input.split(/[/\\]/).pop()!; // `!` - an empty string in any case
 	return basePath.slice((Math.max(0, basePath.lastIndexOf('.')) || Infinity) + 1) || null;
 };
