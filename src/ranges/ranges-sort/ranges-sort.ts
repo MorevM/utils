@@ -16,7 +16,13 @@ const comparator = (a: AllowedInTuple, b: AllowedInTuple) => {
 	return 0;
 };
 
-// TODO: [2020-10-10]
+/**
+ * Sorts given ranges.
+ *
+ * @param   ranges   An array of ranges.
+ *
+ * @returns          Sorted ranges or an empty array for invalid input.
+ */
 export const rangesSort = (ranges: Array<Range | null> | null | undefined): Range[] => {
 	return [...(ranges ?? [])].filter(r => r !== null).sort((r1, r2) => {
 		// These values are filtered in the upper line.

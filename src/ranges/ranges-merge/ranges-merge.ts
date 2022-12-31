@@ -2,7 +2,14 @@ import { isNullish } from '../../guards';
 import { rangesSort } from '../ranges-sort/ranges-sort';
 import type { Range } from '../utils';
 
-// TODO: [2020-10-10]
+/**
+ * Sorts and merges given ranges.
+ *
+ * @param   ranges      An array of ranges.
+ * @param   joinEdges   Whether to combine ranges if they are contiguous.
+ *
+ * @returns             Sorted and merged ranges or an empty array for invalid input.
+ */
 export const rangesMerge = (ranges: Array<Range | null> | null | undefined, joinEdges = true): Range[] => {
 	const sorted = rangesSort(ranges)
 		.map(r => [
