@@ -1,3 +1,4 @@
+export * from './assert/assert';
 export * from './compose/compose';
 export * from './debounce/debounce';
 export * from './hash/hash';
