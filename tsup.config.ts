@@ -4,7 +4,7 @@ export const tsup: Options = {
 	splitting: false,
 	sourcemap: false,
 	clean: true,
-	target: 'node12',
+	target: 'esnext',
 	format: ['cjs', 'esm'],
 	dts: true,
 	entryPoints: ['src/index.ts'],
