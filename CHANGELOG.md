@@ -1,5 +1,49 @@
 
 
+## [2.0.0](https://github.com/MorevM/utils/compare/v1.19.2...v2.0.0) (2022-12-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* The package has been renamed from `@morev/helpers` to `@morev/utils`
+* The package is no longer transpiled. If you need to support a legacy environment, transpile the library on your side.
+* **types:** Some of existed TS types have been replaced with their `type-fest` analogues. \
+  While they should continue to work as before, potentially there can be a changes in these types: `Class`, `Constructor`, `Except`, `ElementOf`, `LiteralUnion`, `Merge`, `Primitive`, `Awaitable`, `PartialOptional`, `PartialRequired`.
+* Utility `inRange` was removed for better naming consistency accross the groups. \
+  Use `rangeIncludes` instead. Note that the function signature has been slightly changed.
+* Named exports such as `@morev/helpers/types`, `@morev/helpers/arrays` are no longer available. Make sure you import utilities from the package root.
+
+### Features
+
+* **functions:** Add `assert` utility ([3f9dccc](https://github.com/MorevM/utils/commit/3f9dccc50fb829ebf761baa55ed4017c3606ed86))
+* **ranges:** Support `undefined` type of `ranges` argument ([334e020](https://github.com/MorevM/utils/commit/334e020d054becb9ee477384c1884f8de7545fca))
+* **strings:** Utility `unquote` should handle backticks as well ([9b37f94](https://github.com/MorevM/utils/commit/9b37f94073769a74cd4e6be3e7164c12d3d37ed6))
+* **types:** Add/replace a lot of types with `type-fest` ([2fc25ae](https://github.com/MorevM/utils/commit/2fc25aedc9b03cf634ed6bc67ae96708ac74799f))
+
+
+### Bug fixes
+
+* Make `isDev` and `isProd` safe for client-side code ([4a3e9bb](https://github.com/MorevM/utils/commit/4a3e9bbf9c00d18524dd8aa19a885aaed5c8bc1e))
+
+
+### Documentation
+
+* **guards:** JSDoc for `isIterable` utility ([2e04df3](https://github.com/MorevM/utils/commit/2e04df35bd1459f20397c56ebb6e8b2502d9e683))
+* **ranges:** Add missed JSDoc to methods in the `range` category ([0b7cbb7](https://github.com/MorevM/utils/commit/0b7cbb730f3ad3b3bb1d1a9a8b58cda7af3b03ad))
+
+
+### Chores
+
+* Add `README.md` boilerplate ([7c020ad](https://github.com/MorevM/utils/commit/7c020ad364b2ea3b7626514306b384ce75633e26))
+* Remove the package exports except root ([645619a](https://github.com/MorevM/utils/commit/645619a1ff6c82fdf634ddd7c2faa2dd1b688dbb))
+* Rename the package from `@morev/helpers` to `@morev/utils` ([7ed87b5](https://github.com/MorevM/utils/commit/7ed87b5a4c3e9288fe2fbc9b075855a5d9db4a9d))
+* Set `target` to `esnext` ([9d3bdd1](https://github.com/MorevM/utils/commit/9d3bdd1b7d1c9455be77c7fc48a8152a588596d3))
+
+
+### Refactoring
+
+* Remove `inRange` utility (replaced with `rangeIncludes`) ([dc7d477](https://github.com/MorevM/utils/commit/dc7d47791b8074dba2889a4474d92f4bf892fe47))
+
 ### [1.19.2](https://github.com/MorevM/utils/compare/v1.19.1...v1.19.2) (2022-12-17)
 
 
