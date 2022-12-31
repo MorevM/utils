@@ -12,5 +12,5 @@ export const isLighthouse = (userAgent?: string): boolean => {
 		userAgent = window.navigator.userAgent;
 	}
 	return ['Lighthouse', 'Page Speed', 'PageSpeed']
-		.some(part => (userAgent || '').includes(part));
+		.some(part => (userAgent ?? '').includes(part));
 };
