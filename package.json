@@ -1,7 +1,7 @@
 {
-	"name": "@morev/helpers",
-	"description": "JS helpers library",
-	"version": "1.19.2",
+	"name": "@morev/utils",
+	"description": "Collection of JavaScript / TypeScript utilities",
+	"version": "1.0.0",
 	"private": false,
 	"license": "MIT",
 	"publishConfig": {
@@ -12,15 +12,18 @@
 		"name": "Maxim Morev",
 		"email": "max.seainside@gmail.com"
 	},
-	"homepage": "https://github.com/MorevM/helpers#readme",
+	"homepage": "https://github.com/MorevM/utils#readme",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/MorevM/helpers"
+		"url": "https://github.com/MorevM/utils"
 	},
 	"keywords": [
-		"helpers",
 		"javascript",
-		"js"
+		"typescript",
+		"js",
+		"ts",
+		"utils",
+		"utilities"
 	],
 	"files": [
 		"dist"
