@@ -1,5 +1,5 @@
 import { assert } from '../../functions';
-import { isNullish } from '../../guards';
+import { isNullish, isNumeric } from '../../guards';
 
 type AllowedInTuple = number | null | undefined;
 type Range = [AllowedInTuple, AllowedInTuple];
@@ -9,7 +9,7 @@ const comparator = (a: AllowedInTuple, b: AllowedInTuple) => {
 	if (isNullish(a) && !isNullish(b)) return -1;
 	if (!isNullish(a) && isNullish(b)) return 1;
 	// Three lines above cover all cases so I'm sure.
-	[a, b] = [assert(a), assert(b)];
+	assert(isNumeric(a) && isNumeric(b));
 
 	if (a < b) return -1;
 	if (a > b) return 1;
@@ -17,7 +17,7 @@ const comparator = (a: AllowedInTuple, b: AllowedInTuple) => {
 };
 
 // TODO: [2020-10-10]
-export const rangesSort = (ranges: Array<Range | null> | null): Range[] => {
+export const rangesSort = (ranges: Array<Range | null> | null | undefined): Range[] => {
 	return [...(ranges ?? [])].filter(r => r !== null).sort((r1, r2) => {
 		// These values are filtered in the upper line.
 		assert(!isNullish(r1) && !isNullish(r2));

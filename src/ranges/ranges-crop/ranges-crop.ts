@@ -14,7 +14,7 @@ import { formatInfinity } from '../utils';
  * @returns                  The array of cropped ranges.
  */
 export const rangesCrop = (
-	ranges: Range[] | null,
+	ranges: Range[] | null | undefined,
 	start: number | null = null,
 	end: number | null = null,
 	infinityToNull: boolean = false,

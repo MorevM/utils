@@ -3,7 +3,7 @@ import { rangesSort } from '../ranges-sort/ranges-sort';
 import type { Range } from '../utils';
 
 // TODO: [2020-10-10]
-export const rangesMerge = (ranges: Array<Range | null> | null, joinEdges = true): Range[] => {
+export const rangesMerge = (ranges: Array<Range | null> | null | undefined, joinEdges = true): Range[] => {
 	const sorted = rangesSort(ranges)
 		.map(r => [
 			isNullish(r[0]) ? -Infinity : r[0],
