@@ -1,5 +1,13 @@
 
 
+### [2.0.1](https://github.com/MorevM/utils/compare/v2.0.0...v2.0.1) (2023-01-03)
+
+
+### Bug fixes
+
+* **ranges:** Mark range arguments as `readonly` ([b33c38b](https://github.com/MorevM/utils/commit/b33c38b48cc77478212286d855153f433141b20a))
+* **ranges:** Strip `undefined` from return values ([860830d](https://github.com/MorevM/utils/commit/860830db7c7763d5306f5073cd32e47adb1261cb))
+
 ## [2.0.0](https://github.com/MorevM/utils/compare/v1.19.2...v2.0.0) (2022-12-31)
 
 
