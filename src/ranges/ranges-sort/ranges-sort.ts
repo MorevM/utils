@@ -1,10 +1,9 @@
 import { assert } from '../../functions';
 import { isNullish, isNumeric } from '../../guards';
+import type { ElementOf } from '../../types';
+import type { Range } from '../utils';
 
-type AllowedInTuple = number | null | undefined;
-type Range = [AllowedInTuple, AllowedInTuple];
-
-const comparator = (a: AllowedInTuple, b: AllowedInTuple) => {
+const comparator = (a: ElementOf<Range>, b: ElementOf<Range>) => {
 	if (isNullish(a) && isNullish(b)) return 0;
 	if (isNullish(a) && !isNullish(b)) return -1;
 	if (!isNullish(a) && isNullish(b)) return 1;
