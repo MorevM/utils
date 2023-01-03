@@ -2,7 +2,7 @@ import { isNullish } from '../../guards';
 import { rangeIncludes } from '../range-includes/range-includes';
 import { rangesCrop } from '../ranges-crop/ranges-crop';
 import { rangesMerge } from '../ranges-merge/ranges-merge';
-import type { Range } from '../utils';
+import type { OutputRange, Range } from '../utils';
 import { formatInfinity } from '../utils';
 
 export const rangesInvert = (
@@ -10,7 +10,7 @@ export const rangesInvert = (
 	start: number | null = null,
 	end: number | null = null,
 	infinityToNull: boolean = false,
-) => {
+): OutputRange[] => {
 	if (isNullish(start)) start = -Infinity;
 	if (isNullish(end)) end = +Infinity;
 	// `start` and `end` cannot be `null` since the top two lines of code.

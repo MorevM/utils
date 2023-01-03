@@ -1,6 +1,6 @@
 import { isEmpty, isNullish } from '../../guards';
 import { rangesMerge } from '../ranges-merge/ranges-merge';
-import type { Range } from '../utils';
+import type { OutputRange, Range } from '../utils';
 import { formatInfinity } from '../utils';
 
 /**
@@ -18,7 +18,7 @@ export const rangesCrop = (
 	start: number | null = null,
 	end: number | null = null,
 	infinityToNull: boolean = false,
-) => {
+): OutputRange[] => {
 	if (isEmpty(ranges)) return [];
 	if (isNullish(start)) start = -Infinity;
 	if (isNullish(end)) end = +Infinity;

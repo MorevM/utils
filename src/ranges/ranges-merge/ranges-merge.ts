@@ -1,6 +1,6 @@
 import { isNullish } from '../../guards';
 import { rangesSort } from '../ranges-sort/ranges-sort';
-import type { Range } from '../utils';
+import type { OutputRange, Range } from '../utils';
 
 /**
  * Sorts and merges given ranges.
@@ -10,7 +10,7 @@ import type { Range } from '../utils';
  *
  * @returns             Sorted and merged ranges or an empty array for invalid input.
  */
-export const rangesMerge = (ranges: Array<Range | null> | null | undefined, joinEdges = true): Range[] => {
+export const rangesMerge = (ranges: Array<Range | null> | null | undefined, joinEdges = true): OutputRange[] => {
 	const sorted = rangesSort(ranges)
 		.map(r => [
 			isNullish(r[0]) ? -Infinity : r[0],
