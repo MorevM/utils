@@ -30,12 +30,12 @@
 	],
 	"exports": {
 		".": {
-			"import": "./dist/index.mjs",
-			"require": "./dist/index.js"
+			"import": "./dist/index.esm.js",
+			"require": "./dist/index.cjs.js"
 		}
 	},
-	"main": "dist/index.js",
-	"module": "dist/index.mjs",
+	"main": "dist/index.cjs.js",
+	"module": "dist/index.esm.js",
 	"types": "dist/index.d.ts",
 	"scripts": {
 		"prepare": "husky install ./.husky",
