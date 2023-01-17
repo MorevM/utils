@@ -1,5 +1,12 @@
 
 
+### [2.0.3](https://github.com/MorevM/utils/compare/v2.0.2...v2.0.3) (2023-01-17)
+
+
+### Chores
+
+* Mark the package as ESM with `type: "module"` ([cf39753](https://github.com/MorevM/utils/commit/cf3975302c20d8c8a2b2ca5be4a863ade3e65ec9))
+
 ### [2.0.2](https://github.com/MorevM/utils/compare/v2.0.1...v2.0.2) (2023-01-17)
 
 
