@@ -51,7 +51,7 @@
 		"fast-copy": "^3.0.0",
 		"fast-equals": "^4.0.3",
 		"ohash": "^1.0.0",
-		"type-fest": "^3.5.0"
+		"type-fest": "^3.5.2"
 	},
 	"devDependencies": {
 		"@morev/commitlint-config": "^0.1.1",
