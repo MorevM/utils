@@ -1,5 +1,14 @@
 
 
+### [2.0.2](https://github.com/MorevM/utils/compare/v2.0.1...v2.0.2) (2023-01-17)
+
+
+### Chores
+
+* bump type-fest from 3.5.0 to 3.5.2 ([5d03b49](https://github.com/MorevM/utils/commit/5d03b49ff3d4c08eb1f07bc7c6aa0e19a84f33cd))
+* Change the extension of build files ([b24b6cc](https://github.com/MorevM/utils/commit/b24b6ccde25474d66b633be023416f2a77421595))
+* Upgrade devDeps ([3dc2f11](https://github.com/MorevM/utils/commit/3dc2f11808a5705ca39e1ea2671a429f07ed65ed))
+
 ### [2.0.1](https://github.com/MorevM/utils/compare/v2.0.0...v2.0.1) (2023-01-03)
 
 
