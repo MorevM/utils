@@ -39,6 +39,6 @@ export const tsObject = {
 	 *
 	 * @returns           `Object.fromEntries()` return value for a given object.
 	 */
-	fromEntries: <Key extends PropertyKey, Entries extends ReadonlyArray<readonly [Key, unknown]>>(entries: Entries) =>
+	fromEntries: <Key extends PropertyKey, Entries extends ReadonlyArray<readonly [Key, any]>>(entries: Entries) =>
 		Object.fromEntries(entries) as ObjectFromEntries<Key, Entries>,
 };

@@ -5,5 +5,5 @@ import type { ObjectKeys } from '../object-keys/object-keys';
  * Suitable for typing `Object.entries()`
  */
 export type ObjectEntries<
-	Type extends Record<PropertyKey, unknown>,
+	Type extends Record<PropertyKey, any>,
 > = Array<[ObjectKeys<Type>, Type[ObjectKeys<Type>]]>;

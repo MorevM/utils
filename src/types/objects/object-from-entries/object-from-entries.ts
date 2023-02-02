@@ -4,7 +4,7 @@
  */
 export type ObjectFromEntries<
 	Key extends PropertyKey,
-	Entries extends ReadonlyArray<readonly [Key, unknown]>,
+	Entries extends ReadonlyArray<readonly [Key, any]>,
 > = {
-	[K in Extract<Entries[number], readonly [Key, unknown]>[0]]: Extract<Entries[number], readonly [K, unknown]>[1]
+	[K in Extract<Entries[number], readonly [Key, any]>[0]]: Extract<Entries[number], readonly [K, any]>[1]
 };

@@ -5,6 +5,6 @@
  *
  * @returns         Whether the value is `Iterable`.
  */
-export const isIterable = (value: any): value is Iterable<unknown> =>
+export const isIterable = (value: any): value is Iterable<any> =>
 	// eslint-disable-next-line unicorn/new-for-builtins
 	Symbol.iterator in Object(value);

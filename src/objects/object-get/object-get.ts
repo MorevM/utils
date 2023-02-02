@@ -35,7 +35,6 @@ export const objectGet = (
 	while (segments.length) {
 		const property = segments.shift() as string | number;
 		if (!(property in result)) return defaultValue;
-		/* @ts-expect-error -- Line above */
 		result = result[property];
 	}
 
