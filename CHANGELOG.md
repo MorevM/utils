@@ -1,5 +1,17 @@
 
 
+### [2.0.4](https://github.com/MorevM/utils/compare/v2.0.3...v2.0.4) (2023-02-02)
+
+
+### Bug fixes
+
+* Soften some types from `unknown` to `any` ([e99d730](https://github.com/MorevM/utils/commit/e99d7301ba2366982a1b6496c31cd268d1236260))
+
+
+### Chores
+
+* bump type-fest from 3.5.2 to 3.5.4 ([dcee056](https://github.com/MorevM/utils/commit/dcee0565a0509a0cc0c8c8a13b846f1da23a1384))
+
 ### [2.0.3](https://github.com/MorevM/utils/compare/v2.0.2...v2.0.3) (2023-01-17)
 
 
