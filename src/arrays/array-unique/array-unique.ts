@@ -8,4 +8,4 @@
  *
  * @returns         Array without any duplicated values
  */
-export const arrayUnique = <T>(array: T[]): T[] => [...new Set(array)];
+export const arrayUnique = <T = any>(array: T[]): T[] => [...new Set(array)];

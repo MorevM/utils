@@ -8,5 +8,5 @@
  *
  * @returns          Union of arrays
  */
-export const arraysUnion = <T>(...arrays: T[][]): T[] =>
+export const arraysUnion = <T = any>(...arrays: T[][]): T[] =>
 	[...new Set(arrays.flat())];
