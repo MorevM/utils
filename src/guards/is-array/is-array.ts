@@ -5,4 +5,4 @@
  *
  * @returns         Whether the value is Array
  */
-export const isArray = (value: any): value is any[] => Array.isArray(value);
+export const isArray = <T = any>(value: any): value is T[] => Array.isArray(value);
