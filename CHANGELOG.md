@@ -1,5 +1,18 @@
 
 
+### [2.0.5](https://github.com/MorevM/utils/compare/v2.0.4...v2.0.5) (2023-02-07)
+
+
+### Bug fixes
+
+* **guards:** Make `isArray` generic ([dfba502](https://github.com/MorevM/utils/commit/dfba502b92b036b4b8be03bb8bac34f2b1e786e2))
+* Set default generic value of some utilities to `any` instead of `unknown` ([d841e72](https://github.com/MorevM/utils/commit/d841e72950d63b2ff27cdeb7299ed1beb377ad80))
+
+
+### Chores
+
+* Upgrade `type-fest` from 3.5.4 to 3.5.5 ([e319e00](https://github.com/MorevM/utils/commit/e319e00fb3b843c9937651f2d550434c663a33a3))
+
 ### [2.0.4](https://github.com/MorevM/utils/compare/v2.0.3...v2.0.4) (2023-02-02)
 
 
