@@ -1,5 +1,7 @@
 // ALARM: Write proper tests before replacing the external lib.
-import copy, { copyStrict } from 'fast-copy';
+import { createCopier, copyStrict } from 'fast-copy';
+
+const copy = createCopier({});
 
 /**
  * Copies a value deeply.
