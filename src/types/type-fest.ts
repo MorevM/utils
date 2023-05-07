@@ -78,6 +78,7 @@ export type {
 	// OnNext,           // If `Observable` proposal will be implemented
 	Opaque,
 	OptionalKeysOf,
+	OverrideProperties,
 	PackageJson,
 	PartialDeep,
 	// PartialDeepOptions,
