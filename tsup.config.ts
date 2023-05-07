@@ -8,5 +8,5 @@ export const tsup: Options = {
 	format: ['cjs', 'esm'],
 	dts: true,
 	entryPoints: ['src/index.ts'],
-	outExtension: ({ format }) => ({ js: `.${format}.js` }),
+	outExtension: ({ format }) => ({ js: format === 'cjs' ? `.${format}` : `.js` }),
 };
