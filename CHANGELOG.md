@@ -1,5 +1,32 @@
 
 
+## [2.1.0](https://github.com/MorevM/utils/compare/v2.0.5...v2.1.0) (2023-05-07)
+
+
+### Features
+
+* **dom:** Add `setStyleProperties` utility ([f3cbbaf](https://github.com/MorevM/utils/commit/f3cbbafebd1c0ad1f6324976d361c478c211eba7))
+* **typescript:** Add newly added type utilities of `type-fest` ([823242f](https://github.com/MorevM/utils/commit/823242f629d821c02f4d8b2cd43478701ffec2c7))
+
+
+### Refactoring
+
+* Prefer named imports for `fast-copy` lib because of incorrect CJS transformation ([ea1397e](https://github.com/MorevM/utils/commit/ea1397e5d9e3c6d2005fcf6842349f88c5e420db))
+
+
+### Bug fixes
+
+* Provide a CJS files with `.cjs` extension ([e884c83](https://github.com/MorevM/utils/commit/e884c831bcd39bf7bbfae34c28b44ac851755ff1))
+
+
+### Chores
+
+* Bump `ohash` from 1.0.0 to 1.1.2 ([e352b51](https://github.com/MorevM/utils/commit/e352b51f77691233b92dbc899fb1d4c0d5e9a543))
+* Bump `type-fest` from 3.8.0 to 3.10.0 ([88eca40](https://github.com/MorevM/utils/commit/88eca40962e1103b5764fbb179210ce0e2d753b9))
+* bump fast-copy from 3.0.0 to 3.0.1 ([#121](https://github.com/MorevM/utils/issues/121)) ([68ef640](https://github.com/MorevM/utils/commit/68ef640bcaa69c98be41c0f86e8af9cc927da01b))
+* bump fast-equals from 4.0.3 to 5.0.1 ([ed35e43](https://github.com/MorevM/utils/commit/ed35e43a23ed2d3ae1b15f03e6e2fcca0687339e))
+* bump type-fest from 3.5.5 to 3.8.0 ([6492bed](https://github.com/MorevM/utils/commit/6492bed3e6f71331b24191e5f2266d43d72a1590))
+
 ### [2.0.5](https://github.com/MorevM/utils/compare/v2.0.4...v2.0.5) (2023-02-07)
 
 
