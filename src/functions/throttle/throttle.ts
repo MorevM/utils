@@ -39,9 +39,7 @@ export const throttle = (callback: Function, optionsOrDelay?: Options | number) 
 	const trailingExec = (exec: Function) => {
 		if (!trailing) return;
 		clearExistingTimeout();
-		if (!timeoutID) {
-			timeoutID = setTimeout(exec, delay);
-		}
+		timeoutID ||= setTimeout(exec, delay);
 	};
 
 	// eslint-disable-next-line func-style -- Needed to preserve `this` context
