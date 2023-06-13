@@ -1,5 +1,20 @@
 
 
+## [2.2.0](https://github.com/MorevM/utils/compare/v2.1.0...v2.2.0) (2023-06-13)
+
+
+### Features
+
+* **arrays:** Add `arrayRemove` and `arrayRemoveMutable` utilities ([e2f003d](https://github.com/MorevM/utils/commit/e2f003d078d08134c3adbe242bd33983645151e5))
+* **promises:** Add `minTimePromise` utility ([f49726d](https://github.com/MorevM/utils/commit/f49726d0466409c6fcff30c10025b82693d6ccf3))
+* **types:** Add new types from `type-fest` ([ac1185c](https://github.com/MorevM/utils/commit/ac1185c11e074e92e9e540a0f4160885c076aa8e))
+
+
+### Chores
+
+* Bump `type-fest` from 3.10.0 to 3.11.1 ([1aab16c](https://github.com/MorevM/utils/commit/1aab16c08f7c90e96afe8551b1003927db9aa54e))
+
+
 ## [2.1.0](https://github.com/MorevM/utils/compare/v2.0.5...v2.1.0) (2023-05-07)
 
 
