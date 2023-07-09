@@ -1,5 +1,24 @@
 
 
+## [2.3.0](https://github.com/MorevM/utils/compare/v2.2.0...v2.3.0) (2023-07-09)
+
+
+### Features
+
+* **functions:** Add `verify-file-accept` utility ([c3bb949](https://github.com/MorevM/utils/commit/c3bb94991727c4e36fe560db53e8a6874d44280c))
+* **numbers:** Add `precision` utility ([fd35b59](https://github.com/MorevM/utils/commit/fd35b59344fc45237d9860013beb2e3bd1d6ab39))
+* **types:** Add new `SetReadonly` type from `type-fest` ([b7c44d9](https://github.com/MorevM/utils/commit/b7c44d9969c3f3660afc43c733093de31d027947))
+
+
+### Tests
+
+* **numbers:** Add more tests for `to-number` utility ([e3de983](https://github.com/MorevM/utils/commit/e3de98364e7a6dda1b29928e28157a621575b6f5))
+
+
+### Chores
+
+* Bump type-fest from 3.11.1 to 3.12.0 ([0bd2e6e](https://github.com/MorevM/utils/commit/0bd2e6e6a16fccb859a70095db32b9878d1f6781))
+
 ## [2.2.0](https://github.com/MorevM/utils/compare/v2.1.0...v2.2.0) (2023-06-13)
 
 
