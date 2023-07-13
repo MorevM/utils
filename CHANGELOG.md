@@ -1,5 +1,22 @@
 
 
+## [2.4.0](https://github.com/MorevM/utils/compare/v2.3.0...v2.4.0) (2023-07-13)
+
+
+### Features
+
+* **types:** Add new `HasReadonlyKeys` and `HasWritableKeys` utility types ([a6b5de4](https://github.com/MorevM/utils/commit/a6b5de4084b8b8cfee44e7363482039cf0c4fcc5))
+
+
+### Bug fixes
+
+* **guards:** Make `isEmpty` more type-safe ([1f3cc7a](https://github.com/MorevM/utils/commit/1f3cc7afddbba5a57c24cbcf980db5bedab2f807))
+
+
+### Chores
+
+* Bump `type-fest` from 3.12.0 to 3.13.0 ([4070df1](https://github.com/MorevM/utils/commit/4070df1ba28e75f2b0710e59cd3323c95452aa26))
+
 ## [2.3.0](https://github.com/MorevM/utils/compare/v2.2.0...v2.3.0) (2023-07-09)
 
 
