@@ -21,6 +21,11 @@ describe('is-empty', () => {
 		expect(isEmpty(0)).toBe(true);
 	});
 
+	it('Returns `true` if a given value is a `0n`', () => {
+		expect(isEmpty(0n)).toBe(true);
+		expect(isEmpty(BigInt(0))).toBe(true);
+	});
+
 	it('Returns `true` if a given value is an empty string', () => {
 		expect(isEmpty('')).toBe(true);
 	});

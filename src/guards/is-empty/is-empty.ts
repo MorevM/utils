@@ -3,7 +3,7 @@
  *
  * @param   value   The value being evaluated.
  *
- * @returns         Whether the value is `empty`
+ * @returns         Whether the value is `empty`.
  */
 import type { PlainObject } from '../../types';
 import { isIterable } from '../is-iterable/is-iterable';
@@ -17,7 +17,7 @@ export const isEmpty = (value: unknown): value is Empty => {
 	if (value === false) return true;
 	if (Number.isNaN(value)) return true;
 	if (value === 0) return true;
-	if (value === 0n) return true;
+	if (value === BigInt(0)) return true; // Using `0n` may fail in some environments such as esbuild es2019
 	if (value === '') return true;
 
 	if (isIterable(value) && typeof value === 'object' && 'length' in value && value.length === 0) return true;
