@@ -1,5 +1,12 @@
 
 
+## [2.4.1](https://github.com/MorevM/utils/compare/v2.4.0...v2.4.1) (2023-07-20)
+
+
+### Bug fixes
+
+* **guards:** Add workaround for `isEmpty` BigInt literal ([19967ad](https://github.com/MorevM/utils/commit/19967ade9465f027bc44269ea334f47d48dd2935))
+
 ## [2.4.0](https://github.com/MorevM/utils/compare/v2.3.0...v2.4.0) (2023-07-13)
 
 
