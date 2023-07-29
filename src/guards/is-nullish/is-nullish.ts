@@ -7,8 +7,5 @@
  *
  * @returns         Whether the value is nullish value
  */
-
-type NullishType = null | undefined;
-
-export const isNullish = (value: any): value is NullishType =>
+export const isNullish = (value: any): value is null | undefined =>
 	value === null || typeof value === 'undefined';
