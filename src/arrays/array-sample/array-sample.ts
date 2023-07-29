@@ -3,6 +3,21 @@ import { randomInteger } from '../../numbers/random-integer/random-integer';
 import { arrayOfLength } from '../array-of-length/array-of-length';
 import { arrayShuffle } from '../array-shuffle/array-shuffle';
 
+type NeverAsUndefined<Type, AsArray extends boolean> = [Type] extends [never]
+	? undefined
+	: AsArray extends true ? Type[] : Type;
+
+// @TODO: Maybe it is possible to create a tuple instead of array
+type Result<
+	Source extends readonly any[],
+	Type,
+	SampleSize,
+> = Source['length'] extends 0
+	? undefined
+	: SampleSize extends 1
+		? NeverAsUndefined<Type, false>
+		: NeverAsUndefined<Type, true>;
+
 /**
  * Returns `size` random elements from the given array.
  *
@@ -13,16 +28,20 @@ import { arrayShuffle } from '../array-shuffle/array-shuffle';
  *                     Default is `false`.
  * @returns
  */
-export const arraySample = (array: any[], size: number = 1, oversize: boolean = false) => {
-	if (!array?.length || !isInteger(size) || size < 1) return undefined;
+export const arraySample = <const T, Size extends number = 1>(
+	array: readonly T[],
+	size: Size = 1 as Size,
+	oversize: boolean = false,
+): Result<typeof array, T, Size> => {
+	if (!array?.length || !isInteger(size) || size < 1) return undefined as Result<typeof array, T, Size>;
 
 	if (size === 1) {
-		return array[randomInteger(0, array.length - 1)];
+		return array[randomInteger(0, array.length - 1)] as Result<typeof array, T, Size>;
 	}
 
-	(!oversize) && (size = Math.min(array.length, size));
+	(!oversize) && (size = Math.min(array.length, size) as Size);
 
-	const result: any[] = [];
+	const result: T[] = [];
 	while (result.length < size) {
 		const neededCount = size - result.length;
 		const iterationIndexes = arrayOfLength(array.length, (index) => index);
@@ -34,5 +53,5 @@ export const arraySample = (array: any[], size: number = 1, oversize: boolean = 
 		}
 	}
 
-	return result;
+	return result as Result<typeof array, T, Size>;
 };
