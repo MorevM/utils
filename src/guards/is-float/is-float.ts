@@ -7,5 +7,5 @@ import { isNumeric } from '../is-numeric/is-numeric';
  *
  * @returns         Whether the value is float number
  */
-export const isFloat = (value: any): boolean =>
+export const isFloat = (value: any): value is number =>
 	isNumeric(value) && (value % 1 !== 0);
