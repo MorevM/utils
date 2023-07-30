@@ -1,5 +1,27 @@
 
 
+## [2.5.0](https://github.com/MorevM/utils/compare/v2.4.1...v2.5.0) (2023-07-30)
+
+
+### Features
+
+* **guards:** Add `isError` utility ([93f140b](https://github.com/MorevM/utils/commit/93f140bdb2ff378b91972f1e53569ab6c7c56445))
+
+
+### Bug fixes
+
+* **arrays:** Make `arraySample` more type-safe ([92e6d15](https://github.com/MorevM/utils/commit/92e6d15219124d56416545e68e679ba4a6ae111d))
+* **guards:** Fix `isNullish` utility JSDoc ([c47be68](https://github.com/MorevM/utils/commit/c47be68781cd28b2422f502b192de64c47bb39a2))
+* **guards:** Make `isEmail` utility more type-safe ([2ae7d65](https://github.com/MorevM/utils/commit/2ae7d656b78a619244ed0aa752f886e265d77337))
+* **guards:** Make `isFloat` utility more type-safe ([617fa32](https://github.com/MorevM/utils/commit/617fa325326de514a58532c17ddebb01ce416a53))
+* **guards:** Make `isFormData` more type-safe ([0b87104](https://github.com/MorevM/utils/commit/0b871045bef57a8c0c0ed505f671cd75e154d751))
+* **types:** Replace type-fest `Trim` utility type with custom one ([6975ea3](https://github.com/MorevM/utils/commit/6975ea32525cf8a38af358aa5b173f1213e95a70))
+
+
+### Chores
+
+* Bump `type-fest` from 3.13.0 to 4.0.0 ([9c493e6](https://github.com/MorevM/utils/commit/9c493e64d20a7329042e9cdac6307ed738847379))
+
 ## [2.4.1](https://github.com/MorevM/utils/compare/v2.4.0...v2.4.1) (2023-07-20)
 
 
