@@ -122,7 +122,7 @@ export type {
 	StringKeyOf,
 	Stringified,
 	TaggedUnion,
-	Trim,
+	// Trim, // Exported from the lib itself, as it allows to define trimmed character
 	TsConfigJson as TsConfig,
 	TupleToUnion,
 	TypedArray,
