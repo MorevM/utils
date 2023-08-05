@@ -104,6 +104,7 @@ export type {
 	// RequireExactlyOne,
 	RequiredDeep,
 	RequiredKeysOf,
+	RequireOneOrNone,
 	Schema,
 	ScreamingSnakeCase as UpperSnakeCase,
 
