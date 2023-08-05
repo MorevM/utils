@@ -1,5 +1,17 @@
 
 
+## [2.6.0](https://github.com/MorevM/utils/compare/v2.5.0...v2.6.0) (2023-08-05)
+
+
+### Features
+
+* **types:** Add new `RequireAllOrNone` utility type ([ed5d825](https://github.com/MorevM/utils/commit/ed5d82522e7c78f57a855b2fd3ff4a743f93ebff))
+
+
+### Chores
+
+* bump type-fest from 4.0.0 to 4.1.0 ([#135](https://github.com/MorevM/utils/issues/135)) ([276c27b](https://github.com/MorevM/utils/commit/276c27b67344b53d6e8f8698a53950513ba166c5))
+
 ## [2.5.0](https://github.com/MorevM/utils/compare/v2.4.1...v2.5.0) (2023-07-30)
 
 
