@@ -1,3 +1,4 @@
+// TODO: Rewrite to not use rest parameters in the next major version to type correctly
 /**
  * Mutable version of `arrayInsert()`.
  * Inserts an element(s) in a certain position of the given array. \
@@ -25,5 +26,5 @@ export const arrayInsertMutable = (arr: any[], index: number, ...items: any[]) =
  *
  * @returns         The whole new array with inserted elements.
  */
-export const arrayInsert = (arr: any[], index: number, ...items: any[]) =>
+export const arrayInsert = (arr: readonly any[], index: number, ...items: any[]) =>
 	arrayInsertMutable([...arr], index, ...items);

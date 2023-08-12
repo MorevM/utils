@@ -30,5 +30,5 @@ export const arrayRemoveMutable = <T = any>(arr: T[], value: T, onlyFirst: boole
  *
  * @returns             The whole new array without specified elements.
  */
-export const arrayRemove = <T = any>(arr: T[], value: T, onlyFirst: boolean = false) =>
+export const arrayRemove = <T = any>(arr: readonly T[], value: T, onlyFirst: boolean = false) =>
 	arrayRemoveMutable([...arr], value, onlyFirst);
