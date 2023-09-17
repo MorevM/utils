@@ -22,7 +22,7 @@ const comparator = (a: ElementOf<Range>, b: ElementOf<Range>) => {
  *
  * @returns          Sorted ranges or an empty array for invalid input.
  */
-export const rangesSort = (ranges: Array<Range | null> | null | undefined): Range[] => {
+export const rangesSort = (ranges: ReadonlyArray<Range | null> | null | undefined): Range[] => {
 	return [...(ranges ?? [])].filter(r => !isNullish(r)).sort((r1, r2) => {
 		// These values are filtered in the upper line.
 		assert(!isNullish(r1) && !isNullish(r2));

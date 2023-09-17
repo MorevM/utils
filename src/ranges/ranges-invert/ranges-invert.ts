@@ -6,7 +6,7 @@ import type { OutputRange, Range } from '../utils';
 import { formatInfinity } from '../utils';
 
 export const rangesInvert = (
-	ranges: Array<Range | null> | null | undefined,
+	ranges: ReadonlyArray<Range | null> | null | undefined,
 	start: number | null = null,
 	end: number | null = null,
 	infinityToNull: boolean = false,

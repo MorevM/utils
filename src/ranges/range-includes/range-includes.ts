@@ -13,7 +13,7 @@ import type { Range } from '../utils';
  */
 export const rangeIncludes = (
 	value: number,
-	ranges: Range[] | null | undefined,
+	ranges: readonly Range[] | null | undefined,
 	mode: 'all' | 'any' = 'any',
 ) => {
 	const method = mode === 'all' ? 'every' : 'some';

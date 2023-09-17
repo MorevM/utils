@@ -10,7 +10,10 @@ import type { OutputRange, Range } from '../utils';
  *
  * @returns             Sorted and merged ranges or an empty array for invalid input.
  */
-export const rangesMerge = (ranges: Array<Range | null> | null | undefined, joinEdges = true): OutputRange[] => {
+export const rangesMerge = (
+	ranges: ReadonlyArray<Range | null> | null | undefined,
+	joinEdges = true,
+): OutputRange[] => {
 	const sorted = rangesSort(ranges)
 		.map(r => [
 			isNullish(r[0]) ? -Infinity : r[0],
