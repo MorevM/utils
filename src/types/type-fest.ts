@@ -70,6 +70,7 @@ export type {
 	NegativeFloat,
 	NegativeInfinity,
 	NegativeInteger,
+	NonEmptyObject,
 	NonNegative,
 	NonNegativeInteger,
 	// ObservableLike,   // If `Observable` proposal will be implemented
@@ -122,14 +123,17 @@ export type {
 	Spread,
 	StringKeyOf,
 	Stringified,
+	Tagged,
 	TaggedUnion,
 	// Trim, // Exported from the lib itself, as it allows to define trimmed character
 	TsConfigJson as TsConfig,
 	TupleToUnion,
 	TypedArray,
 	UnionToIntersection,
+	UnknownRecord,
 	// Unsubscribable, // If `Observable` proposal will be implemented
 	UnwrapOpaque,
+	UnwrapTagged,
 	ValueOf,
 	Writable,
 	WritableDeep,
