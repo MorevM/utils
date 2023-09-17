@@ -1,5 +1,28 @@
 
 
+## [2.7.0](https://github.com/MorevM/utils/compare/v2.6.0...v2.7.0) (2023-09-17)
+
+
+### Features
+
+* **types:** Add new `NonEmptyObject`, `Tagged`, `UnwrapTagged`, `UnknownRecord` types ([1e894f0](https://github.com/MorevM/utils/commit/1e894f09360cb34efd80cb911510b322fc5d39a9))
+
+
+### Bug fixes
+
+* **arrays:** Better typings for `array` utils ([2503ceb](https://github.com/MorevM/utils/commit/2503ceb55546b8228b6b8043b24cac3e8c2f2495))
+
+
+### Refactoring
+
+* Use `unknown` instead of `any` where possible ([933f77b](https://github.com/MorevM/utils/commit/933f77becc25ccd623d81d9c2fcf53ac463e1a91))
+
+
+### Chores
+
+* Bump `ohash` from 1.1.2 to 1.1.3 ([be3a019](https://github.com/MorevM/utils/commit/be3a019224e2064f60ea24e8f23b3f343fd684b4))
+* Bump `type-fest` from 4.1.0 to 4.3.1 ([026d6b1](https://github.com/MorevM/utils/commit/026d6b1fb31b844db29da1de6555551bda9ba555))
+
 ## [2.6.0](https://github.com/MorevM/utils/compare/v2.5.0...v2.6.0) (2023-08-05)
 
 
