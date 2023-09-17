@@ -22,7 +22,7 @@ const extractSegments = (path: PathVariant) => toArray(path)
  * @returns                The value of property in the passed path if exists, `defaultValue` otherwise.
  */
 export const objectGet = (
-	input: any,
+	input: unknown,
 	path: PathVariant,
 	defaultValue: any = undefined,
 ) => {

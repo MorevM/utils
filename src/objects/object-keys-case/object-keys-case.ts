@@ -33,7 +33,7 @@ const getHandler = (neededCase: Case) => {
  *
  * @returns              New object with keys "renamed" to needed case.
  */
-export const objectKeysCase = (input: any, neededCase: Case, _options?: Partial<Options>) => {
+export const objectKeysCase = (input: unknown, neededCase: Case, _options?: Partial<Options>) => {
 	const options = mergeObjects({
 		depth: Infinity,
 		exclude: [],
@@ -52,7 +52,7 @@ export const objectKeysCase = (input: any, neededCase: Case, _options?: Partial<
 
 	const isDepthAllowed = (depth: number) => options.depth > depth;
 
-	const processEntry = (entry: any, path: string, depth: number) => {
+	const processEntry = (entry: unknown, path: string, depth: number) => {
 		if (!isObject(entry) && !isArray(entry)) return entry;
 		const isEntryArray = isArray(entry);
 

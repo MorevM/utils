@@ -5,5 +5,5 @@
  *
  * @returns         Whether the value is Object
  */
-export const isObject = (value: any): value is Record<string, any> =>
+export const isObject = (value: unknown): value is Record<string, any> =>
 	Object.prototype.toString.call(value).includes('Object');

@@ -10,4 +10,4 @@ type HashOptions = Parameters<typeof _hash>[1];
  * @param   options   Hashing options.
  * @returns           Hash string for a given value.
  */
-export const hash = (value: any, options?: HashOptions) => _hash(value, options);
+export const hash = (value: unknown, options?: HashOptions) => _hash(value, options);

@@ -12,7 +12,7 @@ import { isNumeric, isString } from '../../guards';
  * @returns            The number if cast was successful, fallback value otherwise if provided.
  * @throws               Throws if cast was unsuccessful with no fallback value provided.
  */
-export function toNumber<F = undefined>(value: any, fallback?: F): number | F {
+export function toNumber<F = undefined>(value: unknown, fallback?: F): number | F {
 	const throwOrReturnFallback = () => {
 		if (arguments.length === 1) {
 			throw new Error(`The value "${value as string}" cannot be converted to a number`);

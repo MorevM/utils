@@ -5,5 +5,5 @@
  *
  * @returns         Whether the value is Date object
  */
-export const isDate = (value: any): value is Date =>
+export const isDate = (value: unknown): value is Date =>
 	Object.prototype.toString.call(value).includes('Date');

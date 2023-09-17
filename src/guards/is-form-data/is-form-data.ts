@@ -5,4 +5,4 @@
  *
  * @returns         Whether the value is FormData instance
  */
-export const isFormData = (value: any): value is FormData => value instanceof FormData;
+export const isFormData = (value: unknown): value is FormData => value instanceof FormData;

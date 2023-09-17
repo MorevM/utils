@@ -5,5 +5,5 @@
  *
  * @returns         Whether the value is Promise
  */
-export const isPromise = (value: any): value is Promise<any> =>
+export const isPromise = (value: unknown): value is Promise<any> =>
 	value instanceof Promise;

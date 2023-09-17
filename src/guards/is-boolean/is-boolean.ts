@@ -5,5 +5,5 @@
  *
  * @returns         Whether the value is Boolean
  */
-export const isBoolean = (value: any): value is boolean =>
+export const isBoolean = (value: unknown): value is boolean =>
 	value === true || value === false;

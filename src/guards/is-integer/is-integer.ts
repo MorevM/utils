@@ -7,5 +7,5 @@ import { isNumeric } from '../is-numeric/is-numeric';
  *
  * @returns         Whether the value is integer number
  */
-export const isInteger = (value: any): value is number =>
+export const isInteger = (value: unknown): value is number =>
 	isNumeric(value) && (value % 1 === 0);

@@ -5,4 +5,4 @@
  *
  * @returns         Whether the value is a Node
  */
-export const isNode = (value: any): value is Node => value instanceof Node;
+export const isNode = (value: unknown): value is Node => value instanceof Node;

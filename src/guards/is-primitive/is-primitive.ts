@@ -10,7 +10,7 @@ import { isNullish } from '../is-nullish/is-nullish';
  *
  * @see https://developer.mozilla.org/en-US/docs/Glossary/Primitive
  */
-export const isPrimitive = (value: any): value is Primitive => {
+export const isPrimitive = (value: unknown): value is Primitive => {
 	if (isNullish(value)) return true;
 
 	return !['object', 'function'].includes(typeof value);

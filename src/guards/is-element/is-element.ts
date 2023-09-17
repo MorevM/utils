@@ -5,5 +5,5 @@
  *
  * @returns         Whether the value is DOM Element
  */
-export const isElement = (value: any): value is Element =>
-	value?.nodeType === 1;
+export const isElement = (value: unknown): value is Element =>
+	value instanceof Element;

@@ -6,5 +6,5 @@
  *
  * @returns         Whether the given value is a WeakMap or not.
  */
-export const isWeakMap = (value: any): value is WeakMap<any, any> =>
+export const isWeakMap = (value: unknown): value is WeakMap<any, any> =>
 	value instanceof WeakMap;

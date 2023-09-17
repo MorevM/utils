@@ -10,7 +10,7 @@ import { toNumber } from '../to-number/to-number';
  *
  * @returns               A given number precision or `null` in case of invalid input.
  */
-export const precision = (maybeNumber: any) => {
+export const precision = (maybeNumber: unknown) => {
 	const value = toNumber(maybeNumber, null);
 	if (value === null || !Number.isFinite(value)) return null;
 

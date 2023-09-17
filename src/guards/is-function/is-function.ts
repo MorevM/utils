@@ -5,5 +5,5 @@
  *
  * @returns         Whether the value is Function
  */
-export const isFunction = (value: any): value is Function =>
+export const isFunction = (value: unknown): value is Function =>
 	Object.prototype.toString.call(value) === '[object Function]';

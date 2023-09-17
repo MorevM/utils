@@ -21,7 +21,7 @@ const parseOptions = (optionsOrDelay?: Options | number): [number, boolean, bool
 export const throttle = (callback: Function, optionsOrDelay?: Options | number) => {
 	const [delay, leading, trailing] = parseOptions(optionsOrDelay);
 
-	let timeoutID: any = null;
+	let timeoutID: number | null = null;
 	let cancelled: boolean;
 	let lastExec = leading ? 0 : Date.now();
 

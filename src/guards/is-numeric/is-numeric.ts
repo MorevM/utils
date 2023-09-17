@@ -5,5 +5,5 @@
  *
  * @returns         Whether the value is a valid number
  */
-export const isNumeric = (value: any): value is number =>
+export const isNumeric = (value: unknown): value is number =>
 	typeof value === 'number' && !isNaN(value);

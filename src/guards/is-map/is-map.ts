@@ -6,5 +6,5 @@
  *
  * @returns         Whether the given value is a Map or not.
  */
-export const isMap = (value: any): value is Map<any, any> =>
+export const isMap = (value: unknown): value is Map<any, any> =>
 	value instanceof Map;
