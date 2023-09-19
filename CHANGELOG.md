@@ -1,5 +1,12 @@
 
 
+## [2.7.1](https://github.com/MorevM/utils/compare/v2.7.0...v2.7.1) (2023-09-19)
+
+
+### Bug fixes
+
+* **ranges:** Mark any range function arguments as readonly ([0e9bc22](https://github.com/MorevM/utils/commit/0e9bc22c2bc170b82c870a329bc1c7168c92a7b1))
+
 ## [2.7.0](https://github.com/MorevM/utils/compare/v2.6.0...v2.7.0) (2023-09-17)
 
 
