@@ -15,7 +15,7 @@ import type { AvailableRangeValues, OutputRange } from '../utils';
  */
 export const rangesMerge = <
 	T extends AvailableRangeValues,
-	I extends boolean,
+	I extends boolean = false,
 >(
 	ranges: T,
 	joinEdges = true,
