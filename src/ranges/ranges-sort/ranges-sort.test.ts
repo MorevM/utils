@@ -9,7 +9,7 @@ describe('ranges-sort', () => {
 		expect(original).toStrictEqual(clone);
 	});
 
-	it('Returns an empty array as for invalid input', () => {
+	it('Returns an empty array for invalid input', () => {
 		expect(rangesSort(null)).toStrictEqual([]);
 		expect(rangesSort(undefined)).toStrictEqual([]);
 	});
@@ -46,6 +46,22 @@ describe('ranges-sort', () => {
 			[null, 1], [-2, 2], [null, -2], [-3, 3], [0, null], [-2, Infinity],
 		])).toStrictEqual([
 			[null, -2], [null, 1], [-3, 3], [-2, 2], [-2, Infinity], [0, null],
+		]);
+	});
+
+	it('Correctly works with ranges containing an `Infinity`', () => {
+		expect(rangesSort([
+			[-Infinity, 1], [-2, 2], [-Infinity, -2], [-3, 3], [0, Infinity], [-2, Infinity],
+		])).toStrictEqual([
+			[-Infinity, -2], [-Infinity, 1], [-3, 3], [-2, 2], [-2, Infinity], [0, Infinity],
+		]);
+	});
+
+	it('Converts any `Infinity` value to `null` if the second argument is `true`', () => {
+		expect(rangesSort([
+			[-Infinity, 1], [-2, 2], [-Infinity, -2], [-3, 3], [0, Infinity], [-2, Infinity],
+		], true)).toStrictEqual([
+			[null, -2], [null, 1], [-3, 3], [-2, 2], [-2, null], [0, null],
 		]);
 	});
 });

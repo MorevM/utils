@@ -1,20 +1,27 @@
+/* eslint-disable import/exports-last */
 import { isNullish } from '../../guards';
 import { rangesSort } from '../ranges-sort/ranges-sort';
-import type { OutputRange, Range } from '../utils';
+import { formatInfinity   } from '../utils';
+import type { AvailableRangeValues, OutputRange } from '../utils';
 
 /**
  * Sorts and merges given ranges.
  *
- * @param   ranges      An array of ranges.
- * @param   joinEdges   Whether to combine ranges if they are contiguous.
+ * @param   ranges           An array of ranges.
+ * @param   joinEdges        Whether to combine ranges if they are contiguous.
+ * @param   infinityToNull   Whether to return `null` instead of `Infinity`.
  *
- * @returns             Sorted and merged ranges or an empty array for invalid input.
+ * @returns                  Sorted and merged ranges or an empty array for invalid input.
  */
-export const rangesMerge = (
-	ranges: ReadonlyArray<Range | null> | null | undefined,
+export const rangesMerge = <
+	T extends AvailableRangeValues,
+	I extends boolean,
+>(
+	ranges: T,
 	joinEdges = true,
-): OutputRange[] => {
-	const sorted = rangesSort(ranges)
+	infinityToNull: I = false as I,
+): Array<OutputRange<T, I>> => {
+	const sorted = rangesSort(ranges, infinityToNull)
 		.map(r => [
 			isNullish(r[0]) ? -Infinity : r[0],
 			isNullish(r[1]) ? +Infinity : r[1],
@@ -35,8 +42,8 @@ export const rangesMerge = (
 
 	return sorted.length
 		? sorted.map(r => [
-			r[0] === -Infinity ? null : r[0],
-			r[1] === Infinity ? null : r[1],
-		])
+			formatInfinity(r[0], infinityToNull),
+			formatInfinity(r[1], infinityToNull),
+		]) as Array<OutputRange<T, I>>
 		: [];
 };

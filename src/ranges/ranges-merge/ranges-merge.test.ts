@@ -17,16 +17,22 @@ describe('ranges-merge', () => {
 	it('Correctly merges ranges respecting `null` values as arguments / inside the range', () => {
 		expect(rangesMerge([
 			[1, 5], null, [11, 15], [6, 10], null, [16, 20], [10, 30], [31, null],
-		])).toStrictEqual([[1, 5], [6, 30], [31, null]]);
+		])).toStrictEqual([[1, 5], [6, 30], [31, Infinity]]);
 		expect(rangesMerge([
 			[null, 5], null, [11, 15], [5, 10], null, [16, 20], [10, 30], [30, null],
-		])).toStrictEqual([[null, null]]);
+		])).toStrictEqual([[-Infinity, Infinity]]);
 	});
 
 	it('Respects `joinEdges` argument', () => {
 		expect(rangesMerge([
 			[1, 5], null, [9, 15], [5, 10], null, [15, 20], [31, null],
-		], false)).toStrictEqual([[1, 5], [5, 15], [15, 20], [31, null]]);
+		], false)).toStrictEqual([[1, 5], [5, 15], [15, 20], [31, Infinity]]);
+	});
+
+	it('Respects `infinityToNull` argument', () => {
+		expect(rangesMerge([
+			[null, 5], null, [9, 15], [5, 10], null, [15, 20], [31, null],
+		], true, true)).toStrictEqual([[null, 20], [31, null]]);
 	});
 
 	it(`Doesn't mutate the original array`, () => {

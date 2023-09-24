@@ -2,21 +2,24 @@ import { isNullish } from '../../guards';
 import { rangeIncludes } from '../range-includes/range-includes';
 import { rangesCrop } from '../ranges-crop/ranges-crop';
 import { rangesMerge } from '../ranges-merge/ranges-merge';
-import type { OutputRange, Range } from '../utils';
+import type { AvailableRangeValues, OutputRange, Range } from '../utils';
 import { formatInfinity } from '../utils';
 
-export const rangesInvert = (
-	ranges: ReadonlyArray<Range | null> | null | undefined,
+export const rangesInvert = <
+	T extends AvailableRangeValues,
+	I extends boolean = false,
+>(
+	ranges: T,
 	start: number | null = null,
 	end: number | null = null,
-	infinityToNull: boolean = false,
-): OutputRange[] => {
+	infinityToNull: I = false as I,
+): Array<OutputRange<T, I>> => {
 	if (isNullish(start)) start = -Infinity;
 	if (isNullish(end)) end = +Infinity;
 	// `start` and `end` cannot be `null` since the top two lines of code.
 
 	return rangesCrop(
-		rangesMerge(ranges).reduce<Range[]>((acc, range, i, arr) => {
+		rangesMerge(ranges, true, infinityToNull).reduce<Range[]>((acc, range, i, arr) => {
 			const res: Range[] = [];
 
 			if (i === 0 && arr[0][0]! > start!) {
@@ -39,5 +42,5 @@ export const rangesInvert = (
 		start,
 		end,
 		infinityToNull,
-	);
+	) as unknown as Array<OutputRange<T, I>>;
 };

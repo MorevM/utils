@@ -1,6 +1,6 @@
 import { isEmpty, isNullish } from '../../guards';
 import { rangesMerge } from '../ranges-merge/ranges-merge';
-import type { OutputRange, Range } from '../utils';
+import type { AvailableRangeValues, OutputRange } from '../utils';
 import { formatInfinity } from '../utils';
 
 /**
@@ -13,18 +13,21 @@ import { formatInfinity } from '../utils';
  *
  * @returns                  The array of cropped ranges.
  */
-export const rangesCrop = (
-	ranges: readonly Range[] | null | undefined,
+export const rangesCrop = <
+	T extends AvailableRangeValues,
+	I extends boolean = false,
+>(
+	ranges: T,
 	start: number | null = null,
 	end: number | null = null,
-	infinityToNull: boolean = false,
-): OutputRange[] => {
+	infinityToNull: I = false as I,
+): Array<OutputRange<T, I>> => {
 	if (isEmpty(ranges)) return [];
 	if (isNullish(start)) start = -Infinity;
 	if (isNullish(end)) end = +Infinity;
 	// `start` and `end` cannot be `null` here since previous 2 lines.
 
-	return rangesMerge(ranges)
+	return rangesMerge(ranges, true, infinityToNull)
 		.map(range => [
 			isNullish(range[0]) ? -Infinity : range[0],
 			isNullish(range[1]) ? +Infinity : range[1],
@@ -39,5 +42,5 @@ export const rangesCrop = (
 				formatInfinity(first, infinityToNull),
 				formatInfinity(second, infinityToNull),
 			];
-		});
+		}) as Array<OutputRange<T, I>>;
 };

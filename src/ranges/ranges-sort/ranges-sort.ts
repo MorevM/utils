@@ -1,7 +1,8 @@
 import { assert } from '../../functions';
 import { isNullish, isNumeric } from '../../guards';
 import type { ElementOf } from '../../types';
-import type { Range } from '../utils';
+import { formatInfinity } from '../utils';
+import type { AvailableRangeValues, OutputRange, Range } from '../utils';
 
 const comparator = (a: ElementOf<Range>, b: ElementOf<Range>) => {
 	if (isNullish(a) && isNullish(b)) return 0;
@@ -18,12 +19,19 @@ const comparator = (a: ElementOf<Range>, b: ElementOf<Range>) => {
 /**
  * Sorts given ranges.
  *
- * @param   ranges   An array of ranges.
+ * @param   ranges           An array of ranges.
+ * @param   infinityToNull   Whether to convert `Infinity` values to `null`.
  *
- * @returns          Sorted ranges or an empty array for invalid input.
+ * @returns                  Sorted ranges or an empty array for invalid input.
  */
-export const rangesSort = (ranges: ReadonlyArray<Range | null> | null | undefined): Range[] => {
-	return [...(ranges ?? [])].filter(r => !isNullish(r)).sort((r1, r2) => {
+export const rangesSort = <
+	T extends AvailableRangeValues,
+	I extends boolean = false,
+>(
+	ranges: T,
+	infinityToNull: I = false as I,
+): Array<OutputRange<T, I>> => {
+	return [...(ranges ?? [] as Range[])].filter(r => !isNullish(r)).sort((r1, r2) => {
 		// These values are filtered in the upper line.
 		assert(!isNullish(r1) && !isNullish(r2));
 
@@ -32,5 +40,8 @@ export const rangesSort = (ranges: ReadonlyArray<Range | null> | null | undefine
 		}
 
 		return comparator(r1[0], r2[0]);
-	}) as Range[];
+	}).map((range) => [
+		formatInfinity(range![0], infinityToNull),
+		formatInfinity(range![1], infinityToNull),
+	]) as Array<OutputRange<T, I>>;
 };
