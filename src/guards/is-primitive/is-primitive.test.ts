@@ -40,7 +40,7 @@ describe('is-primitive', () => {
 		expect(isPrimitive(new String('123'))).toBe(false);
 		expect(isPrimitive(new Boolean('123'))).toBe(false);
 
-		// eslint-disable-next-line no-new-object
+		// eslint-disable-next-line no-object-constructor
 		expect(isPrimitive(new Object())).toBe(false);
 		expect(isPrimitive(new Array(15))).toBe(false);
 		expect(isPrimitive(func)).toBe(false);
