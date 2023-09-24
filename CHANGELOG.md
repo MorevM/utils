@@ -1,5 +1,13 @@
 
 
+## [2.8.0](https://github.com/MorevM/utils/compare/v2.7.1...v2.8.0) (2023-09-24)
+
+
+### Features
+
+* **ranges:** Improve types for a range utilities ([f7c23e9](https://github.com/MorevM/utils/commit/f7c23e9ee851ad1387009dcea7e29ae6a35c000d))
+
+
 ## [2.7.1](https://github.com/MorevM/utils/compare/v2.7.0...v2.7.1) (2023-09-19)
 
 
