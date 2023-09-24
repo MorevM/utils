@@ -1,5 +1,12 @@
 
 
+## [2.8.1](https://github.com/MorevM/utils/compare/v2.8.0...v2.8.1) (2023-09-24)
+
+
+### Bug fixes
+
+* **ranges:** Add a default generic value to `rangesMerge` ([f89aac4](https://github.com/MorevM/utils/commit/f89aac4453bbffc3b26bae40597cc6452a3ded71))
+
 ## [2.8.0](https://github.com/MorevM/utils/compare/v2.7.1...v2.8.0) (2023-09-24)
 
 
