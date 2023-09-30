@@ -1,7 +1,7 @@
 /* eslint-disable import/exports-last */
 import { isNullish } from '../../guards';
 import { rangesSort } from '../ranges-sort/ranges-sort';
-import { formatInfinity   } from '../utils';
+import { formatInfinity } from '../utils';
 import type { AvailableRangeValues, OutputRange } from '../utils';
 
 /**
