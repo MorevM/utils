@@ -90,12 +90,14 @@ export type {
 	PartialDeep,
 	// PartialDeepOptions,
 	PartialOnUndefinedDeep,
+	Paths,
 	// PartialOnUndefinedDeepOptions,
 
 	PascalCase,
 	PascalCasedProperties,
 	PascalCasedPropertiesDeep,
 
+	PickDeep,
 	PickIndexSignature,
 	PositiveInfinity,
 	Primitive,
@@ -113,6 +115,7 @@ export type {
 	Schema,
 	ScreamingSnakeCase as UpperSnakeCase,
 
+	SetFieldType,
 	SetNonNullable as PartialNonNullable,
 	SetOptional as PartialOptional,
 	SetParameterType,
@@ -136,6 +139,7 @@ export type {
 	TypedArray,
 	UnionToIntersection,
 	UndefinedOnPartialDeep,
+	// UnknownArray, // What is it for?
 	UnknownRecord,
 	// Unsubscribable, // If `Observable` proposal will be implemented
 	UnwrapOpaque,
