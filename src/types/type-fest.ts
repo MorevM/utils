@@ -57,6 +57,7 @@ export type {
 	KebabCase,
 	KebabCasedProperties,
 	KebabCasedPropertiesDeep,
+	KeysOfUnion,
 	LastArrayElement,
 	LiteralToPrimitive,
 	LiteralToPrimitiveDeep,
