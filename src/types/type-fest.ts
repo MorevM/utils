@@ -131,6 +131,7 @@ export type {
 	TupleToUnion,
 	TypedArray,
 	UnionToIntersection,
+	UndefinedOnPartialDeep,
 	UnknownRecord,
 	// Unsubscribable, // If `Observable` proposal will be implemented
 	UnwrapOpaque,
