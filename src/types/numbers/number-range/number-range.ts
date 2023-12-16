@@ -23,5 +23,7 @@ type CreateNumberRange<
 /**
  * Creates a range of numbers.
  * Limitations: works only with natural numbers (integer >= 0), length of resulting type is also limited to like 600 elements.
+ *
+ * @deprecated This function will be removed in the next major release. Use `IntRange` instead.
  */
 export type NumberRange<Start extends number, End extends number> = CreateNumberRange<Start, End>;

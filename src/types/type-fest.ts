@@ -34,6 +34,7 @@ export type {
 	IfUnknown,
 	Includes as ArrayIncludes,
 	Integer,
+	IntRange,
 	InvariantOf,
 	IsEmptyObject,
 	IsAny,
