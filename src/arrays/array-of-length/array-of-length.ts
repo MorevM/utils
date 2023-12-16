@@ -13,10 +13,11 @@ export const arrayOfLength = <T = undefined>(
 	length: number,
 	mapFunction?: (index: number) => T,
 ): T[] => {
-	const neededLength = isInteger(length) ? length : 0;
-	const mapFn = mapFunction ?? (() => undefined);
+	const neededLength = (isInteger(length) && length > 0) ? length : 0;
 
-	// The value is always `undefined` in this situation,
-	// so it can be omitted from the public signature.
-	return Array.from({ length: neededLength }, (_, index) => mapFn(index)) as T[];
+	const arr = new Array(neededLength).fill(undefined);
+
+	return mapFunction
+		? arr.map((_, index) => mapFunction(index))
+		: arr;
 };
