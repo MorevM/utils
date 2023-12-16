@@ -1,5 +1,7 @@
 /* eslint-disable no-multi-spaces */
 export type {
+	ArrayIndices,
+	ArrayValues,
 	AsyncReturnType,
 	Asyncify,
 	CamelCase,
