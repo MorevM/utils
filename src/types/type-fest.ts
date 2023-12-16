@@ -115,6 +115,7 @@ export type {
 
 	SetNonNullable as PartialNonNullable,
 	SetOptional as PartialOptional,
+	SetParameterType,
 	SetReadonly as PartialReadonly,
 	SetRequired as PartialRequired,
 	SetReturnType as PartialReturnType,
