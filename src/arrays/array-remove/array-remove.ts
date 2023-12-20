@@ -1,7 +1,6 @@
 /**
  * Mutable version of `arrayRemove()`.
- * Removes an element from a given array. \
- * Doesn't mutate the original array.
+ * Removes an element from a given array.
  *
  * @param   arr         The original array.
  * @param   value       The value to remove.
