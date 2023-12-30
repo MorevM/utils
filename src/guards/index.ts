@@ -6,6 +6,7 @@ export * from './is-element/is-element';
 export * from './is-email/is-email';
 export * from './is-empty/is-empty';
 export * from './is-error/is-error';
+export * from './is-file/is-file';
 export * from './is-float/is-float';
 export * from './is-form-data/is-form-data';
 export * from './is-function/is-function';
