@@ -122,6 +122,7 @@ export type {
 	SetReadonly as PartialReadonly,
 	SetRequired as PartialRequired,
 	SetReturnType as PartialReturnType,
+	SharedUnionFieldsDeep,
 	Simplify as Explicit,
 
 	SnakeCase,
