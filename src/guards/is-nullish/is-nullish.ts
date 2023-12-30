@@ -1,4 +1,5 @@
 import { isUndefined } from '../is-undefined/is-undefined';
+import { isNull } from '../is-null/is-null';
 
 /**
  * Checks whether a given value is considered to be nullish.
@@ -10,4 +11,4 @@ import { isUndefined } from '../is-undefined/is-undefined';
  * @returns         Whether the value is nullish value
  */
 export const isNullish = (value: unknown): value is null | undefined =>
-	value === null || isUndefined(value);
+	isNull(value) || isUndefined(value);

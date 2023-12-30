@@ -12,6 +12,7 @@ export * from './is-integer/is-integer';
 export * from './is-iterable/is-iterable';
 export * from './is-map/is-map';
 export * from './is-node/is-node';
+export * from './is-null/is-null';
 export * from './is-nullish/is-nullish';
 export * from './is-numeric/is-numeric';
 export * from './is-object/is-object';
