@@ -1,4 +1,5 @@
 export * from './is-array/is-array';
+export * from './is-blob/is-blob';
 export * from './is-boolean/is-boolean';
 export * from './is-date/is-date';
 export * from './is-element/is-element';
