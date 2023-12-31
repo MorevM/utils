@@ -51,3 +51,5 @@ const { arrayShuffle } = require('@morev/utils');
 * [fast-equals](https://github.com/planttheidea/fast-equals) for `deepEqual` and `deepEqualCircular` utilities;
 * [ohash](https://github.com/unjs/ohash) for `hash` utility;
 * [type-fest](https://github.com/sindresorhus/type-fest) for many utility types.
+* `object-to-formdata` utility mostly inspired by [object-to-formdata](https://github.com/therealparmesh/object-to-formdata) package,
+  but public API and implementation is a bit different according to my experience and needs.
