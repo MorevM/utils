@@ -1,4 +1,4 @@
-/* eslint-disable function-call-argument-newline */
+/* eslint-disable @stylistic/js/function-call-argument-newline */
 type Axis = 'x' | 'y' | 'both';
 type ToReturn<T> = T extends 'both' ? { x: number; y: number } : number;
 

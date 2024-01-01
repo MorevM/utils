@@ -1,4 +1,5 @@
-import type { Config } from '@jest/types'; // eslint-disable-line node/no-extraneous-import
+// eslint-disable-next-line node/no-extraneous-import
+import type { Config } from '@jest/types';
 
 const config: Config.InitialOptions = {
 	moduleFileExtensions: ['js', 'ts'],

@@ -6,5 +6,5 @@
 export const isDev = (): boolean | null => {
 	if (typeof process === 'undefined') return null;
 
-	return 	process.env.NODE_ENV === 'development';
+	return process.env.NODE_ENV === 'development';
 };
