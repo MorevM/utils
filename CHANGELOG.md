@@ -1,5 +1,12 @@
 
 
+## [3.0.1](https://github.com/MorevM/utils/compare/v3.0.0...v3.0.1) (2024-01-01)
+
+
+### CI improvements
+
+* Use Node 18 to run actions ([a6579c0](https://github.com/MorevM/utils/commit/a6579c0d77448e83ee62814b5983318a3601f606))
+
 ## [3.0.0](https://github.com/MorevM/utils/compare/v2.8.1...v3.0.0) (2024-01-01)
 
 
