@@ -1,5 +1,42 @@
 
 
+## [3.0.0](https://github.com/MorevM/utils/compare/v2.8.1...v3.0.0) (2024-01-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* **types:** `NumberRange` utility type is no longer exists. Use `IntRange` instead.
+
+### Features
+
+* **guards:** Add `isBlob` guard ([9e75f74](https://github.com/MorevM/utils/commit/9e75f742534b595e22d34d0e176b1b9acc055c72))
+* **guards:** Add `isFile` guard ([8b2994d](https://github.com/MorevM/utils/commit/8b2994da58ee12233e5a4a317acbef1b66481f0a))
+* **guards:** Add `isNull` guard ([6978acb](https://github.com/MorevM/utils/commit/6978acba449a1551b0df0bf11ad435207a598d8c))
+* **guards:** Add `isUndefined` guard ([02773a9](https://github.com/MorevM/utils/commit/02773a9308273cd1e9459c96af5766315624eae2))
+* **objects:** Add `objectToFormdata` utility ([189182c](https://github.com/MorevM/utils/commit/189182cd3edccdadd252b1c4b08b8c252399ba12))
+* **types:** Add `IntRange` exported from `type-fest` instead of deprecated `NumberRange` ([e9a041b](https://github.com/MorevM/utils/commit/e9a041b9671323c626628c1989dffdff4e667f1c))
+* **types:** Add `SharedUnionFieldsDeep` exported from `type-fest` ([844940a](https://github.com/MorevM/utils/commit/844940a4514e049de69f0e597615398eafb8ce39))
+* **types:** Add new `ArrayIndices` and `ArrayValues` utility types exported from `type-fest` ([ff55023](https://github.com/MorevM/utils/commit/ff5502379869a7a26dd24cdd3b06a0f04d057b28))
+* **types:** Add new `KeysOfUnion` utility type exported from `type-fest` ([56d33db](https://github.com/MorevM/utils/commit/56d33dbaabffa3b1168afa324bbb677fee74b52c))
+* **types:** Add new `Paths`, `PickDeep` and `SetFieldType` utility types exported from `type-fest` ([e69d653](https://github.com/MorevM/utils/commit/e69d6530ad8420b7d382c32b4428eca5629a9028))
+* **types:** Add new `SetParameterType` utility type exported from `type-fest` ([cf4b87e](https://github.com/MorevM/utils/commit/cf4b87e0b7e85d28f3e592284c708e2f72b4cac9))
+* **types:** Add new `UndefinedOnPartialDeep` utility type exported from `type-fest` ([efa9883](https://github.com/MorevM/utils/commit/efa988380a193e2304df9c711949e393b822ecb6))
+
+
+### Bug fixes
+
+* Proper description for `arrayRemoveMutable` ([6776da5](https://github.com/MorevM/utils/commit/6776da5736cab93c43d67c4c976165cecb8c2b62))
+
+
+### Tests
+
+* Extend `isObject` tests ([b2ae4b4](https://github.com/MorevM/utils/commit/b2ae4b4ee2ad2cbfd9705ceef0c4578ec22e5db9))
+
+### Refactoring
+
+* Make `arrayOfLength` more performant ([a5bc00a](https://github.com/MorevM/utils/commit/a5bc00a6b0c6517d624021cf77818973bdae0a65))
+* **types:** Remove `NumberRange` utility type in favor of using `IntRange` exported from `type-fest` ([af03dc9](https://github.com/MorevM/utils/commit/af03dc9d22f72fa64610ec6740816d74d7c8aee9))
+
 ## [2.8.1](https://github.com/MorevM/utils/compare/v2.8.0...v2.8.1) (2023-09-24)
 
 
