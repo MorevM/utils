@@ -3,6 +3,7 @@ export * from './compose/compose';
 export * from './debounce/debounce';
 export * from './hash/hash';
 export * from './noop/noop';
+export * from './safe-json-parse/safe-json-parse';
 export * from './sleep/sleep';
 export * from './throttle/throttle';
 export * from './verify-file-accept/verify-file-accept';
