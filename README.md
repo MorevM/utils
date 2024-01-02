@@ -53,3 +53,4 @@ const { arrayShuffle } = require('@morev/utils');
 * [type-fest](https://github.com/sindresorhus/type-fest) for many utility types.
 * `object-to-formdata` utility mostly inspired by [object-to-formdata](https://github.com/therealparmesh/object-to-formdata) package,
   but public API and implementation is a bit different according to my experience and needs.
+* [awaity](https://github.com/asfktz/Awaity.js) for an inspiration and initial code base of the `asyncArray` utility.
