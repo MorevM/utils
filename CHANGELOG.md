@@ -1,5 +1,13 @@
 
 
+## [3.1.0](https://github.com/MorevM/utils/compare/v3.0.1...v3.1.0) (2024-01-02)
+
+
+### Features
+
+* **functions:** Add `safeJsonParse` utility ([6672631](https://github.com/MorevM/utils/commit/6672631b14840d306393a4016ca0fb212afa6dad))
+* **guards:** Add `isSessionStorageAvailable` and `isLocalStorageAvailable` utilities ([da6e18d](https://github.com/MorevM/utils/commit/da6e18d27d7de760f75eb8e91ecd19d2b074dd07))
+
 ## [3.0.1](https://github.com/MorevM/utils/compare/v3.0.0...v3.0.1) (2024-01-01)
 
 
