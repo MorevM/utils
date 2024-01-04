@@ -1217,10 +1217,10 @@
     "@morev/utils" "^2.1.0"
     conventional-changelog-conventionalcommits "^5.0.0"
 
-"@morev/eslint-config@^26.2.1":
-  version "26.2.1"
-  resolved "https://registry.yarnpkg.com/@morev/eslint-config/-/eslint-config-26.2.1.tgz#cd0cad275be12ef43872c9bfb1eb15723120ba1a"
-  integrity sha512-uR84Kvi5Uv/sdxFOuZO9lZXSgkNJJk5dHlMJfxVqA0qx9Qr2vlw2M1svCjYAAaCR++uqbaoMm490PRhusd0WHA==
+"@morev/eslint-config@^26.3.0":
+  version "26.3.0"
+  resolved "https://registry.yarnpkg.com/@morev/eslint-config/-/eslint-config-26.3.0.tgz#6c78d7c3e35950a8ac1aaf25026e0a6e81c3926d"
+  integrity sha512-zvUwr0eruqkWzv8v681P+p+bhf1ovARlwxa070rEGXlEN9blbyQXeXCgvcS2M5XTqY7Yrr1xq40QwuWw0eAiqg==
   dependencies:
     "@babel/core" "^7.23.7"
     "@babel/eslint-parser" "^7.23.3"
