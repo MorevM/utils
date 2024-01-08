@@ -54,3 +54,4 @@ const { arrayShuffle } = require('@morev/utils');
 * `object-to-formdata` utility mostly inspired by [object-to-formdata](https://github.com/therealparmesh/object-to-formdata) package,
   but public API and implementation is a bit different according to my experience and needs.
 * [awaity](https://github.com/asfktz/Awaity.js) for an inspiration and initial code base of the `asyncArray` utility.
+* [set-cookie-parser](https://github.com/nfriedly/set-cookie-parser/) for the basic implementation of the `parseResponseCookie` utility and tests.
