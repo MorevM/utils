@@ -19,6 +19,7 @@ export * from './is-null/is-null';
 export * from './is-nullish/is-nullish';
 export * from './is-numeric/is-numeric';
 export * from './is-object/is-object';
+export * from './is-plain-object/is-plain-object';
 export * from './is-primitive/is-primitive';
 export * from './is-promise/is-promise';
 export * from './is-reg-exp/is-reg-exp';
