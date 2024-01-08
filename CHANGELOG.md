@@ -1,5 +1,12 @@
 
 
+## [3.3.1](https://github.com/MorevM/utils/compare/v3.3.0...v3.3.1) (2024-01-08)
+
+
+### Tests
+
+* Fix `asyncArray` time measurement ([a7cc88b](https://github.com/MorevM/utils/commit/a7cc88b47f89f4e8fbed2f918b1848422abae552))
+
 ## [3.3.0](https://github.com/MorevM/utils/compare/v3.2.0...v3.3.0) (2024-01-08)
 
 
