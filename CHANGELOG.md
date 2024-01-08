@@ -1,5 +1,31 @@
 
 
+## [3.2.0](https://github.com/MorevM/utils/compare/v3.1.0...v3.2.0) (2024-01-08)
+
+
+### Features
+
+* **arrays:** Add `asyncArray` utility ([2585caa](https://github.com/MorevM/utils/commit/2585caa23d8bea68c29d416e018d01cb3401e5dd))
+* **cookies:** Add `parseResponseCookie` utility ([139651f](https://github.com/MorevM/utils/commit/139651fd63dddd159780ce323b098b69b751d26c))
+* **cookies:** Add `serializeCookie` utility ([90e2889](https://github.com/MorevM/utils/commit/90e2889ae65b13fd979aeb0311ae4e41bcd70cc4))
+* **guards:** Add `isDateValid` utility ([4a6de04](https://github.com/MorevM/utils/commit/4a6de0481450687c06f5299162e22fdd504f0ad8))
+* **types:** Add `Cookie` type ([0f900ed](https://github.com/MorevM/utils/commit/0f900ed612633394dac8a98512a87a2e6c26c90e))
+
+
+### Tests
+
+* **guards:** Clarify `isDate` test ([07b615b](https://github.com/MorevM/utils/commit/07b615b2ae6ae6e4327463f27811e4f4e6bf1f0f))
+
+
+### Chores
+
+* Add `@total-typescript/ts-reset` ([0c09614](https://github.com/MorevM/utils/commit/0c096142687ee0418b8f6fc4414db529b390eda5))
+
+
+### Refactoring
+
+* Use `String.replaceAll` instead of `String.replace` ([82b1b5b](https://github.com/MorevM/utils/commit/82b1b5b987584a20a197e3fc57683ab622cb9d24))
+
 ## [3.1.0](https://github.com/MorevM/utils/compare/v3.0.1...v3.1.0) (2024-01-02)
 
 
