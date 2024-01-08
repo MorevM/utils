@@ -51,15 +51,15 @@ const preserveCamelCase = (string: string) => {
 const preserveConsecutiveUppercase = (input: string) => {
 	LEADING_CAPITAL.lastIndex = 0;
 
-	return input.replace(LEADING_CAPITAL, m1 => m1.toLowerCase());
+	return input.replaceAll(LEADING_CAPITAL, m1 => m1.toLowerCase());
 };
 
 const postProcess = (input: string) => {
 	SEPARATORS_AND_IDENTIFIER.lastIndex = 0;
 	NUMBERS_AND_IDENTIFIER.lastIndex = 0;
 
-	return input.replace(SEPARATORS_AND_IDENTIFIER, (_, identifier) => identifier.toUpperCase())
-		.replace(NUMBERS_AND_IDENTIFIER, m => m.toUpperCase());
+	return input.replaceAll(SEPARATORS_AND_IDENTIFIER, (_, identifier) => identifier.toUpperCase())
+		.replaceAll(NUMBERS_AND_IDENTIFIER, m => m.toUpperCase());
 };
 
 /**

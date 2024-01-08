@@ -112,7 +112,7 @@ const serialize = (key: string, value: unknown, options: Options, formData: Form
 					|| (options.arrayBrackets === 'append-only-for-files' && isFilesArray)
 				) return `${key}[${options.indices ? index : ''}]`;
 
-				return key.replace(/\[]$/gm, '');
+				return key.replaceAll(/\[]$/gm, '');
 			})();
 
 			serialize(arrayKey, arrayValue, options, formData);

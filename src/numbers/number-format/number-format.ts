@@ -27,7 +27,7 @@ export const numberFormat = (
 	let [int, fraction = ''] = parts;
 
 	if (int.length > 3) {
-		int = int.replace(/\B(?=(?:\d{3})+(?!\d))/g, thousandsSeparator); // eslint-disable-line unicorn/no-unsafe-regex
+		int = int.replaceAll(/\B(?=(?:\d{3})+(?!\d))/g, thousandsSeparator); // eslint-disable-line unicorn/no-unsafe-regex
 	}
 
 	if (fraction.length < decimals) {

@@ -19,7 +19,7 @@ export const verifyFileAccept = (file: File, accept: string | undefined | null) 
 	const mimeParts = parts.filter((part) => !part.startsWith('.')).join(',');
 
 	const mimeResult = mimeParts
-		? new RegExp(mimeParts.replace(/\*/g, '.\*').replace(/,/g, '|')).test(file.type)
+		? new RegExp(mimeParts.replaceAll('*', '.\*').replaceAll(',', '|')).test(file.type)
 		: false;
 
 	return mimeResult || extensionParts.some((part) => file.name.endsWith(part));

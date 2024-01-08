@@ -16,14 +16,14 @@ type Options = {
 export const kebabCase = (input: string, _options?: Options): string => {
 	const options = { numbers: false, ..._options };
 	let result = input
-		.replace(/([a-z])([A-Z])/g, '$1-$2')
-		.replace(/[\s._]+/g, '-');
+		.replaceAll(/([a-z])([A-Z])/g, '$1-$2')
+		.replaceAll(/[\s._]+/g, '-');
 
 	if (!options.numbers) return result.toLowerCase();
 
 	result = result
 		.replace(/\d+/, '-$&')
-		.replace(/(\d)([A-Z])/g, '$1-$2');
+		.replaceAll(/(\d)([A-Z])/g, '$1-$2');
 
 	return result.startsWith('-')
 		? result.slice(1).toLowerCase()

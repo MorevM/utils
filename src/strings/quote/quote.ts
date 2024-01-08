@@ -8,7 +8,7 @@
  */
 export const quote = (str: string, char: string = '"'): string => {
 	if (str === '') return `${char}${char}`;
-	const [first, last] = [str[0], str[str.length - 1]];
+	const [first, last] = [str[0], str.at(-1)];
 	if (first !== char) str = char + str;
 	if (last !== char) str += char;
 
