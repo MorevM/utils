@@ -17,7 +17,7 @@ const iterable = [
 
 describe('async-array', () => {
 	const duration = 50;
-	const expectedTime = (iterable.length + 1) * duration + itemDelay + itemDelay / 2;
+	const expectedTime = (iterable.length + 2) * duration + itemDelay + itemDelay / 2;
 
 	describe('forEach', () => {
 		it('Serially runs a callback function for an array of values/promises', async () => {
