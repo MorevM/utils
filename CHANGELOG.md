@@ -1,5 +1,13 @@
 
 
+## [3.3.0](https://github.com/MorevM/utils/compare/v3.2.0...v3.3.0) (2024-01-08)
+
+
+### Features
+
+* **guards:** Add `isPlainObject` utility ([6e1c4ab](https://github.com/MorevM/utils/commit/6e1c4ab7c8a65bd7f910c7ec1e012cbe754fa98f))
+* **urls:** Add `queryStringify` utility ([ba22a31](https://github.com/MorevM/utils/commit/ba22a311a4c5567e58fe7533bd9db73f1ef86360))
+
 ## [3.2.0](https://github.com/MorevM/utils/compare/v3.1.0...v3.2.0) (2024-01-08)
 
 
