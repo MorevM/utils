@@ -10,6 +10,7 @@ export * from './is-file/is-file';
 export * from './is-float/is-float';
 export * from './is-form-data/is-form-data';
 export * from './is-function/is-function';
+export * from './is-hex/is-hex';
 export * from './is-integer/is-integer';
 export * from './is-iterable/is-iterable';
 export * from './is-local-storage-available/is-local-storage-available';
