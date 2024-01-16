@@ -6,6 +6,7 @@ import { deepEqual as _deepEqual, circularDeepEqual } from 'fast-equals';
  *
  * @param   a   The value to compare #1.
  * @param   b   The value to compare #2.
+ *
  * @returns     Result of comparing two given values (deep equality).
  */
 export const deepEqual = (a: unknown, b: unknown) => _deepEqual(a, b);
@@ -16,6 +17,7 @@ export const deepEqual = (a: unknown, b: unknown) => _deepEqual(a, b);
  *
  * @param   a   The value to compare #1.
  * @param   b   The value to compare #2.
+ *
  * @returns     Result of comparing two given values (deep equality).
  */
 export const deepEqualCircular = (a: unknown, b: unknown) => circularDeepEqual(a, b);

@@ -10,6 +10,7 @@ import { isNumeric, isString } from '../../guards';
  * @param   fallback   Fallback value if cast was unsuccessful.
  *
  * @returns            The number if cast was successful, fallback value otherwise if provided.
+ *
  * @throws               Throws if cast was unsuccessful with no fallback value provided.
  */
 export function toNumber<F = undefined>(value: unknown, fallback?: F): number | F {

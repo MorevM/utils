@@ -38,6 +38,7 @@ type ToReturn<UserOptions extends Partial<Options> | undefined> = UserOptions ex
  *
  * @param   input         A string containing the cookie header, an array of such strings or fetch `Response` object.
  * @param   userOptions   Parser options.
+ *
  * @returns               Array of parsed cookie objects or object containing cookie name
  *                        as a key and cookie object as a value depending on `userOptions.returnType` property.
  */

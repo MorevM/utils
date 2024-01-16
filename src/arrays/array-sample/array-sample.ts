@@ -26,6 +26,7 @@ type Result<
  *                     Default is `1`.
  * @param   oversize   Should the function return more elements than the original array has if `size` is greater than the original array length? \
  *                     Default is `false`.
+ *
  * @returns
  */
 export const arraySample = <const T, Size extends number = 1>(

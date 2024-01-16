@@ -1,9 +1,6 @@
 import type { PlainObject } from '../../types';
 
-const hasOwn = (obj: PlainObject, prop: string) =>
-	Object.prototype.hasOwnProperty.call(obj, prop);
-
-const regExpKeysToCheck = ['source', 'global', 'ignoreCase', 'multiline', 'unicode', 'sticky', 'lastIndex'];
+const regExpKeysToCheck = ['source', 'global', 'ignoreCase', 'multiline', 'unicode', 'sticky', 'lastIndex'] as const;
 
 export const areObjectsEqual = (a: PlainObject, b: PlainObject, comparator: Function) => {
 	const aKeys = Object.keys(a);
@@ -13,7 +10,7 @@ export const areObjectsEqual = (a: PlainObject, b: PlainObject, comparator: Func
 
 	while (index-- > 0) {
 		const key = aKeys[index];
-		if (!hasOwn(b, key) || !comparator(a[key], b[key])) return false;
+		if (!Object.hasOwn(b, key) || !comparator(a[key], b[key])) return false;
 	}
 
 	return true;

@@ -69,7 +69,8 @@ const postProcess = (input: string) => {
  * @param        options   Additional options being supplied to the `_camelCase`.
  *
  * @returns                The string converted to camelCase.
- * @throws    {TypeError}  Throws if not string is passed
+ *
+ * @throws    {TypeError}  Throws if not a string is passed in.
  */
 export const camelCase = (
 	input: string | readonly string[],

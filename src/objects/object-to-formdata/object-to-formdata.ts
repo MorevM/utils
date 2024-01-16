@@ -151,6 +151,7 @@ const serialize = (key: string, value: unknown, options: Options, formData: Form
  * @param   object             An object to transform into FormData.
  * @param   userOptions        Transformation options.
  * @param   existingFormData   An existing FormData object to extend it instead of creating a new one.
+ *
  * @returns                    FormData object constructed from the object given, considering the options.
  */
 export const objectToFormdata = (

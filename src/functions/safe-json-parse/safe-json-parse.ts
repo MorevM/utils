@@ -11,11 +11,6 @@ type Reviver = Parameters<typeof JSON.parse>[1];
  * this feels wrong - we usually want an object or array as a result of parsing.
  * This function immediately returns `null` in case of non-string input.
  *
- * @param   jsonString   A string representing JSON value.
- * @param   reviver      A function that transforms the results. \
- *                       This function is called for each member of the object. \
- *                       If a member contains nested objects, the nested objects are transformed before the parent object is.
- *
  * @example
  * type ResultType = {
  *   isAuthorized: true;
@@ -29,6 +24,11 @@ type Reviver = Parameters<typeof JSON.parse>[1];
  *
  * // `result` is typed as `ResultType` with the default value in case of an error just in one line.
  * const result = <ResultType>safeJsonParse(jsonString) ?? defaultValue;
+ *
+ * @param   jsonString   A string representing JSON value.
+ * @param   reviver      A function that transforms the results. \
+ *                       This function is called for each member of the object. \
+ *                       If a member contains nested objects, the nested objects are transformed before the parent object is.
  *
  * @returns
  */

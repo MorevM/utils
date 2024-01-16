@@ -19,6 +19,7 @@ const extractSegments = (path: PathVariant) => toArray(path)
  * @param   input          The value to search in.
  * @param   path           The path to search using dot or array notation.
  * @param   defaultValue   The value to return if the path doesn't exist.
+ *
  * @returns                The value of property in the passed path if exists, `defaultValue` otherwise.
  */
 export const objectGet = (
