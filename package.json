@@ -4,6 +4,7 @@
 	"type": "module",
 	"version": "3.3.2",
 	"private": false,
+	"sideEffects": false,
 	"license": "MIT",
 	"publishConfig": {
 		"access": "public",
