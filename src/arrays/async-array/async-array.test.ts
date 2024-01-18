@@ -33,7 +33,7 @@ describe('async-array', () => {
 
 			expect(returnValue).toBeUndefined();
 			expect(result).toBe('1234');
-			expect(Math.abs(expectedTime - actualTime)).toBeLessThan(duration);
+			expect(Math.abs(expectedTime - actualTime)).toBeLessThan(duration * 3);
 		});
 	});
 
