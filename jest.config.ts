@@ -2,6 +2,7 @@
 import type { Config } from '@jest/types';
 
 const config: Config.InitialOptions = {
+	setupFilesAfterEnv: ['./jest.setup.ts'],
 	moduleFileExtensions: ['js', 'ts'],
 	transform: {
 		'\\.ts$': 'ts-jest',
