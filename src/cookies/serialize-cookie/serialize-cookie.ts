@@ -1,5 +1,4 @@
 import { isDate, isEmpty, isNullish } from '../../guards';
-import { isDateValid } from '../../guards/is-date-valid/is-date-valid';
 import { mergeObjects } from '../../objects';
 import type { Cookie } from '../../types';
 
@@ -49,7 +48,7 @@ export const serializeCookie = (cookie: Cookie, userOptions?: Partial<Options>) 
 		cookieString += `; Path=${cookie.path}`;
 	}
 
-	if ('expires' in cookie && isDate(cookie.expires) && isDateValid(cookie.expires)) {
+	if ('expires' in cookie && isDate(cookie.expires, true)) {
 		cookieString += `; Expires=${cookie.expires.toUTCString()}`;
 	}
 
