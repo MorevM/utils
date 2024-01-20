@@ -11,7 +11,8 @@
 		"outDir": "./dist",
 		"checkJs": false,
 		"allowJs": false,
-		"skipLibCheck": true
+		"skipLibCheck": true,
+		"types": ["jest", "node"]
 	},
 	"ts-node": {
 		"esm": true
