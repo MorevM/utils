@@ -1,21 +1,19 @@
+import { isInteger } from '../../guards';
 import { randomInteger } from './random-integer';
 
 describe('random-integer', () => {
 	it('Returns the random integer with no arguments', () => {
-		const result = randomInteger();
+		const result = callTimes(1000, () => randomInteger());
 
-		expect(typeof result).toBe('number');
-		expect(result).not.toBeNaN();
+		expect(result.every((value) => isInteger(value))).toBe(true);
 	});
 
 	it('Returns the random integer between a given minimum and maximum value (including)', () => {
-		const min = 10;
-		const max = 100;
-		const result = randomInteger(min, max);
+		const [min, max] = [10, 100];
+		const result = callTimes(1000, () => randomInteger(min, max));
 
-		expect(typeof result).toBe('number');
-		expect(result).not.toBeNaN();
-		expect(result).toBeGreaterThanOrEqual(min);
-		expect(result).toBeLessThanOrEqual(max);
+		expect(result.every((value) => isInteger(value))).toBe(true);
+		expect(result.every((value) => value >= min)).toBe(true);
+		expect(result.every((value) => value <= max)).toBe(true);
 	});
 });
