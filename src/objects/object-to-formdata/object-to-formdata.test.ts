@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-base-to-string -- FIXME: Add an exception to a shared config for a File */
+
 /* eslint-disable @typescript-eslint/unbound-method */
 import { objectToFormdata } from './object-to-formdata';
 
