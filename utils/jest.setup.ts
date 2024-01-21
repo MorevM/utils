@@ -1,6 +1,6 @@
 import 'jest-date';
 
-import { arrayOfLength } from './src';
+import { arrayOfLength } from '../src';
 
 // Extending Jest `it` object and executing `test(name, fn, timeout)`
 // multiple times makes the output too much verbose, so..
