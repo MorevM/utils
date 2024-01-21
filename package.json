@@ -49,6 +49,14 @@
 		"lint:fix": "eslint \"**/*.{js,ts,json,json5,jsonc,yml,yaml,md}\" --fix",
 		"release": "release-it --disable-metrics"
 	},
+	"overrides": {
+		"@typescript-eslint/eslint-plugin": "6.18.1",
+		"@typescript-eslint/parser": "6.18.1"
+	},
+	"resolutions": {
+		"@typescript-eslint/eslint-plugin": "6.18.1",
+		"@typescript-eslint/parser": "6.18.1"
+	},
 	"dependencies": {
 		"fast-copy": "^3.0.1",
 		"fast-equals": "^5.0.1",
