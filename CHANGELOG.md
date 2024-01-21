@@ -1,5 +1,40 @@
 
 
+## [3.4.0](https://github.com/MorevM/utils/compare/v3.3.2...v3.4.0) (2024-01-21)
+
+
+### Features
+
+* **colors:** Add `contrastColor` utility ([5681971](https://github.com/MorevM/utils/commit/5681971300b87e75f69b29baed8cd22cd4e2a8ff))
+* **colors:** Add `hexToRgb` utility ([836f99e](https://github.com/MorevM/utils/commit/836f99e44d07b059f0961c6c4cc78384ef2212a6))
+* **colors:** Add `rgbToHex` utility ([2cb814f](https://github.com/MorevM/utils/commit/2cb814f2ca869cb0f45d95450bde687f58039e17))
+* **colors:** Add `normalizeHex` utility ([291b40b](https://github.com/MorevM/utils/commit/291b40be9fc16db27182902da664b1a80824c156))
+* **dates:** Add `isLeapYear` utility ([4d415bb](https://github.com/MorevM/utils/commit/4d415bbf8564f2c890db58f082146460093e3874))
+* **dates:** Add `randomDate` utility ([b78c12b](https://github.com/MorevM/utils/commit/b78c12b46c38089859b180197fe7095df3266ac7))
+* **dates:** Add second argument to `isDate` utility to check validity ([cdf2735](https://github.com/MorevM/utils/commit/cdf27351b352349536cc4f407689657bbf000424))
+* **guards:** Add `isHex` utility ([769129a](https://github.com/MorevM/utils/commit/769129af45e56a645ff3a9171d100598f6074c35))
+
+
+### Refactoring
+
+* **dates:** Add deprecation notice for `isDateValid` utility ([45b6aaa](https://github.com/MorevM/utils/commit/45b6aaa5e570a78e22a67f79f0bd4795a9f70673))
+* **guards:** Use platform feature to determine `isInteger` ([ecb2ffa](https://github.com/MorevM/utils/commit/ecb2ffab3e237477c84a9280a24adeb758ade600))
+
+
+### Tests
+
+* Add `jest-date` extension ([40ea53b](https://github.com/MorevM/utils/commit/40ea53b2fd7b47e00670731cb2aa9e6081547fb5))
+* Clarify `isInteger` tests ([5b5ee78](https://github.com/MorevM/utils/commit/5b5ee789104606c96dcb70062b405ca2cef41749))
+* Declare a global test utility function `callTimes` to test utilities that relies on random ([69352aa](https://github.com/MorevM/utils/commit/69352aa82078704bceb58071ad20d30d344e9a76))
+* Increase `async-array` threshold ([d8090ba](https://github.com/MorevM/utils/commit/d8090ba06891ecb51bfe6c251ccd052cbffb8b37))
+* Use `callTimes` utility for tests that relies on random ([284467e](https://github.com/MorevM/utils/commit/284467e5bc2c8ef2fd35c3b4af2dd6962f24d83d))
+
+
+### Chores
+
+* Mark the package as side-effects free ([06f39a4](https://github.com/MorevM/utils/commit/06f39a400d3ba5bebb686047364e7a2c547c129f))
+* Set a predictable static timezone for Jest tests, move some files around to make the repo cleaner ([2816f7b](https://github.com/MorevM/utils/commit/2816f7b164a9915cb5072b7ddf73fc0e919335a5))
+
 ## [3.3.2](https://github.com/MorevM/utils/compare/v3.3.1...v3.3.2) (2024-01-08)
 
 ## [3.3.1](https://github.com/MorevM/utils/compare/v3.3.0...v3.3.1) (2024-01-08)
