@@ -1,5 +1,3 @@
-import { isNumeric } from '../is-numeric/is-numeric';
-
 /**
  * Checks whether a given value is an integer number.
  *
@@ -8,4 +6,4 @@ import { isNumeric } from '../is-numeric/is-numeric';
  * @returns         Whether the value is integer number
  */
 export const isInteger = (value: unknown): value is number =>
-	isNumeric(value) && (value % 1 === 0);
+	Number.isInteger(value);
