@@ -7,3 +7,4 @@ export * from './safe-json-parse/safe-json-parse';
 export * from './sleep/sleep';
 export * from './throttle/throttle';
 export * from './verify-file-accept/verify-file-accept';
+export * from './with-probability/with-probability';
