@@ -1,5 +1,12 @@
 
 
+## [3.5.0](https://github.com/MorevM/utils/compare/v3.4.0...v3.5.0) (2024-01-24)
+
+
+### Features
+
+* **functions:** Add `withProbability` utility ([0637fd9](https://github.com/MorevM/utils/commit/0637fd97cd699d6751455671ad492e1b1d5adc3f))
+
 ## [3.4.0](https://github.com/MorevM/utils/compare/v3.3.2...v3.4.0) (2024-01-21)
 
 
