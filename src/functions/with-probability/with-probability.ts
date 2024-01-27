@@ -30,6 +30,3 @@ export const withProbability = <A, B>(
 		? toValue(secondaryValue)
 		: toValue(primaryValue);
 };
-
-const q = withProbability(.5, 1, () => 'qwe');
-const qq = withProbability('50%', 1, () => 'qwe');
