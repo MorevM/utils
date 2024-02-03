@@ -1,12 +1,17 @@
 import type { Options } from 'tsup';
 
 export const tsup: Options = {
-	splitting: false,
 	sourcemap: false,
 	clean: true,
 	target: 'esnext',
 	format: ['cjs', 'esm'],
-	dts: true,
-	entryPoints: ['src/index.ts'],
+	dts: {
+		entry: 'src/index.ts',
+	},
+	entryPoints: [
+		'src/index.ts',
+		'src/*/**/*.ts',
+		'!src/**/*.test.ts',
+	],
 	outExtension: ({ format }) => ({ js: format === 'cjs' ? `.${format}` : `.js` }),
 };
