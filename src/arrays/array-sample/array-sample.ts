@@ -27,7 +27,8 @@ type Result<
  * @param   oversize   Should the function return more elements than the original array has if `size` is greater than the original array length? \
  *                     Default is `false`.
  *
- * @returns
+ * @returns            An array containing `size` elements from a given array,
+ *                     or just a random value from the given array if the `size` is `1` (default).
  */
 export const arraySample = <const T, Size extends number = 1>(
 	array: readonly T[],
