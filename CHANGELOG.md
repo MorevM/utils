@@ -1,5 +1,31 @@
 
 
+## [3.6.0](https://github.com/MorevM/utils/compare/v3.5.0...v3.6.0) (2024-02-04)
+
+
+### Features
+
+* **dates:** Add `formatDate` utility ([afcd7d9](https://github.com/MorevM/utils/commit/afcd7d9f253d72e05d1fd400bd5114b4723bb1c5))
+* **dates:** Add `isIsoDate` utility ([273e848](https://github.com/MorevM/utils/commit/273e84898857d0f8954852fd009f3b09faa867ab))
+* **dates:** Add `parseDate` utility ([88b5a23](https://github.com/MorevM/utils/commit/88b5a236e75313a8974076579872f48513ee806e))
+* **dates:** Add `toDate` utility ([f11a5cc](https://github.com/MorevM/utils/commit/f11a5cc1b589188c39afc80a8989174ac1589e6d))
+
+
+### Bug fixes
+
+* **arrays:** Write `returns` description for `arraySample` ([7ca5ead](https://github.com/MorevM/utils/commit/7ca5eadf7cadc66d4706057cdfb2e782e6c9525b))
+
+
+### Tests
+
+* Extend `promiseController` tests (mostly to fit ESLint settings) ([4fce609](https://github.com/MorevM/utils/commit/4fce6096a5a334eb8769065440997fa4178eca10))
+
+
+### Chores
+
+* bump type-fest from 4.9.0 to 4.10.1 ([#148](https://github.com/MorevM/utils/issues/148)) ([f476788](https://github.com/MorevM/utils/commit/f4767881f1a956ab23942960869978812e48af2e))
+* Export utilities individually ([2747afd](https://github.com/MorevM/utils/commit/2747afd0c4a82e0e0018e5afa16d569f066ec27c))
+
 ## [3.5.0](https://github.com/MorevM/utils/compare/v3.4.0...v3.5.0) (2024-01-24)
 
 
