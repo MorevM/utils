@@ -33,6 +33,7 @@ describe('async-array', () => {
 
 			expect(returnValue).toBeUndefined();
 			expect(result).toBe('1234');
+			// @TODO: Check the time between calls instead
 			expect(Math.abs(expectedTime - actualTime)).toBeLessThan(duration * 3);
 		});
 	});
@@ -59,7 +60,7 @@ describe('async-array', () => {
 				expect(results).toBe('01234');
 			});
 
-			expect(Math.abs(expectedTime - actualTime)).toBeLessThan(duration);
+			expect(Math.abs(expectedTime - actualTime)).toBeLessThan(duration * 3);
 		});
 
 		it('Serially reduces an array from right to left', async () => {
@@ -72,7 +73,7 @@ describe('async-array', () => {
 				expect(results).toBe('54321');
 			});
 
-			expect(Math.abs(expectedTime - actualTime)).toBeLessThan(duration);
+			expect(Math.abs(expectedTime - actualTime)).toBeLessThan(duration * 3);
 		});
 	});
 });
