@@ -24,10 +24,19 @@ describe('promise-controller', () => {
 		expect(controlledPromise).resolves.toBe('foo');
 	});
 
-	it('Can reject the promise via `reject` method', () => {
+	it('Can reject the promise via `reject` method using message', () => {
 		const controlledPromise = promiseController();
+		// eslint-disable-next-line @typescript-eslint/prefer-promise-reject-errors -- Doesn't matters in test
 		controlledPromise.reject('reason');
 
 		expect(controlledPromise).rejects.toBe('reason');
+	});
+
+	it('Can reject the promise via `reject` method using Error object', () => {
+		const error = new Error('reason');
+		const controlledPromise = promiseController();
+		controlledPromise.reject(error);
+
+		expect(controlledPromise).rejects.toBe(error);
 	});
 });
