@@ -1,6 +1,7 @@
 export * from './aliases/builtin/builtin';
 export * from './arrays/array-of/array-of';
 export * from './arrays/non-empty-array/non-empty-array';
+export * from './arrays/tuple-of/tuple-of';
 export * from './extensions/arrayable/arrayable';
 export * from './extensions/nullable/nullable';
 export * from './numbers/math-add/math-add';
