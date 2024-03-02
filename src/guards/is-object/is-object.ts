@@ -3,7 +3,7 @@
  *
  * @param   value   The value being evaluated.
  *
- * @returns         Whether the value is Object
+ * @returns         Whether the value is an Object.
  */
-export const isObject = (value: unknown): value is Record<string, any> =>
+export const isObject = (value: unknown): value is Record<string, unknown> =>
 	Object.prototype.toString.call(value).includes('Object');

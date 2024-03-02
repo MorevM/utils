@@ -6,9 +6,9 @@ import { isObject } from '../is-object/is-object';
  *
  * @param   value   The value being evaluated.
  *
- * @returns         Whether the value is plain object.
+ * @returns         Whether the value is a plain object.
  */
-export const isPlainObject = (value: unknown): value is PlainObject => {
+export const isPlainObject = (value: unknown): value is PlainObject<unknown> => {
 	if (!isObject(value)) return false;
 
 	const prototype = Object.getPrototypeOf(value);
