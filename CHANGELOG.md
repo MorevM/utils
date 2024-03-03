@@ -1,5 +1,24 @@
 
 
+## [3.7.0](https://github.com/MorevM/utils/compare/v3.6.0...v3.7.0) (2024-03-03)
+
+
+### Features
+
+* **math:** Add `distance` utility ([9771845](https://github.com/MorevM/utils/commit/9771845ff47503d68131b626743cf32a49111d6d))
+* **types:** Add `TupleOf` utility type ([ae07904](https://github.com/MorevM/utils/commit/ae0790497ee085846f848460a6e1706fa23b8a79))
+
+
+### Chores
+
+* bump type-fest from 4.10.2 to 4.10.3 ([#150](https://github.com/MorevM/utils/issues/150)) ([949295c](https://github.com/MorevM/utils/commit/949295c470acd34b6b38864c6127207c62961b88))
+
+
+### Bug fixes
+
+* **dates:** Include `formatDate` JSDoc in the resulting `.d.ts` files ([e066c4f](https://github.com/MorevM/utils/commit/e066c4f539ea894be6be3e15bd6dbd40fe4daba1))
+* **types:** Correct type for `isObject` and `isPlainObject` ([2ba3c9f](https://github.com/MorevM/utils/commit/2ba3c9f1465a1664bbfa461d5f07151e451a2fc4))
+
 ## [3.6.0](https://github.com/MorevM/utils/compare/v3.5.0...v3.6.0) (2024-02-04)
 
 
