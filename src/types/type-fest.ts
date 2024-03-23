@@ -3,6 +3,8 @@ export type {
 	ArrayIndices,
 	ArrayValues,
 	AsyncReturnType,
+	ArraySlice,
+	ArraySplice,
 	Asyncify,
 	CamelCase,
 	CamelCasedProperties,
@@ -17,6 +19,7 @@ export type {
 	// DelimiterCase,
 	// DelimiterCasedProperties,
 	// DelimiterCasedPropertiesDeep,
+	DistributedOmit,
 	EmptyObject,
 	Entries,
 	Entry,
@@ -27,6 +30,8 @@ export type {
 	Float,
 	Get,
 	GlobalThis,
+	GreaterThan,
+	GreaterThanOrEqual,
 	HasOptionalKeys,
 	HasReadonlyKeys,
 	HasRequiredKeys,
@@ -43,6 +48,7 @@ export type {
 	IsBooleanLiteral,
 	IsEqual,
 	IsLiteral,
+	IsNegative,
 	IsNever,
 	IsNumericLiteral,
 	IsStringLiteral,
@@ -61,6 +67,8 @@ export type {
 	KebabCasedPropertiesDeep,
 	KeysOfUnion,
 	LastArrayElement,
+	LessThan,
+	LessThanOrEqual,
 	LiteralToPrimitive,
 	LiteralToPrimitiveDeep,
 	LiteralUnion,
@@ -79,6 +87,7 @@ export type {
 	NonNegativeInteger,
 	// ObservableLike,   // If `Observable` proposal will be implemented
 	// Observer,         // If `Observable` proposal will be implemented
+	OmitDeep,
 	OmitIndexSignature,
 	// OnComplete,       // If `Observable` proposal will be implemented
 	// OnError,          // If `Observable` proposal will be implemented
@@ -132,6 +141,7 @@ export type {
 	Spread,
 	StringKeyOf,
 	Stringified,
+	StringSlice,
 	Tagged,
 	TaggedUnion,
 	// Trim, // Exported from the lib itself, as it allows to define trimmed character
