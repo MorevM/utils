@@ -2,7 +2,7 @@ import { daysInMonth } from './days-in-month';
 
 describe('days-in-month', () => {
 	beforeAll(() => {
-		jest.useFakeTimers({ now: new Date(2020, 1, 1) });
+		vi.useFakeTimers({ now: new Date(2020, 1, 1) });
 	});
 
 	it('Returns correct count of days in month with `year` passed', () => {
@@ -13,11 +13,11 @@ describe('days-in-month', () => {
 	});
 
 	it('Returns correct count of days in month with no `year` passed', () => {
-		jest.useFakeTimers({ now: new Date(2020, 1, 1) });
+		vi.useFakeTimers({ now: new Date(2020, 1, 1) });
 
 		expect(daysInMonth(0)).toBe(31);
 		expect(daysInMonth(1)).toBe(29);
 
-		jest.useRealTimers();
+		vi.useRealTimers();
 	});
 });

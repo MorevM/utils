@@ -1,6 +1,6 @@
 import { parseDate } from './parse-date';
 
-// There is a static timezone offset defined in `utils/jest.global-setup.ts`.
+// There is a static timezone offset defined in `utils/vitest.global-setup.ts`.
 const TIMEZONE_OFFSET_AS_HOURS = 3;
 
 describe('parse-date', () => {

@@ -3,7 +3,7 @@ import { toDate } from './to-date';
 // The utility function is actually a little wrapper under `parseDate` utility,
 // so most tests are defined in `parseDate.test.ts`
 
-// There is a static timezone offset defined in `utils/jest.global-setup.ts`.
+// There is a static timezone offset defined in `utils/vitest.global-setup.ts`.
 const TIMEZONE_OFFSET_AS_HOURS = 3;
 const hours = 20;
 

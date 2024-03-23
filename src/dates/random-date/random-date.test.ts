@@ -1,4 +1,3 @@
-/* eslint-disable jest/no-conditional-in-test */
 import { isDate } from '../../guards';
 import { randomDate } from './random-date';
 
@@ -7,46 +6,31 @@ const DEATHDATE = new Date(2094, 5, 11); // <-- Pretty optimistic
 
 describe('random-date', () => {
 	describe('Negative scenarios', () => {
-		it('Replaces invalid arguments with defaults and returns a Date', () => {
-			const result = callTimes(
-				100,
-				() => randomDate(
-					Math.random() > .5 ? new Date('foo') : null,
-					Math.random() > .5 ? new Date('foo') : null,
-				),
+		it('Replaces invalid arguments with defaults and returns a Date', { repeats: 1000 }, () => {
+			const date = randomDate(
+				Math.random() > .5 ? new Date('foo') : null,
+				Math.random() > .5 ? new Date('foo') : null,
 			);
 
-			for (let i = 0, l = result.length; i < l; i++) {
-				expect(isDate(result[i], true)).toBe(true);
-				expect(result[i]).toBeAfter(new Date(0));
-				expect(result[i]).toBeBefore(new Date());
-			}
+			expect(isDate(date, true)).toBe(true);
+			expect(date).toBeAfter(new Date(0));
+			expect(date).toBeBefore(new Date());
 		});
 
-		it('Replaces the first invalid / nulled argument with default and returns a Date', () => {
-			const result = callTimes(
-				100,
-				() => randomDate(Math.random() > .5 ? new Date('foo') : null, new Date(BIRTHDATE)),
-			);
+		it('Replaces the first invalid / nulled argument with default and returns a Date', { repeats: 1000 }, () => {
+			const date = randomDate(Math.random() > .5 ? new Date('foo') : null, new Date(BIRTHDATE));
 
-			for (let i = 0, l = result.length; i < l; i++) {
-				expect(isDate(result[i], true)).toBe(true);
-				expect(result[i]).toBeAfter(new Date(0));
-				expect(result[i]).toBeBefore(BIRTHDATE);
-			}
+			expect(isDate(date, true)).toBe(true);
+			expect(date).toBeAfter(new Date(0));
+			expect(date).toBeBefore(BIRTHDATE);
 		});
 
-		it('Replaces the second invalid / nulled argument with default and returns a Date', () => {
-			const result = callTimes(
-				100,
-				() => randomDate(new Date(BIRTHDATE), Math.random() > .5 ? new Date('foo') : null),
-			);
+		it('Replaces the second invalid / nulled argument with default and returns a Date', { repeats: 1000 }, () => {
+			const date = randomDate(new Date(BIRTHDATE), Math.random() > .5 ? new Date('foo') : null);
 
-			for (let i = 0, l = result.length; i < l; i++) {
-				expect(isDate(result[i], true)).toBe(true);
-				expect(result[i]).toBeAfter(BIRTHDATE);
-				expect(result[i]).toBeBefore(new Date());
-			}
+			expect(isDate(date, true)).toBe(true);
+			expect(date).toBeAfter(BIRTHDATE);
+			expect(date).toBeBefore(new Date());
 		});
 
 		describe('time (as tuple)', () => {
@@ -98,31 +82,21 @@ describe('random-date', () => {
 			});
 		});
 
-		it('Works propertly if `start` and `end` dates are equal', () => {
-			const result = callTimes(
-				100,
-				() => randomDate(BIRTHDATE, BIRTHDATE),
-			);
+		it('Works propertly if `start` and `end` dates are equal', { repeats: 1000 }, () => {
+			const date = randomDate(BIRTHDATE, BIRTHDATE);
 
-			for (let i = 0, l = result.length; i < l; i++) {
-				expect(isDate(result[i], true)).toBe(true);
-				expect(result[i].getTime()).toBeCloseTo(BIRTHDATE.getTime());
-			}
+			expect(isDate(date, true)).toBe(true);
+			expect(date.getTime()).toBeCloseTo(BIRTHDATE.getTime());
 		});
 	});
 
 	describe('Positive scenarios', () => {
-		it('Returns a random date between `start` and `end` dates', () => {
-			const result = callTimes(
-				100,
-				() => randomDate(BIRTHDATE, DEATHDATE),
-			);
+		it('Returns a random date between `start` and `end` dates', { repeats: 1000 }, () => {
+			const date = randomDate(BIRTHDATE, DEATHDATE);
 
-			for (let i = 0, l = result.length; i < l; i++) {
-				expect(isDate(result[i], true)).toBe(true);
-				expect(result[i]).toBeAfter(BIRTHDATE);
-				expect(result[i]).toBeBefore(DEATHDATE);
-			}
+			expect(isDate(date, true)).toBe(true);
+			expect(date).toBeAfter(BIRTHDATE);
+			expect(date).toBeBefore(DEATHDATE);
 		});
 
 		describe('time (as tuple)', () => {

@@ -2,10 +2,10 @@
 import { throttle } from './throttle';
 
 describe('throttle', () => {
-	beforeEach(() => jest.useFakeTimers());
+	beforeEach(() => vi.useFakeTimers());
 
 	it('Throttles a callback function with no parameters except `delay`', async () => {
-		const fn = jest.fn();
+		const fn = vi.fn();
 		const throttled = throttle(fn, 3000);
 
 		// 1 (leading) - 1
@@ -14,15 +14,15 @@ describe('throttle', () => {
 		// 4 - 9001
 		// 5 (trailing) - 12001
 		const interval = setInterval(throttled, 1);
-		jest.advanceTimersByTime(10000);
+		vi.advanceTimersByTime(10000);
 		clearInterval(interval);
-		jest.advanceTimersByTime(10000);
+		vi.advanceTimersByTime(10000);
 
 		expect(fn).toHaveBeenCalledTimes(5);
 	});
 
 	it('Throttles a callback function with no `leading`', async () => {
-		const fn = jest.fn();
+		const fn = vi.fn();
 		const throttled = throttle(fn, { delay: 3000, leading: false });
 
 		// (leading omitted)
@@ -31,15 +31,15 @@ describe('throttle', () => {
 		// 3 - 9001
 		// 4 (trailing) - 12001
 		const interval = setInterval(throttled, 1);
-		jest.advanceTimersByTime(10000);
+		vi.advanceTimersByTime(10000);
 		clearInterval(interval);
-		jest.advanceTimersByTime(10000);
+		vi.advanceTimersByTime(10000);
 
 		expect(fn).toHaveBeenCalledTimes(4);
 	});
 
 	it('Throttles a callback function with no `trailing`', async () => {
-		const fn = jest.fn();
+		const fn = vi.fn();
 		const throttled = throttle(fn, { delay: 3000, trailing: false });
 
 		// 1 (leading) - 1
@@ -48,15 +48,15 @@ describe('throttle', () => {
 		// 4 - 9001
 		// (trailing omitted)
 		const interval = setInterval(throttled, 1);
-		jest.advanceTimersByTime(10000);
+		vi.advanceTimersByTime(10000);
 		clearInterval(interval);
-		jest.advanceTimersByTime(10000);
+		vi.advanceTimersByTime(10000);
 
 		expect(fn).toHaveBeenCalledTimes(4);
 	});
 
 	it('Throttles a callback function with no `leading` and `trailing`', async () => {
-		const fn = jest.fn();
+		const fn = vi.fn();
 		const throttled = throttle(fn, { delay: 3000, leading: false, trailing: false });
 
 		// (leading omitted)
@@ -65,20 +65,20 @@ describe('throttle', () => {
 		// 3 - 9001
 		// (trailing omitted)
 		const interval = setInterval(throttled, 1);
-		jest.advanceTimersByTime(10000);
+		vi.advanceTimersByTime(10000);
 		clearInterval(interval);
-		jest.advanceTimersByTime(10000);
+		vi.advanceTimersByTime(10000);
 
 		expect(fn).toHaveBeenCalledTimes(3);
 	});
 
 	it('Can cancel invocation using `cancel` method', async () => {
-		const fn = jest.fn();
+		const fn = vi.fn();
 		const throttled = throttle(fn, 3000);
 
 		setInterval(throttled, 1);
 		throttled.cancel();
-		jest.advanceTimersByTime(10000);
+		vi.advanceTimersByTime(10000);
 
 		expect(fn).toHaveBeenCalledTimes(0);
 	});
@@ -100,7 +100,7 @@ describe('throttle', () => {
 		// 4            - 8 + 1 + 1 = 10
 		// 5 (trailing) - 10 + 1 + 1 = 12
 		setInterval(throttled, 1);
-		jest.advanceTimersByTime(10000);
+		vi.advanceTimersByTime(10000);
 
 		expect(counter).toBe(12);
 	});

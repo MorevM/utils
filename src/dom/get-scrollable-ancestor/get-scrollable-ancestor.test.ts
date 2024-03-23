@@ -16,7 +16,7 @@ describe('get-scrollable-ancestor', () => {
 			</div>
 		`);
 
-		// Jest won't parse `overflow`, so it's defined separately
+		// Vitest won't parse `overflow`, so it's defined separately
 		const style = document.createElement('style');
 		style.innerHTML = `
 			.scrollable-x { overflow-x: auto; }

@@ -30,7 +30,6 @@ describe('random-float', () => {
 				expect(random).toBeGreaterThanOrEqual(min);
 				expect(random).toBeLessThanOrEqual(max);
 
-				// eslint-disable-next-line jest/no-conditional-in-test
 				expect(precision === undefined || calculatedPrecision <= precision).toBe(true);
 			}
 		});

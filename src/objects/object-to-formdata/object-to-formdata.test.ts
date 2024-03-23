@@ -6,9 +6,9 @@ import { objectToFormdata } from './object-to-formdata';
 const formDataAppend = global.FormData.prototype.append;
 
 describe('object-to-formdata', () => {
-	beforeEach(() => { jest.spyOn(global.FormData.prototype, 'append').mockImplementation(formDataAppend); });
+	beforeEach(() => { vi.spyOn(global.FormData.prototype, 'append').mockImplementation(formDataAppend); });
 
-	afterEach(() => { jest.restoreAllMocks(); });
+	afterEach(() => { vi.restoreAllMocks(); });
 
 	describe('Default options', () => {
 		it('Skips over `undefined` values', () => {

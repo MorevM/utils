@@ -1,4 +1,3 @@
-/* eslint-disable jest/valid-expect */
 /* eslint-disable @typescript-eslint/no-floating-promises */
 import { isPromise } from '../../guards';
 import { promiseController } from './promise-controller';
@@ -17,26 +16,26 @@ describe('promise-controller', () => {
 		expect(controlledPromise.reject).toBeInstanceOf(Function);
 	});
 
-	it('Can resolve the promise via `resolve` method', () => {
+	it('Can resolve the promise via `resolve` method', async () => {
 		const controlledPromise = promiseController();
 		controlledPromise.resolve('foo');
 
-		expect(controlledPromise).resolves.toBe('foo');
+		await expect(controlledPromise).resolves.toBe('foo');
 	});
 
-	it('Can reject the promise via `reject` method using message', () => {
+	it('Can reject the promise via `reject` method using message', async () => {
 		const controlledPromise = promiseController();
 		// eslint-disable-next-line @typescript-eslint/prefer-promise-reject-errors -- Doesn't matters in test
 		controlledPromise.reject('reason');
 
-		expect(controlledPromise).rejects.toBe('reason');
+		await expect(controlledPromise).rejects.toBe('reason');
 	});
 
-	it('Can reject the promise via `reject` method using Error object', () => {
+	it('Can reject the promise via `reject` method using Error object', async () => {
 		const error = new Error('reason');
 		const controlledPromise = promiseController();
 		controlledPromise.reject(error);
 
-		expect(controlledPromise).rejects.toBe(error);
+		await expect(controlledPromise).rejects.toBe(error);
 	});
 });

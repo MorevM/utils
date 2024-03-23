@@ -1,4 +1,3 @@
-/* eslint-disable jest/max-nested-describe */
 import { rgbToHex } from './rgb-to-hex';
 
 describe('rgb-to-hex', () => {

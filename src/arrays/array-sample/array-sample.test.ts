@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/require-array-sort-compare */
-/* eslint-disable jest/no-conditional-in-test */
 import { randomInteger } from '../../numbers';
 import { deepEqual } from '../../objects';
 import { arrayOfLength } from '../array-of-length/array-of-length';

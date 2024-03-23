@@ -2,8 +2,8 @@ import { getDocumentSize } from './get-document-size';
 
 describe('get-document-size', () => {
 	beforeEach(() => {
-		jest.spyOn(document.body, 'scrollWidth', 'get').mockImplementation(() => 3000);
-		jest.spyOn(document.body, 'scrollHeight', 'get').mockImplementation(() => 6000);
+		vi.spyOn(document.body, 'scrollWidth', 'get').mockImplementation(() => 3000);
+		vi.spyOn(document.body, 'scrollHeight', 'get').mockImplementation(() => 6000);
 	});
 
 	it('Returns the document scroll width if `axis` argument value is `x`', () => {

@@ -1,4 +1,3 @@
-/* eslint-disable jest/no-conditional-in-test */
 import { safeJsonParse } from './safe-json-parse';
 
 const WRONG_JSON_STRING = '{"a":  "b}';

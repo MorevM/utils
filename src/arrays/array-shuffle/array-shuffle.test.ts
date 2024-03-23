@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/require-array-sort-compare */
 import { deepEqual } from '../../objects';
+import { arrayOfLength } from '../array-of-length/array-of-length';
 import { arrayShuffle } from './array-shuffle';
 
 const input = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -7,10 +8,9 @@ const input = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 describe('array-shuffle', () => {
 	it('Returns the shuffled array', () => {
 		const TIMES = 100000;
-		const result = callTimes(TIMES, () => arrayShuffle(input));
+		const result = arrayOfLength(TIMES, () => arrayShuffle(input));
 
 		const sameOrderCount = result.reduce((acc, curr) => {
-			// eslint-disable-next-line jest/no-conditional-in-test
 			return acc + (deepEqual(input, curr) ? 1 : 0);
 		}, 0);
 

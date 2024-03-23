@@ -1,4 +1,3 @@
-/* eslint-disable jest/no-conditional-in-test */
 import { mergeObjects, createMergeObjects } from './merge-objects';
 
 const defaultObj = {

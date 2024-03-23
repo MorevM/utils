@@ -14,13 +14,13 @@ describe('is-lighthouse', () => {
 	});
 
 	it('Returns `true` in browser if the argument is omitted and Lighthouse user agent is being used', () => {
-		jest.spyOn(window.navigator, 'userAgent', 'get').mockReturnValue(LIGHTHOUSE_UA);
+		vi.spyOn(window.navigator, 'userAgent', 'get').mockReturnValue(LIGHTHOUSE_UA);
 
 		expect(isLighthouse()).toBe(true);
 	});
 
 	it('Returns `false` on server side if the argument is omitted', () => {
-		jest.spyOn(global as any, 'window', 'get').mockReturnValue(undefined);
+		vi.spyOn(global as any, 'window', 'get').mockReturnValue(undefined);
 
 		expect(isLighthouse()).toBe(false);
 	});

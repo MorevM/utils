@@ -16,7 +16,7 @@ const mockGetBoundingClientRect = (el: Element, _options: { x: number; y: number
 		right: 0,
 		toJSON: () => {},
 	};
-	jest.spyOn(el, 'getBoundingClientRect')
+	vi.spyOn(el, 'getBoundingClientRect')
 		.mockImplementation(() => pseudoRect);
 };
 

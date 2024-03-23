@@ -1,4 +1,4 @@
-/* eslint-disable jest/no-conditional-in-test -- No way to test without "conditionals" */
+import { arrayOfLength } from '../../arrays';
 import { withProbability } from './with-probability';
 
 const TESTS_COUNT = 10000;
@@ -15,7 +15,7 @@ const [primary, secondary] = [1, 0];
 describe('with-probability', () => {
 	describe('Primary value', () => {
 		it('Returns the primary value if the first argument is `1`', () => {
-			const results = callTimes(TESTS_COUNT, () => withProbability(1, primary, secondary));
+			const results = arrayOfLength(TESTS_COUNT, () => withProbability(1, primary, secondary));
 
 			const primaryAmount = toAmount(results, primary);
 			const secondaryAmount = toAmount(results, secondary);
@@ -25,7 +25,7 @@ describe('with-probability', () => {
 		});
 
 		it('Returns the primary value if the first argument is `100`', () => {
-			const results = callTimes(TESTS_COUNT, () => withProbability(100, primary, secondary));
+			const results = arrayOfLength(TESTS_COUNT, () => withProbability(100, primary, secondary));
 
 			const primaryAmount = toAmount(results, primary);
 			const secondaryAmount = toAmount(results, secondary);
@@ -35,7 +35,7 @@ describe('with-probability', () => {
 		});
 
 		it('Returns the primary value with if the first argument is more than `100`', () => {
-			const results = callTimes(TESTS_COUNT, () => withProbability(10000, primary, secondary));
+			const results = arrayOfLength(TESTS_COUNT, () => withProbability(10000, primary, secondary));
 
 			const primaryAmount = toAmount(results, primary);
 			const secondaryAmount = toAmount(results, secondary);
@@ -45,7 +45,7 @@ describe('with-probability', () => {
 		});
 
 		it('Returns the primary value if the first argument is `100%`', () => {
-			const results = callTimes(TESTS_COUNT, () => withProbability('100%', primary, secondary));
+			const results = arrayOfLength(TESTS_COUNT, () => withProbability('100%', primary, secondary));
 
 			const primaryAmount = toAmount(results, primary);
 			const secondaryAmount = toAmount(results, secondary);
@@ -55,7 +55,7 @@ describe('with-probability', () => {
 		});
 
 		it('Returns the primary value if the first argument is more than `100%`', () => {
-			const results = callTimes(TESTS_COUNT, () => withProbability('10000%', primary, secondary));
+			const results = arrayOfLength(TESTS_COUNT, () => withProbability('10000%', primary, secondary));
 
 			const primaryAmount = toAmount(results, primary);
 			const secondaryAmount = toAmount(results, secondary);
@@ -65,7 +65,7 @@ describe('with-probability', () => {
 		});
 
 		it('Can obtain a primary value from a function', () => {
-			const results = callTimes(TESTS_COUNT, () => withProbability(1, () => primary, secondary));
+			const results = arrayOfLength(TESTS_COUNT, () => withProbability(1, () => primary, secondary));
 
 			expect(results.every((result) => result === 1)).toBe(true);
 		});
@@ -73,7 +73,7 @@ describe('with-probability', () => {
 
 	describe('Secondary value', () => {
 		it('Returns the secondary value if the first argument is `0`', () => {
-			const results = callTimes(TESTS_COUNT, () => withProbability(0, primary, secondary));
+			const results = arrayOfLength(TESTS_COUNT, () => withProbability(0, primary, secondary));
 
 			const primaryAmount = toAmount(results, primary);
 			const secondaryAmount = toAmount(results, secondary);
@@ -83,7 +83,7 @@ describe('with-probability', () => {
 		});
 
 		it('Returns the secondary value if the first argument is negative number', () => {
-			const results = callTimes(TESTS_COUNT, () => withProbability(0, primary, secondary));
+			const results = arrayOfLength(TESTS_COUNT, () => withProbability(0, primary, secondary));
 
 			const primaryAmount = toAmount(results, primary);
 			const secondaryAmount = toAmount(results, secondary);
@@ -93,7 +93,7 @@ describe('with-probability', () => {
 		});
 
 		it('Returns the secondary value if the first argument is `0%`', () => {
-			const results = callTimes(TESTS_COUNT, () => withProbability('0%', primary, secondary));
+			const results = arrayOfLength(TESTS_COUNT, () => withProbability('0%', primary, secondary));
 
 			const primaryAmount = toAmount(results, primary);
 			const secondaryAmount = toAmount(results, secondary);
@@ -103,7 +103,7 @@ describe('with-probability', () => {
 		});
 
 		it('Returns the secondary value if the first argument is a string form of negative percentage', () => {
-			const results = callTimes(TESTS_COUNT, () => withProbability('-10%', primary, secondary));
+			const results = arrayOfLength(TESTS_COUNT, () => withProbability('-10%', primary, secondary));
 
 			const primaryAmount = toAmount(results, primary);
 			const secondaryAmount = toAmount(results, secondary);
@@ -113,7 +113,7 @@ describe('with-probability', () => {
 		});
 
 		it('Can obtain a secondary value from a function', () => {
-			const results = callTimes(TESTS_COUNT, () => withProbability(0, () => primary, () => secondary));
+			const results = arrayOfLength(TESTS_COUNT, () => withProbability(0, () => primary, () => secondary));
 
 			expect(results.every((result) => result === 0)).toBe(true);
 		});
@@ -122,7 +122,7 @@ describe('with-probability', () => {
 	describe('Mixed', () => {
 		it('Returns the primary value with given probability', () => {
 			const probability = .8;
-			const results = callTimes(TESTS_COUNT, () => withProbability(probability, primary, secondary));
+			const results = arrayOfLength(TESTS_COUNT, () => withProbability(probability, primary, secondary));
 
 			const primaryAmount = toAmount(results, primary);
 			const secondaryAmount = toAmount(results, secondary);
@@ -133,7 +133,7 @@ describe('with-probability', () => {
 
 		it('Counts the `probability` as a percentage value if it is greater than `1`', () => {
 			const probability = 20;
-			const results = callTimes(TESTS_COUNT, () => withProbability(probability, primary, secondary));
+			const results = arrayOfLength(TESTS_COUNT, () => withProbability(probability, primary, secondary));
 
 			const primaryAmount = toAmount(results, primary);
 			const secondaryAmount = toAmount(results, secondary);
@@ -143,7 +143,7 @@ describe('with-probability', () => {
 		});
 
 		it('Works with nested calls', () => {
-			const results = callTimes(
+			const results = arrayOfLength(
 				TESTS_COUNT, () => withProbability(.5, 1, withProbability(.5, () => withProbability(.1, 2, 3), 4)),
 			);
 

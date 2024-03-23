@@ -4,7 +4,7 @@ describe('is-dev', () => {
 	const OLD_ENV = process.env;
 
 	beforeEach(() => {
-		jest.resetModules();
+		vi.resetModules();
 		process.env = { ...OLD_ENV };
 	});
 

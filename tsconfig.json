@@ -12,7 +12,7 @@
 		"checkJs": false,
 		"allowJs": false,
 		"skipLibCheck": true,
-		"types": ["jest", "node"]
+		"types": ["node", "vitest/globals"]
 	},
 	"ts-node": {
 		"esm": true
