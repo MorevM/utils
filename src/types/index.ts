@@ -4,8 +4,6 @@ export * from './arrays/non-empty-array/non-empty-array';
 export * from './arrays/tuple-of/tuple-of';
 export * from './extensions/arrayable/arrayable';
 export * from './extensions/nullable/nullable';
-export * from './numbers/math-add/math-add';
-export * from './numbers/math-subtract/math-subtract';
 export * from './objects/cookie/cookie';
 export * from './objects/object-entries/object-entries';
 export * from './objects/object-from-entries/object-from-entries';
