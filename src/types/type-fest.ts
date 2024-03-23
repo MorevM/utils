@@ -1,4 +1,16 @@
-/* eslint-disable no-multi-spaces */
+export type { Includes as ArrayIncludes } from 'type-fest';
+export type { IterableElement as ElementOf } from 'type-fest';
+export type { Promisable as Awaitable } from 'type-fest';
+export type { Replace as StringReplace } from 'type-fest';
+export type { ScreamingSnakeCase as UpperSnakeCase } from 'type-fest';
+export type { SetNonNullable as PartialNonNullable } from 'type-fest';
+export type { SetOptional as PartialOptional } from 'type-fest';
+export type { SetReadonly as PartialReadonly } from 'type-fest';
+export type { SetRequired as PartialRequired } from 'type-fest';
+export type { SetReturnType as PartialReturnType } from 'type-fest';
+export type { Simplify as Explicit } from 'type-fest';
+export type { TsConfigJson as TsConfig } from 'type-fest';
+
 export type {
 	ArrayIndices,
 	ArrayValues,
@@ -39,7 +51,6 @@ export type {
 	IfAny,
 	IfNever,
 	IfUnknown,
-	Includes as ArrayIncludes,
 	Integer,
 	IntRange,
 	InvariantOf,
@@ -54,7 +65,6 @@ export type {
 	IsStringLiteral,
 	IsSymbolLiteral,
 	IsUnknown,
-	IterableElement as ElementOf,
 	Join,
 	JsonArray,
 	JsonObject,
@@ -110,11 +120,9 @@ export type {
 	PickIndexSignature,
 	PositiveInfinity,
 	Primitive,
-	Promisable as Awaitable,
 	ReadonlyDeep,
 	ReadonlyKeysOf,
 	ReadonlyTuple,
-	Replace as StringReplace,
 	// RequireAllOrNone,
 	// RequireAtLeastOne,
 	// RequireExactlyOne,
@@ -122,17 +130,10 @@ export type {
 	RequiredKeysOf,
 	RequireOneOrNone,
 	Schema,
-	ScreamingSnakeCase as UpperSnakeCase,
 
 	SetFieldType,
-	SetNonNullable as PartialNonNullable,
-	SetOptional as PartialOptional,
 	SetParameterType,
-	SetReadonly as PartialReadonly,
-	SetRequired as PartialRequired,
-	SetReturnType as PartialReturnType,
 	SharedUnionFieldsDeep,
-	Simplify as Explicit,
 
 	SnakeCase,
 	SnakeCasedProperties,
@@ -145,7 +146,6 @@ export type {
 	Tagged,
 	TaggedUnion,
 	// Trim, // Exported from the lib itself, as it allows to define trimmed character
-	TsConfigJson as TsConfig,
 	TupleToUnion,
 	TypedArray,
 	UnionToIntersection,
