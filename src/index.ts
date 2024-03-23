@@ -5,6 +5,7 @@ export * from './dom';
 export * from './environment';
 export * from './functions';
 export * from './guards';
+export * from './math';
 export * from './numbers';
 export * from './objects';
 export * from './promises';
