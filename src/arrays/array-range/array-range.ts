@@ -20,6 +20,5 @@ export const arrayRange = (from: number, to?: number) => {
 	}
 
 	return arrayOfLength(Math.abs(to - from) + 1, (index) => index)
-		/* @ts-expect-error -- `to` cannot be `undefined` here since the top check */
 		.map(i => (from > to ? -i : i) + from);
 };
