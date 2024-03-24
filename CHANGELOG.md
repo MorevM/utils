@@ -1,5 +1,33 @@
 
 
+## [3.8.0](https://github.com/MorevM/utils/compare/v3.7.0...v3.8.0) (2024-03-24)
+
+
+### Features
+
+* **math:** Add `lerp` utility ([57eeceb](https://github.com/MorevM/utils/commit/57eeceb6a38458b268f0c8902ddd38dd3f9b5fac))
+* **strings:** Add `stripIndent` utility ([f8bee7f](https://github.com/MorevM/utils/commit/f8bee7fe05fab98a6ec077a1132ffb995028cb84))
+* **types:** Add new types from `type-fest` ([a03ee9e](https://github.com/MorevM/utils/commit/a03ee9e7fdd84fd73f87526703f96b9fafbfd030))
+
+
+### Bug fixes
+
+* **math:** Add missed `math` exports ([2111832](https://github.com/MorevM/utils/commit/21118325c756fc391a749d73b526dd3a022e4f32))
+
+
+### Chores
+
+* Bump `fast-copy` from 3.0.1 to 3.0.2 ([5787993](https://github.com/MorevM/utils/commit/57879936208723a8086c302c00209d94ed5fa493))
+* Bump `type-fest` from 4.10.3 to 4.13.1 ([cc2d09f](https://github.com/MorevM/utils/commit/cc2d09f161789d59ee6e1611106882f3291d485e))
+* Migrate from `jest` to `vitest` ([2325013](https://github.com/MorevM/utils/commit/232501344fecc8aa71b959e0b11db6a4d3bab302))
+
+
+### Refactoring
+
+* Remove some TS tweaks after updating `typescript` ([5f97dd7](https://github.com/MorevM/utils/commit/5f97dd7c47891628dc14f45715bfa8806e106ad8))
+* **types:** Mark renamed `type-fest` types more explicitly ([ba2cc9b](https://github.com/MorevM/utils/commit/ba2cc9b15e6939cf03eaeb787e9f447c692baba5))
+* **types:** Replace `MathAdd` and `MathSubstract` utility types with `type-fest` new alternative ones ([485c20f](https://github.com/MorevM/utils/commit/485c20f7d1fdb2c6f7d7cba7385f8cd8bd428aec))
+
 ## [3.7.0](https://github.com/MorevM/utils/compare/v3.6.0...v3.7.0) (2024-03-03)
 
 
