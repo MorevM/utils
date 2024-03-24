@@ -9,7 +9,7 @@ export default defineConfig({
 		environment: 'jsdom',
 		reporters: ['verbose'],
 		coverage: {
-			enabled: true,
+			enabled: false,
 			provider: 'v8',
 			all: false,
 		},
