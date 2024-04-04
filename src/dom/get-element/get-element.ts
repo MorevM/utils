@@ -6,11 +6,11 @@ import { isString } from '../../guards/is-string/is-string';
  * or just returns a given element as is.
  *
  * @param   value    Queried element selector or the element itself.
- * @param   parent
+ * @param   parent   The parent element within which to search.
  *
- * @returns          The element being queried.
+ * @returns          The element being queried or `null` if does not exists.
  */
-export const getElement = (value: Element | string | null, parent: Element | string | null = null) => {
+export const getElement = (value: Element | string | null, parent: Window | Element | string | null = null) => {
 	if (isString(parent)) {
 		parent = document.querySelector(parent);
 	}

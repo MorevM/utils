@@ -77,6 +77,11 @@ describe('get-element', () => {
 		expect(getElement(justBlock.element, justBlock.element)).toBe(justBlock.element);
 	});
 
+	it('Returns the element itself if `window` is passed as `parent` argument', () => {
+		expect(getElement(outOfParent.element, window)).toBe(outOfParent.element);
+		expect(getElement(justBlock.element, window)).toBe(justBlock.element);
+	});
+
 	it('Returns the element or null considers parent element', () => {
 		expect(getElement(childInside.element, parentBlock.element)).toBe(childInside.element);
 		expect(getElement(outOfParent.element, parentBlock.element)).toBeNull();
