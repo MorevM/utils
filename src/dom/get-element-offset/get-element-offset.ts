@@ -23,9 +23,9 @@ const getElementScroll = <T extends Axis>(el: Element, axis: T = 'both' as T): T
 export const getElementOffset = <T extends Axis>(
 	el: Element,
 	axis: T = 'both' as T,
-	parent: Element | Window = window,
+	parent: Element | Window | null = window,
 ): ToReturn<T> => {
-	const parentRect = parent === window
+	const parentRect = parent === window || parent === null
 		? { top: 0, left: 0 }
 		: (parent as Element).getBoundingClientRect();
 	const elRect = el.getBoundingClientRect();
@@ -33,7 +33,7 @@ export const getElementOffset = <T extends Axis>(
 	const top = elRect.top - parentRect.top;
 	const left = elRect.left - parentRect.left;
 
-	const scroll = parent === window
+	const scroll = parent === window || !parent
 		? getWindowScroll(axis)
 		: getElementScroll(parent as Element, axis);
 

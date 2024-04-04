@@ -118,4 +118,14 @@ describe('get-element-offset', () => {
 			y: 200 + 800,
 		});
 	});
+
+	it('Correctly outputs with if `null` is passed as `parent` argument', () => {
+		const el = document.querySelector(SELECTOR) as Element;
+		mockGetBoundingClientRect(el, { x: 100, y: 200 });
+
+		expect(getElementOffset(el, 'both', null)).toStrictEqual({
+			x: 100,
+			y: 200,
+		});
+	});
 });
