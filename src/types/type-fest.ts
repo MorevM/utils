@@ -51,6 +51,7 @@ export type {
 	HasRequiredKeys,
 	HasWritableKeys,
 	IfAny,
+	IfEmptyObject,
 	IfNever,
 	IfUnknown,
 	Integer,
@@ -135,6 +136,7 @@ export type {
 
 	SetFieldType,
 	SetParameterType,
+	SingleKeyObject,
 	SharedUnionFieldsDeep,
 
 	SnakeCase,
