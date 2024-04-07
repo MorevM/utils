@@ -1,5 +1,25 @@
 
 
+## [3.9.0](https://github.com/MorevM/utils/compare/v3.8.0...v3.9.0) (2024-04-07)
+
+
+### Features
+
+* **dom:** Allow `null` as `parent` argument of `get-element-offset` utility ([32b0bf2](https://github.com/MorevM/utils/commit/32b0bf292f4ba4d0346e6858babf474ad8f6907d))
+* **dom:** Allow `window` as `parent` argument of `get-element` utility ([59f5be0](https://github.com/MorevM/utils/commit/59f5be0a6922f2e9dd0f4b338df9b931e2fc318e))
+* **dom:** Make `getElement` and `getScrollableAncestor` generic ([49cbd03](https://github.com/MorevM/utils/commit/49cbd03fbae0108d861728048f4b6ecc5125c13e))
+* **types:** Add `IfEmptyObject` and `SingleKeyObject` types exported from `type-fest` ([e98c481](https://github.com/MorevM/utils/commit/e98c4810aced4909ecf77d68943faa70563d7739))
+
+
+### Chores
+
+* Bump `type-fest` from 4.14.0 to 4.15.0 ([65bd1a7](https://github.com/MorevM/utils/commit/65bd1a73b2b7cbc64738af8516f03a432c82999c))
+
+
+### CI improvements
+
+* Add latest changelog entry to Github release ([9336acb](https://github.com/MorevM/utils/commit/9336acb763c1cbc0f1774ec3f0cc15cab8d084dd))
+
 ## [3.8.0](https://github.com/MorevM/utils/compare/v3.7.0...v3.8.0) (2024-03-24)
 
 
