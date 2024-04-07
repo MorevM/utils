@@ -8,7 +8,10 @@ type Axis = 'x' | 'y' | 'both';
  *
  * @returns           The nearest scrollable ancestor element of a given element, or the `window` object.
  */
-export const getScrollableAncestor = (element: Element | null, axis: Axis = 'both'): Element | Window => {
+export const getScrollableAncestor = <El extends Element = Element>(
+	element: Element | null,
+	axis: Axis = 'both',
+): El | Window => {
 	let el = element;
 
 	while (el?.parentElement) {
@@ -23,7 +26,7 @@ export const getScrollableAncestor = (element: Element | null, axis: Axis = 'bot
 		['both', 'y'].includes(axis) && toCheck.push(styles.getPropertyValue('overflow-y'));
 
 		const isScrollable = toCheck.some(val => ['auto', 'scroll'].includes(val));
-		if (isScrollable) return el;
+		if (isScrollable) return el as El;
 	}
 
 	return window;

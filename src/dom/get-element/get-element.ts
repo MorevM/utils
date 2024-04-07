@@ -10,7 +10,10 @@ import { isString } from '../../guards/is-string/is-string';
  *
  * @returns          The element being queried or `null` if does not exists.
  */
-export const getElement = (value: Element | string | null, parent: Window | Element | string | null = null) => {
+export const getElement = <El extends Element = Element>(
+	value: Element | string | null,
+	parent: Window | Element | string | null = null,
+): El | null => {
 	if (isString(parent)) {
 		parent = document.querySelector(parent);
 	}
@@ -23,8 +26,8 @@ export const getElement = (value: Element | string | null, parent: Window | Elem
 
 	if (isElement(value)) {
 		return isElement(parent)
-			? parent.contains(value) ? value : null
-			: value;
+			? parent.contains(value) ? value as El : null
+			: value as El;
 	}
 
 	return null;
