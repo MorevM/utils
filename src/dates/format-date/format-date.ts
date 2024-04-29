@@ -3,7 +3,7 @@ import { toArray } from '../../arrays';
 import { mergeObjects } from '../../objects';
 import type { Arrayable } from '../../types';
 import { toDate } from '../to-date/to-date';
-import { prefixedDateMethodsFactory } from '../utils';
+import { prefixedDateMethodsFactory } from '../dates.utils';
 import type { FormatDate, Input, LocaleObject, Options } from './format-date.types';
 import { FORMAT_DATE_LOCALE_EN, FORMAT_DATE_LOCALE_RU } from './format-date.locales';
 import { ORDERED_DAY_INDICES, TOKEN, pad } from './format-date.utils';

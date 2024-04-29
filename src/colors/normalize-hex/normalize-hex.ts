@@ -1,7 +1,7 @@
 /* eslint-disable sonarjs/no-duplicate-string */
 import { isHex, isNullish } from '../../guards';
 import { mergeObjects } from '../../objects';
-import { LONG_HEX_REG_EXP, SHORT_HEX_REG_EXP } from '../utils';
+import { LONG_HEX_REG_EXP, SHORT_HEX_REG_EXP } from '../colors.utils';
 import type { Options } from './normalize-hex.types';
 
 const DEFAULT_OPTIONS: Options = {

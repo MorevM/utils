@@ -1,6 +1,6 @@
 import { mergeObjects } from '../../objects';
 import { parseDate } from '../parse-date/parse-date';
-import { createDateFromTokens } from '../utils';
+import { createDateFromTokens } from '../dates.utils';
 
 type Options = {
 	/**

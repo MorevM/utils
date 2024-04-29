@@ -1,5 +1,5 @@
 import { isString } from '../../guards';
-import { ISO_DATETIME_REG_EXP } from '../utils';
+import { ISO_DATETIME_REG_EXP } from '../dates.utils';
 
 /**
  * Checks whether the given value is a valid ISO date string.

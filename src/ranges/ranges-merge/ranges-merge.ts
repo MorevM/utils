@@ -1,8 +1,8 @@
 /* eslint-disable import/exports-last */
 import { isNullish } from '../../guards';
 import { rangesSort } from '../ranges-sort/ranges-sort';
-import { formatInfinity } from '../utils';
-import type { AvailableRangeValues, OutputRange } from '../utils';
+import { formatInfinity } from '../ranges.utils';
+import type { AvailableRangeValues, OutputRange } from '../ranges.utils';
 
 /**
  * Sorts and merges given ranges.

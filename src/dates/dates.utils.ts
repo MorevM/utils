@@ -1,4 +1,4 @@
-import type { Prefix, _DateTokens } from './types';
+import type { Prefix, _DateTokens } from './dates.types';
 
 export const ISO_DATETIME_REG_EXP = /^(\d{4})-(0[1-9]|1[02])-(0[1-9]|[12]\d|3[01])(?:[ T](0\d|1\d|2[0-3]):([0-5]\d):([0-5]\d)(?:\.(\d{3}))?(?:Z|([+-](?:0\d|1\d|2[0-3])(?::?[0-5]\d)?))?)?$/;
 export const RU_DATETIME_REG_EXP = /^([1-9]|0\d|[12]\d|3[01])\.(0[1-9]|[1-9]|1[0-2])\.(\d{4})(?:\s*([01]\d|2[0-3]|\d)(?::(0\d|[1-5]\d|\d))?(?::(0\d|[1-5]\d|\d))?(?:.(\d{3}))?)?$/;

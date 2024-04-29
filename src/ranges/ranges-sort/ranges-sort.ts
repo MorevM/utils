@@ -1,8 +1,8 @@
 import { assert } from '../../functions';
 import { isNullish, isNumeric } from '../../guards';
 import type { ElementOf } from '../../types';
-import { formatInfinity } from '../utils';
-import type { AvailableRangeValues, OutputRange, Range } from '../utils';
+import { formatInfinity } from '../ranges.utils';
+import type { AvailableRangeValues, OutputRange, Range } from '../ranges.utils';
 
 const comparator = (a: ElementOf<Range>, b: ElementOf<Range>) => {
 	if (isNullish(a) && isNullish(b)) return 0;

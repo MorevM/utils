@@ -1,5 +1,5 @@
 import { isNullish } from '../../guards';
-import type { Range } from '../utils';
+import type { Range } from '../ranges.utils';
 
 /**
  * Checks whether at least one of provided ranges

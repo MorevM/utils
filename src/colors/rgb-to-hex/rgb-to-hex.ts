@@ -2,7 +2,7 @@ import { isArray, isHex, isInteger, isNull, isNullish, isNumeric, isObject, isSt
 import { clamp, toNumber } from '../../numbers';
 import { mergeObjects } from '../../objects';
 import { normalizeHex } from '../normalize-hex/normalize-hex';
-import type { ObjectShortMaybeAlpha } from '../types';
+import type { ObjectShortMaybeAlpha } from '../colors.types';
 import type { Options, Input } from './rgb-to-hex.types';
 
 const CSS_REG_EXP = /^rgba?\(((?:\s*\d+\s*,?\s*){2}\d+)(\s*[,/]\s*-?[\d.]+%?)?\s*\);?$/m;
