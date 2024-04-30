@@ -1,5 +1,14 @@
 
 
+## [3.10.0](https://github.com/MorevM/utils/compare/v3.9.0...v3.10.0) (2024-04-30)
+
+
+### Features
+
+* **math:** Add `angle` utility ([a948bd8](https://github.com/MorevM/utils/commit/a948bd85643cf17720b1778ed6ae2ec36d1fd906))
+* **math:** Add `gcd` utility ([f4e2435](https://github.com/MorevM/utils/commit/f4e243523bffd3370e402ce838dbc040d9921c37))
+
+
 ## [3.9.0](https://github.com/MorevM/utils/compare/v3.8.0...v3.9.0) (2024-04-07)
 
 
