@@ -56,3 +56,4 @@ const { arrayShuffle } = require('@morev/utils');
 * [awaity](https://github.com/asfktz/Awaity.js) for an inspiration and initial code base of the `asyncArray` utility.
 * [set-cookie-parser](https://github.com/nfriedly/set-cookie-parser/) for the basic implementation of the `parseResponseCookie` utility and tests.
 * [cookie](https://github.com/jshttp/cookie) for the basic implementation of the `serializeCookie` utility and its tests.
+* [compute-gcd](https://github.com/compute-io/gcd) for the implementation of the `gcd` utility and its tests.
