@@ -8,6 +8,12 @@ describe('form-data-to-object', () => {
 		expect(formDataToObject(formData)).toStrictEqual({});
 	});
 
+	it('Returns the object as is if not FormData is passed', () => {
+		const obj = { foo: 'bar' };
+
+		expect(formDataToObject(obj)).toStrictEqual(obj);
+	});
+
 	it('Returns plain object builded from given `FormData`', () => {
 		const formData = new FormData();
 		formData.append('string', 'string');
