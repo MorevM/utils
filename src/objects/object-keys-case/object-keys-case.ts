@@ -1,7 +1,6 @@
 /* eslint-disable import/exports-last */
 import { kebabCase, snakeCase, pascalCase, camelCase } from '../../strings';
 import { isArray, isObject, isRegExp, isString } from '../../guards/index';
-import { mergeObjects } from '../merge-objects/merge-objects';
 import type { PlainObject } from '../../types';
 
 type Case = 'snake_case' | 'PascalCase' | 'kebab-case' | 'camelCase';
@@ -34,11 +33,12 @@ const getHandler = (neededCase: Case) => {
  * @returns              New object with keys "renamed" to needed case.
  */
 export const objectKeysCase = (input: unknown, neededCase: Case, _options?: Partial<Options>) => {
-	const options = mergeObjects({
+	const options = {
 		depth: Infinity,
 		exclude: [],
 		excludeBranches: [],
-	}, _options) as Required<Options>;
+		..._options,
+	};
 	const handler = getHandler(neededCase);
 
 	const isExcluded = (type: 'key' | 'branch', key: string) => {

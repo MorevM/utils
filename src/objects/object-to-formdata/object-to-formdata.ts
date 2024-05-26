@@ -1,6 +1,5 @@
 /* eslint-disable jsdoc/no-multi-asterisks */
 import type { PlainObject } from '../../types';
-import { mergeObjects } from '../merge-objects/merge-objects';
 import { isArray, isBoolean, isDate, isFile, isFunction, isNumeric, isObject, isString } from '../../guards';
 import { isUndefined } from '../../guards/is-undefined/is-undefined';
 import { isNull } from '../../guards/is-null/is-null';
@@ -159,7 +158,7 @@ export const objectToFormdata = (
 	userOptions?: Partial<Options> | null,
 	existingFormData?: FormData,
 ) => {
-	const options = mergeObjects(DEFAULT_OPTIONS, userOptions) as Required<Options>;
+	const options = { ...DEFAULT_OPTIONS, ...userOptions };
 
 	const formData = existingFormData ?? new FormData();
 	serialize('', object, options, formData);

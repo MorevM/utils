@@ -1,5 +1,3 @@
-import { mergeObjects } from '../../objects/merge-objects/merge-objects';
-
 const _getMinimalIndent = (input: string) => {
 	const match = input.match(/^[\t ]*(?=\S)/gm);
 	if (!match) return 0;
@@ -47,7 +45,7 @@ const _applyOptions = (input: string, options: Options) => {
  * @returns               The string with minimal required indentation.
  */
 export const stripIndent = (input: string, userOptions?: Partial<Options>) => {
-	const options = mergeObjects(DEFAULTS, userOptions) as Required<Options>;
+	const options = { ...DEFAULTS, ...userOptions };
 
 	const minIndent = _getMinimalIndent(input);
 	if (minIndent === 0) return _applyOptions(input, options);

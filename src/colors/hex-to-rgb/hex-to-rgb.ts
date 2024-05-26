@@ -1,4 +1,3 @@
-import { mergeObjects } from '../../objects';
 import { normalizeHex } from '../normalize-hex/normalize-hex';
 import type { Options, ToReturn } from './hex-to-rgb.types';
 
@@ -20,7 +19,7 @@ export const hexToRgb = <UserOptions extends Partial<Options> = Options>(
 	hex: string,
 	userOptions?: UserOptions,
 ): ToReturn<UserOptions> | null => {
-	const options = mergeObjects(DEFAULT_OPTIONS, userOptions) as Required<Options>;
+	const options = { ...DEFAULT_OPTIONS, ...userOptions };
 
 	hex = normalizeHex(hex, { alphaChannel: options.alphaChannel, notation: 'long' }) ?? '';
 	if (!hex) return null;

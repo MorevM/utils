@@ -1,6 +1,5 @@
 /* eslint-disable sonarjs/no-duplicate-string */
 import { isHex, isNullish } from '../../guards';
-import { mergeObjects } from '../../objects';
 import { LONG_HEX_REG_EXP, SHORT_HEX_REG_EXP } from '../colors.utils';
 import type { Options } from './normalize-hex.types';
 
@@ -23,7 +22,7 @@ export const normalizeHex = (hex: string, userOptions?: Partial<Options>) => {
 	hex = hex.trim().toLowerCase();
 	if (!isHex(hex)) return null;
 
-	const options = mergeObjects(DEFAULT_OPTIONS, userOptions) as Required<Options>;
+	const options = { ...DEFAULT_OPTIONS, ...userOptions };
 
 	const isShort = hex.length === 4 || hex.length === 5;
 	const hasAlphaChannel = hex.length === 5 || hex.length === 9;

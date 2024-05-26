@@ -1,5 +1,4 @@
 import { isHex, isNull } from '../../guards';
-import { mergeObjects } from '../../objects';
 import { hexToRgb } from '../hex-to-rgb/hex-to-rgb';
 import { normalizeHex } from '../normalize-hex/normalize-hex';
 
@@ -67,7 +66,7 @@ export const contrastColor = (
 	userCandidates?: string[] | null,
 	userOptions?: Partial<Options>,
 ) => {
-	const options = mergeObjects(DEFAULT_OPTIONS, userOptions) as Required<Options>;
+	const options = { ...DEFAULT_OPTIONS, ...userOptions };
 	const candidates = userCandidates ?? DEFAULT_CANDIDATES;
 
 	if (!isHex(sourceColor)) return null;

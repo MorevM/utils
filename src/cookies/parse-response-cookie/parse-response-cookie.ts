@@ -3,7 +3,6 @@
 
 import type { IncomingMessage } from 'node:http';
 import { isArray, isEmpty, isFunction, isObject, isString } from '../../guards';
-import { mergeObjects } from '../../objects';
 import { toArray } from '../../arrays';
 import type { Cookie } from '../../types';
 import { splitCookiesString, parseCookieChunk, DEFAULT_OPTIONS } from './parse-response-cookie.utils';
@@ -46,7 +45,7 @@ export const parseResponseCookie = <UserOptions extends Partial<Options> = typeo
 	input: string | string[] | Response | IncomingMessage | undefined | null,
 	userOptions?: UserOptions,
 ): ToReturn<UserOptions> => {
-	const options = mergeObjects(DEFAULT_OPTIONS, userOptions) as Required<Options>;
+	const options = { ...DEFAULT_OPTIONS, ...userOptions };
 
 	if (isEmpty(input)) {
 		return options.returnType === 'array'

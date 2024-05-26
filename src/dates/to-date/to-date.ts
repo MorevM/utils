@@ -1,4 +1,3 @@
-import { mergeObjects } from '../../objects';
 import { parseDate } from '../parse-date/parse-date';
 import { createDateFromTokens } from '../dates.utils';
 
@@ -27,7 +26,7 @@ const DEFAULT_OPTIONS: Options = { utc: false };
  * @returns               A Date object or `null` in case of invalid input.
  */
 export const toDate = (value: string | number | Date, userOptions?: Options): Date | null => {
-	const options = mergeObjects(DEFAULT_OPTIONS, userOptions) as Required<Options>;
+	const options = { ...DEFAULT_OPTIONS, ...userOptions };
 	const tokens = parseDate(value, { utc: options.utc });
 	if (!tokens) return null;
 

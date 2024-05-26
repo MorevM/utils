@@ -1,5 +1,4 @@
 import { isDate, isEmpty, isNullish } from '../../guards';
-import { mergeObjects } from '../../objects';
 import type { Cookie } from '../../types';
 
 type Options = {
@@ -24,7 +23,7 @@ const DEFAULT_OPTIONS: Options = {
  * @returns               A cookie string.
  */
 export const serializeCookie = (cookie: Cookie, userOptions?: Partial<Options>) => {
-	const options = mergeObjects(DEFAULT_OPTIONS, userOptions) as Required<Options>;
+	const options = { ...DEFAULT_OPTIONS, ...userOptions };
 
 	const value = options.encodeValue ? encodeURIComponent(cookie.value) : cookie.value;
 

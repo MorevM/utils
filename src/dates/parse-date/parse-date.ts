@@ -1,5 +1,4 @@
 import { isDate, isInteger, isUndefined } from '../../guards';
-import { mergeObjects } from '../../objects';
 import { EN_DATETIME_REG_EXP, ISO_DATETIME_REG_EXP, RU_DATETIME_REG_EXP, createDateFromTokens, prefixedDateMethodsFactory } from '../dates.utils';
 import type { DateTokens, _DateTokens } from '../dates.types';
 
@@ -45,7 +44,7 @@ const DEFAULT_OPTIONS: Options = { utc: false };
  * @returns               Date tokens or `null` in case of invalid input.
  */
 export const parseDate = (input: string | number | Date, userOptions?: Partial<Options>): DateTokens | null => {
-	const options = mergeObjects(DEFAULT_OPTIONS, userOptions) as Required<Options>;
+	const options = { ...DEFAULT_OPTIONS, ...userOptions };
 
 	if (isDate(input)) {
 		if (!isDate(input, true)) return null;

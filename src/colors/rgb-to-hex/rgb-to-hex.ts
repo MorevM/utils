@@ -1,6 +1,5 @@
 import { isArray, isHex, isInteger, isNull, isNullish, isNumeric, isObject, isString } from '../../guards';
 import { clamp, toNumber } from '../../numbers';
-import { mergeObjects } from '../../objects';
 import { normalizeHex } from '../normalize-hex/normalize-hex';
 import type { ObjectShortMaybeAlpha } from '../colors.types';
 import type { Options, Input } from './rgb-to-hex.types';
@@ -26,7 +25,7 @@ const isValidAlphaPart = (part: unknown): part is number => isNumeric(part) && p
  * @returns               HEX string built from `input` or `null` in case of invalid input.
  */
 export const rgbToHex = (source: Input, userOptions?: Partial<Options>): string | null => {
-	const options = mergeObjects(DEFAULT_OPTIONS, userOptions) as Required<Options>;
+	const options = { ...DEFAULT_OPTIONS, ...userOptions };
 
 	const toHex = (r: number, g: number, b: number, a: number | null) => {
 		const hex = `#${numberToHex(r)}${numberToHex(g)}${numberToHex(b)}${isNull(a) ? '' : numberToHex(a)}`;
