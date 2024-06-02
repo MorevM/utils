@@ -14,6 +14,7 @@ export type { Sum as MathAdd } from 'type-fest';
 export type { TsConfigJson as TsConfig } from 'type-fest';
 
 export type {
+	And,
 	ArrayIndices,
 	ArrayValues,
 	AsyncReturnType,
@@ -34,6 +35,7 @@ export type {
 	// DelimiterCasedProperties,
 	// DelimiterCasedPropertiesDeep,
 	DistributedOmit,
+	DistributedPick,
 	EmptyObject,
 	Entries,
 	Entry,
@@ -61,9 +63,12 @@ export type {
 	IsAny,
 	IsBooleanLiteral,
 	IsEqual,
+	IsFloat,
+	IsInteger,
 	IsLiteral,
 	IsNegative,
 	IsNever,
+	IsNull,
 	IsNumericLiteral,
 	IsStringLiteral,
 	IsSymbolLiteral,
@@ -107,6 +112,7 @@ export type {
 	// OnNext,           // If `Observable` proposal will be implemented
 	Opaque,
 	OptionalKeysOf,
+	Or,
 	OverrideProperties,
 	PackageJson,
 	PartialDeep,
