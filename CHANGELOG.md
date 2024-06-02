@@ -1,5 +1,32 @@
 
 
+## [3.11.0](https://github.com/MorevM/utils/compare/v3.10.0...v3.11.0) (2024-06-02)
+
+
+### Features
+
+* **arrays:** Add `arraySwap` utility ([53def2a](https://github.com/MorevM/utils/commit/53def2aabddf658c5958f8576d351fb7d7a3310f))
+* **objects:** Allow to pass plain object in `formDataToObject` utility ([1b5d1a6](https://github.com/MorevM/utils/commit/1b5d1a68daf69f75ce288a03190e3d914130a278))
+* **ranges:** Add `rangesIntersection` utility ([aff384f](https://github.com/MorevM/utils/commit/aff384f64f262dc52c47f094c62c8b08e9d31fb8))
+* **types:** Add new utility types exported from latest `type-fest` ([c1975f4](https://github.com/MorevM/utils/commit/c1975f42dd8e1d3b11ba5bb9ef20489f8a959538))
+
+
+### Bug fixes
+
+* **ranges:** Consider `NaN` value as input or a range edge ([7e9b1a8](https://github.com/MorevM/utils/commit/7e9b1a8f5a1b8e159eddd28cdad64724b3489a0a))
+
+
+### Chores
+
+* Bump `type-fest` from 4.15.0 to 4.18.3 ([214ba9e](https://github.com/MorevM/utils/commit/214ba9ee5710dcf0811acfb6e0f3b4e02097207d))
+
+
+### Refactoring
+
+* Avoid using more expensive `mergeObjects` if simple spread operator can be used ([9aab13d](https://github.com/MorevM/utils/commit/9aab13dd91f130dc43d02ee653a20d07e659b855))
+* Compare with `undefined` directly without calling `typeof` ([4fcb57b](https://github.com/MorevM/utils/commit/4fcb57bbad7c7ed41bbdfb0f512c3204b7246856))
+* Fix circular dependencies ([4b675ae](https://github.com/MorevM/utils/commit/4b675aeed7329457c65ec155ba7717a65accc423))
+
 ## [3.10.0](https://github.com/MorevM/utils/compare/v3.9.0...v3.10.0) (2024-04-30)
 
 
