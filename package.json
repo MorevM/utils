@@ -63,20 +63,20 @@
 	},
 	"devDependencies": {
 		"@morev/commitlint-config": "^0.2.2",
-		"@morev/eslint-config": "^32.0.0",
+		"@morev/eslint-config": "^33.0.0",
 		"@release-it/conventional-changelog": "^8.0.1",
 		"@total-typescript/ts-reset": "^0.5.1",
-		"@types/node": "^20.12.7",
-		"@vitest/coverage-v8": "^1.5.2",
+		"@types/node": "^20.13.0",
+		"@vitest/coverage-v8": "^1.6.0",
 		"eslint": "^8.57.0",
 		"jest-date": "^1.1.6",
 		"jest-environment-jsdom": "^29.7.0",
-		"jsdom": "^24.0.0",
-		"lefthook": "^1.6.10",
-		"release-it": "^17.2.1",
+		"jsdom": "^24.1.0",
+		"lefthook": "^1.6.14",
+		"release-it": "^17.3.0",
 		"ts-node": "^10.9.2",
 		"tsup": "^8.0.2",
 		"typescript": "^5.4.5",
-		"vitest": "^1.5.2"
+		"vitest": "^1.6.0"
 	}
 }
