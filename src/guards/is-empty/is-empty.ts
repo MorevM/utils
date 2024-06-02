@@ -12,7 +12,7 @@ import { isObject } from '../is-object/is-object';
 type Empty = undefined | null | false | 0 | 0n | '' | readonly [] | [] | PlainObject<never>;
 
 export const isEmpty = (value: unknown): value is Empty => {
-	if (typeof (value) === 'undefined') return true;
+	if (value === undefined) return true;
 	if (value === null) return true;
 	if (value === false) return true;
 	if (Number.isNaN(value)) return true;
