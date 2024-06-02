@@ -16,8 +16,12 @@ export const rangeIncludes = (
 	ranges: readonly Range[] | null | undefined,
 	mode: 'all' | 'any' = 'any',
 ) => {
+	if (Number.isNaN(value)) return false;
+
 	const method = mode === 'all' ? 'every' : 'some';
 	return (ranges ?? [])[method](([min, max]) => {
+		if (Number.isNaN(min) || Number.isNaN(max)) return false;
+
 		if (!isNullish(min) && value < min) return false;
 		// eslint-disable-next-line sonarjs/prefer-single-boolean-return
 		if (!isNullish(max) && value > max) return false;

@@ -1,6 +1,15 @@
 import { rangeIncludes } from './range-includes';
 
 describe('range-includes', () => {
+	it('Returns `false` if the value is `NaN`', () => {
+		expect(rangeIncludes(NaN, [[-Infinity, Infinity]])).toBe(false);
+	});
+
+	it('Returns `false` if the given range includes `NaN`', () => {
+		expect(rangeIncludes(10, [[0, NaN]])).toBe(false);
+		expect(rangeIncludes(10, [[NaN, Infinity]])).toBe(false);
+	});
+
 	it('Returns `true` if a given range includes a given value', () => {
 		expect(rangeIncludes(150, [[100, 200]])).toBe(true);
 	});
