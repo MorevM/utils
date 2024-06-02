@@ -4,6 +4,7 @@ export * from './array-range/array-range';
 export * from './array-remove/array-remove';
 export * from './array-sample/array-sample';
 export * from './array-shuffle/array-shuffle';
+export * from './array-swap/array-swap';
 export * from './array-unique/array-unique';
 export * from './arrays-difference/arrays-difference';
 export * from './arrays-intersection/arrays-intersection';
