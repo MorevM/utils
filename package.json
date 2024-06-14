@@ -2,7 +2,7 @@
 	"name": "@morev/utils",
 	"description": "Collection of JavaScript / TypeScript utilities",
 	"type": "module",
-	"version": "3.11.0",
+	"version": "3.11.1",
 	"private": false,
 	"sideEffects": false,
 	"license": "MIT",

@@ -1,5 +1,17 @@
 
 
+## [3.11.1](https://github.com/MorevM/utils/compare/v3.11.0...v3.11.1) (2024-06-14)
+
+
+### Tests
+
+* **guards:** Ensure `isObject` is `false` for `File` object ([0f6a800](https://github.com/MorevM/utils/commit/0f6a800a3caed12455264ecd69cc480902bc1edf))
+
+
+### Bug fixes
+
+* **objects:** Add `File` objects to resulting FormData as is ([d055851](https://github.com/MorevM/utils/commit/d055851e03b0cdf3dffec85c62457e83cb81293d))
+
 ## [3.11.0](https://github.com/MorevM/utils/compare/v3.10.0...v3.11.0) (2024-06-02)
 
 
