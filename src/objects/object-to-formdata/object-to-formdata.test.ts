@@ -142,13 +142,17 @@ describe('object-to-formdata', () => {
 		it('Preserves arrays brackets only for file arrays using `append-only-for-files` value for `arraysBrackets` option', () => {
 			const file = new File([], '');
 			const files = [file, file];
-			const formData = objectToFormdata({ a: [1, 2], files }, { arrayBrackets: 'append-only-for-files' });
+			const notOnlyfiles = [file, file, 1];
+			const formData = objectToFormdata({ a: [1, 2], files, notOnlyfiles }, { arrayBrackets: 'append-only-for-files' });
 
-			expect(formData.append).toHaveBeenCalledTimes(4);
+			expect(formData.append).toHaveBeenCalledTimes(7);
 			expect(formData.append).toHaveBeenCalledWith('a', '1');
 			expect(formData.append).toHaveBeenCalledWith('a', '2');
-			expect(formData.append).toHaveBeenCalledWith('files[]', file.toString());
-			expect(formData.append).toHaveBeenCalledWith('files[]', file.toString());
+			expect(formData.append).toHaveBeenCalledWith('files[]', file);
+			expect(formData.append).toHaveBeenCalledWith('files[]', file);
+			expect(formData.append).toHaveBeenCalledWith('notOnlyfiles', file);
+			expect(formData.append).toHaveBeenCalledWith('notOnlyfiles', file);
+			expect(formData.append).toHaveBeenCalledWith('notOnlyfiles', '1');
 		});
 
 		it('Omits any arrays brackets using `omit` value for `arraysBrackets` option', () => {
@@ -159,8 +163,8 @@ describe('object-to-formdata', () => {
 			expect(formData.append).toHaveBeenCalledTimes(7);
 			expect(formData.append).toHaveBeenCalledWith('a', '1');
 			expect(formData.append).toHaveBeenCalledWith('a', '2');
-			expect(formData.append).toHaveBeenCalledWith('files', file.toString());
-			expect(formData.append).toHaveBeenCalledWith('files', file.toString());
+			expect(formData.append).toHaveBeenCalledWith('files', file);
+			expect(formData.append).toHaveBeenCalledWith('files', file);
 			expect(formData.append).toHaveBeenCalledWith('c[a]', '1');
 			expect(formData.append).toHaveBeenCalledWith('d', '1');
 			expect(formData.append).toHaveBeenCalledWith('d', '2');
@@ -220,16 +224,16 @@ describe('object-to-formdata', () => {
 		expect(formData.append).toHaveBeenCalledWith('d[a][]', '1');
 		expect(formData.append).toHaveBeenCalledWith('d[a][]', '2');
 		expect(formData.append).toHaveBeenCalledWith('d[a][]', '3');
-		expect(formData.append).toHaveBeenCalledWith('d[b][a][]', file.toString());
+		expect(formData.append).toHaveBeenCalledWith('d[b][a][]', file);
 		expect(formData.append).toHaveBeenCalledWith('e', '');
 		expect(formData.append).toHaveBeenCalledWith('g[][]', '1');
 		expect(formData.append).toHaveBeenCalledWith('g[][]', '2');
 		expect(formData.append).toHaveBeenCalledWith('h[]', '1');
-		expect(formData.append).toHaveBeenCalledWith('i[][]', file.toString());
+		expect(formData.append).toHaveBeenCalledWith('i[][]', file);
 		expect(formData.append).toHaveBeenCalledWith('i[][]', '1');
 		expect(formData.append).toHaveBeenCalledWith('j', date.toISOString());
-		expect(formData.append).toHaveBeenCalledWith('k', file.toString());
-		expect(formData.append).toHaveBeenCalledWith('l[]', blob.toString());
-		expect(formData.append).toHaveBeenCalledWith('l[]', blob.toString());
+		expect(formData.append).toHaveBeenCalledWith('k', file);
+		expect(formData.append).toHaveBeenCalledWith('l[]', blob);
+		expect(formData.append).toHaveBeenCalledWith('l[]', blob);
 	});
 });

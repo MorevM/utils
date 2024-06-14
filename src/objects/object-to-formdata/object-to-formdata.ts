@@ -1,6 +1,6 @@
 /* eslint-disable jsdoc/no-multi-asterisks */
 import type { PlainObject } from '../../types';
-import { isArray, isBoolean, isDate, isFile, isFunction, isNumeric, isObject, isString } from '../../guards';
+import { isArray, isBlob, isBoolean, isDate, isFile, isFunction, isNumeric, isObject, isString } from '../../guards';
 import { isUndefined } from '../../guards/is-undefined/is-undefined';
 import { isNull } from '../../guards/is-null/is-null';
 import { tsObject } from '../ts-object/ts-object';
@@ -116,6 +116,11 @@ const serialize = (key: string, value: unknown, options: Options, formData: Form
 
 			serialize(arrayKey, arrayValue, options, formData);
 		});
+		return;
+	}
+
+	if (isBlob(value)) {
+		formData.append(key, value);
 		return;
 	}
 
