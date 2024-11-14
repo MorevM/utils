@@ -20,6 +20,7 @@ export type {
 	AsyncReturnType,
 	ArraySlice,
 	ArraySplice,
+	ArrayTail,
 	Asyncify,
 	CamelCase,
 	CamelCasedProperties,
