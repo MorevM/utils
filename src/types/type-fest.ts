@@ -142,6 +142,7 @@ export type {
 
 	SetFieldType,
 	SetParameterType,
+	SimplifyDeep,
 	SingleKeyObject,
 	SharedUnionFieldsDeep,
 
