@@ -21,7 +21,8 @@ export const minTimePromise = async <T>(promise: Promise<T>, minTime: number = 0
 
 	if (errorTime) {
 		await sleep(clamp(minTime - (errorTime - startTime), 0));
-		throw result[0];
+		// eslint-disable-next-line no-throw-literal -- If `errorTime` is truethy, then `result[0]` always instanceof Error
+		throw result[0] as Error;
 	}
 
 	return result[0];

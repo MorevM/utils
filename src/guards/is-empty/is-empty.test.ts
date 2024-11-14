@@ -77,7 +77,6 @@ describe('is-empty', () => {
 		document.body.innerHTML = '';
 		document.body.insertAdjacentHTML('beforeend', `<div id="root"></div>`);
 
-		// eslint-disable-next-line unicorn/prefer-query-selector
 		expect(isEmpty(document.querySelectorAll('.foo'))).toBe(true);
 	});
 

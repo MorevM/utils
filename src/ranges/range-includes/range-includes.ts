@@ -23,7 +23,6 @@ export const rangeIncludes = (
 		if (Number.isNaN(min) || Number.isNaN(max)) return false;
 
 		if (!isNullish(min) && value < min) return false;
-		// eslint-disable-next-line sonarjs/prefer-single-boolean-return
 		if (!isNullish(max) && value > max) return false;
 
 		return true;

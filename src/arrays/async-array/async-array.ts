@@ -1,4 +1,3 @@
-/* eslint-disable import/exports-last */
 /* eslint-disable func-style -- It's needed to type `this` here. */
 import type { AsyncArray, Callback, Mapper, Reducer } from './async-array.types';
 import { resolve, series } from './async-array.utils';

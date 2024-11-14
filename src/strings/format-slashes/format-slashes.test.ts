@@ -1,4 +1,3 @@
-/* eslint-disable sonarjs/no-duplicate-string */
 import { formatSlashes } from './format-slashes';
 
 describe('format-slashes', () => {

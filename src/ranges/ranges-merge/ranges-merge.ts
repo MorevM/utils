@@ -1,4 +1,3 @@
-/* eslint-disable import/exports-last */
 import { isNullish } from '../../guards';
 import { rangesSort } from '../ranges-sort/ranges-sort';
 import { formatInfinity } from '../ranges.utils';
@@ -22,7 +21,7 @@ export const rangesMerge = <
 	infinityToNull: I = false as I,
 ): Array<OutputRange<T, I>> => {
 	const sorted = rangesSort(ranges, infinityToNull)
-		.map(r => [
+		.map((r) => [
 			isNullish(r[0]) ? -Infinity : r[0],
 			isNullish(r[1]) ? +Infinity : r[1],
 		]);
@@ -30,8 +29,8 @@ export const rangesMerge = <
 	for (let l = sorted.length - 1, i = l; i > 0; i--) {
 		if (
 			sorted[i][0] <= sorted[i - 1][0]
-      || (!joinEdges && sorted[i][0] < sorted[i - 1][1])
-      || (joinEdges && sorted[i][0] <= sorted[i - 1][1])
+			|| (!joinEdges && sorted[i][0] < sorted[i - 1][1])
+			|| (joinEdges && sorted[i][0] <= sorted[i - 1][1])
 		) {
 			sorted[i - 1][0] = Math.min(sorted[i][0], sorted[i - 1][0]);
 			sorted[i - 1][1] = Math.max(sorted[i][1], sorted[i - 1][1]);
@@ -41,7 +40,7 @@ export const rangesMerge = <
 	}
 
 	return sorted.length
-		? sorted.map(r => [
+		? sorted.map((r) => [
 			formatInfinity(r[0], infinityToNull),
 			formatInfinity(r[1], infinityToNull),
 		]) as Array<OutputRange<T, I>>

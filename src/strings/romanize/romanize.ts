@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/naming-convention */
 const numerals = {
 	M: 1000,
 	CM: 900,

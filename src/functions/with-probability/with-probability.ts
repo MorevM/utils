@@ -1,4 +1,3 @@
-/* eslint-disable import/exports-last */
 import { toNumericProbability, toValue } from './with-probability.utils';
 
 type ReturnValue<Value> = Value extends ((...args: any[]) => any)

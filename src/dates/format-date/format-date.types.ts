@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/prefer-function-type -- `type` is stripped in resulting `.d.ts` files */
-/* eslint-disable jsdoc/no-multi-asterisks -- Need a list inside JSDocs */
+
 import type { IntRange } from 'type-fest';
 import type { ArrayOf } from '../../types';
 

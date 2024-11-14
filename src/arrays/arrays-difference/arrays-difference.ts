@@ -13,5 +13,5 @@ import { arraysUnion } from '../arrays-union/arrays-union';
  */
 export const arraysDifference = <T = any>(...arrays: readonly T[][]): T[] => {
 	const intersections = arraysIntersection(...arrays);
-	return arraysUnion(...arrays.map(array => array.filter(i => !intersections.includes(i))));
+	return arraysUnion(...arrays.map((array) => array.filter((i) => !intersections.includes(i))));
 };

@@ -1,4 +1,3 @@
-/* eslint-disable no-autofix/sonarjs/no-identical-functions */
 import { throttle } from './throttle';
 
 describe('throttle', () => {

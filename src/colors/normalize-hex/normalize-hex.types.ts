@@ -1,4 +1,3 @@
-/* eslint-disable jsdoc/no-multi-asterisks -- Need a list inside JSDoc. */
 import type { AlphaChannelOption } from '../colors.types';
 
 export type Options = AlphaChannelOption & {

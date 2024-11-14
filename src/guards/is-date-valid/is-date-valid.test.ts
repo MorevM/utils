@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-deprecated, import-x/no-deprecated */
 import { isDateValid } from './is-date-valid';
 
 describe('is-date-valid', () => {

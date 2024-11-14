@@ -25,7 +25,7 @@ export const getScrollableAncestor = <El extends Element = Element>(
 		['both', 'x'].includes(axis) && toCheck.push(styles.getPropertyValue('overflow-x'));
 		['both', 'y'].includes(axis) && toCheck.push(styles.getPropertyValue('overflow-y'));
 
-		const isScrollable = toCheck.some(val => ['auto', 'scroll'].includes(val));
+		const isScrollable = toCheck.some((val) => ['auto', 'scroll'].includes(val));
 		if (isScrollable) return el as El;
 	}
 

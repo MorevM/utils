@@ -49,9 +49,9 @@ export const arraySample = <const T, Size extends number = 1>(
 		const iterationIndexes = arrayOfLength(array.length, (index) => index);
 
 		if (neededCount > array.length) {
-			result.push(...iterationIndexes.map(i => array[i]));
+			result.push(...iterationIndexes.map((i) => array[i]));
 		} else {
-			result.push(...arrayShuffle(iterationIndexes).slice(0, neededCount).map(i => array[i]));
+			result.push(...arrayShuffle(iterationIndexes).slice(0, neededCount).map((i) => array[i]));
 		}
 	}
 

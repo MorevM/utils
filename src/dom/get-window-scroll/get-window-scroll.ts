@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-deprecated -- For compatibility purposes */
 type Axis = 'x' | 'y' | 'both';
 
 type ToReturn<T extends Axis> = T extends 'both'

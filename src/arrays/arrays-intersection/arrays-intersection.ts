@@ -10,4 +10,4 @@
  * @returns          Intersection between arrays
  */
 export const arraysIntersection = <T = any>(...arrays: readonly T[][]): T[] =>
-	arrays.reduce((acc, array) => acc.filter(i => array.includes(i)));
+	arrays.reduce((acc, array) => acc.filter((i) => array.includes(i)));

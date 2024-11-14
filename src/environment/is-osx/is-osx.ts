@@ -6,7 +6,7 @@
 
 export const isOSX = (): boolean => {
 	const platform = (navigator as any).userAgentData?.platform
-		|| navigator.platform
+		|| navigator.platform // eslint-disable-line @typescript-eslint/no-deprecated
 		|| '';
 	return !!platform.match(/(ipad|iphone|ipod|mac)/i);
 };

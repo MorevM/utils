@@ -31,7 +31,7 @@ export const rangesSort = <
 	ranges: T,
 	infinityToNull: I = false as I,
 ): Array<OutputRange<T, I>> => {
-	return [...(ranges ?? [] as Range[])].filter(r => !isNullish(r)).sort((r1, r2) => {
+	return [...(ranges ?? [] as Range[])].filter((r) => !isNullish(r)).sort((r1, r2) => {
 		// These values are filtered in the upper line.
 		assert(!isNullish(r1) && !isNullish(r2));
 

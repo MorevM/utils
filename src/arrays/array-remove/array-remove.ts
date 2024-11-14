@@ -10,7 +10,7 @@
  * @returns             The array itself without specified elements.
  */
 export const arrayRemoveMutable = <T = any>(arr: T[], value: T, onlyFirst: boolean = false) => {
-	while (true) { // eslint-disable-line no-constant-condition
+	while (true) {
 		const occurrence = arr.indexOf(value);
 		if (occurrence === -1) return arr;
 		arr.splice(occurrence, 1);

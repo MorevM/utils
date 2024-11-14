@@ -151,8 +151,8 @@ class FormatBytes {
 
 		const referenceTable = REFERENCE_TABLE[options.mode];
 		const entry = options.to === 'auto'
-			? referenceTable.find(e => bytes >= e.from && bytes < e.to) ?? referenceTable[0]
-			: referenceTable.find(i => i.prefix === options.to) ?? referenceTable[0];
+			? referenceTable.find((e) => bytes >= e.from && bytes < e.to) ?? referenceTable[0]
+			: referenceTable.find((i) => i.prefix === options.to) ?? referenceTable[0];
 		const { from, prefix } = entry;
 
 		const unitsReferenceTable = mergeObjects(UNITS_DEFAULTS, options.customUnits) as typeof UNITS_DEFAULTS;

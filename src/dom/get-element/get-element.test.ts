@@ -1,4 +1,3 @@
-/* eslint-disable sonarjs/no-duplicate-string */
 import { getElement } from './get-element';
 
 type ElementDeclaration = { selector: string; element: Element | null };

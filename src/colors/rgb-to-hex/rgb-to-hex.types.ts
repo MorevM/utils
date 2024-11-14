@@ -1,5 +1,3 @@
-/* eslint-disable jsdoc/no-multi-asterisks -- Need a list inside JSDoc. */
-
 import type { AlphaChannelOption, ObjectLongMaybeAlpha, ObjectShortMaybeAlpha, RgbArrayMaybeAlpha } from '../colors.types';
 
 export type Input = string | RgbArrayMaybeAlpha | ObjectLongMaybeAlpha | ObjectShortMaybeAlpha;

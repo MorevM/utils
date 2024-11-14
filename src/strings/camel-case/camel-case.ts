@@ -1,4 +1,4 @@
-/* eslint-disable regexp/no-unused-capturing-group, no-autofix/regexp/no-unused-capturing-group -- Used actually */
+/* eslint-disable regexp/no-unused-capturing-group -- Used actually */
 import { isArray, isString } from '../../guards';
 
 type CamelCaseOptions = {
@@ -51,7 +51,7 @@ const preserveCamelCase = (string: string) => {
 const preserveConsecutiveUppercase = (input: string) => {
 	LEADING_CAPITAL.lastIndex = 0;
 
-	return input.replaceAll(LEADING_CAPITAL, m1 => m1.toLowerCase());
+	return input.replaceAll(LEADING_CAPITAL, (m1) => m1.toLowerCase());
 };
 
 const postProcess = (input: string) => {
@@ -59,7 +59,7 @@ const postProcess = (input: string) => {
 	NUMBERS_AND_IDENTIFIER.lastIndex = 0;
 
 	return input.replaceAll(SEPARATORS_AND_IDENTIFIER, (_, identifier) => identifier.toUpperCase())
-		.replaceAll(NUMBERS_AND_IDENTIFIER, m => m.toUpperCase());
+		.replaceAll(NUMBERS_AND_IDENTIFIER, (m) => m.toUpperCase());
 };
 
 /**
@@ -83,7 +83,7 @@ export const camelCase = (
 	options = { ...defaultOptions, ...options };
 
 	input = isArray(input)
-		? input.map(v => v.trim()).filter(Boolean).join('-')
+		? input.map((v) => v.trim()).filter(Boolean).join('-')
 		: (input as string).trim();
 
 	if (!input.length) return '';

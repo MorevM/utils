@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/prefer-function-type */
-/* eslint-disable import/exports-last */
 import type { JsonObject } from 'type-fest';
 import type { PartialRequired } from '../../types';
 

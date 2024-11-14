@@ -1,4 +1,3 @@
-/* eslint-disable sonarjs/no-duplicate-string */
 import { getScrollableAncestor } from './get-scrollable-ancestor';
 
 describe('get-scrollable-ancestor', () => {

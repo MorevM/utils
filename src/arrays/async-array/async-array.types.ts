@@ -1,4 +1,4 @@
-/* eslint-disable @stylistic/js/max-len, no-autofix/@typescript-eslint/method-signature-style */
+/* eslint-disable @stylistic/max-len, no-autofix/@typescript-eslint/method-signature-style */
 import type { Awaitable } from '../../types';
 
 export type Callback<T = any> = (value: T, index: number, array: T[]) => void;

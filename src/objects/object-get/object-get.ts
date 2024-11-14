@@ -6,12 +6,12 @@ type PathVariant = string | Array<string | number>;
 
 const extractSegments = (path: PathVariant) => toArray(path)
 	.map((p: string | number) => p.toString().trim())
-	.flatMap(part => part
+	.flatMap((part) => part
 		.replaceAll(/\[(.?)]/g, '.$1.')
 		.replaceAll(/\.+/g, '.')
 		.split('.')
 		.filter(Boolean)
-		.map(p => toNumber(p, p)));
+		.map((p) => toNumber(p, p)));
 
 /**
  * Gets a property from an object using dot (object path) notation.

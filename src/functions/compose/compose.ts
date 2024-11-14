@@ -14,4 +14,7 @@
  * @returns             Composed function
  */
 export const compose = (...functions: readonly Function[]): any => (value: any) =>
-	[...functions].reverse().reduce((acc, curr) => (acc = curr(acc)), value);
+	[...functions].reverse().reduce((acc, curr) => {
+		acc = curr(acc);
+		return acc;
+	}, value);

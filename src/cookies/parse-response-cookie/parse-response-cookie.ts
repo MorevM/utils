@@ -7,7 +7,7 @@ import { toArray } from '../../arrays';
 import type { Cookie } from '../../types';
 import { splitCookiesString, parseCookieChunk, DEFAULT_OPTIONS } from './parse-response-cookie.utils';
 
-// eslint-disable-next-line import/exports-last
+// eslint-disable-next-line import-x/exports-last
 export type Options = {
 	/**
 	 * Whether to call `decodeURIComponent` for each value.

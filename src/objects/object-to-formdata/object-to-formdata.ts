@@ -1,4 +1,3 @@
-/* eslint-disable jsdoc/no-multi-asterisks */
 import type { PlainObject } from '../../types';
 import { isArray, isBlob, isBoolean, isDate, isFile, isFunction, isNumeric, isObject, isString } from '../../guards';
 import { isUndefined } from '../../guards/is-undefined/is-undefined';
@@ -143,7 +142,6 @@ const serialize = (key: string, value: unknown, options: Options, formData: Form
 		return;
 	}
 
-	// eslint-disable-next-line @typescript-eslint/unbound-method
 	if (isString(value) || isFunction(value?.toString)) {
 		formData.append(key, (value as any).toString());
 	}

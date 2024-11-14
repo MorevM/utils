@@ -1,4 +1,3 @@
-/* eslint-disable sonarjs/no-duplicate-string */
 import { isHex, isNullish } from '../../guards';
 import { LONG_HEX_REG_EXP, SHORT_HEX_REG_EXP } from '../colors.utils';
 import type { Options } from './normalize-hex.types';
@@ -31,14 +30,14 @@ export const normalizeHex = (hex: string, userOptions?: Partial<Options>) => {
 
 	const parts = hex.replace(
 		isShort ? SHORT_HEX_REG_EXP : LONG_HEX_REG_EXP,
-	 (_, r, g, b, a) => {
+		(_, r, g, b, a) => {
 			if (isShort) {
 				const alpha = !isNullish(a) ? `${a}${a}` : `ff`;
 				return `${r}${r}${g}${g}${b}${b}${alpha}`;
 			}
 
 			return `${r}${g}${b}${a || 'ff'}`;
-	 },
+		},
 	).match(/.{2}/g)!;
 
 	const [r, g, b, a] = parts;

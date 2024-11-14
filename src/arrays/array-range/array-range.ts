@@ -20,5 +20,5 @@ export const arrayRange = (from: number, to?: number) => {
 	}
 
 	return arrayOfLength(Math.abs(to - from) + 1, (index) => index)
-		.map(i => (from > to ? -i : i) + from);
+		.map((i) => (from > to ? -i : i) + from);
 };

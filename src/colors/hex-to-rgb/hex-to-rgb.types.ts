@@ -1,5 +1,5 @@
-/* eslint-disable import/exports-last */
-/* eslint-disable jsdoc/no-multi-asterisks -- Need a list inside JSDoc. */
+/* eslint-disable import-x/exports-last */
+
 import type { ObjectLong, ObjectLongAlpha, ObjectLongMaybeAlpha, ObjectShort, ObjectShortAlpha, ObjectShortMaybeAlpha, RgbArray, RgbArrayAlpha, RgbArrayMaybeAlpha } from '../colors.types';
 
 /**

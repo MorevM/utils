@@ -59,9 +59,7 @@ export const rangesIntersection = (
 
 				acc.push([
 					safeNumber(max[0], '-'),
-					safeNumber(min[1]) < safeNumber(max[1])
-						? safeNumber(min[1])
-						: safeNumber(max[1]),
+					Math.min(safeNumber(min[1]), safeNumber(max[1])),
 				]);
 			});
 

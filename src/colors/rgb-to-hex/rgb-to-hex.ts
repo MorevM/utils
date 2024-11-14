@@ -88,7 +88,7 @@ export const rgbToHex = (source: Input, userOptions?: Partial<Options>): string 
 	if (isArray(source)) {
 		const cleanInput = source
 			.map((part) => toNumber(part, null))
-			.filter((part) => part !== null) as number[];
+			.filter((part) => part !== null);
 
 		if (cleanInput.length !== 3 && cleanInput.length !== 4) return null;
 		if (cleanInput.slice(0, 3).some((part) => !isValidRgbPart(part))) return null;

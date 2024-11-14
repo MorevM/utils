@@ -1,4 +1,3 @@
-/* eslint-disable import/exports-last */
 import { kebabCase, snakeCase, pascalCase, camelCase } from '../../strings';
 import { isArray, isObject, isRegExp, isString } from '../../guards/index';
 import type { PlainObject } from '../../types';
@@ -43,7 +42,7 @@ export const objectKeysCase = (input: unknown, neededCase: Case, _options?: Part
 
 	const isExcluded = (type: 'key' | 'branch', key: string) => {
 		const entity = type === 'key' ? options.exclude : options.excludeBranches;
-		return entity.some(item => {
+		return entity.some((item) => {
 			if (isString(item)) return item === key;
 			if (isRegExp(item)) return item.test(key);
 			return false;

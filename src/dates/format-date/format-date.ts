@@ -1,4 +1,3 @@
-/* eslint-disable jsdoc/no-multi-asterisks */
 import { toArray } from '../../arrays';
 import { mergeObjects } from '../../objects';
 import type { Arrayable } from '../../types';

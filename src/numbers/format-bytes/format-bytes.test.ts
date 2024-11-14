@@ -48,8 +48,6 @@ describe('format-bytes', () => {
 	});
 
 	it('Correctly implements `toString` method', () => {
-		// eslint-disable-next-line @typescript-eslint/no-base-to-string
-		// TODO: Fix types for toString
 		expect(formatBytes(2100, { precision: 3 }).toString()).toBe('2.1 kB');
 	});
 

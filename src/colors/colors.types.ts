@@ -1,5 +1,3 @@
-/* eslint-disable jsdoc/no-multi-asterisks -- Need a list inside JSDoc. */
-
 export type AlphaChannelOption = {
 	/**
 	 * Whether to include information about alpha channel in a resulting HEX string.

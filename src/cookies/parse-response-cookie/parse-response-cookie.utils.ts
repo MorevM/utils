@@ -144,8 +144,8 @@ export const splitCookiesString = (cookiesString: unknown): string[] => {
 	while (position < cookiesString.length) {
 		let start = position;
 		let cookiesSeparatorFound = false;
-		let lastComma = 0;
-		let nextStart = 0;
+		let lastComma;
+		let nextStart;
 
 		while (skipWhitespace()) {
 			if (cookiesString[position] !== ',') { position++; continue; }
@@ -172,7 +172,7 @@ export const splitCookiesString = (cookiesString: unknown): string[] => {
 		}
 
 		if (!cookiesSeparatorFound || position >= cookiesString.length) {
-			cookieStrings.push(cookiesString.slice(start, cookiesString.length));
+			cookieStrings.push(cookiesString.slice(start));
 		}
 	}
 

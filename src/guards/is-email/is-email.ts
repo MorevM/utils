@@ -1,4 +1,4 @@
-/* eslint-disable regexp/no-unused-capturing-group, no-autofix/regexp/no-unused-capturing-group  -- It's better here for "readability" :D */
+/* eslint-disable regexp/no-unused-capturing-group  -- It's better here for "readability" :D */
 import { isString } from '../is-string/is-string';
 
 /**

@@ -1,4 +1,3 @@
-/* eslint-disable sonarjs/no-duplicate-string */
 import { hexToRgb } from './hex-to-rgb';
 
 describe('hex-to-rgb', () => {

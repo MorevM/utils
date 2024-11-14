@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-floating-promises */
 import { isPromise } from '../../guards';
 import { promiseController } from './promise-controller';
 
