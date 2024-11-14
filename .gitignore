@@ -5,6 +5,7 @@ Thumbs.db
 # Artifacts
 build
 dist
+coverage
 
 # Dependencies
 node_modules
@@ -22,8 +23,4 @@ yarn-error.log*
 todo
 
 # Editors
-.vscode/*
-!.vscode/settings.template.json
-
 .idea
-coverage

@@ -47,7 +47,6 @@
 	"types": "dist/index.d.ts",
 	"scripts": {
 		"prepare": "lefthook install",
-		"vscode-settings": "cp .vscode/settings.template.json .vscode/settings.json",
 		"build": "rm -rf dist && tsup",
 		"test": "vitest",
 		"test:dev": "vitest --watch",
