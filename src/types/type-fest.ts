@@ -42,6 +42,8 @@ export type {
 	Entry,
 	Exact,
 	Except,
+	FindGlobalInstanceType,
+	FindGlobalType,
 	Finite,
 	// FixedLengthArray,    // Use `ArrayOf<'exactly', 2, string>` instead
 	Float,
