@@ -154,6 +154,7 @@ export type {
 	StringKeyOf,
 	Stringified,
 	StringSlice,
+	StructuredCloneable,
 	Tagged,
 	TaggedUnion,
 	// Trim, // Exported from the lib itself, as it allows to define trimmed character
