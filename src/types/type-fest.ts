@@ -164,6 +164,7 @@ export type {
 	TupleToUnion,
 	TypedArray,
 	UnionToIntersection,
+	UnionToTuple,
 	UndefinedOnPartialDeep,
 	// UnknownArray, // What is it for?
 	UnknownRecord,
