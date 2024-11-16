@@ -80,7 +80,7 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@clack/core@^0.3.3":
+"@clack/core@0.3.4":
   version "0.3.4"
   resolved "https://registry.yarnpkg.com/@clack/core/-/core-0.3.4.tgz#375e82fc8fe46650b37cab2f2ea8752c6b7f0450"
   integrity sha512-H4hxZDXgHtWTwV3RAVenqcC4VbJZNegbBjlPvzOzCouXtS2y3sDvlO3IsbrPNWuLWPPlYVYPghQdSF64683Ldw==
@@ -88,12 +88,12 @@
     picocolors "^1.0.0"
     sisteransi "^1.0.5"
 
-"@clack/prompts@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@clack/prompts/-/prompts-0.7.0.tgz#6aaef48ea803d91cce12bc80811cfcb8de2e75ea"
-  integrity sha512-0MhX9/B4iL6Re04jPrttDm+BsP8y6mS7byuv0BvXgdXhbV5PdlsHt55dvNsuBCPZ7xq1oTAOOuotR9NFbQyMSA==
+"@clack/prompts@^0.8.1":
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/@clack/prompts/-/prompts-0.8.1.tgz#9c5408edc16768d7d87a97096ec8265cc47a928d"
+  integrity sha512-I263nEUNbX4lPTX93trl1fkIvGrGlz6nUYkqOddF0ZmjqcxUgUlXmpUIUqfapirRKJrFddvwF+qdZgg8cSqF7g==
   dependencies:
-    "@clack/core" "^0.3.3"
+    "@clack/core" "0.3.4"
     picocolors "^1.0.0"
     sisteransi "^1.0.5"
 
@@ -530,7 +530,7 @@
   resolved "https://registry.yarnpkg.com/@eslint-community/regexpp/-/regexpp-4.12.1.tgz#cfc6cffe39df390a3841cde2abccf92eaa7ae0e0"
   integrity sha512-CCZCDJuduB9OUkFkY2IgppNZMi2lBQgD2qzwXkEia16cge2pijY/aXi96CJMquDMn3nJdlPV1A5KrJEXwfLNzQ==
 
-"@eslint-community/regexpp@^4.8.0", "@eslint-community/regexpp@^4.9.1":
+"@eslint-community/regexpp@^4.8.0":
   version "4.10.0"
   resolved "https://registry.yarnpkg.com/@eslint-community/regexpp/-/regexpp-4.10.0.tgz#548f6de556857c8bb73bbee70c35dc82a2e74d63"
   integrity sha512-Cu96Sd2By9mCNTx2iyKOmq10v22jUVQv0lQnlGNy16oE9589yE+QADPbrMGCkA51cKZSg3Pu/aTJVTGfL/qjUA==
@@ -753,12 +753,12 @@
     "@morev/utils" "^2.1.0"
     conventional-changelog-conventionalcommits "^5.0.0"
 
-"@morev/eslint-config@^35.0.2":
-  version "35.0.2"
-  resolved "https://registry.yarnpkg.com/@morev/eslint-config/-/eslint-config-35.0.2.tgz#b8e561c5f506e0b73c3a0ef976b0be9a5434868c"
-  integrity sha512-fTmce9iN1UOqmjxcaccBWKIsPX7pKPAZ0lE48kSlseUI6nBgVdAMhCVQof1WrIaMD5AiOiF2qPM/9hL5t7zsxw==
+"@morev/eslint-config@^35.1.0":
+  version "35.1.0"
+  resolved "https://registry.yarnpkg.com/@morev/eslint-config/-/eslint-config-35.1.0.tgz#19e7ebdede3fdf19de961551f59b764b97fb1646"
+  integrity sha512-RQ66zCsZlYJr19KTobw4EHW4/MaHgtznXXxW2gjH8RFe0ZVJh9Z2Vh18ZoFHXVv0qAfIiFJGg6f9eUrprV4dGA==
   dependencies:
-    "@clack/prompts" "^0.7.0"
+    "@clack/prompts" "^0.8.1"
     "@html-eslint/eslint-plugin" "^0.27.0"
     "@html-eslint/parser" "^0.27.0"
     "@morev/utils" "^3.11.1"
@@ -779,10 +779,10 @@
     eslint-plugin-jsonc "^2.18.1"
     eslint-plugin-jsx-a11y "^6.10.2"
     eslint-plugin-markdownlint "^0.3.4"
-    eslint-plugin-n "^17.13.1"
+    eslint-plugin-n "^17.13.2"
     eslint-plugin-no-autofix "^2.1.0"
     eslint-plugin-no-secrets "^1.1.2"
-    eslint-plugin-regexp "^2.6.0"
+    eslint-plugin-regexp "^2.7.0"
     eslint-plugin-sonarjs "^1.0.4"
     eslint-plugin-unicorn "^56.0.0"
     eslint-plugin-vue "^9.31.0"
@@ -3145,10 +3145,10 @@ eslint-plugin-markdownlint@^0.3.4:
   dependencies:
     markdownlint "0.25.1"
 
-eslint-plugin-n@^17.13.1:
-  version "17.13.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-n/-/eslint-plugin-n-17.13.1.tgz#3178c87989ad23417d22c5f66a13ecb1e9c5245e"
-  integrity sha512-97qzhk1z3DdSJNCqT45EslwCu5+LB9GDadSyBItgKUfGsXAmN/aa7LRQ0ZxHffUxUzvgbTPJL27/pE9ZQWHy7A==
+eslint-plugin-n@^17.13.2:
+  version "17.13.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-n/-/eslint-plugin-n-17.13.2.tgz#6d1532e68de196189540271bb7188234b8b086c8"
+  integrity sha512-MhBAKkT01h8cOXcTBTlpuR7bxH5OBUNpUXefsvwSVEy46cY4m/Kzr2osUCQvA3zJFD6KuCeNNDv0+HDuWk/OcA==
   dependencies:
     "@eslint-community/eslint-utils" "^4.4.1"
     enhanced-resolve "^5.17.1"
@@ -3172,13 +3172,13 @@ eslint-plugin-no-secrets@^1.1.2:
   resolved "https://registry.yarnpkg.com/eslint-plugin-no-secrets/-/eslint-plugin-no-secrets-1.1.2.tgz#b6f6d65d91d5f1bea75ad5f5a3524986011b57e1"
   integrity sha512-FjgyBaEkQK6hrdKf0V1TnKbY3dxXmw8S7tjfHs/BMIgFGNYhzFccxbZSJtDCPHTQTSiBtdLwRlOmSF81toII4w==
 
-eslint-plugin-regexp@^2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-regexp/-/eslint-plugin-regexp-2.6.0.tgz#54b9ca535662ca2c59ca211b7723ef22e2b6681b"
-  integrity sha512-FCL851+kislsTEQEMioAlpDuK5+E5vs0hi1bF8cFlPlHcEjeRhuAzEsGikXRreE+0j4WhW2uO54MqTjXtYOi3A==
+eslint-plugin-regexp@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-regexp/-/eslint-plugin-regexp-2.7.0.tgz#84fa2d2b122e343f596cfb83ed8a5517a1dfef2a"
+  integrity sha512-U8oZI77SBtH8U3ulZ05iu0qEzIizyEDXd+BWHvyVxTOjGwcDcvy/kEpgFG4DYca2ByRLiVPFZ2GeH7j1pdvZTA==
   dependencies:
     "@eslint-community/eslint-utils" "^4.2.0"
-    "@eslint-community/regexpp" "^4.9.1"
+    "@eslint-community/regexpp" "^4.11.0"
     comment-parser "^1.4.0"
     jsdoc-type-pratt-parser "^4.0.0"
     refa "^0.12.1"
