@@ -62,7 +62,7 @@
 	},
 	"devDependencies": {
 		"@morev/commitlint-config": "^0.2.2",
-		"@morev/eslint-config": "^35.1.0",
+		"@morev/eslint-config": "^35.2.0",
 		"@release-it/conventional-changelog": "^8.0.1",
 		"@total-typescript/ts-reset": "^0.6.1",
 		"@types/node": "^22.9.0",
