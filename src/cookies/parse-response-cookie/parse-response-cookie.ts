@@ -1,11 +1,11 @@
 // Just a custom implementation of https://github.com/nfriedly/set-cookie-parser/
 // written in a modern syntax with TS types included, slightly more performant and easy-to-read form.
 
-import type { IncomingMessage } from 'node:http';
-import { isArray, isEmpty, isFunction, isObject, isString } from '../../guards';
 import { toArray } from '../../arrays';
+import { isArray, isEmpty, isFunction, isObject, isString } from '../../guards';
+import { DEFAULT_OPTIONS, parseCookieChunk, splitCookiesString } from './parse-response-cookie.utils';
+import type { IncomingMessage } from 'node:http';
 import type { Cookie } from '../../types';
-import { splitCookiesString, parseCookieChunk, DEFAULT_OPTIONS } from './parse-response-cookie.utils';
 
 // eslint-disable-next-line import-x/exports-last
 export type Options = {

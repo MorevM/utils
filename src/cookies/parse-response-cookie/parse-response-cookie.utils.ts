@@ -1,7 +1,7 @@
 // Just a custom implementation of `https://github.com/nfriedly/set-cookie-parser/`
 // written in a modern syntax with TS types included, also written in a more performant and easy-to-read way (double options init, no returns, extra checks in while loops, negated loops, etc)
 
-import { isArray, isEmpty, isString, isDate } from '../../guards';
+import { isArray, isDate, isEmpty, isString } from '../../guards';
 import { capitalize } from '../../strings';
 import type { Cookie } from '../../types';
 import type { Options } from './parse-response-cookie';

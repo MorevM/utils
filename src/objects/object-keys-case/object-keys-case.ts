@@ -1,5 +1,5 @@
-import { kebabCase, snakeCase, pascalCase, camelCase } from '../../strings';
 import { isArray, isObject, isRegExp, isString } from '../../guards/index';
+import { camelCase, kebabCase, pascalCase, snakeCase } from '../../strings';
 import type { PlainObject } from '../../types';
 
 type Case = 'snake_case' | 'PascalCase' | 'kebab-case' | 'camelCase';

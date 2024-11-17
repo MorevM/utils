@@ -1,9 +1,9 @@
 // Heavily based on https://github.com/fram-x/assert-ts
 
-import type { JsonObject } from 'type-fest';
 import { isBoolean, isFunction, isNullish } from '../../guards';
-import type { AssertConfiguration, FailureType, Assert, SoftAssert, HardAssert } from './assert.types';
 import { createConfiguration, errorCreatorFactory, messageFormatter  } from './assert.utils';
+import type { JsonObject } from 'type-fest';
+import type { Assert, AssertConfiguration, FailureType, HardAssert, SoftAssert } from './assert.types';
 
 let configuration = createConfiguration();
 

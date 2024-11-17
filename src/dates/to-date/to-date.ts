@@ -1,5 +1,5 @@
-import { parseDate } from '../parse-date/parse-date';
 import { createDateFromTokens } from '../dates.utils';
+import { parseDate } from '../parse-date/parse-date';
 
 type Options = {
 	/**

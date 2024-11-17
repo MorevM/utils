@@ -1,4 +1,4 @@
-import { mergeObjects, createMergeObjects } from './merge-objects';
+import { createMergeObjects, mergeObjects } from './merge-objects';
 
 const defaultObj = {
 	a: 'a',

@@ -1,5 +1,5 @@
-import { splitCookiesString } from './parse-response-cookie.utils';
 import { parseResponseCookie } from './parse-response-cookie';
+import { splitCookiesString } from './parse-response-cookie.utils';
 
 const array = ['a', 'b'];
 

@@ -1,11 +1,11 @@
 import { toArray } from '../../arrays';
 import { mergeObjects } from '../../objects';
-import type { Arrayable } from '../../types';
-import { toDate } from '../to-date/to-date';
 import { prefixedDateMethodsFactory } from '../dates.utils';
-import type { FormatDate, Input, LocaleObject, Options } from './format-date.types';
+import { toDate } from '../to-date/to-date';
 import { FORMAT_DATE_LOCALE_EN, FORMAT_DATE_LOCALE_RU } from './format-date.locales';
-import { ORDERED_DAY_INDICES, TOKEN, pad } from './format-date.utils';
+import { ORDERED_DAY_INDICES, pad, TOKEN } from './format-date.utils';
+import type { Arrayable } from '../../types';
+import type { FormatDate, Input, LocaleObject, Options } from './format-date.types';
 
 const _formatDate = (pattern: string, locales: LocaleObject[], input: Input, options: Options) => {
 	const { utc, locale } = options;

@@ -1,4 +1,4 @@
-import { isPlainObject, isArray, isEmpty } from '../../guards';
+import { isArray, isEmpty, isPlainObject } from '../../guards';
 import { tsObject } from '../../objects';
 import type { PlainObject } from '../../types';
 

@@ -1,7 +1,7 @@
 import { assert } from '../../functions/assert/assert';
 import { isNullish, isNumeric } from '../../guards';
-import type { ElementOf } from '../../types';
 import { formatInfinity } from '../ranges.utils';
+import type { ElementOf } from '../../types';
 import type { AvailableRangeValues, OutputRange, Range } from '../ranges.utils';
 
 const comparator = (a: ElementOf<Range>, b: ElementOf<Range>) => {

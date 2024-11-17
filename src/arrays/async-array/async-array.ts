@@ -1,6 +1,6 @@
 /* eslint-disable func-style -- It's needed to type `this` here. */
-import type { AsyncArray, Callback, Mapper, Reducer } from './async-array.types';
 import { resolve, series } from './async-array.utils';
+import type { AsyncArray, Callback, Mapper, Reducer } from './async-array.types';
 
 function forEach<T>(this: T[], callback: Callback): Promise<void> {
 	return resolve(this).then(

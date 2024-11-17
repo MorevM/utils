@@ -1,8 +1,8 @@
-import type { PlainObject } from '../../types';
 import { isArray, isBlob, isBoolean, isDate, isFile, isFunction, isNumeric, isObject, isString } from '../../guards';
-import { isUndefined } from '../../guards/is-undefined/is-undefined';
 import { isNull } from '../../guards/is-null/is-null';
+import { isUndefined } from '../../guards/is-undefined/is-undefined';
 import { tsObject } from '../ts-object/ts-object';
+import type { PlainObject } from '../../types';
 
 type Options = {
 	/**

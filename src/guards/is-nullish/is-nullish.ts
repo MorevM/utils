@@ -1,5 +1,5 @@
-import { isUndefined } from '../is-undefined/is-undefined';
 import { isNull } from '../is-null/is-null';
+import { isUndefined } from '../is-undefined/is-undefined';
 
 /**
  * Checks whether a given value is considered to be nullish.

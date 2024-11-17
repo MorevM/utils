@@ -1,7 +1,7 @@
 import { isEmpty, isNullish } from '../../guards';
+import { formatInfinity } from '../ranges.utils';
 import { rangesMerge } from '../ranges-merge/ranges-merge';
 import type { AvailableRangeValues, OutputRange } from '../ranges.utils';
-import { formatInfinity } from '../ranges.utils';
 
 /**
  * Crops an array of ranges if they go beyond the `start` and `end`.

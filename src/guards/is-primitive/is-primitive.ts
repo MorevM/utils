@@ -1,5 +1,5 @@
-import type { Primitive } from '../../types';
 import { isNullish } from '../is-nullish/is-nullish';
+import type { Primitive } from '../../types';
 
 /**
  * Checks whether the value is a primitive.

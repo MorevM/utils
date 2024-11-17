@@ -1,4 +1,4 @@
-import { isInteger, isNull, isDate, isString } from '../../guards';
+import { isDate, isInteger, isNull, isString } from '../../guards';
 
 /**
  * Checks whether the passed value is a Date representing or leap year,

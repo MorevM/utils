@@ -1,4 +1,4 @@
-import { formatDateRu, formatDateEn } from './format-date';
+import { formatDateEn, formatDateRu } from './format-date';
 
 describe('format-date', () => {
 	const RANDOM_DATE = new Date(2015, 4, 11, 18, 2, 35);

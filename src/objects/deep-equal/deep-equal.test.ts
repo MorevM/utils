@@ -227,7 +227,7 @@ describe('deep-equal', () => {
 		it('Returns `true` for identical RegExps with flags in different order', () => {
 			const a = /a/gi;
 			// eslint-disable-next-line regexp/sort-flags -- Special testing case
-			const b = /a/ig; // eslint-disable-line unicorn/better-regex
+			const b = /a/ig;
 
 			expect(deepEqual(a, b)).toBe(true);
 		});

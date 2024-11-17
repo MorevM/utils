@@ -11,5 +11,5 @@ export * from './objects';
 export * from './promises';
 export * from './ranges';
 export * from './strings';
-export type * from './types';
 export * from './urls';
+export type * from './types';

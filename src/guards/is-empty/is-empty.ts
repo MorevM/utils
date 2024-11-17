@@ -1,3 +1,9 @@
+import { isIterable } from '../is-iterable/is-iterable';
+import { isObject } from '../is-object/is-object';
+import type { PlainObject } from '../../types';
+
+type Empty = undefined | null | false | 0 | 0n | '' | readonly [] | [] | PlainObject<never>;
+
 /**
  * Checks whether a given value is considered to be empty.
  *
@@ -5,12 +11,6 @@
  *
  * @returns         Whether the value is `empty`.
  */
-import type { PlainObject } from '../../types';
-import { isIterable } from '../is-iterable/is-iterable';
-import { isObject } from '../is-object/is-object';
-
-type Empty = undefined | null | false | 0 | 0n | '' | readonly [] | [] | PlainObject<never>;
-
 export const isEmpty = (value: unknown): value is Empty => {
 	if (value === undefined) return true;
 	if (value === null) return true;

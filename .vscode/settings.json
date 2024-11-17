@@ -4,7 +4,7 @@
 
 	// Turn autofix on.
 	"editor.codeActionsOnSave": {
-		"source.fixAll.eslint": "explicit"
+		"source.fixAll.eslint": "explicit",
 	},
 
 	// Enable ESLint for all files that could
@@ -20,7 +20,7 @@
 		"markdown",
 		"json",
 		"jsonc",
-		"yaml"
+		"yaml",
 	],
 
 	// Just warn about stylistic errors that will be fixed automatically on save.
@@ -33,6 +33,6 @@
 		{ "rule": "*-dangle", "severity": "warn", "fixable": true },
 		{ "rule": "*-newline", "severity": "warn", "fixable": true },
 		{ "rule": "*quotes", "severity": "warn", "fixable": true },
-		{ "rule": "*semi", "severity": "warn", "fixable": true }
-	]
+		{ "rule": "*semi", "severity": "warn", "fixable": true },
+	],
 }

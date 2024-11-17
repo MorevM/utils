@@ -1,5 +1,5 @@
-import type { PlainObject } from '../../types';
 import { isObject } from '../is-object/is-object';
+import type { PlainObject } from '../../types';
 
 /**
  * Checks whether a given value is a plain object.
