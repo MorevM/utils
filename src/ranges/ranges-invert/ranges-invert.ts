@@ -1,8 +1,8 @@
 import { isNullish } from '../../guards';
 import { rangeIncludes } from '../range-includes/range-includes';
-import { formatInfinity } from '../ranges.utils';
 import { rangesCrop } from '../ranges-crop/ranges-crop';
 import { rangesMerge } from '../ranges-merge/ranges-merge';
+import { formatInfinity } from '../ranges.utils';
 import type { AvailableRangeValues, OutputRange, Range } from '../ranges.utils';
 
 export const rangesInvert = <

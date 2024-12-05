@@ -12,8 +12,8 @@ export type * from './objects/object-values/object-values';
 export type * from './objects/plain-object/plain-object';
 export type * from './strings/ends-with/ends-with';
 export type * from './strings/starts-with/starts-with';
-export type * from './strings/trim/trim';
 export type * from './strings/trim-end/trim-end';
 export type * from './strings/trim-start/trim-start';
+export type * from './strings/trim/trim';
 
 export type * from './type-fest';

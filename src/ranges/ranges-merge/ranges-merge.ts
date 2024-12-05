@@ -1,6 +1,6 @@
 import { isNullish } from '../../guards';
-import { formatInfinity } from '../ranges.utils';
 import { rangesSort } from '../ranges-sort/ranges-sort';
+import { formatInfinity } from '../ranges.utils';
 import type { AvailableRangeValues, OutputRange } from '../ranges.utils';
 
 /**

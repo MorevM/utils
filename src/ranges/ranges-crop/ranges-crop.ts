@@ -1,6 +1,6 @@
 import { isEmpty, isNullish } from '../../guards';
-import { formatInfinity } from '../ranges.utils';
 import { rangesMerge } from '../ranges-merge/ranges-merge';
+import { formatInfinity } from '../ranges.utils';
 import type { AvailableRangeValues, OutputRange } from '../ranges.utils';
 
 /**
