@@ -1,4 +1,5 @@
 export * from './arrays';
+export * from './colors';
 export * from './cookies';
 export * from './dates';
 export * from './dom';
