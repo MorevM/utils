@@ -1,5 +1,23 @@
 
 
+## [3.12.0](https://github.com/MorevM/utils/compare/v3.11.1...v3.12.0) (2024-12-05)
+
+
+### Features
+
+* **environment:** Deprecate `isLighthouse` function ([0273f06](https://github.com/MorevM/utils/commit/0273f0648e3cd8a9dfd001d8b78f7fd78d8e4fb4))
+* **types:** Re-export `ArrayTail` type from `type-fest` ([85e36c0](https://github.com/MorevM/utils/commit/85e36c0b07ff9078db773553993419a3a4b188b4))
+* **types:** Re-export `FindGlobalInstanceType` and `FindGlobalType` types from `type-fest` ([a3bf9c7](https://github.com/MorevM/utils/commit/a3bf9c7e8c92500b6913abf9097091b213dab066))
+* **types:** Re-export `SimplifyDeep` type from `type-fest` ([1538daf](https://github.com/MorevM/utils/commit/1538daf2ee484269b4547d8f076f8449e048821e))
+* **types:** Re-export `StructuredCloneable` type from `type-fest` ([6168f35](https://github.com/MorevM/utils/commit/6168f35d0cb0181397d4053a0cbeddc52809c49f))
+* **types:** Re-export `UnionToTuple` type from `type-fest` ([dfa2636](https://github.com/MorevM/utils/commit/dfa26368f9c0d9a03a12795d81a69d601548a53d))
+
+
+### Bug fixes
+
+* Add missed `colors` category export ([a7b0549](https://github.com/MorevM/utils/commit/a7b0549e6a549e5b5faaa56bd8afb1f89cd80416))
+
+
 ## [3.11.1](https://github.com/MorevM/utils/compare/v3.11.0...v3.11.1) (2024-06-14)
 
 
