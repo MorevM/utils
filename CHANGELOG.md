@@ -1,5 +1,9 @@
 
 
+## [3.12.1](https://github.com/MorevM/utils/compare/v3.12.0...v3.12.1) (2024-12-15)
+
+No notable changes.
+
 ## [3.12.0](https://github.com/MorevM/utils/compare/v3.11.1...v3.12.0) (2024-12-05)
 
 
