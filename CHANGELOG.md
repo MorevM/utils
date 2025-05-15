@@ -1,5 +1,17 @@
 
 
+## [3.12.2](https://github.com/MorevM/utils/compare/v3.12.1...v3.12.2) (2025-05-15)
+
+
+### Bug fixes
+
+* **dates:** Respect November within ISO RegExp ([051cb90](https://github.com/MorevM/utils/commit/051cb900abcd23340a15330ba3a4952ad13327bd))
+
+
+### CI improvements
+
+* Use v4 version of some actions ([685e10c](https://github.com/MorevM/utils/commit/685e10caa2e023d8310e816840708682930e1af9))
+
 ## [3.12.1](https://github.com/MorevM/utils/compare/v3.12.0...v3.12.1) (2024-12-15)
 
 No notable changes.
