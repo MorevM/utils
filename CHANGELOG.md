@@ -1,5 +1,12 @@
 
 
+## [3.13.1](https://github.com/MorevM/utils/compare/v3.13.0...v3.13.1) (2025-05-30)
+
+
+### Bug fixes
+
+* **arrays:** Add missed `arrayRotate/arrayRotateMutable` exports ([9065793](https://github.com/MorevM/utils/commit/9065793809f1032f6a0017295a9033e5b439eb64))
+
 ## [3.13.0](https://github.com/MorevM/utils/compare/v3.12.2...v3.13.0) (2025-05-30)
 
 
