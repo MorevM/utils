@@ -2,6 +2,7 @@ export * from './array-insert/array-insert';
 export * from './array-of-length/array-of-length';
 export * from './array-range/array-range';
 export * from './array-remove/array-remove';
+export * from './array-rotate/array-rotate';
 export * from './array-sample/array-sample';
 export * from './array-shuffle/array-shuffle';
 export * from './array-swap/array-swap';
