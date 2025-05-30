@@ -1,5 +1,13 @@
 
 
+## [3.13.0](https://github.com/MorevM/utils/compare/v3.12.2...v3.13.0) (2025-05-30)
+
+
+### Features
+
+* **arrays:** Add `arrayRotate` and `arrayRotateMutable` utilities ([b37a185](https://github.com/MorevM/utils/commit/b37a18593b8dbb6e01dd4ca802b9b7df6d647e40))
+* **objects:** Add `omitMutable` utility ([43fd07b](https://github.com/MorevM/utils/commit/43fd07b83912bdcf104ae6c56af05e3b63c34f7a))
+
 ## [3.12.2](https://github.com/MorevM/utils/compare/v3.12.1...v3.12.2) (2025-05-15)
 
 
