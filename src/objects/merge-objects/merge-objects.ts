@@ -15,7 +15,7 @@ type MergerFn = <Source extends PlainObject, Input extends PlainObject>(
 ) => MergeObjects<Source, Input>;
 
 type Merger = <T extends PlainObject, K extends keyof T>(
-	obj: T, key: keyof T, value: T[K], stack: string
+	obj: T, key: keyof T, value: T[K], stack: string,
 ) => boolean | undefined;
 
 // Base function to merge objects
@@ -23,13 +23,13 @@ const _mergeObjects = <T extends PlainObject>(defaults: T, input?: T | null, sta
 	const result = { ...defaults };
 	if (!isObject(input)) return result;
 
-	Object.entries(input).forEach(([key, val]) => {
-		if (merger?.(result, key, val, stack)) return;
+	Object.entries(input).forEach(([key, value]) => {
+		if (merger?.(result, key, value, stack)) return;
 
-		if (isObject(val) && isObject(result[key])) {
-			Object.assign(result, { [key]: _mergeObjects(result[key], val, (stack ? `${stack}.` : '') + key, merger) });
+		if (isObject(value) && isObject(result[key])) {
+			Object.assign(result, { [key]: _mergeObjects(result[key], value, (stack ? `${stack}.` : '') + key, merger) });
 		} else {
-			Object.assign(result, { [key]: val });
+			Object.assign(result, { [key]: value });
 		}
 	});
 
@@ -51,7 +51,7 @@ export const createMergeObjects = (merger?: Merger): MergerFn =>
  * Mixes properties from source into target when
  *
  * @param   defaults   Source object
- * @param   ...input   Custom object(s) to be merged with source or result of previous merge
+ * @param   args       Custom object(s) to be merged with source or result of previous merge
  *
  * @returns            Merged object.
  */
