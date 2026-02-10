@@ -7,8 +7,8 @@ import type { AvailableRangeValues, OutputRange } from '../ranges.utils';
  * Sorts and merges given ranges.
  *
  * @param   ranges           An array of ranges.
- * @param   joinEdges        Whether to combine ranges if they are contiguous.
- * @param   infinityToNull   Whether to return `null` instead of `Infinity`.
+ * @param   joinEdges        Whether to combine ranges if they are contiguous. Default is `true`.
+ * @param   infinityToNull   Whether to return `null` instead of `Infinity`. Default is `false`.
  *
  * @returns                  Sorted and merged ranges or an empty array for invalid input.
  */
