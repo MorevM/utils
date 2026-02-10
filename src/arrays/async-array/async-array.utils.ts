@@ -1,7 +1,7 @@
 import { isArray } from '../../guards';
 import type { Reducer } from './async-array.types';
 
-export const resolve = async <T>(collectionOrPromise: T[]): Promise<Awaited<T[]>> => {
+export const resolve = async <T>(collectionOrPromise: T | T[]): Promise<Awaited<T[]>> => {
 	if (isArray(collectionOrPromise)) return Promise.all(collectionOrPromise);
 	return Promise.all([collectionOrPromise]);
 };
