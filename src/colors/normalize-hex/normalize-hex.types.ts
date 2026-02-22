@@ -8,5 +8,5 @@ export type Options = AlphaChannelOption & {
 	 * * `short` will always transform the HEX to a long notation;
 	 * * `preserve` will save the notation as it is in the source HEX.
 	 */
-	notation: 'long' | 'short' | 'preserve' ;
+	notation: 'long' | 'short' | 'preserve';
 };

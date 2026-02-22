@@ -22,7 +22,7 @@
 
 ## Installation
 
-```bash
+```sh
 # Using `yarn`
 yarn add @morev/utils
 
@@ -47,13 +47,13 @@ const { arrayShuffle } = require('@morev/utils');
 
 ## Acknowledgments
 
-* [fast-copy](https://github.com/planttheidea/fast-copy) for `deepClone` and `deepCloneStrict` utilities;
-* [fast-equals](https://github.com/planttheidea/fast-equals) for `deepEqual` and `deepEqualCircular` utilities;
-* [ohash](https://github.com/unjs/ohash) for `hash` utility;
-* [type-fest](https://github.com/sindresorhus/type-fest) for many utility types.
-* `object-to-formdata` utility mostly inspired by [object-to-formdata](https://github.com/therealparmesh/object-to-formdata) package,
+- [fast-copy](https://github.com/planttheidea/fast-copy) for `deepClone` and `deepCloneStrict` utilities;
+- [fast-equals](https://github.com/planttheidea/fast-equals) for `deepEqual` and `deepEqualCircular` utilities;
+- [ohash](https://github.com/unjs/ohash) for `hash` utility;
+- [type-fest](https://github.com/sindresorhus/type-fest) for many utility types.
+- `object-to-formdata` utility mostly inspired by [object-to-formdata](https://github.com/therealparmesh/object-to-formdata) package,
   but public API and implementation is a bit different according to my experience and needs.
-* [awaity](https://github.com/asfktz/Awaity.js) for an inspiration and initial code base of the `asyncArray` utility.
-* [set-cookie-parser](https://github.com/nfriedly/set-cookie-parser/) for the basic implementation of the `parseResponseCookie` utility and tests.
-* [cookie](https://github.com/jshttp/cookie) for the basic implementation of the `serializeCookie` utility and its tests.
-* [compute-gcd](https://github.com/compute-io/gcd) for the implementation of the `gcd` utility and its tests.
+- [awaity](https://github.com/asfktz/Awaity.js) for an inspiration and initial code base of the `asyncArray` utility.
+- [set-cookie-parser](https://github.com/nfriedly/set-cookie-parser/) for the basic implementation of the `parseResponseCookie` utility and tests.
+- [cookie](https://github.com/jshttp/cookie) for the basic implementation of the `serializeCookie` utility and its tests.
+- [compute-gcd](https://github.com/compute-io/gcd) for the implementation of the `gcd` utility and its tests.

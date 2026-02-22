@@ -1,6 +1,6 @@
 import { romanize } from './romanize';
 
-describe('romanize', () => {
+describe(romanize, () => {
 	it('Looks like it works', () => {
 		expect(romanize(1)).toBe('I');
 		expect(romanize(2)).toBe('II');

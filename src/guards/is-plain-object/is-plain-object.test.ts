@@ -2,6 +2,7 @@ import { runInNewContext } from 'node:vm';
 import { isPlainObject } from './is-plain-object';
 
 class Foo {
+	// eslint-disable-next-line @typescript-eslint/no-unused-private-class-members -- Test case
 	private readonly x: any;
 
 	public constructor(x: any) {

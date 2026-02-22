@@ -1,7 +1,7 @@
-/* eslint-disable no-autofix/sonarjs/no-identical-functions */
+/* eslint-disable sonarjs/no-identical-functions */
 import { debounce } from './debounce';
 
-describe('debounce', () => {
+describe(debounce, () => {
 	it('Delays a given function invoking until a given `delay` time have elapsed since the last time a function was invoked', async () => {
 		let counter = 0;
 		const debounced = debounce(() => counter++, 32, false);

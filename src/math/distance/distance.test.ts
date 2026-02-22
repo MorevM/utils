@@ -1,6 +1,6 @@
 import { distance } from './distance';
 
-describe('distance', () => {
+describe(distance, () => {
 	it('Returns the distance between two points using object notation', () => {
 		expect(distance({ x: 1, y: 1 }, { x: 1, y: 1 })).toBe(0);
 		expect(distance({ x: 1, y: 1 }, { x: 2, y: 1 })).toBe(1);

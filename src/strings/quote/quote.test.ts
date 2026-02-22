@@ -1,6 +1,6 @@
 import { quote } from './quote';
 
-describe('quote', () => {
+describe(quote, () => {
 	it('Returns empty quotes for empty string', () => {
 		expect(quote('')).toBe('""');
 	});

@@ -14,9 +14,9 @@ export const minTimePromise = async <T>(promise: Promise<T>, minTime: number = 0
 	const startTime = Date.now();
 
 	let errorTime: null | number = null;
-	const result = await Promise.all([promise, sleep(minTime)]).catch((e) => {
+	const result = await Promise.all([promise, sleep(minTime)]).catch((error) => {
 		errorTime = Date.now();
-		return [e];
+		return [error];
 	});
 
 	if (errorTime) {

@@ -1,6 +1,6 @@
 import { capitalize } from './capitalize';
 
-describe('capitalize', () => {
+describe(capitalize, () => {
 	it('Returns empty string for empty input', () => {
 		expect(capitalize('')).toBe('');
 	});

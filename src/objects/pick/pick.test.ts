@@ -1,6 +1,6 @@
 import { pick } from './pick';
 
-describe('pick', () => {
+describe(pick, () => {
 	it('Returns the object with only keys specified', () => {
 		expect(pick({ a: 1, b: 2, c: 3 }, 'a')).toStrictEqual({ a: 1 });
 		expect(pick({ a: 1, b: 2, c: 3 }, 'a', 'c')).toStrictEqual({ a: 1, c: 3 });

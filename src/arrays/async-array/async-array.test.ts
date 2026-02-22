@@ -52,9 +52,9 @@ describe('async-array', () => {
 	describe('reduce / reduceRight', () => {
 		it('Serially reduces an array', async () => {
 			const actualTime = await measureTime(async () => {
-				const results = await asyncArray(iterable).reduce(async (acc, curr) => {
+				const results = await asyncArray(iterable).reduce(async (acc, current) => {
 					await sleep(duration);
-					return acc + curr;
+					return acc + current;
 				}, '0');
 
 				expect(results).toBe('01234');
@@ -65,9 +65,9 @@ describe('async-array', () => {
 
 		it('Serially reduces an array from right to left', async () => {
 			const actualTime = await measureTime(async () => {
-				const results = await asyncArray(iterable).reduceRight(async (acc, curr) => {
+				const results = await asyncArray(iterable).reduceRight(async (acc, current) => {
 					await sleep(duration);
-					return acc + curr;
+					return acc + current;
 				}, '5');
 
 				expect(results).toBe('54321');

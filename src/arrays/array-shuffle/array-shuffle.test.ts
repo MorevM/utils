@@ -10,8 +10,8 @@ describe('array-shuffle', () => {
 		const TIMES = 100000;
 		const result = arrayOfLength(TIMES, () => arrayShuffle(input));
 
-		const sameOrderCount = result.reduce((acc, curr) => {
-			return acc + (deepEqual(input, curr) ? 1 : 0);
+		const sameOrderCount = result.reduce((acc, current) => {
+			return acc + (deepEqual(input, current) ? 1 : 0);
 		}, 0);
 
 		// `0.1%` of `10!` looks like a pretty good threshold, doesn't it?

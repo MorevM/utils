@@ -19,18 +19,18 @@ describe('array-swap', () => {
 	});
 
 	it('Throws if any swap index is outside the array length', () => {
-		expect(() => arraySwap([1, 2, 3], -1, 2)).toThrow('First swap position outside the array range');
-		expect(() => arraySwap([1, 2, 3], 1, 3)).toThrow('Second swap position outside the array range');
+		expect(() => arraySwap([1, 2, 3], -1, 2)).toThrowError('First swap position outside the array range');
+		expect(() => arraySwap([1, 2, 3], 1, 3)).toThrowError('Second swap position outside the array range');
 	});
 
 	it('Throws if the end edge of swap range is lower than the start edge', () => {
-		expect(() => arraySwap([1, 2, 3], [1, 0], 2)).toThrow('The end edge of the first position is lower than the start edge');
-		expect(() => arraySwap([1, 2, 3], 0, [2, 1])).toThrow('The end edge of the second position is lower than the start edge');
+		expect(() => arraySwap([1, 2, 3], [1, 0], 2)).toThrowError('The end edge of the first position is lower than the start edge');
+		expect(() => arraySwap([1, 2, 3], 0, [2, 1])).toThrowError('The end edge of the second position is lower than the start edge');
 	});
 
 	it('Throws if ranges are crossed', () => {
-		expect(() => arraySwap([1, 2, 3, 4], [0, 2], [1, 3])).toThrow('The edges cannot be crossed');
-		expect(() => arraySwap([1, 2, 3, 4], [0, 2], [2, 3])).toThrow('The edges cannot be crossed');
+		expect(() => arraySwap([1, 2, 3, 4], [0, 2], [1, 3])).toThrowError('The edges cannot be crossed');
+		expect(() => arraySwap([1, 2, 3, 4], [0, 2], [2, 3])).toThrowError('The edges cannot be crossed');
 	});
 
 	it('Swaps array values using integer positions', () => {

@@ -1,4 +1,3 @@
-/* eslint-disable func-style -- Much better to work with overloads */
 import { isArray, isNull, isNumeric, isObject } from '../../guards';
 import type { PointObject, PointTuple } from '../math.types';
 

@@ -1,6 +1,6 @@
 import { gcd } from './gcd';
 
-describe('gcd', () => {
+describe(gcd, () => {
 	it('Returns `null` in case of invalid input', () => {
 		expect(gcd(2)).toBeNull();
 		expect(gcd(2.1, 4, 6)).toBeNull();

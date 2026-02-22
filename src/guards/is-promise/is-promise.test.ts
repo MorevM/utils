@@ -1,6 +1,6 @@
 import { isPromise } from './is-promise';
 
-const promise = new Promise((res, rej) => res(''));
+const promise = new Promise((resolve, reject) => resolve(''));
 const asyncFn = async () => 1;
 
 describe('is-promise', () => {

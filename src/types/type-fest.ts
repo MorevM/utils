@@ -1,17 +1,17 @@
-export type { Includes as ArrayIncludes } from 'type-fest';
-export type { IterableElement as ElementOf } from 'type-fest';
-export type { Promisable as Awaitable } from 'type-fest';
-export type { Replace as StringReplace } from 'type-fest';
 export type { ScreamingSnakeCase as UpperSnakeCase } from 'type-fest';
 export type { SetNonNullable as PartialNonNullable } from 'type-fest';
+export type { SetReturnType as PartialReturnType } from 'type-fest';
 export type { SetOptional as PartialOptional } from 'type-fest';
 export type { SetReadonly as PartialReadonly } from 'type-fest';
 export type { SetRequired as PartialRequired } from 'type-fest';
-export type { SetReturnType as PartialReturnType } from 'type-fest';
-export type { Simplify as Explicit } from 'type-fest';
+export type { IterableElement as ElementOf } from 'type-fest';
+export type { Includes as ArrayIncludes } from 'type-fest';
+export type { Replace as StringReplace } from 'type-fest';
 export type { Subtract as MathSubtract } from 'type-fest';
-export type { Sum as MathAdd } from 'type-fest';
 export type { TsConfigJson as TsConfig } from 'type-fest';
+export type { Promisable as Awaitable } from 'type-fest';
+export type { Simplify as Explicit } from 'type-fest';
+export type { Sum as MathAdd } from 'type-fest';
 
 export type {
 	And,
@@ -113,7 +113,7 @@ export type {
 	// OnComplete,       // If `Observable` proposal will be implemented
 	// OnError,          // If `Observable` proposal will be implemented
 	// OnNext,           // If `Observable` proposal will be implemented
-	Opaque,
+	Opaque, // eslint-disable-line @typescript-eslint/no-deprecated
 	OptionalKeysOf,
 	Or,
 	OverrideProperties,
@@ -169,7 +169,7 @@ export type {
 	// UnknownArray, // What is it for?
 	UnknownRecord,
 	// Unsubscribable, // If `Observable` proposal will be implemented
-	UnwrapOpaque,
+	UnwrapOpaque, // eslint-disable-line @typescript-eslint/no-deprecated
 	UnwrapTagged,
 	ValueOf,
 	Writable,

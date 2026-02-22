@@ -11,7 +11,7 @@ const createLog = () => {
 };
 const { log, clear, history } = createLog();
 
-describe('assert', () => {
+describe(assert, () => {
 	beforeAll(() => {
 		configureAssert({
 			errorReporter: (failureType, error, message, props) => {
@@ -27,19 +27,19 @@ describe('assert', () => {
 
 	describe('hard (default)', () => {
 		it(`Doesn't throw for non-falsy values`, () => {
-			expect(() => assert(true)).not.toThrow();
-			expect(() => assert('')).not.toThrow();
-			expect(() => assert([])).not.toThrow();
-			expect(() => assert({})).not.toThrow();
-			expect(() => assert(0)).not.toThrow();
-			expect(() => assert(/test/)).not.toThrow();
-			expect(() => assert(new Set())).not.toThrow();
+			expect(() => assert(true)).not.toThrowError();
+			expect(() => assert('')).not.toThrowError();
+			expect(() => assert([])).not.toThrowError();
+			expect(() => assert({})).not.toThrowError();
+			expect(() => assert(0)).not.toThrowError();
+			expect(() => assert(/test/)).not.toThrowError();
+			expect(() => assert(new Set())).not.toThrowError();
 		});
 
 		it('Throws for `false`, `null` and `undefined` values', () => {
-			expect(() => assert(false)).toThrow();
-			expect(() => assert(null)).toThrow();
-			expect(() => assert(undefined)).toThrow();
+			expect(() => assert(false)).toThrowError();
+			expect(() => assert(null)).toThrowError();
+			expect(() => assert(undefined)).toThrowError();
 		});
 
 		it('Calls ErrorReporter if failed', () => {
@@ -91,25 +91,25 @@ describe('assert', () => {
 
 	describe('default formatter messages', () => {
 		it('Boolean assertion fails with proper message', () => {
-			expect(() => assert(false)).toThrow('Assert condition failed');
+			expect(() => assert(false)).toThrowError('Assert condition failed');
 		});
 
 		it('Non-boolean assertion fails with proper message', () => {
-			expect(() => assert(null)).toThrow('Assert value not undefined/null failed');
+			expect(() => assert(null)).toThrowError('Assert value not undefined/null failed');
 		});
 
 		it('The error text respects custom developer message', () => {
-			expect(() => assert(null, 'Custom!')).toThrow('Custom!');
+			expect(() => assert(null, 'Custom!')).toThrowError('Custom!');
 		});
 
 		it('The error text respects custom developer props', () => {
-			expect(() => assert(null, '', { id: 5 })).toThrow('"id":5');
-			expect(() => assert(null, '', () => ({ id: 5 }))).toThrow('"id":5');
+			expect(() => assert(null, '', { id: 5 })).toThrowError('"id":5');
+			expect(() => assert(null, '', () => ({ id: 5 }))).toThrowError('"id":5');
 		});
 	});
 });
 
-describe('configureAssert', () => {
+describe(configureAssert, () => {
 	beforeEach(() => {
 		configureAssert(createConfiguration());
 	});
@@ -119,7 +119,7 @@ describe('configureAssert', () => {
 			formatter: () => 'Fully custom',
 		});
 
-		expect(() => assert(false)).toThrow('Fully custom');
+		expect(() => assert(false)).toThrowError('Fully custom');
 	});
 
 	it('Can use custom ErrorCreator for an error message', () => {
@@ -127,6 +127,6 @@ describe('configureAssert', () => {
 			errorCreator: () => new Error('Custom error creator'),
 		});
 
-		expect(() => assert(false)).toThrow('Custom error creator');
+		expect(() => assert(false)).toThrowError('Custom error creator');
 	});
 });

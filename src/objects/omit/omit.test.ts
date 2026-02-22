@@ -1,6 +1,6 @@
 import { omit, omitMutable } from './omit';
 
-describe('omit', () => {
+describe(omit, () => {
 	it('Returns empty object in case of nullish input', () => {
 		/* @ts-expect-error -- Edge case */
 		const nullResult = omit(null, 'foo', 'bar');

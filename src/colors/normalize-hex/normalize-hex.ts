@@ -36,7 +36,7 @@ export const normalizeHex = (hex: string, userOptions?: Partial<Options>) => {
 				return `${r}${r}${g}${g}${b}${b}${alpha}`;
 			}
 
-			return `${r}${g}${b}${a || 'ff'}`;
+			return `${r}${g}${b}${a ?? 'ff'}`;
 		},
 	).match(/.{2}/g)!;
 

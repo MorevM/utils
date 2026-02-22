@@ -1,6 +1,6 @@
 import { precision } from './precision';
 
-describe('precision', () => {
+describe(precision, () => {
 	it('Calculates the number precision', () => {
 		expect(precision(.1)).toBe(1);
 		expect(precision(1)).toBe(0);

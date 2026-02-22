@@ -1,6 +1,6 @@
 import { clamp } from './clamp';
 
-describe('clamp', () => {
+describe(clamp, () => {
 	it('Returns the average value from a given values', () => {
 		expect(clamp(1, 2, 3)).toBe(2);
 	});

@@ -1,6 +1,6 @@
 import { lerp } from './lerp';
 
-describe('lerp', () => {
+describe(lerp, () => {
 	it('Works as documented for simple cases', () => {
 		expect(lerp(2, 4, 0)).toBe(2);
 		expect(lerp(2, 4, 1)).toBe(4);

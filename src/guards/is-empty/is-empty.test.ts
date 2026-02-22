@@ -23,6 +23,7 @@ describe('is-empty', () => {
 
 	it('Returns `true` if a given value is a `0n`', () => {
 		expect(isEmpty(0n)).toBe(true);
+		// eslint-disable-next-line unicorn/prefer-bigint-literals -- Important to test different format
 		expect(isEmpty(BigInt(0))).toBe(true);
 	});
 

@@ -1,6 +1,6 @@
 import { angle } from './angle';
 
-describe('angle', () => {
+describe(angle, () => {
 	it('Returns the angle between two points using object notation', () => {
 		expect(angle({ x: 3, y: 3 }, { x: 3, y: 3 })).toBe(0);
 		expect(angle({ x: 3, y: 3 }, { x: 4, y: 4 })).toBe(45);

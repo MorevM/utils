@@ -1,5 +1,4 @@
 /* eslint-disable no-bitwise -- Used intentionally for performance, details https://github.com/compute-io/gcd/pull/2 */
-/* eslint-disable func-style -- Much better to work with overloads */
 
 // Just a custom implementation of https://github.com/compute-io/gcd
 // written in a modern syntax with TS types included and more easy-to-read form.

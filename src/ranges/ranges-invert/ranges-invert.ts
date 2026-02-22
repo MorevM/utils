@@ -20,10 +20,10 @@ export const rangesInvert = <
 
 	return rangesCrop(
 		rangesMerge(ranges, true, infinityToNull).reduce<Range[]>((acc, range, i, arr) => {
-			const res: Range[] = [];
+			const result: Range[] = [];
 
 			if (i === 0 && arr[0][0]! > start) {
-				res.push([
+				result.push([
 					formatInfinity(start, infinityToNull),
 					formatInfinity(arr[0][0], infinityToNull),
 				]);
@@ -31,13 +31,13 @@ export const rangesInvert = <
 
 			const tail = i < arr.length - 1 ? arr[i + 1][0] : end;
 			if (!rangeIncludes(end, [range])) {
-				res.push([
+				result.push([
 					formatInfinity((range[1] ?? -Infinity) > start ? range[1] : start, infinityToNull),
 					formatInfinity(tail, infinityToNull),
 				]);
 			}
 
-			return res.length ? [...acc, ...res] : acc;
+			return result.length ? [...acc, ...result] : acc;
 		}, []),
 		start,
 		end,

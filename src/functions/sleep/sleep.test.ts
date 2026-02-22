@@ -1,6 +1,6 @@
 import { sleep } from './sleep';
 
-describe('sleep', () => {
+describe(sleep, () => {
 	it('Can make delay using `await`', async () => {
 		const before = Date.now();
 		await sleep(500);

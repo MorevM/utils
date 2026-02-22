@@ -1,6 +1,6 @@
 import { compose } from './compose';
 
-describe('compose', () => {
+describe(compose, () => {
 	it('Sequentially applies given functions to a passed value in reverse order', () => {
 		const f1 = vi.fn().mockImplementation((str: string): string => `${str}-baz`);
 		const f2 = vi.fn().mockImplementation((str: string): string => `${str}-bar`);

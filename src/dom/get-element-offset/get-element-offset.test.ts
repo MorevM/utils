@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-deprecated -- For compatibility purposes */
 /* eslint-disable no-multi-assign */
 import { getElementOffset } from './get-element-offset';
 

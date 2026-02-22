@@ -64,14 +64,14 @@ export const serializeCookie = (cookie: Cookie, userOptions?: Partial<Options>) 
 	}
 
 	if (cookie.sameSite) {
-		// eslint-disable-next-line no-autofix/unicorn/no-lonely-if
+		// eslint-disable-next-line unicorn/no-lonely-if
 		if (cookie.sameSite === 'Strict' || cookie.sameSite === 'Lax' || cookie.sameSite === 'None') {
 			cookieString += `; SameSite=${cookie.sameSite}`;
 		}
 	}
 
 	if (cookie.priority) {
-		// eslint-disable-next-line no-autofix/unicorn/no-lonely-if
+		// eslint-disable-next-line unicorn/no-lonely-if
 		if (cookie.priority === 'Low' || cookie.priority === 'Medium' || cookie.priority === 'High') {
 			cookieString += `; Priority=${cookie.priority}`;
 		}

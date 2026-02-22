@@ -14,6 +14,7 @@ export const precision = (maybeNumber: unknown) => {
 	const value = toNumber(maybeNumber, null);
 	if (value === null || !Number.isFinite(value)) return null;
 
+	// eslint-disable-next-line unicorn/prevent-abbreviations
 	let e = 1; let p = 0;
 	while (Math.round(value * e) / e !== value) { e *= 10; p++; }
 

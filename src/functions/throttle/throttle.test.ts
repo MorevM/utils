@@ -1,6 +1,6 @@
 import { throttle } from './throttle';
 
-describe('throttle', () => {
+describe(throttle, () => {
 	beforeEach(() => vi.useFakeTimers());
 
 	it('Throttles a callback function with no parameters except `delay`', async () => {

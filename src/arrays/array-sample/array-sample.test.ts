@@ -6,7 +6,7 @@ import { arraySample } from './array-sample';
 
 const input = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const runTimes = (times: number, fn: Function) => {
-	return arrayOfLength(times).reduce<any[]>((acc, curr) => {
+	return arrayOfLength(times).reduce<any[]>((acc, current) => {
 		acc.push(fn());
 		return acc;
 	}, []);

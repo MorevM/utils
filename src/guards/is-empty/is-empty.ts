@@ -17,7 +17,9 @@ export const isEmpty = (value: unknown): value is Empty => {
 	if (value === false) return true;
 	if (Number.isNaN(value)) return true;
 	if (value === 0) return true;
-	if (value === BigInt(0)) return true; // Using `0n` may fail in some environments such as esbuild es2019
+	/* eslint-disable-next-line unicorn/prefer-bigint-literals --
+		Using `0n` may fail in some environments such as esbuild es2019 */
+	if (value === BigInt(0)) return true;
 	if (value === '') return true;
 
 	if (isIterable(value) && typeof value === 'object' && 'length' in value && value.length === 0) return true;

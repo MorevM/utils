@@ -1,10 +1,12 @@
 import { isPrimitive } from './is-primitive';
 
 /* @ts-expect-error -- Edge case */
+// eslint-disable-next-line @typescript-eslint/no-unused-private-class-members
 class Foo { private readonly foo: string; }
+
 // eslint-disable-next-line func-style, @typescript-eslint/no-empty-function
-function func() {}
-const arrowFunc = () => {};
+function fn() {}
+const arrowFn = () => {};
 
 describe('is-primitive', () => {
 	it('Returns `true` if a given value is a primitive', () => {
@@ -15,6 +17,7 @@ describe('is-primitive', () => {
 		expect(isPrimitive(NaN)).toBe(true);
 
 		expect(isPrimitive(10n)).toBe(true);
+		// eslint-disable-next-line unicorn/prefer-bigint-literals -- Important to test different format
 		expect(isPrimitive(BigInt(1))).toBe(true);
 
 		expect(isPrimitive('string')).toBe(true);
@@ -43,8 +46,8 @@ describe('is-primitive', () => {
 		// eslint-disable-next-line no-object-constructor
 		expect(isPrimitive(new Object())).toBe(false);
 		expect(isPrimitive(new Array(15))).toBe(false);
-		expect(isPrimitive(func)).toBe(false);
-		expect(isPrimitive(arrowFunc)).toBe(false);
+		expect(isPrimitive(fn)).toBe(false);
+		expect(isPrimitive(arrowFn)).toBe(false);
 		expect(isPrimitive(() => {})).toBe(false);
 		expect(isPrimitive(/foo/g)).toBe(false);
 		expect(isPrimitive(new Date())).toBe(false);

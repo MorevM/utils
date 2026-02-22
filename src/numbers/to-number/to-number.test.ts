@@ -19,16 +19,16 @@ describe('to-number', () => {
 	});
 
 	it('Throws if it\'s impossible to cast to a number and no fallback value is provided', () => {
-		expect(() => toNumber('!')).toThrow();
-		expect(() => toNumber(['123'])).toThrow();
-		expect(() => toNumber(NaN)).toThrow();
-		expect(() => toNumber(null)).toThrow();
-		expect(() => toNumber(undefined)).toThrow();
-		expect(() => toNumber({})).toThrow();
-		expect(() => toNumber(true)).toThrow();
-		expect(() => toNumber(false)).toThrow();
-		expect(() => toNumber(Symbol('foo'))).toThrow();
-		expect(() => toNumber(new Date())).toThrow();
+		expect(() => toNumber('!')).toThrowError();
+		expect(() => toNumber(['123'])).toThrowError();
+		expect(() => toNumber(NaN)).toThrowError();
+		expect(() => toNumber(null)).toThrowError();
+		expect(() => toNumber(undefined)).toThrowError();
+		expect(() => toNumber({})).toThrowError();
+		expect(() => toNumber(true)).toThrowError();
+		expect(() => toNumber(false)).toThrowError();
+		expect(() => toNumber(Symbol('foo'))).toThrowError();
+		expect(() => toNumber(new Date())).toThrowError();
 	});
 
 	it('Returns the fallback value if specified and cast to a number was unsuccessful', () => {
