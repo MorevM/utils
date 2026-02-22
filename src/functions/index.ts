@@ -1,3 +1,4 @@
+export * from './assert-never/assert-never';
 export * from './assert/assert';
 export * from './compose/compose';
 export * from './debounce/debounce';
