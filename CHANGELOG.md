@@ -1,5 +1,34 @@
 
 
+## [3.14.0](https://github.com/MorevM/utils/compare/v3.13.1...v3.14.0) (2026-03-07)
+
+
+### Features
+
+* **functions:** Add `assertNever` utility for exhaustive type checking ([08494b4](https://github.com/MorevM/utils/commit/08494b4582046b0a3fa3b91d3e181a30b55dfe7a))
+
+
+### Bug fixes
+
+* **functions:** Resolve with `void` in `sleep` ([f5ba7bf](https://github.com/MorevM/utils/commit/f5ba7bff776613a35ff6bb384e6fbae631e0a80f))
+
+
+### Refactoring
+
+* Fix internal type ([60fcfa5](https://github.com/MorevM/utils/commit/60fcfa560eb4b3b898afa6d54133996fa5c09e7b))
+* **objects:** Proper JSDoc for `mergeObjects` ([5f38d57](https://github.com/MorevM/utils/commit/5f38d57f2411d0d4cf494fe66e543c47ca3c6509))
+
+
+### Documentation
+
+* **ranges:** Add a note about default values in `rangesMerge` ([57802f8](https://github.com/MorevM/utils/commit/57802f847841f748b6679c778eaceb04bd6bda73))
+
+
+### CI improvements
+
+* Setup OIDC ([67c6a17](https://github.com/MorevM/utils/commit/67c6a1785641c30879a2fc2d62f66474899a1d95))
+
+
 ## [3.13.1](https://github.com/MorevM/utils/compare/v3.13.0...v3.13.1) (2025-05-30)
 
 
