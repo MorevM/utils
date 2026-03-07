@@ -36,7 +36,9 @@ export const normalizeHex = (hex: string, userOptions?: Partial<Options>) => {
 				return `${r}${r}${g}${g}${b}${b}${alpha}`;
 			}
 
-			return `${r}${g}${b}${a ?? 'ff'}`;
+			/* eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing --
+			 * Empty string should fallback to 'ff', so `||` is intentional */
+			return `${r}${g}${b}${a || 'ff'}`;
 		},
 	).match(/.{2}/g)!;
 
