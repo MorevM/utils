@@ -11,4 +11,5 @@ export * from './arrays-difference/arrays-difference';
 export * from './arrays-intersection/arrays-intersection';
 export * from './arrays-union/arrays-union';
 export * from './async-array/async-array';
+export * from './sequence/sequence';
 export * from './to-array/to-array';
