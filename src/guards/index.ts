@@ -25,6 +25,7 @@ export * from './is-object/is-object';
 export * from './is-plain-object/is-plain-object';
 export * from './is-primitive/is-primitive';
 export * from './is-promise/is-promise';
+export * from './is-property-key/is-property-key';
 export * from './is-reg-exp/is-reg-exp';
 export * from './is-session-storage-available/is-session-storage-available';
 export * from './is-string/is-string';
