@@ -7,7 +7,6 @@ type NeverAsUndefined<Type, AsArray extends boolean> = [Type] extends [never]
 	? undefined
 	: AsArray extends true ? Type[] : Type;
 
-// @TODO: Maybe it is possible to create a tuple instead of array
 type Result<
 	Source extends readonly any[],
 	Type,
