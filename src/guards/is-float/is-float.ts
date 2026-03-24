@@ -1,4 +1,4 @@
-import { isNumeric } from '../is-numeric/is-numeric';
+import { isFiniteNumber } from '../is-finite-number/is-finite-number';
 
 /**
  * Checks whether a given value is a float number.
@@ -8,4 +8,4 @@ import { isNumeric } from '../is-numeric/is-numeric';
  * @returns         Whether the value is float number
  */
 export const isFloat = (value: unknown): value is bigint =>
-	isNumeric(value) && (value % 1 !== 0);
+	isFiniteNumber(value) && (value % 1 !== 0);

@@ -13,6 +13,11 @@ describe(isFloat, () => {
 		expect(isFloat(NaN)).toBe(false);
 	});
 
+	it('Returns `false` if a given value is `Infinity`', () => {
+		expect(isFloat(Infinity)).toBe(false);
+		expect(isFloat(-Infinity)).toBe(false);
+	});
+
 	it('Returns `false` if a given value is not a number', () => {
 		expect(isFloat('foo')).toBe(false);
 	});

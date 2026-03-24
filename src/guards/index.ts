@@ -31,4 +31,5 @@ export * from './is-session-storage-available/is-session-storage-available';
 export * from './is-string/is-string';
 export * from './is-symbol/is-symbol';
 export * from './is-undefined/is-undefined';
+export * from './is-valid-number/is-valid-number';
 export * from './is-weak-map/is-weak-map';
