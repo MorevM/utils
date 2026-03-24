@@ -1,6 +1,6 @@
 import { arrayRange } from './array-range';
 
-describe('array-range', () => {
+describe(arrayRange, () => {
 	it('Returns an array containing the values from the passed `from` and `to` arguments', () => {
 		expect(arrayRange(0, 2)).toStrictEqual([0, 1, 2]);
 		expect(arrayRange(-2, 1)).toStrictEqual([-2, -1, 0, 1]);

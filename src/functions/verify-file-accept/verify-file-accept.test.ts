@@ -1,6 +1,6 @@
 import { verifyFileAccept } from './verify-file-accept';
 
-describe('verify-file-accept', () => {
+describe(verifyFileAccept, () => {
 	const imageFile = new File([], 'image.jpg', { type: 'image/jpeg' });
 	const videoFile = new File([], 'image.mp4', { type: 'video/mp4' });
 	const audioFile = new File([], 'sound.mp3', { type: 'audio/mp3' });

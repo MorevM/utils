@@ -1,6 +1,6 @@
 import { rangesCrop } from './ranges-crop';
 
-describe('ranges-crop', () => {
+describe(rangesCrop, () => {
 	it(`Doesn't mutate the original array`, () => {
 		const original = [[1, 2], [0, 1]] as Array<[number, number]>;
 		const clone = [...original];

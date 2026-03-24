@@ -29,9 +29,9 @@ const threeWithExpiresAtEnd = `${cookieWithExpiresAtEnd}, ${cookieWithExpiresAtE
 const DATE_STRING = 'Tue Jul 01 2025 06:01:11 GMT-0400 (EDT)';
 const DOMAIN = '.example.com';
 
-describe('parse-response-cookie', () => {
+describe(parseResponseCookie, () => {
 	// https://github.com/nfriedly/set-cookie-parser/blob/master/test/split-cookies-string.js
-	describe('split-cookies-string', () => {
+	describe(splitCookiesString, () => {
 		it('Should return an array if an array of strings is given', () => {
 			const actual = splitCookiesString(array);
 			const expected = array;
@@ -219,7 +219,7 @@ describe('parse-response-cookie', () => {
 
 	// https://github.com/nfriedly/set-cookie-parser/blob/master/test/set-cookie-parser.js
 	// https://github.com/nfriedly/set-cookie-parser/blob/master/test/fetch.js
-	describe('parse-response-cookie', () => {
+	describe(parseResponseCookie, () => {
 		it('Should parse a simple set-cookie header', () => {
 			expect(parseResponseCookie('foo=bar;'))
 				.toStrictEqual([{ name: 'foo', value: 'bar' }]);

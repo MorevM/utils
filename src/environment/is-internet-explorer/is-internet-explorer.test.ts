@@ -1,6 +1,6 @@
 import { isInternetExplorer } from './is-internet-explorer';
 
-describe('is-internet-explorer', () => {
+describe(isInternetExplorer, () => {
 	it('Returns `true` if IE 11 is being used', () => {
 		vi.spyOn(window.navigator, 'userAgent', 'get')
 			.mockReturnValue('Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko');

@@ -2,7 +2,7 @@ import { getElement } from './get-element';
 
 type ElementDeclaration = { selector: string; element: Element | null };
 
-describe('get-element', () => {
+describe(getElement, () => {
 	let parentBlock: ElementDeclaration;
 	let outOfParent: ElementDeclaration;
 	let justBlock: ElementDeclaration;

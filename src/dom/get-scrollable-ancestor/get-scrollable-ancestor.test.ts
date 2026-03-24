@@ -1,6 +1,6 @@
 import { getScrollableAncestor } from './get-scrollable-ancestor';
 
-describe('get-scrollable-ancestor', () => {
+describe(getScrollableAncestor, () => {
 	beforeAll(() => {
 		document.body.insertAdjacentHTML('beforeend', `
 			<div id="root">

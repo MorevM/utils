@@ -7,7 +7,7 @@ class NonStandardError extends Error {
 	}
 }
 
-describe('is-error', () => {
+describe(isError, () => {
 	it('Returns `false` for any non-error value', () => {
 		expect(isError(null)).toBe(false);
 		expect(isError(undefined)).toBe(false);

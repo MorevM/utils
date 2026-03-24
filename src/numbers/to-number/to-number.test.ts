@@ -1,6 +1,6 @@
 import { toNumber } from './to-number';
 
-describe('to-number', () => {
+describe(toNumber, () => {
 	it('Returns a real numbers as is', () => {
 		expect(toNumber(0)).toBe(0);
 		expect(toNumber(-0)).toBe(-0);

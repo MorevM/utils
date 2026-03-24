@@ -1,6 +1,6 @@
 import { isEmail } from './is-email';
 
-describe('is-email', () => {
+describe(isEmail, () => {
 	it('Returns `false` for any non-string input', () => {
 		expect(isEmail(null)).toBe(false);
 		expect(isEmail(undefined)).toBe(false);

@@ -1,6 +1,6 @@
 import { formatSlashes } from './format-slashes';
 
-describe('format-slashes', () => {
+describe(formatSlashes, () => {
 	it('Returns string without slash duplicates if no arguments passed', () => {
 		expect(formatSlashes('')).toBe('');
 		expect(formatSlashes('some/long/string/')).toBe('some/long/string/');

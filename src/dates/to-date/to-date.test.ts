@@ -7,7 +7,7 @@ import { toDate } from './to-date';
 const TIMEZONE_OFFSET_AS_HOURS = 3;
 const hours = 20;
 
-describe('to-date', () => {
+describe(toDate, () => {
 	describe('Timestamp', () => {
 		const timestamp = Date.UTC(2024, 4, 2, hours, 55, 55);
 

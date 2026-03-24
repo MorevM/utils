@@ -1,6 +1,6 @@
 import { isMap } from './is-map';
 
-describe('is-map', () => {
+describe(isMap, () => {
 	it('Returns `true` if the given value is a Map', () => {
 		expect(isMap(new Map())).toBe(true);
 	});

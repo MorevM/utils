@@ -20,7 +20,7 @@ const mockGetBoundingClientRect = (el: Element, _options: { x: number; y: number
 		.mockImplementation(() => pseudoRect);
 };
 
-describe('get-element-offset', () => {
+describe(getElementOffset, () => {
 	beforeAll(() => {
 		const el = document.createElement('div');
 		el.classList.add(CLASSNAME);

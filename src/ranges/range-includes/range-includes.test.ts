@@ -1,6 +1,6 @@
 import { rangeIncludes } from './range-includes';
 
-describe('range-includes', () => {
+describe(rangeIncludes, () => {
 	it('Returns `false` if the value is `NaN`', () => {
 		expect(rangeIncludes(NaN, [[-Infinity, Infinity]])).toBe(false);
 	});

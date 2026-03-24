@@ -1,6 +1,6 @@
 import { queryStringify } from './query-stringify';
 
-describe('query-stringify', () => {
+describe(queryStringify, () => {
 	it('Returns empty string for empty/invalid input', () => {
 		/* @ts-expect-error -- Edge case */
 		expect(queryStringify('')).toBe('');

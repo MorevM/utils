@@ -1,6 +1,6 @@
 import { rangesMerge } from './ranges-merge';
 
-describe('ranges-merge', () => {
+describe(rangesMerge, () => {
 	it('Returns sorted ranges if there are no intersections', () => {
 		expect(rangesMerge([[5, 10], [1, 4]])).toStrictEqual([[1, 4], [5, 10]]);
 	});

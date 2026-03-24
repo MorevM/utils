@@ -1,6 +1,6 @@
 import { isTouch } from './is-touch';
 
-describe('is-touch', () => {
+describe(isTouch, () => {
 	afterEach(() => {
 		delete window.ontouchstart;
 	});

@@ -4,7 +4,7 @@ import { randomDate } from './random-date';
 const BIRTHDATE = new Date(1994, 5, 11); // <-- That's mine ^^
 const DEATHDATE = new Date(2094, 5, 11); // <-- Pretty optimistic
 
-describe('random-date', () => {
+describe(randomDate, () => {
 	describe('Negative scenarios', () => {
 		it('Replaces invalid arguments with defaults and returns a Date', { repeats: 1000 }, () => {
 			const date = randomDate(

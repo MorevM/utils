@@ -1,6 +1,6 @@
 import { isLeapYear } from './is-leap-year';
 
-describe('is-leap-year', () => {
+describe(isLeapYear, () => {
 	it('Returns `false` for an invalid input', () => {
 		expect(isLeapYear('foo')).toBe(false);
 		expect(isLeapYear(Math.PI)).toBe(false);

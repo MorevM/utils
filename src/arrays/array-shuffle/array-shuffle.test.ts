@@ -5,7 +5,7 @@ import { arrayShuffle } from './array-shuffle';
 
 const input = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-describe('array-shuffle', () => {
+describe(arrayShuffle, () => {
 	it('Returns the shuffled array', () => {
 		const TIMES = 100000;
 		const result = arrayOfLength(TIMES, () => arrayShuffle(input));

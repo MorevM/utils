@@ -10,7 +10,7 @@ class Foo {
 	}
 }
 
-describe('is-plain-object', () => {
+describe(isPlainObject, () => {
 	it('Returns `true` if a given value is a plain object', () => {
 		expect(isPlainObject({})).toBe(true);
 		expect(isPlainObject({ foo: 'bar' })).toBe(true);

@@ -15,7 +15,7 @@ const iterable = [
 	new Promise<4>((resolve, reject) => sleep(itemDelay / 2).then(() => resolve(4))),
 ];
 
-describe('async-array', () => {
+describe(asyncArray, () => {
 	const duration = 50;
 	const expectedTime = iterable.length * duration + itemDelay + itemDelay / 2;
 

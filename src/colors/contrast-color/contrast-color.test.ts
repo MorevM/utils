@@ -5,7 +5,7 @@
  */
 import { contrastColor } from './contrast-color';
 
-describe('contrast-color', () => {
+describe(contrastColor, () => {
 	it('Calculates right contrast color using defaults (black and white)', () => {
 		expect(contrastColor('#f00')).toBe('#000000');
 		expect(contrastColor('#0f0')).toBe('#000000');

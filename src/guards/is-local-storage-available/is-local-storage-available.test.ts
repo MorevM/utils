@@ -1,6 +1,6 @@
 import { isLocalStorageAvailable } from './is-local-storage-available';
 
-describe('is-local-storage-available', () => {
+describe(isLocalStorageAvailable, () => {
 	afterAll(() => { vi.restoreAllMocks(); });
 
 	// This is ok in Node environment

@@ -1,6 +1,6 @@
 import { isNullish } from './is-nullish';
 
-describe('is-nullish', () => {
+describe(isNullish, () => {
 	it('Returns `true` if a given value is `null`', () => {
 		expect(isNullish(null)).toBe(true);
 	});

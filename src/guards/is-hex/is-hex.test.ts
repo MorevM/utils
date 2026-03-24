@@ -1,6 +1,6 @@
 import { isHex } from './is-hex';
 
-describe('is-hex', () => {
+describe(isHex, () => {
 	it('Returns `false` if a given value is not a string', () => {
 		expect(isHex(undefined)).toBe(false);
 		expect(isHex(null)).toBe(false);

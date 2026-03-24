@@ -1,6 +1,6 @@
 import { padStart } from './pad-start';
 
-describe('pad-start', () => {
+describe(padStart, () => {
 	it('Correctly fills the resulting string using mixed type of first argument', () => {
 		expect(padStart(1, 3, '0')).toBe('001');
 		expect(padStart('1', 4, 'xx')).toBe('xxx1');

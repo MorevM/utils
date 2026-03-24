@@ -1,6 +1,6 @@
 import { normalizeHex } from './normalize-hex';
 
-describe('normalize-hex', () => {
+describe(normalizeHex, () => {
 	it('Returns `null` for invalid HEX strings', () => {
 		expect(normalizeHex('')).toBeNull();
 		expect(normalizeHex('foo')).toBeNull();

@@ -1,6 +1,6 @@
 import { arrayRotate, arrayRotateMutable } from './array-rotate';
 
-describe('array-rotate', () => {
+describe(arrayRotate, () => {
 	const testArray = [1, 2, 3, 4];
 
 	it('Does not mutate the original array', () => {
@@ -37,7 +37,7 @@ describe('array-rotate', () => {
 	});
 });
 
-describe('array-rotate-mutable', () => {
+describe(arrayRotateMutable, () => {
 	it('Mutates the original array', () => {
 		const arr = [1, 2, 3, 4];
 		const result = arrayRotateMutable(arr, 1);

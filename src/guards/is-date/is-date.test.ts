@@ -1,6 +1,6 @@
 import { isDate } from './is-date';
 
-describe('is-date', () => {
+describe(isDate, () => {
 	it('Returns `true` if a given value is a `Date` object (even invalid)', () => {
 		expect(isDate(new Date())).toBe(true);
 		expect(isDate(new Date('foo'))).toBe(true);

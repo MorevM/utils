@@ -1,6 +1,6 @@
 import { isDev } from './is-dev';
 
-describe('is-dev', () => {
+describe(isDev, () => {
 	const OLD_ENV = process.env;
 
 	beforeEach(() => {

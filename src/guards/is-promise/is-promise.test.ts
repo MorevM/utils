@@ -3,7 +3,7 @@ import { isPromise } from './is-promise';
 const promise = new Promise((resolve, reject) => resolve(''));
 const asyncFn = async () => 1;
 
-describe('is-promise', () => {
+describe(isPromise, () => {
 	it('Returns `true` if a given value is a Promise', () => {
 		expect(isPromise(promise)).toBe(true);
 		expect(isPromise(asyncFn())).toBe(true);

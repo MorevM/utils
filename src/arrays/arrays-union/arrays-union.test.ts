@@ -1,6 +1,6 @@
 import { arraysUnion } from './arrays-union';
 
-describe('arrays-union', () => {
+describe(arraysUnion, () => {
 	it('Returns the array which is the result of combine a given arrays', () => {
 		expect(arraysUnion([1, 2], [3, 4])).toStrictEqual([1, 2, 3, 4]);
 		expect(arraysUnion([1, 2], [3, 4], [5, 6])).toStrictEqual([1, 2, 3, 4, 5, 6]);

@@ -12,7 +12,7 @@ const runTimes = (times: number, fn: Function) => {
 	}, []);
 };
 
-describe('array-sample', () => {
+describe(arraySample, () => {
 	it('Returns undefined for any invalid input', () => {
 		expect(arraySample([])).toBeUndefined();
 		/* @ts-expect-error -- Edge case */

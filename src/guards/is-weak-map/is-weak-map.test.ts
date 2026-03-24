@@ -1,6 +1,6 @@
 import { isWeakMap } from './is-weak-map';
 
-describe('is-weak-map', () => {
+describe(isWeakMap, () => {
 	it('Returns `true` if the given value is a WeakMap', () => {
 		expect(isWeakMap(new WeakMap())).toBe(true);
 	});

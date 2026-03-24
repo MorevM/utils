@@ -1,6 +1,6 @@
 import { arrayRemove, arrayRemoveMutable } from './array-remove';
 
-describe('array-remove', () => {
+describe(arrayRemove, () => {
 	const testArray = [1, 2, 3, 1, 2, 3];
 
 	it('Doesn\'t mutate the original array', () => {
@@ -28,7 +28,7 @@ describe('array-remove', () => {
 	});
 });
 
-describe('array-remove-mutable', () => {
+describe(arrayRemoveMutable, () => {
 	it('Mutates the original array (`onlyFirst` is `false`)', () => {
 		const arr = [1, 2, 3, 1, 2, 3];
 		arrayRemoveMutable(arr, 1);

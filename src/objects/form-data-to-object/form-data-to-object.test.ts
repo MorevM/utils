@@ -1,7 +1,7 @@
 import { isObject } from '../../guards/is-object/is-object';
 import { formDataToObject } from './form-data-to-object';
 
-describe('form-data-to-object', () => {
+describe(formDataToObject, () => {
 	it('Returns empty object for empty `FormData` given', () => {
 		const formData = new FormData();
 

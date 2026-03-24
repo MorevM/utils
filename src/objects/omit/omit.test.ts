@@ -70,7 +70,7 @@ describe(omit, () => {
 	});
 });
 
-describe('omit-mutable', () => {
+describe(omitMutable, () => {
 	it('Returns input as is in case of nullish input', () => {
 		/* @ts-expect-error -- Edge case */
 		const nullResult = omitMutable(null, 'foo', 'bar');

@@ -1,6 +1,6 @@
 import { isString } from './is-string';
 
-describe('is-string', () => {
+describe(isString, () => {
 	it('Returns `true` if a given value is a string', () => {
 		expect(isString('foo')).toBe(true);
 	});

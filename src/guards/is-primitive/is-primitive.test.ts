@@ -8,7 +8,7 @@ class Foo { private readonly foo: string; }
 function fn() {}
 const arrowFn = () => {};
 
-describe('is-primitive', () => {
+describe(isPrimitive, () => {
 	it('Returns `true` if a given value is a primitive', () => {
 		expect(isPrimitive(1)).toBe(true);
 		expect(isPrimitive(Infinity)).toBe(true);

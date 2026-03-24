@@ -1,6 +1,6 @@
 import { serializeCookie } from './serialize-cookie';
 
-describe('serialize-cookie', () => {
+describe(serializeCookie, () => {
 	describe('Basics', () => {
 		it('Should serialize name-value pair', () => {
 			expect(serializeCookie({ name: 'foo', value: 'bar' })).toBe('foo=bar');

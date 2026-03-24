@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-deprecated, import-x/no-deprecated */
 import { isDateValid } from './is-date-valid';
 
-describe('is-date-valid', () => {
+describe(isDateValid, () => {
 	it('Returns `true` if a given value is a valid `Date` object', () => {
 		expect(isDateValid(new Date())).toBe(true);
 	});

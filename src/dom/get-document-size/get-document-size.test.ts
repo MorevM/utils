@@ -1,6 +1,6 @@
 import { getDocumentSize } from './get-document-size';
 
-describe('get-document-size', () => {
+describe(getDocumentSize, () => {
 	beforeEach(() => {
 		vi.spyOn(document.body, 'scrollWidth', 'get').mockImplementation(() => 3000);
 		vi.spyOn(document.body, 'scrollHeight', 'get').mockImplementation(() => 6000);

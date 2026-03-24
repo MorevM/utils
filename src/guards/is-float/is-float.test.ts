@@ -1,6 +1,6 @@
 import { isFloat } from './is-float';
 
-describe('is-float', () => {
+describe(isFloat, () => {
 	it('Returns `true` if a given value is a fractional number', () => {
 		expect(isFloat(1.2)).toBe(true);
 	});

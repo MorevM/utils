@@ -1,6 +1,6 @@
 import { camelCase } from './camel-case';
 
-describe('camel-case', () => {
+describe(camelCase, () => {
 	it('Converts a given string written in snake_case to camelCase', () => {
 		expect(camelCase('foo_bar')).toBe('fooBar');
 	});

@@ -1,6 +1,6 @@
 import { stripIndent } from './strip-indent';
 
-describe('strip-indent', () => {
+describe(stripIndent, () => {
 	it('Returns the string as is if there is no extra indentation and leading/trailing linebreaks', () => {
 		expect(stripIndent('')).toBe('');
 		expect(stripIndent('foo')).toBe('foo');

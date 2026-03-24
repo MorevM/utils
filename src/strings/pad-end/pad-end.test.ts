@@ -1,6 +1,6 @@
 import { padEnd } from './pad-end';
 
-describe('pad-end', () => {
+describe(padEnd, () => {
 	it('Correctly fills the resulting string using mixed type of first argument', () => {
 		expect(padEnd(1, 3, '0')).toBe('100');
 		expect(padEnd('1', 4, 'xx')).toBe('1xxx');

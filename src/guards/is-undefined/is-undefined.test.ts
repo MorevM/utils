@@ -1,6 +1,6 @@
 import { isUndefined } from './is-undefined';
 
-describe('is-undefined', () => {
+describe(isUndefined, () => {
 	it('Returns `true` if a given value is `undefined`', () => {
 		expect(isUndefined(undefined)).toBe(true);
 	});

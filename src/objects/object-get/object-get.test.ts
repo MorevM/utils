@@ -7,7 +7,7 @@ const s = {
 	d: [{ a: [undefined, null, true, [Infinity], [{ q: 'q' }]] }],
 };
 
-describe('object-get', () => {
+describe(objectGet, () => {
 	it('Retrieves a value from an object using string path notation', () => {
 		expect(objectGet(s, 'a')).toBe(1);
 		expect(objectGet(s, 'b')).toStrictEqual([1, 2, 3]);

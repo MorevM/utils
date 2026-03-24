@@ -1,6 +1,6 @@
 import { isMobile } from './is-mobile';
 
-describe('is-mobile', () => {
+describe(isMobile, () => {
 	it('Returns `true` if Android device is being used', () => {
 		vi.spyOn(window.navigator, 'userAgent', 'get')
 			.mockReturnValue('Mozilla/5.0 (Linux; Android 11; SM-A102U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Mobile Safari/537.36');

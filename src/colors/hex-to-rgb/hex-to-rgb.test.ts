@@ -1,6 +1,6 @@
 import { hexToRgb } from './hex-to-rgb';
 
-describe('hex-to-rgb', () => {
+describe(hexToRgb, () => {
 	it('Returns `null` if a given value is not a valid HEX string', () => {
 		expect(hexToRgb('')).toBeNull();
 		expect(hexToRgb('000')).toBeNull();

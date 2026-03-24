@@ -1,6 +1,6 @@
 import { setStyleProperties } from './set-style-properties';
 
-describe('set-style-properties', () => {
+describe(setStyleProperties, () => {
 	let el: HTMLElement;
 
 	beforeAll(() => {

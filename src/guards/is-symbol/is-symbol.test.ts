@@ -2,7 +2,7 @@ import { isSymbol } from './is-symbol';
 
 const symbol = Symbol(1);
 
-describe('is-symbol', () => {
+describe(isSymbol, () => {
 	it('Returns `true` if a given value is a symbol', () => {
 		expect(isSymbol(symbol)).toBe(true);
 	});

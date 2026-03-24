@@ -3,7 +3,7 @@ import { safeJsonParse } from './safe-json-parse';
 const WRONG_JSON_STRING = '{"a":  "b}';
 const TEST_OBJECT = { a: 1, b: [1, 2, 3], c: { d: 'e' } };
 
-describe('safe-json-parse', () => {
+describe(safeJsonParse, () => {
 	it('Returns `null` for invalid input', () => {
 		expect(safeJsonParse(null)).toBeNull();
 		expect(safeJsonParse(undefined)).toBeNull();

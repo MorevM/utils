@@ -1,6 +1,6 @@
 import { arraysDifference } from './arrays-difference';
 
-describe('arrays-difference', () => {
+describe(arraysDifference, () => {
 	it('Returns the array of values that are present not in all of a given arrays', () => {
 		expect(arraysDifference([1, 2, 3], [2, 3, 4])).toStrictEqual([1, 4]);
 		expect(arraysDifference([1, 2, 3], [2, 3, 4], [3, 4, 5])).toStrictEqual([1, 2, 4, 5]);

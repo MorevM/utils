@@ -1,6 +1,6 @@
 import { isInteger } from './is-integer';
 
-describe('is-integer', () => {
+describe(isInteger, () => {
 	it('Returns `true` if a given value is an integer number', () => {
 		expect(isInteger(1)).toBe(true);
 		expect(isInteger(0)).toBe(true);

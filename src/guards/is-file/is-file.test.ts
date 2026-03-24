@@ -1,6 +1,6 @@
 import { isFile } from './is-file';
 
-describe('is-blob', () => {
+describe(isFile, () => {
 	it('Returns `true` if a given value is a `File`', () => {
 		expect(isFile(new File([], 'test.txt'))).toBe(true);
 	});

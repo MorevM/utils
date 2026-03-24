@@ -1,6 +1,6 @@
 import { rangesIntersection } from './ranges-intersection';
 
-describe('ranges-intersection', () => {
+describe(rangesIntersection, () => {
 	it(`Doesn't mutate the original array`, () => {
 		const original = [[1, 2], [0, 5]] as const;
 		const clone = [...original];

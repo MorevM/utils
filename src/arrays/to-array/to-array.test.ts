@@ -2,7 +2,7 @@ import { toArray } from './to-array';
 
 const callback = () => ({});
 
-describe('to-array', () => {
+describe(toArray, () => {
 	it('Converts given value to an array', () => {
 		expect(toArray(1)).toStrictEqual([1]);
 		expect(toArray({ foo: 'bar' })).toStrictEqual([{ foo: 'bar' }]);

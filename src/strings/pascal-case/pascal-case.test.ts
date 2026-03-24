@@ -1,6 +1,6 @@
 import { pascalCase } from './pascal-case';
 
-describe('pascal-case', () => {
+describe(pascalCase, () => {
 	it('Converts a given string written in snake_case to PascalCase', () => {
 		expect(pascalCase('foo_bar')).toBe('FooBar');
 	});

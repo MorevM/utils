@@ -1,6 +1,6 @@
 import { isBlob } from './is-blob';
 
-describe('is-blob', () => {
+describe(isBlob, () => {
 	it('Returns `true` if a given value is a `Blob`', () => {
 		expect(isBlob(new Blob())).toBe(true);
 		expect(isBlob(new File([], 'test.txt'))).toBe(true);

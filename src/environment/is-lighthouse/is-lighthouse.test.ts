@@ -5,7 +5,7 @@ const LIGHTHOUSE_UA = 'Mozilla/5.0 (Linux; Android 7.0; Moto G (4)) AppleWebKit/
 const NON_LIGHTHOUSE_UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36';
 
 
-describe('is-lighthouse', () => {
+describe(isLighthouse, () => {
 	it('Returns `true` if the Lighthouse user agent is being used', () => {
 		expect(isLighthouse(LIGHTHOUSE_UA)).toBe(true);
 	});

@@ -1,6 +1,6 @@
 import { arraySwap, arraySwapMutable } from './array-swap';
 
-describe('array-swap', () => {
+describe(arraySwap, () => {
 	it('Does not mutate an original array', () => {
 		const original = [0, 1, 2, 4, 5];
 		const clone = [...original];

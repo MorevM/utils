@@ -2,7 +2,7 @@ import { deepEqual, deepEqualCircular } from './deep-equal';
 
 const fn = () => ({});
 
-describe('deep-equal', () => {
+describe(deepEqual, () => {
 	describe('Primitives', () => {
 		// Numbers
 		it('Returns `true` for equal numbers', () => {

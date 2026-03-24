@@ -1,6 +1,6 @@
 import { daysInMonth } from './days-in-month';
 
-describe('days-in-month', () => {
+describe(daysInMonth, () => {
 	beforeAll(() => {
 		vi.useFakeTimers({ now: new Date(2020, 1, 1) });
 	});

@@ -1,6 +1,6 @@
 import { isOSX } from './is-osx';
 
-describe('is-osx', () => {
+describe(isOSX, () => {
 	it('Returns `true` if a MacOS device is being used', () => {
 		vi.spyOn(window.navigator, 'platform', 'get')
 			.mockReturnValue('MacIntel');

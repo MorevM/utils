@@ -1,6 +1,6 @@
 import { rangesInvert } from './ranges-invert';
 
-describe('ranges-invert', () => {
+describe(rangesInvert, () => {
 	it(`Doesn't mutate the original array`, () => {
 		const original = [[1, 2], [0, 1]] as Array<[number, number]>;
 		const clone = [...original];

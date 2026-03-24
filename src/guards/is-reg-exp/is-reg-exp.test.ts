@@ -1,6 +1,6 @@
 import { isRegExp } from './is-reg-exp';
 
-describe('is-reg-exp', () => {
+describe(isRegExp, () => {
 	it('Returns `true` if a given value is a `RegExp` object', () => {
 		expect(isRegExp(new RegExp('\\w+'))).toBe(true);
 	});

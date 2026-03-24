@@ -1,6 +1,6 @@
 import { numberFormat } from './number-format';
 
-describe('number-format', () => {
+describe(numberFormat, () => {
 	it('Returns the string representation of a given number formatted using given parameters', () => {
 		expect(numberFormat(1234.56, 2, '.', ' ')).toBe('1 234.56');
 	});

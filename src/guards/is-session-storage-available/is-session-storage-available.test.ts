@@ -1,6 +1,6 @@
 import { isSessionStorageAvailable } from './is-session-storage-available';
 
-describe('is-session-storage-available', () => {
+describe(isSessionStorageAvailable, () => {
 	afterAll(() => { vi.restoreAllMocks(); });
 
 	// This is ok in Node environment

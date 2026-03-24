@@ -1,7 +1,7 @@
 import { isInteger } from '../../guards';
 import { randomInteger } from './random-integer';
 
-describe('random-integer', () => {
+describe(randomInteger, () => {
 	it('Returns the random integer with no arguments', { repeats: 10000 }, () => {
 		expect(isInteger(randomInteger())).toBe(true);
 	});

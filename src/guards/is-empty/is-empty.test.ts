@@ -1,6 +1,6 @@
 import { isEmpty } from './is-empty';
 
-describe('is-empty', () => {
+describe(isEmpty, () => {
 	it('Returns `true` if a given value is a `null`', () => {
 		expect(isEmpty(null)).toBe(true);
 	});

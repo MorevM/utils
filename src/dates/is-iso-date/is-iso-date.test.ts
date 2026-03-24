@@ -1,6 +1,6 @@
 import { isIsoDate } from './is-iso-date';
 
-describe('is-iso-date', () => {
+describe(isIsoDate, () => {
 	it('Returns `false` for any non-string input', () => {
 		expect(isIsoDate(1)).toBe(false);
 		expect(isIsoDate(new Date())).toBe(false);

@@ -1,6 +1,6 @@
 import { escapeRegExp } from './escape-reg-exp';
 
-describe('escape-reg-exp', () => {
+describe(escapeRegExp, () => {
 	const escaped = '\\^\\$\\.\\*\\+\\?\\(\\)\\[\\]\\{\\}\\|\\\\';
 	const unescaped = '^$.*+?()[]{}|\\';
 

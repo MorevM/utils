@@ -1,6 +1,6 @@
 import { isIterable } from './is-iterable';
 
-describe('is-iterable', () => {
+describe(isIterable, () => {
 	it('Returns `true` if a given value is an array', () => {
 		expect(isIterable([])).toBe(true);
 	});

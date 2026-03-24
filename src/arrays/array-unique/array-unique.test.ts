@@ -1,6 +1,6 @@
 import { arrayUnique } from './array-unique';
 
-describe('array-unique', () => {
+describe(arrayUnique, () => {
 	it('Returns the array without duplicated values (scalar / literal)', () => {
 		expect(arrayUnique([1, 2, 1, 2])).toStrictEqual([1, 2]);
 		expect(arrayUnique(['1', '2', 1, 2, '1', 1])).toStrictEqual(['1', '2', 1, 2]);

@@ -1,6 +1,6 @@
 import { randomString } from './random-string';
 
-describe('random-string', () => {
+describe(randomString, () => {
 	it('Returns the random string of a given length', () => {
 		expect(randomString(10, false)).toHaveLength(10);
 		expect(randomString(100, false)).toHaveLength(100);

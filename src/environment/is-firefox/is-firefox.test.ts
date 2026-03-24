@@ -1,6 +1,6 @@
 import { isFirefox } from './is-firefox';
 
-describe('is-firefox', () => {
+describe(isFirefox, () => {
 	it('Returns `true` if a Firefox browser is being used', () => {
 		vi.spyOn(window.navigator, 'userAgent', 'get')
 			.mockReturnValue('Mozilla/5.0 (Windows NT 10.0; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0');

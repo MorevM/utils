@@ -1,6 +1,6 @@
 import { arrayInsert, arrayInsertMutable } from './array-insert';
 
-describe('array-insert', () => {
+describe(arrayInsert, () => {
 	const testArray = [1, 3];
 
 	it('Doesn\'t mutate the original array', () => {
@@ -30,7 +30,7 @@ describe('array-insert', () => {
 	});
 });
 
-describe('array-insert-mutable', () => {
+describe(arrayInsertMutable, () => {
 	const arr = [1, 2, 3];
 
 	it('Mutates the original array', () => {

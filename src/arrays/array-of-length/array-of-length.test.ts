@@ -1,6 +1,6 @@
 import { arrayOfLength } from './array-of-length';
 
-describe('array-of-length', () => {
+describe(arrayOfLength, () => {
 	it('Returns an array with a given length filled with `undefined` by default', () => {
 		expect(arrayOfLength(3)).toStrictEqual([undefined, undefined, undefined]);
 	});

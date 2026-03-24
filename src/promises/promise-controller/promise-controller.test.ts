@@ -1,7 +1,7 @@
 import { isPromise } from '../../guards';
 import { promiseController } from './promise-controller';
 
-describe('promise-controller', () => {
+describe(promiseController, () => {
 	it('Returns the Promise object', () => {
 		const controlledPromise = promiseController();
 

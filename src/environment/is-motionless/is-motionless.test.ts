@@ -1,6 +1,6 @@
 import { isMotionless } from './is-motionless';
 
-describe('is-motionless', () => {
+describe(isMotionless, () => {
 	it('Returns `true` if user has requested the operating system to minimize the amount of animation or motion it uses', () => {
 		Object.defineProperty(window, 'matchMedia', {
 			writable: true,

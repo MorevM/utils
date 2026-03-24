@@ -1,6 +1,6 @@
 import { rgbToHex } from './rgb-to-hex';
 
-describe('rgb-to-hex', () => {
+describe(rgbToHex, () => {
 	describe('String', () => {
 		it('Returns `null` in case of invalid input', () => {
 			expect(rgbToHex('bgr(0, 0, 0)')).toBeNull();

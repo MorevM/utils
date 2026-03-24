@@ -3,7 +3,7 @@ import { parseDate } from './parse-date';
 // There is a static timezone offset defined in `utils/vitest.global-setup.ts`.
 const TIMEZONE_OFFSET_AS_HOURS = 3;
 
-describe('parse-date', () => {
+describe(parseDate, () => {
 	describe('Timestamp', () => {
 		const timestamp = Date.UTC(2024, 5, 25, 20, 30, 0);
 

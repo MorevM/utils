@@ -1,6 +1,6 @@
 import { isFormData } from './is-form-data';
 
-describe('is-form-data', () => {
+describe(isFormData, () => {
 	it('Returns `true` if a given value is a `FormData` object', () => {
 		expect(isFormData(new FormData())).toBe(true);
 	});

@@ -1,6 +1,6 @@
 import { fileExtension } from './file-extension';
 
-describe('file-extension', () => {
+describe(fileExtension, () => {
 	it('Returns `null` for UNIX-hidden files', () => {
 		expect(fileExtension('.htaccess')).toBeNull();
 	});

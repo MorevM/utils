@@ -1,6 +1,6 @@
 import { arraysIntersection } from './arrays-intersection';
 
-describe('arrays-intersection', () => {
+describe(arraysIntersection, () => {
 	it('Returns the array of values that are present in all of a given arrays', () => {
 		expect(arraysIntersection([1, 2, 3], [2, 3, 4])).toStrictEqual([2, 3]);
 		expect(arraysIntersection([1, 2, 3], [2, 3, 4], [3, 4, 5])).toStrictEqual([3]);

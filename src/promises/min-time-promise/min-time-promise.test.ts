@@ -3,7 +3,7 @@ import { minTimePromise } from './min-time-promise';
 
 const ERROR = new Error('Error message');
 
-describe('min-time-promise', () => {
+describe(minTimePromise, () => {
 	it('Returns a Promise object that resolves correctly regardless of `minTime` argument', async () => {
 		const testValue = 1;
 		const result = minTimePromise(Promise.resolve(testValue));

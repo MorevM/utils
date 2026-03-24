@@ -1,6 +1,6 @@
 import { rangesSort } from './ranges-sort';
 
-describe('ranges-sort', () => {
+describe(rangesSort, () => {
 	it(`Doesn't mutate the original array`, () => {
 		const original = [[1, 2], [0, 1]] as Array<[number, number]>;
 		const clone = [...original];

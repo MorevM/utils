@@ -10,7 +10,7 @@ const getPrecision = (num: number) => {
 
 const TIMES = 1000;
 
-describe('random-float', () => {
+describe(randomFloat, () => {
 	it('Returns the random float between a given minimum and maximum value (including)', () => {
 		const suites = [
 			{ min: -1, max: 0 },

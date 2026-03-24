@@ -12,7 +12,7 @@ const toAmount = (results: any[], value: any) =>
 
 const [primary, secondary] = [1, 0];
 
-describe('with-probability', () => {
+describe(withProbability, () => {
 	describe('Primary value', () => {
 		it('Returns the primary value if the first argument is `1`', () => {
 			const results = arrayOfLength(TESTS_COUNT, () => withProbability(1, primary, secondary));

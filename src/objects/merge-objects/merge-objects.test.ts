@@ -28,7 +28,7 @@ const input = {
 	d: 'd',
 };
 
-describe('merge-objects', () => {
+describe(mergeObjects, () => {
 	it('Returns the object which is a given objects being recursively merged', () => {
 		const expected = {
 			a: 'a',

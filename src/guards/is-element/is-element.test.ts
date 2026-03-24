@@ -1,6 +1,6 @@
 import { isElement } from './is-element';
 
-describe('is-element', () => {
+describe(isElement, () => {
 	it('Returns `true` if a given value is a DOM element node', () => {
 		expect(isElement(document.body)).toBe(true);
 	});
