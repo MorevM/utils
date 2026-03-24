@@ -1,5 +1,24 @@
 
 
+## [3.15.0](https://github.com/MorevM/utils/compare/v3.14.0...v3.15.0) (2026-03-24)
+
+
+### Features
+
+* **arrays:** Add `sequence` utility function ([a62979b](https://github.com/MorevM/utils/commit/a62979b7fe01c3b3442655394777e4a1e9036567))
+* **guards:** Add `isFiniteNumber` utility function ([18138cb](https://github.com/MorevM/utils/commit/18138cbcff8d106688fbda4f5f6633813e8f2ffa))
+* **guards:** Add `isValidNumber` utility ([a6fee51](https://github.com/MorevM/utils/commit/a6fee518f6404c04befc6285f8124a56bea4b802))
+* **guards:** Add `isNumber` utility function ([578860e](https://github.com/MorevM/utils/commit/578860ebb2c0c55c45518e0030f75c3ffcf172e1))
+* **guards:** Add `isPropertyKey` utility function ([b7d28ed](https://github.com/MorevM/utils/commit/b7d28ed2002999dfabd78f760fdb7062a49ef5c3))
+
+### Refactoring
+
+* **guards:** Deprecate `isNumeric` utility function ([0579b4f](https://github.com/MorevM/utils/commit/0579b4f644b70e4d67db31f22c8245a47c4a6dab))
+
+### Tests
+
+* Stabilize `asyncArray` timing assertions ([c3bf7ee](https://github.com/MorevM/utils/commit/c3bf7eeb08b9689379c074885ab122092acf15a0))
+
 ## [3.14.0](https://github.com/MorevM/utils/compare/v3.13.1...v3.14.0) (2026-03-07)
 
 
