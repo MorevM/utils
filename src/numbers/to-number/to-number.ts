@@ -1,5 +1,5 @@
 /* eslint-disable func-style -- There is no access to `arguments` in arrow functions */
-import { isNumeric, isString } from '../../guards';
+import { isString, isValidNumber } from '../../guards';
 
 /**
  * Attempts to cast the passed value to a number.
@@ -22,10 +22,10 @@ export function toNumber<F = undefined>(value: unknown, fallback?: F): number | 
 		return fallback;
 	};
 
-	if (isNumeric(value)) return value;
+	if (isValidNumber(value)) return value;
 	if (isString(value)) {
 		const number = Number(value);
-		return isNumeric(number) ? number : (throwOrReturnFallback() as NonNullable<F>);
+		return isValidNumber(number) ? number : (throwOrReturnFallback() as NonNullable<F>);
 	}
 
 	return throwOrReturnFallback() as NonNullable<F>;

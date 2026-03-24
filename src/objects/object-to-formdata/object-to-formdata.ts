@@ -1,4 +1,4 @@
-import { isArray, isBlob, isBoolean, isDate, isFile, isFunction, isNumeric, isObject, isString } from '../../guards';
+import { isArray, isBlob, isBoolean, isDate, isFile, isFunction, isObject, isString, isValidNumber } from '../../guards';
 import { isNull } from '../../guards/is-null/is-null';
 import { isUndefined } from '../../guards/is-undefined/is-undefined';
 import { tsObject } from '../ts-object/ts-object';
@@ -137,7 +137,7 @@ const serialize = (key: string, value: unknown, options: Options, formData: Form
 		return;
 	}
 
-	if (isNumeric(value)) {
+	if (isValidNumber(value)) {
 		formData.append(key, value.toString());
 		return;
 	}

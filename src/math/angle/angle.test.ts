@@ -41,5 +41,6 @@ describe(angle, () => {
 		expect(angle([1, 1, 1, 2, 2])).toBeNull();
 		/* @ts-expect-error -- Edge case for runtime usage */
 		expect(angle(null)).toBeNull();
+		expect(angle(Infinity, 0, 1, 1)).toBeNull();
 	});
 });

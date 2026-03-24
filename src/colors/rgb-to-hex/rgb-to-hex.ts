@@ -1,4 +1,4 @@
-import { isArray, isHex, isInteger, isNull, isNullish, isNumeric, isObject, isString } from '../../guards';
+import { isArray, isFiniteNumber, isHex, isInteger, isNull, isNullish, isObject, isString } from '../../guards';
 import { clamp, toNumber } from '../../numbers';
 import { normalizeHex } from '../normalize-hex/normalize-hex';
 import type { ObjectShortMaybeAlpha } from '../colors.types';
@@ -13,7 +13,7 @@ const DEFAULT_OPTIONS: Options = {
 
 const numberToHex = (part: number) => part.toString(16).padStart(2, '0');
 const isValidRgbPart = (part: unknown): part is number => isInteger(part) && part >= 0 && part <= 255;
-const isValidAlphaPart = (part: unknown): part is number => isNumeric(part) && part >= 0 && part <= 1;
+const isValidAlphaPart = (part: unknown): part is number => isFiniteNumber(part) && part >= 0 && part <= 1;
 
 /**
  * Turns an RGB(A) object, array or CSS string into a HEX string.

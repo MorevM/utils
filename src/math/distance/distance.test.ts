@@ -26,5 +26,6 @@ describe(distance, () => {
 		expect(distance([1, 1, 1, 2, 2])).toBeNull();
 		/* @ts-expect-error -- Edge case for runtime usage */
 		expect(distance(null)).toBeNull();
+		expect(distance(Infinity, 0, 1, 1)).toBeNull();
 	});
 });

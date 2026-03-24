@@ -1,4 +1,4 @@
-import { isArray, isNull, isNumeric, isObject } from '../../guards';
+import { isArray, isFiniteNumber, isNull, isObject } from '../../guards';
 import type { PointObject, PointTuple } from '../math.types';
 
 type ValidValue = PointObject | PointTuple | number;
@@ -44,7 +44,7 @@ export function angle(arg1: ValidValue, arg2: ValidValue, arg3?: number, arg4?: 
 			return [arg1, arg2];
 		}
 
-		if (isNumeric(arg1) && isNumeric(arg2) && isNumeric(arg3) && isNumeric(arg4)) {
+		if (isFiniteNumber(arg1) && isFiniteNumber(arg2) && isFiniteNumber(arg3) && isFiniteNumber(arg4)) {
 			return [[arg1, arg2], [arg3, arg4]];
 		}
 

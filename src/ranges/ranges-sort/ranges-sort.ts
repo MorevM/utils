@@ -1,5 +1,5 @@
 import { assert } from '../../functions/assert/assert';
-import { isNullish, isNumeric } from '../../guards';
+import { isNullish, isValidNumber } from '../../guards';
 import { formatInfinity } from '../ranges.utils';
 import type { ElementOf } from '../../types';
 import type { AvailableRangeValues, OutputRange, Range } from '../ranges.utils';
@@ -9,7 +9,7 @@ const comparator = (a: ElementOf<Range>, b: ElementOf<Range>) => {
 	if (isNullish(a) && !isNullish(b)) return -1;
 	if (!isNullish(a) && isNullish(b)) return 1;
 	// Three lines above cover all cases so I'm sure.
-	assert(isNumeric(a) && isNumeric(b));
+	assert(isValidNumber(a) && isValidNumber(b));
 
 	if (a < b) return -1;
 	if (a > b) return 1;
